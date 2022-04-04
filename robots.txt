@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://JerryGoodLuck.github.io/sitemap.xml
