@@ -1,2 +1,4 @@
-# JerryGoodLuck.github.io
-Blog My post
+
+## Blog
+
+https://jerrygoodluck.github.io/
