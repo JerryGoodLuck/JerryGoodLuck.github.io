@@ -10,40 +10,40 @@ git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
 </code></pre><p>添加 <code>-D</code> 选项以输出草稿状态的文章，执行成功后可以通过 <code>http://localhost:1313/</code> 访问站点。</p><p>7、生成静态站点文件</p><p>当主题和文章等配置ok了，就可以生成静态站点界面。</p><pre><code class=language-other data-lang=other>hugo -D
 </code></pre><p>添加 <code>-D</code> 选项可以在结果中包括草稿内容，默认情况下静态页面会输出到根目录下的 <code>public</code> 文件夹中。</p><p>三、利用Github Action发布</p><p>1、创建静态站点项目</p><p>在Github创建一个公共项目，名为username.github.io，这个仓库只放静态内容。注意，username一定要和github用户名相同。</p><p>2、创建hugo-blog项目</p><p>然后再Github新创建一个私有项目，名字为hugo-blog（保持与上面 第二步《生成静态站点》的目录名字相同），然后添加为我们本地项目文件夹的远程仓库（第二步创建的利用Hugo自动生成的目录）。这个仓库用来维护站点配置和原始的文章内容。</p><p>3、添加子模块</p><p>因为public里面存的是静态站点文件，所以我们在public创建一个git的子模块，之后这个目录将以 <a href=mailto:git@github.com>git@github.com</a>:JerryGoodLuck/JerryGoodLuck.github.io.git 作为远程仓库。</p><pre><code class=language-other data-lang=other>git submodule add -b main git@github.com:JerryGoodLuck/JerryGoodLuck.github.io.git public
 </code></pre><p>4、baseurl配置</p><p>确保配置文件中的 <code>baseUrl</code> 已经设置为了 <code>&lt;USERNAME>.github.io</code></p><p>5、其他配置</p><p>一般还有其他的很多配置，可以根据自己的偏好来配置</p><p>6、添加workflows</p><p>这个文件所定义的workflow 基于项目仓库运行，但我们需要将运行过程生成的静态文件推送到个人主页仓库 <code>JerryGoodLuck.github.io</code> 完成发布.
-相关的deploy任务中按照文档的 <a href=https://github.com/peaceiris/actions-gh-pages>Deploy to external repository external_repository</a> 一节做了专门的配置。</p><p>我的配置文件如下</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#bbb>
-</span><span style=color:#bbb></span><span style=color:navy>name</span>:<span style=color:#bbb> </span>github pages<span style=color:#bbb>
+相关的deploy任务中按照文档的 <a href=https://github.com/peaceiris/actions-gh-pages>Deploy to external repository external_repository</a> 一节做了专门的配置。</p><p>我的配置文件如下</p><div class=highlight><pre style=background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#bbb>
+</span><span style=color:#bbb></span><span style=color:#309;font-weight:700>name</span>:<span style=color:#bbb> </span>github pages<span style=color:#bbb>
 </span><span style=color:#bbb>   
-</span><span style=color:#bbb></span><span style=color:navy>on</span>:<span style=color:#bbb>
-</span><span style=color:#bbb>  </span><span style=color:navy>push</span>:<span style=color:#bbb>
-</span><span style=color:#bbb>    </span><span style=color:navy>branches</span>:<span style=color:#bbb>
+</span><span style=color:#bbb></span><span style=color:#309;font-weight:700>on</span>:<span style=color:#bbb>
+</span><span style=color:#bbb>  </span><span style=color:#309;font-weight:700>push</span>:<span style=color:#bbb>
+</span><span style=color:#bbb>    </span><span style=color:#309;font-weight:700>branches</span>:<span style=color:#bbb>
 </span><span style=color:#bbb>      </span>- main<span style=color:#bbb>
 </span><span style=color:#bbb>  
-</span><span style=color:#bbb></span><span style=color:navy>jobs</span>:<span style=color:#bbb>
-</span><span style=color:#bbb>  </span><span style=color:navy>deploy</span>:<span style=color:#bbb>
-</span><span style=color:#bbb>    </span><span style=color:navy>runs-on</span>:<span style=color:#bbb> </span>ubuntu-18.04<span style=color:#bbb>
-</span><span style=color:#bbb>    </span><span style=color:navy>steps</span>:<span style=color:#bbb>
-</span><span style=color:#bbb>      </span>- <span style=color:navy>uses</span>:<span style=color:#bbb> </span>actions/checkout@v2<span style=color:#bbb>
-</span><span style=color:#bbb>        </span><span style=color:navy>with</span>:<span style=color:#bbb>
-</span><span style=color:#bbb>          </span><span style=color:navy>submodules</span>:<span style=color:#bbb> </span><span style=color:#000;font-weight:700>true</span><span style=color:#bbb>  </span><span style=color:#998;font-style:italic># Fetch Hugo themes (true OR recursive)</span><span style=color:#bbb>
-</span><span style=color:#bbb>          </span><span style=color:navy>fetch-depth</span>:<span style=color:#bbb> </span><span style=color:#099>0</span><span style=color:#bbb>    </span><span style=color:#998;font-style:italic># Fetch all history for .GitInfo and .Lastmod</span><span style=color:#bbb>
+</span><span style=color:#bbb></span><span style=color:#309;font-weight:700>jobs</span>:<span style=color:#bbb>
+</span><span style=color:#bbb>  </span><span style=color:#309;font-weight:700>deploy</span>:<span style=color:#bbb>
+</span><span style=color:#bbb>    </span><span style=color:#309;font-weight:700>runs-on</span>:<span style=color:#bbb> </span>ubuntu-18.04<span style=color:#bbb>
+</span><span style=color:#bbb>    </span><span style=color:#309;font-weight:700>steps</span>:<span style=color:#bbb>
+</span><span style=color:#bbb>      </span>- <span style=color:#309;font-weight:700>uses</span>:<span style=color:#bbb> </span>actions/checkout@v2<span style=color:#bbb>
+</span><span style=color:#bbb>        </span><span style=color:#309;font-weight:700>with</span>:<span style=color:#bbb>
+</span><span style=color:#bbb>          </span><span style=color:#309;font-weight:700>submodules</span>:<span style=color:#bbb> </span><span style=color:#069;font-weight:700>true</span><span style=color:#bbb>  </span><span style=color:#09f;font-style:italic># Fetch Hugo themes (true OR recursive)</span><span style=color:#bbb>
+</span><span style=color:#bbb>          </span><span style=color:#309;font-weight:700>fetch-depth</span>:<span style=color:#bbb> </span><span style=color:#f60>0</span><span style=color:#bbb>    </span><span style=color:#09f;font-style:italic># Fetch all history for .GitInfo and .Lastmod</span><span style=color:#bbb>
 </span><span style=color:#bbb>   
-</span><span style=color:#bbb>      </span>- <span style=color:navy>name</span>:<span style=color:#bbb> </span>Setup Hugo<span style=color:#bbb>
-</span><span style=color:#bbb>        </span><span style=color:navy>uses</span>:<span style=color:#bbb> </span>peaceiris/actions-hugo@v2<span style=color:#bbb>
-</span><span style=color:#bbb>        </span><span style=color:navy>with</span>:<span style=color:#bbb>
-</span><span style=color:#bbb>          </span><span style=color:navy>hugo-version</span>:<span style=color:#bbb> </span><span style=color:#d14>&#39;0.79.1&#39;</span><span style=color:#bbb>
-</span><span style=color:#bbb>          </span><span style=color:navy>extended</span>:<span style=color:#bbb> </span><span style=color:#000;font-weight:700>true</span><span style=color:#bbb>
+</span><span style=color:#bbb>      </span>- <span style=color:#309;font-weight:700>name</span>:<span style=color:#bbb> </span>Setup Hugo<span style=color:#bbb>
+</span><span style=color:#bbb>        </span><span style=color:#309;font-weight:700>uses</span>:<span style=color:#bbb> </span>peaceiris/actions-hugo@v2<span style=color:#bbb>
+</span><span style=color:#bbb>        </span><span style=color:#309;font-weight:700>with</span>:<span style=color:#bbb>
+</span><span style=color:#bbb>          </span><span style=color:#309;font-weight:700>hugo-version</span>:<span style=color:#bbb> </span><span style=color:#c30>&#39;0.79.1&#39;</span><span style=color:#bbb>
+</span><span style=color:#bbb>          </span><span style=color:#309;font-weight:700>extended</span>:<span style=color:#bbb> </span><span style=color:#069;font-weight:700>true</span><span style=color:#bbb>
 </span><span style=color:#bbb>   
-</span><span style=color:#bbb>      </span>- <span style=color:navy>name</span>:<span style=color:#bbb> </span>Build<span style=color:#bbb>
-</span><span style=color:#bbb>        </span><span style=color:navy>run</span>:<span style=color:#bbb> </span>hugo --minify<span style=color:#bbb>
+</span><span style=color:#bbb>      </span>- <span style=color:#309;font-weight:700>name</span>:<span style=color:#bbb> </span>Build<span style=color:#bbb>
+</span><span style=color:#bbb>        </span><span style=color:#309;font-weight:700>run</span>:<span style=color:#bbb> </span>hugo --minify<span style=color:#bbb>
 </span><span style=color:#bbb>
 </span><span style=color:#bbb>   
-</span><span style=color:#bbb>      </span>- <span style=color:navy>name</span>:<span style=color:#bbb> </span>Deploy<span style=color:#bbb>
-</span><span style=color:#bbb>        </span><span style=color:navy>uses</span>:<span style=color:#bbb> </span>peaceiris/actions-gh-pages@v3<span style=color:#bbb>
-</span><span style=color:#bbb>        </span><span style=color:navy>with</span>:<span style=color:#bbb>
-</span><span style=color:#bbb>          </span><span style=color:navy>deploy_key</span>:<span style=color:#bbb> </span>${{ secrets.ACTIONS_DEPLOY_KEY }}<span style=color:#bbb>
-</span><span style=color:#bbb>          </span><span style=color:navy>external_repository</span>:<span style=color:#bbb> </span>JerryGoodLuck/JerryGoodLuck.github.io<span style=color:#bbb>
-</span><span style=color:#bbb>          </span><span style=color:navy>publish_branch</span>:<span style=color:#bbb> </span>main<span style=color:#bbb>
-</span><span style=color:#bbb>          </span><span style=color:navy>publish_dir</span>:<span style=color:#bbb> </span>./public<span style=color:#bbb>
+</span><span style=color:#bbb>      </span>- <span style=color:#309;font-weight:700>name</span>:<span style=color:#bbb> </span>Deploy<span style=color:#bbb>
+</span><span style=color:#bbb>        </span><span style=color:#309;font-weight:700>uses</span>:<span style=color:#bbb> </span>peaceiris/actions-gh-pages@v3<span style=color:#bbb>
+</span><span style=color:#bbb>        </span><span style=color:#309;font-weight:700>with</span>:<span style=color:#bbb>
+</span><span style=color:#bbb>          </span><span style=color:#309;font-weight:700>deploy_key</span>:<span style=color:#bbb> </span>${{ secrets.ACTIONS_DEPLOY_KEY }}<span style=color:#bbb>
+</span><span style=color:#bbb>          </span><span style=color:#309;font-weight:700>external_repository</span>:<span style=color:#bbb> </span>JerryGoodLuck/JerryGoodLuck.github.io<span style=color:#bbb>
+</span><span style=color:#bbb>          </span><span style=color:#309;font-weight:700>publish_branch</span>:<span style=color:#bbb> </span>main<span style=color:#bbb>
+</span><span style=color:#bbb>          </span><span style=color:#309;font-weight:700>publish_dir</span>:<span style=color:#bbb> </span>./public<span style=color:#bbb>
 </span><span style=color:#bbb>
 </span><span style=color:#bbb>
 </span></code></pre></div><p>7、在本地电脑生成SSH密钥</p><pre><code class=language-other data-lang=other>ssh-keygen -t rsa -b 4096 -C &quot;$(git config user.email)&quot; -f gh-pages -N &quot;&quot;
