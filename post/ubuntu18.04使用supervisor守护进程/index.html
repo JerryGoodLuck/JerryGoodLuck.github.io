@@ -2,8 +2,8 @@
 <button class="pswp__button pswp__button--share" title=Share></button>
 <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
 <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><header id=header class="header container"><div class=logo-wrapper><a href=/ class=logo>Lost Temple</a></div><nav class=site-navbar><ul id=menu class=menu><li class=menu-item><a class=menu-item-link href=http://JerryGoodLuck.github.io/>Home</a></li><li class=menu-item><a class=menu-item-link href=http://JerryGoodLuck.github.io/post/>Archives</a></li><li class=menu-item><a class=menu-item-link href=http://JerryGoodLuck.github.io/tags/>Tags</a></li><li class=menu-item><a class=menu-item-link href=http://JerryGoodLuck.github.io/categories/>Categories</a></li><li class=menu-item><a class=menu-item-link href=http://JerryGoodLuck.github.io/about/>About</a></li></ul></nav></header><div id=mobile-panel><main id=main class="main bg-llight"><div class=content-wrapper><div id=content class="content container"><article class="post bg-white"><header class=post-header><h1 class=post-title>Ubuntu18.04使用supervisor守护进程</h1><div class=post-meta><time datetime=2022-08-07 class=post-time>2022-08-07</time><div class=post-category><a href=http://JerryGoodLuck.github.io/categories/%E6%9D%82%E8%AE%B0/>杂记</a></div></div></header><div class=post-toc id=post-toc><h2 class=post-toc-title>Table of Contents</h2><div class=post-toc-content><nav id=TableOfContents><ul><li><ul><li><a href=#问题背景>问题背景</a></li><li><a href=#机器环境>机器环境</a></li><li><a href=#ubuntu安装supervisor>Ubuntu安装supervisor</a></li><li><a href=#ubuntu配置supervisor>Ubuntu配置supervisor</a></li><li><a href=#检查supervisor的状态>检查supervisor的状态</a></li><li><a href=#设置supervisor开机启动>设置supervisor开机启动</a></li></ul></li></ul></nav></div></div><div class=post-content><h3 id=问题背景>问题背景</h3><p>最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。</p><p>于是想着用supervisor来做守护进程, 本文就是记录supervisor 的安装、配置、使用技巧，并设置如何supervisor开机自动启动</p><h3 id=机器环境>机器环境</h3><p>Ubuntu版本：18.04</p><p>Ubuntu用户：root</p><h3 id=ubuntu安装supervisor>Ubuntu安装supervisor</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-fallback data-lang=fallback>apt install supervisor
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><header id=header class="header container"><div class=logo-wrapper><a href=/ class=logo>Lost Temple</a></div><nav class=site-navbar><ul id=menu class=menu><li class=menu-item><a class=menu-item-link href=http://JerryGoodLuck.github.io/>Home</a></li><li class=menu-item><a class=menu-item-link href=http://JerryGoodLuck.github.io/post/>Archives</a></li><li class=menu-item><a class=menu-item-link href=http://JerryGoodLuck.github.io/tags/>Tags</a></li><li class=menu-item><a class=menu-item-link href=http://JerryGoodLuck.github.io/categories/>Categories</a></li><li class=menu-item><a class=menu-item-link href=http://JerryGoodLuck.github.io/about/>About</a></li></ul></nav></header><div id=mobile-panel><main id=main class="main bg-llight"><div class=content-wrapper><div id=content class="content container"><article class="post bg-white"><header class=post-header><h1 class=post-title>Ubuntu18.04使用supervisor守护进程</h1><div class=post-meta><time datetime=2022-08-07 class=post-time>2022-08-07</time><div class=post-category><a href=http://JerryGoodLuck.github.io/categories/%E6%9D%82%E8%AE%B0/>杂记</a></div></div></header><div class=post-toc id=post-toc><h2 class=post-toc-title>Table of Contents</h2><div class=post-toc-content><nav id=TableOfContents><ul><li><ul><li><a href=#问题背景>问题背景</a></li><li><a href=#机器环境>机器环境</a></li><li><a href=#ubuntu安装supervisor>Ubuntu安装supervisor</a></li><li><a href=#ubuntu配置supervisor>Ubuntu配置supervisor</a></li><li><a href=#检查supervisor的状态>检查supervisor的状态</a></li><li><a href=#supervisorctl-常用命令>supervisorctl 常用命令</a></li><li><a href=#设置supervisor开机启动>设置supervisor开机启动</a></li></ul></li></ul></nav></div></div><div class=post-content><h3 id=问题背景>问题背景</h3><p>最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。</p><p>于是想着用supervisor来做守护进程, 本文就是记录supervisor 的安装、配置、使用技巧，并设置如何supervisor开机自动启动</p><h3 id=机器环境>机器环境</h3><p>Ubuntu版本：18.04</p><p>Ubuntu用户：root</p><h3 id=ubuntu安装supervisor>Ubuntu安装supervisor</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-shell data-lang=shell>apt install supervisor
 </code></pre></td></tr></table></div></div><h3 id=ubuntu配置supervisor>Ubuntu配置supervisor</h3><p>安装完成后，会生成一个默认的配置文件/etc/supervisor/supervisord.conf， 这个默认配置里面也会load所有在conf.d目录下的配置</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
@@ -11,13 +11,13 @@
 </span><span class=lnt>5
 </span><span class=lnt>6
 </span><span class=lnt>7
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-fallback data-lang=fallback>root@test:/etc/supervisor# tree
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-shell data-lang=shell>root@test:/etc/supervisor# tree
 .
-|-- conf.d
-|   `-- we.conf
-`-- supervisord.conf
+<span class=p>|</span>-- conf.d
+<span class=p>|</span>   <span class=sb>`</span>-- we.conf
+<span class=sb>`</span>-- supervisord.conf
 
-1 directory, 2 files
+<span class=m>1</span> directory, <span class=m>2</span> files
 </code></pre></td></tr></table></div></div><p>supervisord.conf这个默认配置会load所有在conf.d目录下的配置，所以我们接下来在conf.d目录下新建一个我们自己的配置</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
 </span></code></pre></td><td class=lntd><pre class=chroma><code class=language-shell data-lang=shell>touch /etc/supervisor/conf.d/we.conf
 </code></pre></td></tr></table></div></div><p>参照默认配置文件supervisord.conf里的内容改改，配置内容如下</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
@@ -28,32 +28,32 @@
 </span><span class=lnt>6
 </span><span class=lnt>7
 </span><span class=lnt>8
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-fallback data-lang=fallback>[program:we]
-directory=/home/test/
-command=sh we.sh
-autostart=true
-autorestart=true
-startretries=10
-redirect_stderr=true
-stdout_logfile=/home/test/out.log
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-shell data-lang=shell><span class=o>[</span>program:we<span class=o>]</span>
+<span class=nv>directory</span><span class=o>=</span>/home/test/
+<span class=nv>command</span><span class=o>=</span>sh we.sh
+<span class=nv>autostart</span><span class=o>=</span><span class=nb>true</span>
+<span class=nv>autorestart</span><span class=o>=</span><span class=nb>true</span>
+<span class=nv>startretries</span><span class=o>=</span><span class=m>10</span>
+<span class=nv>redirect_stderr</span><span class=o>=</span><span class=nb>true</span>
+<span class=nv>stdout_logfile</span><span class=o>=</span>/home/test/out.log
 </code></pre></td></tr></table></div></div><p>具体也可参照官方给的详细文档： <a href=http://supervisord.org/configuration.html>http://supervisord.org/configuration.html</a></p><h3 id=检查supervisor的状态>检查supervisor的状态</h3><p>1、检查supervisor的状态</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
 </span><span class=lnt>4
 </span><span class=lnt>5
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-fallback data-lang=fallback>ps aux | grep supervisor
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-shell data-lang=shell>ps aux <span class=p>|</span> grep supervisor
 
-root@test:/etc/supervisor# ps aux | grep supervisor
-root      2551  0.0  2.0  65580 21508 ?        Ss   12:39   0:09 /usr/bin/python /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
-root      7720  0.0  0.1  13116  1044 pts/0    S+   16:46   0:00 grep --color=auto supervisor
+root@test:/etc/supervisor# ps aux <span class=p>|</span> grep supervisor
+root      <span class=m>2551</span>  0.0  2.0  <span class=m>65580</span> <span class=m>21508</span> ?        Ss   12:39   0:09 /usr/bin/python /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
+root      <span class=m>7720</span>  0.0  0.1  <span class=m>13116</span>  <span class=m>1044</span> pts/0    S+   16:46   0:00 grep --color<span class=o>=</span>auto supervisor
 </code></pre></td></tr></table></div></div><p>当看到如上对应的进程，就说明supervisor启动是成功的。</p><p>2、检查守护的进程的状态</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-fallback data-lang=fallback>root@test:/etc/supervisor# supervisorctl
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-shell data-lang=shell>root@test:/etc/supervisor# supervisorctl
 we                        RUNNING   pid 2603, uptime 4:05:59
 </code></pre></td></tr></table></div></div><p>我们就可以看到我们配置的守护进程的状态，如果不在运行，会有相应的错误信息，可以去刚才配置的log目录查看日志：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-fallback data-lang=fallback>less /home/test/out.log
-</code></pre></td></tr></table></div></div><p>###supervisorctl 常用命令</p><table><thead><tr><th style=text-align:left>command</th><th style=text-align:left>Description</th></tr></thead><tbody><tr><td style=text-align:left>supervisorctl stop program_name</td><td style=text-align:left>停止某个进程</td></tr><tr><td style=text-align:left>supervisorctl start program_name</td><td style=text-align:left>启动某个进程</td></tr><tr><td style=text-align:left>supervisorctl restart program_name</td><td style=text-align:left>重启某个进程</td></tr><tr><td style=text-align:left>supervisorctl stop all</td><td style=text-align:left>停止全部进程</td></tr><tr><td style=text-align:left>supervisorctl reload</td><td style=text-align:left>载入最新的配置文件，停止原有进程并按新的配置启动、管理所有进程</td></tr><tr><td style=text-align:left>supervisorctl update</td><td style=text-align:left>根据最新的配置文件，启动新配置或有改动的进程，配置没有改动的进程不会受影响而重启</td></tr></tbody></table><h3 id=设置supervisor开机启动>设置supervisor开机启动</h3><p>如果使用apt安装的，一般来说会自动设置好开机启动，但是如果你重启之后发现没有开机自动启动，可以按照下面的方法配置。</p><p>把下面的命令写进 rc.local 即可：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-fallback data-lang=fallback>/usr/bin/supervisord
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-shell data-lang=shell>less /home/test/out.log
+</code></pre></td></tr></table></div></div><h3 id=supervisorctl-常用命令>supervisorctl 常用命令</h3><table><thead><tr><th style=text-align:left>command</th><th style=text-align:left>Description</th></tr></thead><tbody><tr><td style=text-align:left>supervisorctl stop program_name</td><td style=text-align:left>停止某个进程</td></tr><tr><td style=text-align:left>supervisorctl start program_name</td><td style=text-align:left>启动某个进程</td></tr><tr><td style=text-align:left>supervisorctl restart program_name</td><td style=text-align:left>重启某个进程</td></tr><tr><td style=text-align:left>supervisorctl stop all</td><td style=text-align:left>停止全部进程</td></tr><tr><td style=text-align:left>supervisorctl reload</td><td style=text-align:left>载入最新的配置文件，停止原有进程并按新的配置启动、管理所有进程</td></tr><tr><td style=text-align:left>supervisorctl update</td><td style=text-align:left>根据最新的配置文件，启动新配置或有改动的进程，配置没有改动的进程不会受影响而重启</td></tr></tbody></table><h3 id=设置supervisor开机启动>设置supervisor开机启动</h3><p>如果使用apt安装的，一般来说会自动设置好开机启动，但是如果你重启之后发现没有开机自动启动，可以按照下面的方法配置。</p><p>把下面的命令写进 rc.local 即可：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-shell data-lang=shell>/usr/bin/supervisord
 </code></pre></td></tr></table></div></div></div><div class=post-reward><input type=checkbox name=reward id=reward hidden>
 <label class=reward-button for=reward>Reward</label><div class=qr-code><label class=qr-code-image for=reward><img class=image src=https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202208071626544.JPG>
 <span>Wechat</span></label></div></div><footer class=post-footer><div class=post-tags><a href=http://JerryGoodLuck.github.io/tags/linux/>linux</a></div><nav class=post-nav><a class=next href=/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/><span class="next-text nav-default">Vue Vite初学报错大全</span>
