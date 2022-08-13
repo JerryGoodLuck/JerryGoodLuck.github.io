@@ -6,11 +6,11 @@
 </span></code></pre></td><td class=lntd><pre class=chroma><code class=language-shell data-lang=shell>half-life
 </code></pre></td></tr></table></div></div><h3 id=修改prompt>修改PROMPT</h3><p>然后去oh-my-zsh.sh修改PROMPT</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-fallback data-lang=fallback>vim ~/.oh-my-zsh/oh-my-zsh.sh
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-shell data-lang=shell>vim ~/.oh-my-zsh/oh-my-zsh.sh
 
 </code></pre></td></tr></table></div></div><p>在文件末尾添加一行：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-fallback data-lang=fallback>PROMPT=$&#39;%{$purple%}%n%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info &#34; with%{$fg[red]%} &#34; v g &#34;%{$reset_color%}&#34;)$vcs_info_msg_0_%{$orange%}%{$reset_color%} at %{$hotpink%}%* %{$orange%}λ%{$reset_color%} &#39;
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-shell data-lang=shell><span class=nv>PROMPT</span><span class=o>=</span><span class=s1>$&#39;%{$purple%}%n%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info &#34; with%{$fg[red]%} &#34; v g &#34;%{$reset_color%}&#34;)$vcs_info_msg_0_%{$orange%}%{$reset_color%} at %{$hotpink%}%* %{$orange%}λ%{$reset_color%} &#39;</span>
 
 </code></pre></td></tr></table></div></div><p>效果如下</p><p><img src=https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202208131028385.png alt></p></div><div class=post-reward><input type=checkbox name=reward id=reward hidden>
 <label class=reward-button for=reward>Reward</label><div class=qr-code><label class=qr-code-image for=reward><img class=image src=https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202208071626544.JPG>
