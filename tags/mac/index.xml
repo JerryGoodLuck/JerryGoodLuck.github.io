@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mac on</title><link>/tags/mac/</link><description>Recent content in Mac on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 31 Jul 2022 11:24:38 +0800</lastBuildDate><atom:link href="/tags/mac/index.xml" rel="self" type="application/rss+xml"/><item><title>寻找Mac java_home</title><link>/post/mac_java_home/</link><pubDate>Sun, 31 Jul 2022 11:24:38 +0800</pubDate><guid>/post/mac_java_home/</guid><description>&lt;h2 id="前期准备">&lt;strong>前期准备&lt;/strong>&lt;/h2>
+&lt;ol>
+&lt;li>下载JDK安装包：在&lt;a href="https://link.zhihu.com/?target=http%3A//www.oracle.com/technetwork/cn/java/javase/downloads/jdk8-downloads-2133151-zhs.html">JDK1.8下载&lt;/a>中选择Mac的JDK安装包&lt;/li>
+&lt;li>安装JDK：这里只要按照安装指引一步一步安装即可&lt;/li>
+&lt;/ol>
+&lt;h2 id="查找java_home">&lt;strong>查找JAVA_HOME&lt;/strong>&lt;/h2>
+&lt;ol>
+&lt;li>打开Mac的终端，检查JDK是否安装成功：&lt;code>java -version&lt;/code>&lt;/li>
+&lt;li>查看java指令所在的目录：&lt;code>which java&lt;/code>。输出结果：&lt;code>/usr/bin/java&lt;/code>&lt;/li>
+&lt;li>显示java指令文件的属性：&lt;code>ls -l /usr/bin/java&lt;/code>。输出结果如下：&lt;code>lrwxr-xr-x 1 root wheel 74 12 2 06:44 /usr/bin/java -&amp;gt; /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java&lt;/code>，从输出结果可以知道**/usr/bin/java&lt;strong>文件是一个链接文件，实际是指向&lt;/strong>/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java**文件的。&lt;/li>
+&lt;li>进入实际指令所在的文件夹：&lt;code>cd /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands&lt;/code>。但是这个目录并不是JAVA_HOME目录。&lt;/li>
+&lt;li>然后就是最重点的地方，在这个目录下面有一个mac的JDK特有的&lt;code>java_home&lt;/code>指令可以查看JDK的JAVA_HOME目录。执行指令：&lt;code>./java_home&lt;/code>执行结果如下：&lt;code>/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;h2 id="设置java_home">&lt;strong>设置JAVA_HOME&lt;/strong>&lt;/h2>
+&lt;ol>
+&lt;li>编辑.bash_profile文件：&lt;code>vim ~/.bash_profile&lt;/code>&lt;/li>
+&lt;li>添加以下内容：&lt;code>export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Homeexport PATH=$JAVA_HOME/bin:$PATH&lt;/code>&lt;/li>
+&lt;li>使修改的文件生效：&lt;code>source ~/.bash_profile&lt;/code>&lt;/li>
+&lt;/ol></description></item></channel></rss>
