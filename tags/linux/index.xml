@@ -1,1 +1,113 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on JerryGoodLuck</title><link>http://JerryGoodLuck.github.io/tags/linux/</link><description>Recent content in linux on JerryGoodLuck</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Aug 2022 10:23:30 +0800</lastBuildDate><atom:link href="http://JerryGoodLuck.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>我的oh My Zsh主题</title><link>http://JerryGoodLuck.github.io/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link><pubDate>Sat, 13 Aug 2022 10:23:30 +0800</pubDate><guid>http://JerryGoodLuck.github.io/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid><description>最近想改下iTerm的oh-my-zsh主题，看知乎讨论，有一款简洁的主题映入眼帘。 主题名称 1 half-life 修改PROMPT 然后去oh-my-zsh.s</description></item><item><title>Ubuntu18.04使用supervisor守护进程</title><link>http://JerryGoodLuck.github.io/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link><pubDate>Sun, 07 Aug 2022 15:54:02 +0800</pubDate><guid>http://JerryGoodLuck.github.io/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid><description>问题背景 最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就</description></item><item><title>Wget用法</title><link>http://JerryGoodLuck.github.io/post/wget%E7%94%A8%E6%B3%95/</link><pubDate>Sun, 31 Jul 2022 11:20:32 +0800</pubDate><guid>http://JerryGoodLuck.github.io/post/wget%E7%94%A8%E6%B3%95/</guid><description>我会向你展示10个 Wget 命令的实际案例. Wget 是一个用于下载文件的免费工具，它支持大多数常用的Internet协议，包括 HTTP, HTTPS, 以及 FTP. Wget这个名字来</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linux on PaperMod</title>
+    <link>https://adityatelange.github.io/hugo-PaperMod/tags/linux/</link>
+        <follow_challenge>
+    <feedId>60623584562065408</feedId>
+    <userId>60599027243183104</userId>
+    </follow_challenge>
+    <description>Recent content in Linux on PaperModfeedId:60623584562065408+userId:60599027243183104</description>
+    <image>
+      <title>PaperMod</title>
+      <url>https://adityatelange.github.io/hugo-PaperMod/images/papermod-cover.png</url>
+      <link>https://adityatelange.github.io/hugo-PaperMod/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.134.3</generator>
+    <language>en</language>
+    <copyright>PaperMod Contributors</copyright>
+    <lastBuildDate>Sat, 13 Aug 2022 10:23:30 +0800</lastBuildDate>
+    <atom:link href="https://adityatelange.github.io/hugo-PaperMod/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的oh My Zsh主题</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Sat, 13 Aug 2022 10:23:30 +0800</pubDate>
+      <guid>https://adityatelange.github.io/hugo-PaperMod/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid>
+      <description>&lt;p&gt;最近想改下iTerm的oh-my-zsh主题，看知乎讨论，有一款简洁的主题映入眼帘。&lt;/p&gt;
+&lt;h3 id=&#34;主题名称&#34;&gt;主题名称&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;half-life
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;修改prompt&#34;&gt;修改PROMPT&lt;/h3&gt;
+&lt;p&gt;然后去oh-my-zsh.sh修改PROMPT&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vim ~/.oh-my-zsh/oh-my-zsh.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在文件末尾添加一行：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;PROMPT&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;$&amp;#39;%{$purple%}%n%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info &amp;#34; with%{$fg[red]%} &amp;#34; v g &amp;#34;%{$reset_color%}&amp;#34;)$vcs_info_msg_0_%{$orange%}%{$reset_color%} at %{$hotpink%}%* %{$orange%}λ%{$reset_color%} &amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果如下&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202208131028385.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ubuntu18.04使用supervisor守护进程</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link>
+      <pubDate>Sun, 07 Aug 2022 15:54:02 +0800</pubDate>
+      <guid>https://adityatelange.github.io/hugo-PaperMod/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid>
+      <description>&lt;h3 id=&#34;问题背景&#34;&gt;问题背景&lt;/h3&gt;
+&lt;p&gt;最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。&lt;/p&gt;
+&lt;p&gt;于是想着用supervisor来做守护进程, 本文就是记录supervisor 的安装、配置、使用技巧，并设置如何supervisor开机自动启动&lt;/p&gt;
+&lt;h3 id=&#34;机器环境&#34;&gt;机器环境&lt;/h3&gt;
+&lt;p&gt;Ubuntu版本：18.04&lt;/p&gt;
+&lt;p&gt;Ubuntu用户：root&lt;/p&gt;
+&lt;h3 id=&#34;ubuntu安装supervisor&#34;&gt;Ubuntu安装supervisor&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt install supervisor
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;ubuntu配置supervisor&#34;&gt;Ubuntu配置supervisor&lt;/h3&gt;
+&lt;p&gt;安装完成后，会生成一个默认的配置文件/etc/supervisor/supervisord.conf， 这个默认配置里面也会load所有在conf.d目录下的配置&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@test:/etc/supervisor# tree
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;-- conf.d
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;   &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;-- we.conf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;-- supervisord.conf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; directory, &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; files
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;supervisord.conf这个默认配置会load所有在conf.d目录下的配置，所以我们接下来在conf.d目录下新建一个我们自己的配置&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;touch /etc/supervisor/conf.d/we.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参照默认配置文件supervisord.conf里的内容改改，配置内容如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;program:we&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;directory&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/home/test/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;sh we.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;autostart&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;autorestart&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;startretries&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;redirect_stderr&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;stdout_logfile&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/home/test/out.log
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;具体也可参照官方给的详细文档： &lt;a href=&#34;http://supervisord.org/configuration.html&#34;&gt;http://supervisord.org/configuration.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;检查supervisor的状态&#34;&gt;检查supervisor的状态&lt;/h3&gt;
+&lt;p&gt;1、检查supervisor的状态&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ps aux &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep supervisor
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@test:/etc/supervisor# ps aux &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep supervisor
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root      &lt;span class=&#34;m&#34;&gt;2551&lt;/span&gt;  0.0  2.0  &lt;span class=&#34;m&#34;&gt;65580&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;21508&lt;/span&gt; ?        Ss   12:39   0:09 /usr/bin/python /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root      &lt;span class=&#34;m&#34;&gt;7720&lt;/span&gt;  0.0  0.1  &lt;span class=&#34;m&#34;&gt;13116&lt;/span&gt;  &lt;span class=&#34;m&#34;&gt;1044&lt;/span&gt; pts/0    S+   16:46   0:00 grep --color&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;auto supervisor
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;当看到如上对应的进程，就说明supervisor启动是成功的。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wget用法</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/post/wget%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Sun, 31 Jul 2022 11:20:32 +0800</pubDate>
+      <guid>https://adityatelange.github.io/hugo-PaperMod/post/wget%E7%94%A8%E6%B3%95/</guid>
+      <description>&lt;p&gt;我会向你展示10个 Wget 命令的实际案例. Wget 是一个用于下载文件的免费工具，它支持大多数常用的Internet协议，包括 HTTP, HTTPS, 以及 FTP.&lt;/p&gt;
+&lt;p&gt;Wget这个名字来源于 World Wide Web + get. Wget 有很多功能，可以很方便地做到下载大型文件,递归下载,一次下载多个文件以及镜像web网站和FTP站点.&lt;/p&gt;
+&lt;p&gt;Wget是非交互式的，但是使用起来相当的灵活. 你可以在脚本，cron任务，终端等地方调用它. 它可以在用户未登陆的情况下运行在后台. 也就是说你可以开始下载文件，然后退出系统，wget会在后台运行直到完成任务.&lt;/p&gt;
+&lt;p&gt;在本文中，我将演示一些wget的使用例子, 这些例子都很常见,比如下载文件，比如镜像整个网站.&lt;/p&gt;
+&lt;p&gt;在演示前,我们先在 Ubuntu 16.04 VPS 上安装wget.&lt;/p&gt;
+&lt;p&gt;请注意，虽然该演示是在 Ubuntu 16.04 上进行的, 但是这些命令在其他 Linux 发行版中同样适用.&lt;/p&gt;
+&lt;p&gt;登陆服务器并安装wget&lt;/p&gt;
+&lt;p&gt;第一步是 通过SSH登陆服务器.&lt;/p&gt;
+&lt;p&gt;使用下面命令更新你的服务器:&lt;/p&gt;
+&lt;p&gt;apt-get update
+apt-get upgrade&lt;/p&gt;
+&lt;p&gt;然后安装wget软件包:&lt;/p&gt;
+&lt;p&gt;apt-get install wget&lt;/p&gt;
+&lt;p&gt;安装完成后，就可以开始使用wget命令了.&lt;/p&gt;
+&lt;p&gt;下载单个文件
+wget最常用也是最简单的用法就是用来下载单个文件.&lt;/p&gt;
+&lt;p&gt;你可以用下面命令想下载最新版的WordPress&lt;/p&gt;
+&lt;p&gt;wget &lt;a href=&#34;https://wordpress.org/latest.zip&#34;&gt;https://wordpress.org/latest.zip&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;你会看到如下输出:&lt;/p&gt;
+&lt;p&gt;&amp;ndash;2017-10-14 03:46:06&amp;ndash; &lt;a href=&#34;https://wordpress.org/latest.zip&#34;&gt;https://wordpress.org/latest.zip&lt;/a&gt;
+Resolving wordpress.org (wordpress.org)&amp;hellip; 66.155.40.250, 66.155.40.249
+Connecting to wordpress.org (wordpress.org)|66.155.40.250|:443&amp;hellip; connected.
+HTTP request sent, awaiting response&amp;hellip; 200 OK
+Length: 8912693 (8.5M) [application/zip]
+Saving to: &amp;rsquo;latest.zip&#39;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
