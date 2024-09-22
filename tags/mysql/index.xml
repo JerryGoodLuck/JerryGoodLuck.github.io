@@ -1,30 +1,7 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>mysql on </title>
-    <link>/tags/mysql/</link>
-    <description>Recent content in mysql on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 08 Aug 2022 22:11:13 +0800</lastBuildDate><atom:link href="/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ubuntu18.04/Mysql5.7改成utf8编码</title>
-      <link>/post/mysql57_character/</link>
-      <pubDate>Mon, 08 Aug 2022 22:11:13 +0800</pubDate>
-      
-      <guid>/post/mysql57_character/</guid>
-      <description>问题背景 向MySQL插入中文内容显示问号
-原因 Server端的MySQL不支持utf8， 部分是latin1编码格式。
-mysql&amp;gt;show variables like &amp;#34;%char%&amp;#34;;  +--------------------------------------+----------------------------+ | Variable_name | Value | +--------------------------------------+----------------------------+ | character_set_client | latin1 | | character_set_connection | latin1 | | character_set_database | utf8mb4 | | character_set_filesystem | binary | | character_set_results | latin1 | | character_set_server | latin1 | | character_set_system | utf8 | | character_sets_dir | /usr/share/mysql/charsets/ | | validate_password_special_char_count | 1 | +--------------------------------------+----------------------------+ 9 rows in set (0.02 sec) 解决办法 1、直接登录MySQL改数据库, 但是MySQL重启后，修改会失效。</description>
-    </item>
-    
-  </channel>
-</rss>
-=======
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mysql on</title><link>/tags/mysql/</link><description>Recent content in Mysql on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 08 Aug 2022 22:11:13 +0800</lastBuildDate><atom:link href="/tags/mysql/index.xml" rel="self" type="application/rss+xml"/><item><title>Ubuntu18.04/Mysql5.7改成utf8编码</title><link>/post/mysql57_character/</link><pubDate>Mon, 08 Aug 2022 22:11:13 +0800</pubDate><guid>/post/mysql57_character/</guid><description>&lt;h3 id="问题背景">问题背景&lt;/h3>
-&lt;p>向MySQL插入中文内容显示问号&lt;/p>
-&lt;h3 id="原因">原因&lt;/h3>
-&lt;p>Server端的MySQL不支持utf8， 部分是latin1编码格式。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><follow_challenge><feedId>60623584562065408</feedId><userId>60599027243183104</userId></follow_challenge><channel><title>Mysql on My New Hugo Site</title><link>http://example.org/tags/mysql/</link><description> Recent content in Mysql on My New Hugo Site feedId:60623584562065408+userId:60599027243183104</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 08 Aug 2022 22:11:13 +0800</lastBuildDate><atom:link href="http://example.org/tags/mysql/index.xml" rel="self" type="application/rss+xml"/><item><title>Ubuntu18.04/Mysql5.7改成utf8编码</title><link>http://example.org/post/mysql57_character/</link><pubDate>Mon, 08 Aug 2022 22:11:13 +0800</pubDate><guid>http://example.org/post/mysql57_character/</guid><description>&lt;h3 id="问题背景">问题背景
+&lt;/h3>&lt;p>向MySQL插入中文内容显示问号&lt;/p>
+&lt;h3 id="原因">原因
+&lt;/h3>&lt;p>Server端的MySQL不支持utf8， 部分是latin1编码格式。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>mysql&amp;gt;show variables like &lt;span style="color:#e6db74">&amp;#34;%char%&amp;#34;&lt;/span>;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
@@ -41,7 +18,53 @@ mysql&amp;gt;show variables like &amp;#34;%char%&amp;#34;;  +-------------------
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| validate_password_special_char_count | &lt;span style="color:#ae81ff">1&lt;/span> |
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">9&lt;/span> rows in set &lt;span style="color:#f92672">(&lt;/span>0.02 sec&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="解决办法">解决办法&lt;/h3>
-&lt;p>1、直接登录MySQL改数据库, 但是MySQL重启后，修改会失效。&lt;/p>
-&lt;p>2、修改MySQL配置&lt;/p></description></item></channel></rss>
->>>>>>> c2831dde1e4b55539240969f8f4e41355e629d77
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="解决办法">解决办法
+&lt;/h3>&lt;p>1、直接登录MySQL改数据库, 但是MySQL重启后，修改会失效。&lt;/p>
+&lt;p>2、修改MySQL配置&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /etc/mysql/conf.d
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>vim mysql.cnf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.1、在[mysql]添加 default-character-set=utf8&lt;/p>
+&lt;pre tabindex="0">&lt;code>[mysql]
+default-character-set=utf8
+&lt;/code>&lt;/pre>&lt;p>2.2、进入/etc/mysql/mysql.conf.d目录，打开mysql.conf.d，在[mysqld]添加一行 character-set-server=utf8，如下所示&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /etc/mysql/mysql.conf.d
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>mysqld&lt;span style="color:#f92672">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># * Basic Settings&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>user &lt;span style="color:#f92672">=&lt;/span> mysql
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pid-file &lt;span style="color:#f92672">=&lt;/span> /var/run/mysqld/mysqld.pid
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>socket &lt;span style="color:#f92672">=&lt;/span> /var/run/mysqld/mysqld.sock
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>port &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">3306&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>basedir &lt;span style="color:#f92672">=&lt;/span> /usr
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>datadir &lt;span style="color:#f92672">=&lt;/span> /var/lib/mysql
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tmpdir &lt;span style="color:#f92672">=&lt;/span> /tmp
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>lc-messages-dir &lt;span style="color:#f92672">=&lt;/span> /usr/share/mysql
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>skip-external-locking
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>character-set-server&lt;span style="color:#f92672">=&lt;/span>utf8
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Instead of skip-networking the default is now to listen only on&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># localhost which is more compatible and is not less secure.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bind-address &lt;span style="color:#f92672">=&lt;/span> 127.0.0.1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.3、配置成功修改后，重启MySQL服务&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>service mysql restart
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.4、检查编码是否修改成功&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>mysql&amp;gt;show variables like &lt;span style="color:#e6db74">&amp;#34;%char%&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| Variable_name | Value |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_client | utf8 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_connection | utf8 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_database | utf8mb4 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_filesystem | binary |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_results | utf8 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_server | utf8 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_system | utf8 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_sets_dir | /usr/share/mysql/charsets/ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| validate_password_special_char_count | &lt;span style="color:#ae81ff">1&lt;/span> |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">9&lt;/span> rows in set &lt;span style="color:#f92672">(&lt;/span>0.02 sec&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.5、配置成utf8生效后，再插入中文内容就可以正常显示了。&lt;/p>
+&lt;hr></description></item></channel></rss>

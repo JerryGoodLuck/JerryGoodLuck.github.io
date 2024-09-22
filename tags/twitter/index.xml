@@ -1,55 +1,8 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>twitter on </title>
-    <link>/tags/twitter/</link>
-    <description>Recent content in twitter on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 26 Jun 2022 12:55:34 +0800</lastBuildDate><atom:link href="/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Advice for lack of discipline</title>
-      <link>/post/advice_for_lack_of_discipline/</link>
-      <pubDate>Sun, 26 Jun 2022 12:55:34 +0800</pubDate>
-      
-      <guid>/post/advice_for_lack_of_discipline/</guid>
-      <description>&amp;ldquo;If you lack discipline, open this&amp;rdquo;
-Psychology Thread
- Choose a Goal  Begin by choosing just one goal that you want to focus on to develop your self-discipline.
-Remember, starting small is the best way to start developing your self-discipline.
-Nutrition, Sleep and Exercise Are Key  If you are trying to improve your self discipline and you&amp;rsquo;re not getting enough sleep, healthy food and exercise, you&amp;rsquo;re fighting an uphill battle.</description>
-    </item>
-    
-    <item>
-      <title>Advice from ArtOfLife_</title>
-      <link>/post/advice_from_artoflife_/</link>
-      <pubDate>Sun, 26 Jun 2022 12:52:06 +0800</pubDate>
-      
-      <guid>/post/advice_from_artoflife_/</guid>
-      <description>&amp;ldquo;Overthinkers&amp;rdquo;, open this:
-• You&amp;rsquo;re loved, someone out there loves you more than you think.
-• Your anxiety will tell you the worst case scenario. It’s a damn liar!
-• You mean so much to your friends and family, they may not say it as often but they really do love you.
-• You’ve already survived things you didn’t think you’d survive.
-• You&amp;rsquo;re strong and you can get through everything one step at a time.</description>
-    </item>
-    
-    <item>
-      <title>Advice from LongShortHC</title>
-      <link>/post/advice_from_longshorthc/</link>
-      <pubDate>Sun, 26 Jun 2022 12:30:18 +0800</pubDate>
-      
-      <guid>/post/advice_from_longshorthc/</guid>
-      <description>Had a DM question asking for advice for a brand new analyst working at a pod shop. Noodled on it, and figured I would share the thoughts broadly in case helpful. I am far from the most tenured and successful pod PM - spent 4 years as a PM at combo of D.E. Shaw (not a pod)…
-Citadel/Aptigon and Schonfeld, over which time I hired/employed/trained a dozen or so analysts. (And then threw up two middle fingers and retired…more on that later).</description>
-    </item>
-    
-  </channel>
-</rss>
-=======
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Twitter on</title><link>/tags/twitter/</link><description>Recent content in Twitter on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 26 Jun 2022 12:55:34 +0800</lastBuildDate><atom:link href="/tags/twitter/index.xml" rel="self" type="application/rss+xml"/><item><title>Advice for lack of discipline</title><link>/post/advice_for_lack_of_discipline/</link><pubDate>Sun, 26 Jun 2022 12:55:34 +0800</pubDate><guid>/post/advice_for_lack_of_discipline/</guid><description>&lt;p>&amp;ldquo;If you lack discipline, open this&amp;rdquo;&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><follow_challenge><feedId>60623584562065408</feedId><userId>60599027243183104</userId></follow_challenge><channel><title>Twitter on My New Hugo Site</title><link>http://example.org/tags/twitter/</link><description> Recent content in Twitter on My New Hugo Site feedId:60623584562065408+userId:60599027243183104</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 26 Jun 2022 12:55:34 +0800</lastBuildDate><atom:link href="http://example.org/tags/twitter/index.xml" rel="self" type="application/rss+xml"/><item><title>Advice for lack of discipline</title><link>http://example.org/post/advice_for_lack_of_discipline/</link><pubDate>Sun, 26 Jun 2022 12:55:34 +0800</pubDate><guid>http://example.org/post/advice_for_lack_of_discipline/</guid><description>&lt;p>&amp;ldquo;If you lack discipline, open this&amp;rdquo;&lt;/p>
 &lt;p>Psychology Thread&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202206261258258.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202206261258258.jpeg"
+loading="lazy"
+>&lt;/p>
 &lt;ol>
 &lt;li>Choose a Goal&lt;/li>
 &lt;/ol>
@@ -58,11 +11,126 @@ Citadel/Aptigon and Schonfeld, over which time I hired/employed/trained a dozen 
 &lt;ol start="2">
 &lt;li>Nutrition, Sleep and Exercise Are Key&lt;/li>
 &lt;/ol>
-&lt;p>If you are trying to improve your self discipline and you&amp;rsquo;re not getting enough sleep, healthy food and exercise, you&amp;rsquo;re fighting an uphill battle.&lt;/p></description></item><item><title>Advice from ArtOfLife_</title><link>/post/advice_from_artoflife_/</link><pubDate>Sun, 26 Jun 2022 12:52:06 +0800</pubDate><guid>/post/advice_from_artoflife_/</guid><description>&lt;p>&amp;ldquo;Overthinkers&amp;rdquo;, open this:&lt;/p>
+&lt;p>If you are trying to improve your self discipline and you&amp;rsquo;re not getting enough sleep, healthy food and exercise, you&amp;rsquo;re fighting an uphill battle.&lt;/p>
+&lt;p>If you do the above, you&amp;rsquo;ll have more energy and an overall positive attitude.&lt;/p>
+&lt;ol start="3">
+&lt;li>It&amp;rsquo;s About the Habit, Not the Outcome&lt;/li>
+&lt;/ol>
+&lt;p>Rather than saying &amp;ldquo;I want to lose weight&amp;rdquo; say &amp;ldquo;I want to walk at least 10,000 steps per day.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Losing weight&amp;rdquo; is something difficult to pin down.&lt;/p>
+&lt;p>Walking 10,000 steps per day is something concrete that you can track and measure.&lt;/p>
+&lt;ol start="4">
+&lt;li>Time flies&lt;/li>
+&lt;/ol>
+&lt;p>Take a close look at where you are spending your time and energy.&lt;/p>
+&lt;p>The average adult spends five hours per day looking at their smartphone.&lt;/p>
+&lt;p>With this in mind, NOT constantly scrolling through social media on your phone can make a huge difference in your day.&lt;/p>
+&lt;ol start="5">
+&lt;li>You Don&amp;rsquo;t Need Permission From Anyone&lt;/li>
+&lt;/ol>
+&lt;p>Building self discipline means that you will need to learn how to find that approval within yourself.&lt;/p>
+&lt;p>Once we let go of this need for approval from others, we are free to follow our goals and work on what is important to us.&lt;/p>
+&lt;ol start="6">
+&lt;li>Be Nice to Yourself&lt;/li>
+&lt;/ol>
+&lt;p>Change is hard. New habits are hard.&lt;/p>
+&lt;p>Our minds are wired for familiarity and if you’re doing something new, part of you is going to be fighting against it.&lt;/p>
+&lt;p>Don’t allow obstacles to cause you to give up on your bigger vision or goal.&lt;/p>
+&lt;ol start="7">
+&lt;li>Just one pushup&lt;/li>
+&lt;/ol>
+&lt;p>Do one pushup, once you get started you&amp;rsquo;ll end up doing more.&lt;/p>
+&lt;p>It works for self discipline in any area.&lt;/p>
+&lt;p>Don&amp;rsquo;t worry if the goal you set for yourself is easy - that&amp;rsquo;s the point.&lt;/p>
+&lt;p>The key is to choose something that is so easy that you can&amp;rsquo;t say no.&lt;/p>
+&lt;ol start="8">
+&lt;li>Punch the Clock&lt;/li>
+&lt;/ol>
+&lt;p>You will have good days and bad days, but what matters is that you show up.&lt;/p>
+&lt;p>There will be some mornings where you feel tired and you won&amp;rsquo;t have your best workout ever.&lt;/p>
+&lt;p>It&amp;rsquo;s still incredibly important to follow through and go to the gym anyways.&lt;/p>
+&lt;ol start="9">
+&lt;li>You live your life on auto pilot because you don&amp;rsquo;t know what to do with your life.&lt;/li>
+&lt;/ol>
+&lt;p>Get &amp;ldquo;Live Intentionally&amp;rdquo; and become;&lt;/p>
+&lt;p>• Motivated
+• Disciplined
+• Your best self
+• Self-confident&lt;/p>
+&lt;p>Get the book here: Live Intentionally: 90 Day Self-Improvement Program (&lt;a class="link" href="https://lifemathmoney.gumroad.com/l/tough" target="_blank" rel="noopener"
+>https://lifemathmoney.gumroad.com/l/tough&lt;/a>)&lt;/p>
+&lt;p>Twitter Link: &lt;a class="link" href="https://twitter.com/Art0fLife_/status/1533361596323569665" target="_blank" rel="noopener"
+>https://twitter.com/Art0fLife_/status/1533361596323569665&lt;/a>&lt;/p></description></item><item><title>Advice from ArtOfLife_</title><link>http://example.org/post/advice_from_artoflife_/</link><pubDate>Sun, 26 Jun 2022 12:52:06 +0800</pubDate><guid>http://example.org/post/advice_from_artoflife_/</guid><description>&lt;p>&amp;ldquo;Overthinkers&amp;rdquo;, open this:&lt;/p>
 &lt;p>• You&amp;rsquo;re loved, someone out there loves you more than you think.&lt;/p>
 &lt;p>• Your anxiety will tell you the worst case scenario. It’s a damn liar!&lt;/p>
 &lt;p>• You mean so much to your friends and family, they may not say it as often but they really do love you.&lt;/p>
 &lt;p>• You’ve already survived things you didn’t think you’d survive.&lt;/p>
-&lt;p>• You&amp;rsquo;re strong and you can get through everything one step at a time.&lt;/p></description></item><item><title>Advice from LongShortHC</title><link>/post/advice_from_longshorthc/</link><pubDate>Sun, 26 Jun 2022 12:30:18 +0800</pubDate><guid>/post/advice_from_longshorthc/</guid><description>&lt;p>Had a DM question asking for advice for a brand new analyst working at a pod shop. Noodled on it, and figured I would share the thoughts broadly in case helpful. I am far from the most tenured and successful pod PM - spent 4 years as a PM at combo of D.E. Shaw (not a pod)…&lt;/p>
-&lt;p>Citadel/Aptigon and Schonfeld, over which time I hired/employed/trained a dozen or so analysts. (And then threw up two middle fingers and retired…more on that later). So I’m by no means the absolute authority on pods. But here is my advice:&lt;/p></description></item></channel></rss>
->>>>>>> c2831dde1e4b55539240969f8f4e41355e629d77
+&lt;p>• You&amp;rsquo;re strong and you can get through everything one step at a time.&lt;/p>
+&lt;p>• You&amp;rsquo;re not a failure! Never!&lt;/p>
+&lt;p>• No matter what anyone tells you, you&amp;rsquo;re beautiful, smart and you matter.&lt;/p>
+&lt;p>• Keep your mind off things that don&amp;rsquo;t help you think positively.&lt;/p>
+&lt;p>• You are not bothering anyone at all, they would love to hear more of your thoughts.&lt;/p>
+&lt;p>• It&amp;rsquo;s okay not to be okay. But make sure you speak to someone and let go of any negative emotions&lt;/p>
+&lt;p>• Stop feeding bad thoughts.&lt;/p>
+&lt;p>• Stop caring what other&amp;rsquo;s think. You&amp;rsquo;re unique and amazing! That&amp;rsquo;s all that matters!&lt;/p>
+&lt;p>• As long as you&amp;rsquo;re breathing, people will judge. Learn to not give a f*ck about them.&lt;/p>
+&lt;p>• Do what&amp;rsquo;s right for you. Start putting yourself and your own happiness first.&lt;/p>
+&lt;p>If you enjoyed this thread, please retweet the first tweet and follow me
+@Art0fLife_&lt;/p>
+&lt;p>This account exists to help you:&lt;/p>
+&lt;ul>
+&lt;li>Become your best self&lt;/li>
+&lt;li>Live a happier and healthier life&lt;/li>
+&lt;li>Grow mentally and emotionally&lt;/li>
+&lt;/ul>
+&lt;p>Have an amazing day, because you are amazing :)&lt;/p>
+&lt;p>Twitter Link: &lt;a class="link" href="https://twitter.com/Art0fLife_/status/1513853742541676546" target="_blank" rel="noopener"
+>https://twitter.com/Art0fLife_/status/1513853742541676546&lt;/a>&lt;/p></description></item><item><title>Advice from LongShortHC</title><link>http://example.org/post/advice_from_longshorthc/</link><pubDate>Sun, 26 Jun 2022 12:30:18 +0800</pubDate><guid>http://example.org/post/advice_from_longshorthc/</guid><description>&lt;p>Had a DM question asking for advice for a brand new analyst working at a pod shop. Noodled on it, and figured I would share the thoughts broadly in case helpful. I am far from the most tenured and successful pod PM - spent 4 years as a PM at combo of D.E. Shaw (not a pod)…&lt;/p>
+&lt;p>Citadel/Aptigon and Schonfeld, over which time I hired/employed/trained a dozen or so analysts. (And then threw up two middle fingers and retired…more on that later). So I’m by no means the absolute authority on pods. But here is my advice:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>You’re job is make your PM’s life easier. Full stop. Don’t forget this. Run through walls for PM. Let PM know this. Don’t whine and complain about your “career development” or comp in your first two years. Don’t do it. That era will come. Be a ride or die, and let PM know it&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Use your “golden three months”. Life happens fast at pods. It has to - it’s sink or swim. However, you CAN be the naive newbie for 3 months. So ask questions!! Create a running list, ask PM for 10
+min a week and ask anything you don’t understand. Don’t pretend like you do!!!&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>2 contd) Use more senior analysts on team as resource. But you have 3 months. By month 6 the naive newbie schtick will be old, and you will be expected to contribute. Sell side teach in calls can be helpful. Be a sponge. Be a sponge. Be a sponge.&lt;/p>
+&lt;ol start="3">
+&lt;li>
+&lt;p>learn to communicate. Seasoned pod players have a distinct communication style. Terse. Direct. No BS. Tell me what I need to know and no more. They don’t have time to waste on 15 minute convos about your weekend. This isn’t I-banking. Mimic how Sr analysts speak to PM.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Zero defect mentality. This isn’t I-banking where you send a deck to associate, get 56 markups and turn the deck 6 more times. Don’t send anything to PM until it has been 5x checked and perfect. Fastest way to ruin reputation is to send sloppy work.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Study compliance procedures very carefully. Contrary to some beliefs, pod PMs are insanely careful about MNPI and don’t want to touch gray areas. Personal trading, consultant calls and mgmt meetings are focus areas. Make sure you don’t foot fault here. If you make a mistake…&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>5 contd) …that gets firm involved it will be very bad for you. You are easy to fire. Compliance and the GC are your friends and use them proactively (don’t assume you know the answer). Even if you can own individual stocks I would just own indexes first few years.&lt;/p>
+&lt;ol start="6">
+&lt;li>
+&lt;p>become the “techie,
+data guy”. Learn all the risk model UI, excel pulls, Bloomberg bells and whistles, etc. There is a lot of this and PMs are older and less tech savvy. Become friends with the data science team and become your teams internal data guy. Add value like this.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>FILO. First in, last out. Shouldn’t have to say this, but i do. It matters. Don’t take vacation your first year. Sounds harsh, but your first 12 months isn’t a career, it’s a try out. Treat it that way.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Find your voice. You don’t want to be the arrogant know it all, but you don’t want be the person who can’t take a stand. Observe, listen more than you speak, contemplate, but when you have an opinion you must voice it. Use data, analogs, and facts to support, not opinion.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>be a culture carrier. Make it about your team, not yourself. Be even keeled in drawdowns. Be yourself, tell jokes, do your best to be likeable. Obsessively identify ways to be helpful. Be a fixture at team happy hours, etc&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>know the game you chose, and embrace it. Pod life is fundamentally impermanent. You could make a million+ a year by year 3 or be fired in 3 months. You cannot be too attached for either outcome or you will drive yourself mad. Embrace the uncertainty. Some teams/seats last…&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>10 contd) …for years. But the pod GP’s are fundamentally PM traders who cut losers and let winers run. Given the leverage, it can’t be any other way. So ride the ride - highs will be euphoric and lows will be depressive. Thats life. In 3-5 years, you will have battle scars…&lt;/p>
+&lt;p>10 contd) …and tons of lessons learned (keep a trading journal), and if you do it right you will turn into a total badass money maker. But it’s a journey, and you won’t be there day 1. Best luck!&lt;/p>
+&lt;ol start="11">
+&lt;li>please add any helpful advice i omitted in the comments!!!&lt;/li>
+&lt;/ol>
+&lt;p>Twitter link: &lt;a class="link" href="https://twitter.com/LongShortHC/status/1540530560631578624" target="_blank" rel="noopener"
+>https://twitter.com/LongShortHC/status/1540530560631578624&lt;/a>&lt;/p></description></item></channel></rss>

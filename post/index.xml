@@ -1,309 +1,21 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on </title>
-    <link>/post/</link>
-    <description>Recent content in Posts on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 17 Sep 2023 16:45:45 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>好久没写博客了</title>
-      <link>/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</link>
-      <pubDate>Sun, 17 Sep 2023 16:45:45 +0800</pubDate>
-      
-      <guid>/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</guid>
-      <description>好久没来写点东西了。打算不写技术博客了，人要学技术，网上写的人还是太多了。而且写的比我更好，我也就不在这方面去费时间了。
-打算就写点我的所见，所闻，所感，记录下岁月吧。可能还能引起一些共鸣。
-从2007年我就喜欢博客，那时候有搜狐博客，新浪博客，经常去看韩寒，老徐，还有个极地阳光。想想现在的网红，其实逻辑没变。那时候写博客人气高的也是网红。
-现如今变成了短视频的天下了，不过现在也有微博，知乎，小红书之类的。但是本质还是没变，还是看访问量，看粉丝。以前粉丝经济没这么强，现在粉丝经济那就是相当强了。</description>
-    </item>
-    
-    <item>
-      <title>我的oh My Zsh主题</title>
-      <link>/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link>
-      <pubDate>Sat, 13 Aug 2022 10:23:30 +0800</pubDate>
-      
-      <guid>/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid>
-      <description>最近想改下iTerm的oh-my-zsh主题，看知乎讨论，有一款简洁的主题映入眼帘。
-主题名称 half-life 修改PROMPT 然后去oh-my-zsh.sh修改PROMPT
-vim ~/.oh-my-zsh/oh-my-zsh.sh 在文件末尾添加一行：
-PROMPT=$&amp;#39;%{$purple%}%n%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info &amp;#34; with%{$fg[red]%} &amp;#34; v g &amp;#34;%{$reset_color%}&amp;#34;)$vcs_info_msg_0_%{$orange%}%{$reset_color%} at %{$hotpink%}%* %{$orange%}λ%{$reset_color%} &amp;#39; 效果如下</description>
-    </item>
-    
-    <item>
-      <title>Ubuntu18.04/Mysql5.7改成utf8编码</title>
-      <link>/post/mysql57_character/</link>
-      <pubDate>Mon, 08 Aug 2022 22:11:13 +0800</pubDate>
-      
-      <guid>/post/mysql57_character/</guid>
-      <description>问题背景 向MySQL插入中文内容显示问号
-原因 Server端的MySQL不支持utf8， 部分是latin1编码格式。
-mysql&amp;gt;show variables like &amp;#34;%char%&amp;#34;;  +--------------------------------------+----------------------------+ | Variable_name | Value | +--------------------------------------+----------------------------+ | character_set_client | latin1 | | character_set_connection | latin1 | | character_set_database | utf8mb4 | | character_set_filesystem | binary | | character_set_results | latin1 | | character_set_server | latin1 | | character_set_system | utf8 | | character_sets_dir | /usr/share/mysql/charsets/ | | validate_password_special_char_count | 1 | +--------------------------------------+----------------------------+ 9 rows in set (0.02 sec) 解决办法 1、直接登录MySQL改数据库, 但是MySQL重启后，修改会失效。</description>
-    </item>
-    
-    <item>
-      <title>Ubuntu18.04使用supervisor守护进程</title>
-      <link>/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link>
-      <pubDate>Sun, 07 Aug 2022 15:54:02 +0800</pubDate>
-      
-      <guid>/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid>
-      <description>问题背景 最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。
-于是想着用supervisor来做守护进程, 本文就是记录supervisor 的安装、配置、使用技巧，并设置如何supervisor开机自动启动
-机器环境 Ubuntu版本：18.04
-Ubuntu用户：root
-Ubuntu安装supervisor apt install supervisor Ubuntu配置supervisor 安装完成后，会生成一个默认的配置文件/etc/supervisor/supervisord.conf， 这个默认配置里面也会load所有在conf.d目录下的配置
-root@test:/etc/supervisor# tree . |-- conf.d | `-- we.conf `-- supervisord.conf  1 directory, 2 files supervisord.conf这个默认配置会load所有在conf.d目录下的配置，所以我们接下来在conf.d目录下新建一个我们自己的配置
-touch /etc/supervisor/conf.d/we.conf 参照默认配置文件supervisord.conf里的内容改改，配置内容如下
-[program:we] directory=/home/test/ command=sh we.sh autostart=true autorestart=true startretries=10 redirect_stderr=true stdout_logfile=/home/test/out.log 具体也可参照官方给的详细文档： http://supervisord.org/configuration.html
-检查supervisor的状态 1、检查supervisor的状态
-ps aux | grep supervisor  root@test:/etc/supervisor# ps aux | grep supervisor root 2551 0.0 2.0 65580 21508 ? Ss 12:39 0:09 /usr/bin/python /usr/bin/supervisord -n -c /etc/supervisor/supervisord.</description>
-    </item>
-    
-    <item>
-      <title>Vue Vite初学报错大全</title>
-      <link>/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</link>
-      <pubDate>Sun, 07 Aug 2022 15:23:20 +0800</pubDate>
-      
-      <guid>/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</guid>
-      <description>项目环境 机器：mac
-框架：vue3
-版本：vue=^3.0.4
-###报错信息
-[vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. Install @vitejs/plugin-vue to handle .vue files. 问题描述 1、安装Vite及初始化项目
-npm init vite-app vue3demo004 npm install npm run dev 2、手动配置完项目后， 项目目录如下
-├── node_modules ├── package-lock.json ├── package.json ├── public │ └── favicon.ico ├── src │ ├── App.vue │ ├── assets │ │ └── logo.png │ ├── components │ │ └── HelloWorld.</description>
-    </item>
-    
-    <item>
-      <title>寻找Mac java_home</title>
-      <link>/post/mac_java_home/</link>
-      <pubDate>Sun, 31 Jul 2022 11:24:38 +0800</pubDate>
-      
-      <guid>/post/mac_java_home/</guid>
-      <description>前期准备  下载JDK安装包：在JDK1.8下载中选择Mac的JDK安装包 安装JDK：这里只要按照安装指引一步一步安装即可  查找JAVA_HOME  打开Mac的终端，检查JDK是否安装成功：java -version 查看java指令所在的目录：which java。输出结果：/usr/bin/java 显示java指令文件的属性：ls -l /usr/bin/java。输出结果如下：lrwxr-xr-x 1 root wheel 74 12 2 06:44 /usr/bin/java -&amp;gt; /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java，从输出结果可以知道**/usr/bin/java文件是一个链接文件，实际是指向/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java**文件的。 进入实际指令所在的文件夹：cd /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands。但是这个目录并不是JAVA_HOME目录。 然后就是最重点的地方，在这个目录下面有一个mac的JDK特有的java_home指令可以查看JDK的JAVA_HOME目录。执行指令：./java_home执行结果如下：/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home  设置JAVA_HOME  编辑.bash_profile文件：vim ~/.bash_profile 添加以下内容：export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Homeexport PATH=$JAVA_HOME/bin:$PATH 使修改的文件生效：source ~/.bash_profile  </description>
-    </item>
-    
-    <item>
-      <title>Linux command</title>
-      <link>/post/linuxcommand/</link>
-      <pubDate>Sun, 31 Jul 2022 11:22:04 +0800</pubDate>
-      
-      <guid>/post/linuxcommand/</guid>
-      <description>一些命令  查看目录结构 tree mac默认是没有tree命令的，所以可以有2种办法: brew install tree find . -print | sed -e &amp;rsquo;s;[^/]*/;|;g;s;|; |;g&#39; 查看代码有多少行 find . -name &amp;ldquo;*.py&amp;rdquo; | xargs wc -l 删除所有的pyc文件 find . -name &amp;ldquo;*.pyc&amp;rdquo; -delete 返回到上一个目录 cd - 生成随机数 jot -r [number_of_numbers] [lower_limit] [upper_limit] 显示当前谁登陆到了你的系统 w 将一个字符串打印很多次 yes [string] 更好看的git log git log &amp;ndash;graph &amp;ndash;abbrev-commit &amp;ndash;decorate &amp;ndash;date=relative &amp;ndash;format=format:&amp;rsquo;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)&amp;rsquo; &amp;ndash;all 更好看的git log(带详细信息) git log &amp;ndash;graph &amp;ndash;abbrev-commit &amp;ndash;decorate &amp;ndash;date=relative &amp;ndash;format=format:&amp;rsquo;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)&amp;rsquo; &amp;ndash;all -p curl相关命令 直接输出到命令行 curl http://www.</description>
-    </item>
-    
-    <item>
-      <title>Wget用法</title>
-      <link>/post/wget%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Sun, 31 Jul 2022 11:20:32 +0800</pubDate>
-      
-      <guid>/post/wget%E7%94%A8%E6%B3%95/</guid>
-      <description>我会向你展示10个 Wget 命令的实际案例. Wget 是一个用于下载文件的免费工具，它支持大多数常用的Internet协议，包括 HTTP, HTTPS, 以及 FTP.
-Wget这个名字来源于 World Wide Web + get. Wget 有很多功能，可以很方便地做到下载大型文件,递归下载,一次下载多个文件以及镜像web网站和FTP站点.
-Wget是非交互式的，但是使用起来相当的灵活. 你可以在脚本，cron任务，终端等地方调用它. 它可以在用户未登陆的情况下运行在后台. 也就是说你可以开始下载文件，然后退出系统，wget会在后台运行直到完成任务.
-在本文中，我将演示一些wget的使用例子, 这些例子都很常见,比如下载文件，比如镜像整个网站.
-在演示前,我们先在 Ubuntu 16.04 VPS 上安装wget.
-请注意，虽然该演示是在 Ubuntu 16.04 上进行的, 但是这些命令在其他 Linux 发行版中同样适用.
-登陆服务器并安装wget
-第一步是 通过SSH登陆服务器.
-使用下面命令更新你的服务器:
-apt-get update apt-get upgrade
-然后安装wget软件包:
-apt-get install wget
-安装完成后，就可以开始使用wget命令了.
-下载单个文件 wget最常用也是最简单的用法就是用来下载单个文件.
-你可以用下面命令想下载最新版的WordPress
-wget https://wordpress.org/latest.zip
-你会看到如下输出:
-&amp;ndash;2017-10-14 03:46:06&amp;ndash; https://wordpress.org/latest.zip Resolving wordpress.org (wordpress.org)&amp;hellip; 66.155.40.250, 66.155.40.249 Connecting to wordpress.org (wordpress.org)|66.155.40.250|:443&amp;hellip; connected. HTTP request sent, awaiting response&amp;hellip; 200 OK Length: 8912693 (8.</description>
-    </item>
-    
-    <item>
-      <title>同一台电脑双Github账号配置</title>
-      <link>/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Sat, 23 Jul 2022 13:35:10 +0800</pubDate>
-      
-      <guid>/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</guid>
-      <description>因为用Hugo开了一个新Blog，然后原来github账号的blog我想一直保留，所以就有了2个github账号，这样放在一台电脑上就不好管理。
-因为github不支持同一个SSH绑定不同的github账号。这样如果我想用github A账号，我就要换成A账号的私钥，用github B账号就要换成B账号的密钥，挺麻烦的。于是网上找到教程，搞成功了。
-第一步：假设已经有了A B密钥账号，分别保存在~/.ssh目录下，名字为id_rsa_public, id_rsa_private，当然公钥也是与之对应。
-第二步：编辑 ~/.ssh/config 文件。如果该文件不存在的话，直接创建一个就好。里面的内容如下：
-# public account Host github_public HostName ssh.github.com IdentityFile ~/.ssh/id_rsa_public port 22 # private account Host github_private HostName ssh.github.com IdentityFile ~/.ssh/id_rsa_private port 22 第三步：把这两个密钥对应的公钥添加到对应的github账号上。
-第四步：执行bash命令，确认能够跟github那边鉴权成功
-ssh -T git@github_public ssh -T git@github_private 当你看到如下信息, 就说明成功了
-➜ ssh -T git@github_public Hi YOURNAME! You&amp;#39;ve successfully authenticated, but GitHub does not provide access. 第五步：仓库设置
-# 删除全局设置 git config --global --unset user.name git config --global --unset user.email # 添加本地设置 # 设置为私有仓库的GitHub账号邮箱和公有账号的GitHub邮箱。 git config --local user.</description>
-    </item>
-    
-    <item>
-      <title>DABDA</title>
-      <link>/post/dabda/</link>
-      <pubDate>Sun, 17 Jul 2022 09:14:08 +0800</pubDate>
-      
-      <guid>/post/dabda/</guid>
-      <description>from https://twitter.com/cryptoismyjam/status/1548114053247012865
-1/ The future of our funds is in limbo.
-The company that told us &amp;ldquo;Banks are Not Your Friends&amp;rdquo; &amp;amp; &amp;ldquo;Unbank Yourself&amp;rdquo; violated our trust in a most egregious manner.
-We are sad. Angry. Brokenhearted.
-Here are the 5 Stages of Grief (DABDA) according to a Celsian
-1/ 我们的基金前途未卜。
-告诉我们“银行不是你的朋友”和“你自己取消银行”的公司以最令人震惊的方式违反了我们的信任。
-我们都很伤心。生气的。心碎了。
-这是根据 Celsian
-2/ I am not a licensed psychologist, nor do I seek to provide any clinical advice.</description>
-    </item>
-    
-    <item>
-      <title>The Webb Space Telescope Will Rewrite Cosmic History. If It Works.</title>
-      <link>/post/the_webb_space_telescope_will_rewrite_cosmic_history/</link>
-      <pubDate>Wed, 13 Jul 2022 22:20:09 +0800</pubDate>
-      
-      <guid>/post/the_webb_space_telescope_will_rewrite_cosmic_history/</guid>
-      <description>《韦伯天文望远镜将会改写宇宙历史，如果它能正常工作的话》
-作者：娜塔莉·沃尔乔弗
-和菜头整理,谷歌翻译: https://mp.weixin.qq.com/s/YSEmlentq3pwhLsNIfT8Dw
-原文地址: https://www.quantamagazine.org/why-nasas-james-webb-space-telescope-matters-so-much-20211203
-回首宇宙的幼年，见证第一颗星星的闪烁，你必须先磨出一面房子那么大的镜子。它的表面必须非常光滑，如果镜子是一个大陆的比例，它的特征就不会超过脚踝高度的山丘或山谷。只有一面如此巨大和光滑的镜子才能收集和聚焦来自天空中最远星系的微弱光线——这些光线很久以前就离开了它的源头，因此显示了宇宙年轻时在远古时代出现的星系。我们所能看到的最微弱、最远的星系仍在诞生的过程中，那时神秘的力量在黑暗中合谋，第一批恒星开始发光。
-但要阅读宇宙历史的早期篇章——了解那些第一批恒星的性质，可能是巨大的恒星，了解引力诱使它们形成的不可见物质，磁力和湍流的作用，以及巨大的黑洞成长并进入星系中心——一个特殊的镜子是远远不够的。
-之所以没有人看到星系形成的时代，是因为古老的星光在穿过不断膨胀的空间结构到达我们这里数十亿年之后，变得拉长了。天空中最远的恒星喷出的紫外线和可见光在这里的旅程中被拉长到大约 20 倍的波长，变成了红外线辐射。但红外光是一种我们称之为热的原子抖动光，与我们的身体、大气和脚下的地面辐射的热相同。唉，这些局部热源淹没了原始恒星可怜的火焰。要感知这些恒星，带有完美大镜子的望远镜必须非常冷。它必须发射到太空中。
-问题是，一个房子大小的镜子太大，无法装进任何火箭整流罩。那么，镜子必须能够折叠起来。一面镜子只有在被分割的情况下才能折叠——如果它不是一个单一的、不间断的表面，而是一个由镜子片段组成的蜂窝状阵列。但为了共同创造清晰的图像，镜段在空间中自主展开后，必须几乎完美对齐。需要极其精确的电机才能实现良好的聚焦——电机可以将每个镜像段微调病毒宽度的一半，直到它们全部到位。
-看到微弱红外源的能力不仅能让你进入宇宙的形成篇章——大约是大爆炸后 5000 万到 5 亿年的时期——它还可以揭示宇宙的其他、可以说同样重要的方面，从围绕其他恒星运行的地球大小行星的特性到备受争议的空间扩张速度。但要使望远镜工作，还需要一个额外的元素，除了一面完美无瑕的镜子，它会在被射向天空后自动展开和聚焦。
-即使在外太空，地球、月球和太阳仍然使望远镜过热，以至于它无法感知宇宙中最遥远结构的微弱闪烁。除非，也就是说，望远镜指向一个距离地球比月球远四倍的特定点，称为拉格朗日点 2。在那里，月球、地球和太阳都位于同一方向，让望远镜挡住了所有三个天体有一次是架设一个网球场大小的遮阳板。在这样的阴影下，望远镜终于可以进入深寒，终于探测到宇宙黎明微弱的热量。
-遮阳板既是红外望远镜的唯一希望，也是它的致命弱点。
-为了在不压垮火箭的情况下展开足够大的比例，遮阳罩必须由薄织物组成。（就此而言，整个天文台，包括它的镜子、照相机和其他仪器、它的发射器和它的电源，必须只有典型大型地面望远镜质量的 2% 左右。）轻型红外传感航天器很容易，但不可避免地使用织物使其成为一个固有的风险事件。工程师说，织物是“不确定的”，它的运动无法完美控制或预测。如果遮光罩在展开时被卡住，整个望远镜就会变成太空垃圾。
-目前，令人难以置信的是，已经建成的望远镜已经折叠起来，准备放在阿丽亚娜 5 号火箭的顶部。该火箭计划于 12 月 22 日从法属圭亚那的库鲁发射升空，距其有效载荷詹姆斯韦伯太空望远镜 (JWST) 的首次设想和草图已超过 30 年。该望远镜比计划晚了 14 年，超出预算 20 倍。“我们已经尽了最大的努力去发现我们所有的错误，并进行测试和排练，”诺贝尔奖获得者、NASA 领导的项目的首席科学家约翰·马瑟 (John Mather) 说。现在，他说，“我们将把价值数十亿美元的望远镜放在一堆爆炸材料上”，然后把事情交给命运。
-JWST 在过去三十年的发展历程与我们在理解宇宙方面取得的巨大进步并行不悖，尤其是因为韦伯的前辈。通过哈勃太空望远镜，我们了解到恒星、星系和超大质量黑洞在宇宙历史上的存在时间比任何人预期的要早得多，并且自那以后它们发生了根本性的变化。我们已经了解到暗物质和暗能量塑造了宇宙。通过开普勒望远镜和其他望远镜，我们已经看到各种各样的行星像圣诞树上的小玩意一样装饰着星系，仅在我们的银河系中就包括数十亿个潜在的宜居世界。这些发现提出了詹姆斯韦伯太空望远镜可以解决的问题。天文学家还希望，与其他望远镜一样，它的目击将提出新的问题。
-这次发射将开始天文学家娜塔莉·巴塔利亚（Natalie Batalha）所说的“六个月如坐针毡”，因为这台极其复杂的望远镜将尝试以数百步展开并聚焦自身。该天文台将花费一个月的时间漂浮 100 万英里到达拉格朗日点 2。在此过程中，它将变成一朵天上的睡莲，将其巨大的镀金镜段花放在更大的银叶上。
-“这将是我们自己‘敢于做大事’的时刻，”曾在该望远镜时间分配委员会任职的哈佛大学天体物理学家格兰特·特伦布莱 (Grant Tremblay) 说。“它会做出惊人的事情。我们将在《纽约时报》上谈论这是如何在时间边缘见证恒星的诞生，这是最早的星系之一，这是其他地球的故事。”
-“请工作，”Tremblay 补充道，他的眼睛向上飘动。
-从光滑到块状
-美国宇航局上一次发射如此重要的天文台——哈勃太空望远镜，是在 1990 年——那是一场灾难。“绝对是灾难性的”，资深天文学家桑德拉·法伯告诉我。Faber 所在的团队在马里兰州格林贝尔特的 NASA 戈达德太空飞行中心露营，以诊断这种疾病。从哈勃的一张照片中的一颗恒星看起来像一个环，她和一位同事推断，主镜 - 将光线反射到副镜，然后将其反射到相机镜头的大凹面镜 - 没有被研磨降低到非常合适的凹度以聚焦光线；它在边缘周围太厚了半个波长。如果主镜和副镜在发射前一起测试过，这种像差就会被注意到，但在急于将拖延已久且超预算的望远镜升空的过程中，这种测试从未发生过。
-一些 NASA 领导人呼吁放弃望远镜，这已经是一个有争议的项目。相反，马里兰州参议员芭芭拉·米库尔斯基获得了救援任务的资金。修复它是可能的，因为作为对彩虹颜色而不是红外光敏感的光学望远镜，哈勃可以从仅 340 英里高的低地球轨道获得清晰的视野，而不必走一百万英里远.</description>
-    </item>
-    
-    <item>
-      <title>Advice for lack of discipline</title>
-      <link>/post/advice_for_lack_of_discipline/</link>
-      <pubDate>Sun, 26 Jun 2022 12:55:34 +0800</pubDate>
-      
-      <guid>/post/advice_for_lack_of_discipline/</guid>
-      <description>&amp;ldquo;If you lack discipline, open this&amp;rdquo;
-Psychology Thread
- Choose a Goal  Begin by choosing just one goal that you want to focus on to develop your self-discipline.
-Remember, starting small is the best way to start developing your self-discipline.
-Nutrition, Sleep and Exercise Are Key  If you are trying to improve your self discipline and you&amp;rsquo;re not getting enough sleep, healthy food and exercise, you&amp;rsquo;re fighting an uphill battle.</description>
-    </item>
-    
-    <item>
-      <title>Advice from ArtOfLife_</title>
-      <link>/post/advice_from_artoflife_/</link>
-      <pubDate>Sun, 26 Jun 2022 12:52:06 +0800</pubDate>
-      
-      <guid>/post/advice_from_artoflife_/</guid>
-      <description>&amp;ldquo;Overthinkers&amp;rdquo;, open this:
-• You&amp;rsquo;re loved, someone out there loves you more than you think.
-• Your anxiety will tell you the worst case scenario. It’s a damn liar!
-• You mean so much to your friends and family, they may not say it as often but they really do love you.
-• You’ve already survived things you didn’t think you’d survive.
-• You&amp;rsquo;re strong and you can get through everything one step at a time.</description>
-    </item>
-    
-    <item>
-      <title>Advice from LongShortHC</title>
-      <link>/post/advice_from_longshorthc/</link>
-      <pubDate>Sun, 26 Jun 2022 12:30:18 +0800</pubDate>
-      
-      <guid>/post/advice_from_longshorthc/</guid>
-      <description>Had a DM question asking for advice for a brand new analyst working at a pod shop. Noodled on it, and figured I would share the thoughts broadly in case helpful. I am far from the most tenured and successful pod PM - spent 4 years as a PM at combo of D.E. Shaw (not a pod)…
-Citadel/Aptigon and Schonfeld, over which time I hired/employed/trained a dozen or so analysts. (And then threw up two middle fingers and retired…more on that later).</description>
-    </item>
-    
-    <item>
-      <title>如何利用GithubAction发布Hugo博客</title>
-      <link>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Tue, 05 Apr 2022 15:07:33 +0800</pubDate>
-      
-      <guid>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</guid>
-      <description>作为一个老网民，我还是很喜欢折腾博客的。从07年开始就玩各种博客，比如07年搜狐博客，那时候博客热很火，不亚于微博兴起的时候，于是我每天去刷我的搜狐博客访问量，是不是还专门去网吧写文章。 后来还开了新浪博客，一直在新浪博客混混文字，大概一直在新浪博客写了4年。
-再后来又买了独立主机，自己开WordPress写博客，无奈后来被人把主机给黑了。但是那时候很快啦，天天找WordPress好看的主题，去别的的WP 搜索好用的插件。各种互加友链。
-当然后来还玩了很多其他的博客，比如Google的BlogSpot，Tumbler，对就是那个Tumbler。 还有网易的LOFTER，新浪的绿洲。腾讯的QQ空间，微信公众号。
-工作以后，有了Github page，看着大家都用Travis去自动化部署，于是也用HEXO搭建了一个。不过18年后一直没维护了，中途有次冲动想维护起来，发现怎么都跑不起来，于是就懒得动了。
-最近大家都用Github Action自动化部署Blog。于是又折腾起来了。整个过程花了几个小时，担心以后忘记又记不起来，在这里简单做个记录。整个流程如下
-1、本地安装Hugo
-2、用Hugo写好Markdown文章 (hugo new posts/new_post.md) 3、然后将Markdown生成为静态文件
-4、将生成的静态站点内容推送到Github发布
-一、安装Hugo
-mac： brew install hugo
-其他系统安装方式见：https://gohugo.io/getting-started/installing/
-二、生成静态站点
-1、初始化站点
-Hugo命令可以自动生成站点需要的文件，后续我们所有的操作命令将会在Hugo生成的目录下执行。
-hugo new site hugo-blog
-2、进入到hugo-blog目录，cd hugo-blog
-3、安装主题
-我是通过 git submodule 安装的，确保自己在hugo-blog目录下，执行命令：
-git init git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane 4、启用主题
-第三步完成后，需要在配置文件中启用主题，配置文件在hugo-blog根目录下。
-echo &amp;#39;theme = &amp;#34;jane&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.toml 5、创建第一篇你的博文
-hugo new posts/my-first-post.md
-在下方接着写入文章内容即可。注意此时该文件为草稿状态，写作完成后需要改成 draft: false 才能部署。
-6、启动 Hugo 预览服务器
-Hugo 可以启动一个 Web 服务器，同时构建站点内容到内存中并在检测到文件更改后重新渲染，方便我们在开发环境实时预览对站点所做的更改。命令如下：
-hugo server -D 添加 -D 选项以输出草稿状态的文章，执行成功后可以通过 http://localhost:1313/ 访问站点。</description>
-    </item>
-    
-    <item>
-      <title>如果我有一段生命</title>
-      <link>/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</link>
-      <pubDate>Tue, 05 Apr 2022 00:17:28 +0800</pubDate>
-      
-      <guid>/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</guid>
-      <description>If God, for a second, forgot what I have become and granted me a little bit more of life, I would use it to the best of my ability.
-如果有一刹那，上帝忘记我是一只布偶并赋予我片刻生命，我会最大限度的利用起来。
-I wouldn&amp;rsquo;t possibly, say everything that is in my mind, but I would be more thoughtful of all I say…
-我可能不会说出我心中的一切所想，但我必定会思考我所说的一切。
-I would give merit to things not for what they are worth, but for what they mean to express.</description>
-    </item>
-    
-    <item>
-      <title>不装蒜</title>
-      <link>/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</link>
-      <pubDate>Mon, 04 Apr 2022 22:16:02 +0800</pubDate>
-      
-      <guid>/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</guid>
-      <description>顾城 (1956-1993)
-人的生命里有一种能量，它使你不安宁。说它是欲望也行，幻想也行，妄想也行，总之它不可能停下来，它需要一个表达形式。这个形式可能是革命，也可能是爱情；可能是搬一块石头，也可能是写一首诗。只要这个形式和生命力里的这个能量吻合了，就有了一个完美的过程。
-一个彻底诚实的人是从不面对选择的，那条路永远会清楚无二地呈现在你面前，这和你的憧憬无关，就像你是一棵苹果树，你憧憬结橘子，但是你还是诚实地结出苹果一样。
-西方爱情是强烈开放的花朵，东方爱情是两朵花之间微妙的芳香。
-自由并不是你不知道干什么好，也不是你干什么都可以不坐牢；自由是你清楚无疑你要干什么，不装蒜，不矫揉造作，无论什么功利结果，会不会坐牢或者送死，都不在话下了。对于惶惑不知道干什么的人来说，自由是不存在的；对于瞻前顾后、患得患失的人来说，自由是不可及的。
-一个人，生活可以变得好，也可以变得坏；可以活得久，也可以活得不久；可以做一个艺术家，也可以锯木头，没有多大区别。但是有一点，就是他不能面目全非，他不能变成一个鬼，他不能说鬼话、说谎言，他不能在醒来的时候看见自己觉得不堪入目。一个人应该活得是自己并且干净。
-命运不是风来回吹，命运是大地，走到哪里你都在命中。
-贾宝玉是真性情，鲁智深也是真性情；鲁智深一句唱词儿“赤条条来去无牵挂”，贾宝玉眼泪就下来了，顿时就有了感觉。可是你让贾宝玉抡个棍子去打，那无疑是找死。他们爱好不同，性情很不一样，但是呢，都是真性情，它就通了。
-从叶到花，或从花到叶，于科研是一个过程，而于生命自身则永远只在此刻。花和叶都是一种记忆方式。果子同时也是叶子。生命是闪耀的此刻，不是过程，就像芳香不需要道路一样。
-中国人只创造了两个理想，一个是山中的桃花源，一个是墙里的大观园。我的笑话不过是把大观园搬到了山里，忘了林黛玉的药锄是葬花用的。
-我到了新西兰一个小岛上，把身体交给了劳动。四年之后，有一天，我忽然看见黑色的鸟停在月亮里，树上的花早就开了，红花已经落了满地。这时候我才感到我从文化中间、文字中间走了出来。万物清清楚楚地呈现在你的心里，一阵风吹过，鸟就开始叫了，树就开始响了。这个时候我明白了一个道理：只有在你生命美丽的时候，世界才是美丽的。</description>
-    </item>
-    
-  </channel>
-</rss>
-=======
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on</title><link>/post/</link><description>Recent content in Posts on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 17 Sep 2023 16:45:45 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml"/><item><title>好久没写博客了</title><link>/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</link><pubDate>Sun, 17 Sep 2023 16:45:45 +0800</pubDate><guid>/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</guid><description>&lt;p>好久没来写点东西了。打算不写技术博客了，人要学技术，网上写的人还是太多了。而且写的比我更好，我也就不在这方面去费时间了。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><follow_challenge><feedId>60623584562065408</feedId><userId>60599027243183104</userId></follow_challenge><channel><title>Posts on My New Hugo Site</title><link>http://example.org/post/</link><description> Recent content in Posts on My New Hugo Site feedId:60623584562065408+userId:60599027243183104</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 17 Sep 2023 16:45:45 +0800</lastBuildDate><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml"/><item><title>好久没写博客了</title><link>http://example.org/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</link><pubDate>Sun, 17 Sep 2023 16:45:45 +0800</pubDate><guid>http://example.org/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</guid><description>&lt;p>好久没来写点东西了。打算不写技术博客了，人要学技术，网上写的人还是太多了。而且写的比我更好，我也就不在这方面去费时间了。&lt;/p>
 &lt;p>打算就写点我的所见，所闻，所感，记录下岁月吧。可能还能引起一些共鸣。&lt;/p>
 &lt;p>从2007年我就喜欢博客，那时候有搜狐博客，新浪博客，经常去看韩寒，老徐，还有个极地阳光。想想现在的网红，其实逻辑没变。那时候写博客人气高的也是网红。&lt;/p>
-&lt;p>现如今变成了短视频的天下了，不过现在也有微博，知乎，小红书之类的。但是本质还是没变，还是看访问量，看粉丝。以前粉丝经济没这么强，现在粉丝经济那就是相当强了。&lt;/p></description></item><item><title>我的oh My Zsh主题</title><link>/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link><pubDate>Sat, 13 Aug 2022 10:23:30 +0800</pubDate><guid>/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid><description>&lt;p>最近想改下iTerm的oh-my-zsh主题，看知乎讨论，有一款简洁的主题映入眼帘。&lt;/p>
-&lt;h3 id="主题名称">主题名称&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>half-life
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改prompt">修改PROMPT&lt;/h3>
-&lt;p>然后去oh-my-zsh.sh修改PROMPT&lt;/p>
+&lt;p>现如今变成了短视频的天下了，不过现在也有微博，知乎，小红书之类的。但是本质还是没变，还是看访问量，看粉丝。以前粉丝经济没这么强，现在粉丝经济那就是相当强了。&lt;/p></description></item><item><title>我的oh My Zsh主题</title><link>http://example.org/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link><pubDate>Sat, 13 Aug 2022 10:23:30 +0800</pubDate><guid>http://example.org/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid><description>&lt;p>最近想改下iTerm的oh-my-zsh主题，看知乎讨论，有一款简洁的主题映入眼帘。&lt;/p>
+&lt;h3 id="主题名称">主题名称
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>half-life
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改prompt">修改PROMPT
+&lt;/h3>&lt;p>然后去oh-my-zsh.sh修改PROMPT&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>vim ~/.oh-my-zsh/oh-my-zsh.sh
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在文件末尾添加一行：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>PROMPT&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">$&amp;#39;%{$purple%}%n%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info &amp;#34; with%{$fg[red]%} &amp;#34; v g &amp;#34;%{$reset_color%}&amp;#34;)$vcs_info_msg_0_%{$orange%}%{$reset_color%} at %{$hotpink%}%* %{$orange%}λ%{$reset_color%} &amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>效果如下&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202208131028385.png" alt="">&lt;/p></description></item><item><title>Ubuntu18.04/Mysql5.7改成utf8编码</title><link>/post/mysql57_character/</link><pubDate>Mon, 08 Aug 2022 22:11:13 +0800</pubDate><guid>/post/mysql57_character/</guid><description>&lt;h3 id="问题背景">问题背景&lt;/h3>
-&lt;p>向MySQL插入中文内容显示问号&lt;/p>
-&lt;h3 id="原因">原因&lt;/h3>
-&lt;p>Server端的MySQL不支持utf8， 部分是latin1编码格式。&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202208131028385.png"
+loading="lazy"
+>&lt;/p></description></item><item><title>Ubuntu18.04/Mysql5.7改成utf8编码</title><link>http://example.org/post/mysql57_character/</link><pubDate>Mon, 08 Aug 2022 22:11:13 +0800</pubDate><guid>http://example.org/post/mysql57_character/</guid><description>&lt;h3 id="问题背景">问题背景
+&lt;/h3>&lt;p>向MySQL插入中文内容显示问号&lt;/p>
+&lt;h3 id="原因">原因
+&lt;/h3>&lt;p>Server端的MySQL不支持utf8， 部分是latin1编码格式。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>mysql&amp;gt;show variables like &lt;span style="color:#e6db74">&amp;#34;%char%&amp;#34;&lt;/span>;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
@@ -320,18 +32,65 @@ I would give merit to things not for what they are worth, but for what they mean
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| validate_password_special_char_count | &lt;span style="color:#ae81ff">1&lt;/span> |
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">9&lt;/span> rows in set &lt;span style="color:#f92672">(&lt;/span>0.02 sec&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="解决办法">解决办法&lt;/h3>
-&lt;p>1、直接登录MySQL改数据库, 但是MySQL重启后，修改会失效。&lt;/p>
-&lt;p>2、修改MySQL配置&lt;/p></description></item><item><title>Ubuntu18.04使用supervisor守护进程</title><link>/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link><pubDate>Sun, 07 Aug 2022 15:54:02 +0800</pubDate><guid>/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid><description>&lt;h3 id="问题背景">问题背景&lt;/h3>
-&lt;p>最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="解决办法">解决办法
+&lt;/h3>&lt;p>1、直接登录MySQL改数据库, 但是MySQL重启后，修改会失效。&lt;/p>
+&lt;p>2、修改MySQL配置&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /etc/mysql/conf.d
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>vim mysql.cnf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.1、在[mysql]添加 default-character-set=utf8&lt;/p>
+&lt;pre tabindex="0">&lt;code>[mysql]
+default-character-set=utf8
+&lt;/code>&lt;/pre>&lt;p>2.2、进入/etc/mysql/mysql.conf.d目录，打开mysql.conf.d，在[mysqld]添加一行 character-set-server=utf8，如下所示&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /etc/mysql/mysql.conf.d
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>mysqld&lt;span style="color:#f92672">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># * Basic Settings&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>user &lt;span style="color:#f92672">=&lt;/span> mysql
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pid-file &lt;span style="color:#f92672">=&lt;/span> /var/run/mysqld/mysqld.pid
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>socket &lt;span style="color:#f92672">=&lt;/span> /var/run/mysqld/mysqld.sock
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>port &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">3306&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>basedir &lt;span style="color:#f92672">=&lt;/span> /usr
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>datadir &lt;span style="color:#f92672">=&lt;/span> /var/lib/mysql
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tmpdir &lt;span style="color:#f92672">=&lt;/span> /tmp
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>lc-messages-dir &lt;span style="color:#f92672">=&lt;/span> /usr/share/mysql
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>skip-external-locking
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>character-set-server&lt;span style="color:#f92672">=&lt;/span>utf8
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Instead of skip-networking the default is now to listen only on&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># localhost which is more compatible and is not less secure.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bind-address &lt;span style="color:#f92672">=&lt;/span> 127.0.0.1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.3、配置成功修改后，重启MySQL服务&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>service mysql restart
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.4、检查编码是否修改成功&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>mysql&amp;gt;show variables like &lt;span style="color:#e6db74">&amp;#34;%char%&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| Variable_name | Value |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_client | utf8 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_connection | utf8 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_database | utf8mb4 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_filesystem | binary |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_results | utf8 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_server | utf8 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_system | utf8 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_sets_dir | /usr/share/mysql/charsets/ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| validate_password_special_char_count | &lt;span style="color:#ae81ff">1&lt;/span> |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">9&lt;/span> rows in set &lt;span style="color:#f92672">(&lt;/span>0.02 sec&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.5、配置成utf8生效后，再插入中文内容就可以正常显示了。&lt;/p>
+&lt;hr></description></item><item><title>Ubuntu18.04使用supervisor守护进程</title><link>http://example.org/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link><pubDate>Sun, 07 Aug 2022 15:54:02 +0800</pubDate><guid>http://example.org/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid><description>&lt;h3 id="问题背景">问题背景
+&lt;/h3>&lt;p>最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。&lt;/p>
 &lt;p>于是想着用supervisor来做守护进程, 本文就是记录supervisor 的安装、配置、使用技巧，并设置如何supervisor开机自动启动&lt;/p>
-&lt;h3 id="机器环境">机器环境&lt;/h3>
-&lt;p>Ubuntu版本：18.04&lt;/p>
+&lt;h3 id="机器环境">机器环境
+&lt;/h3>&lt;p>Ubuntu版本：18.04&lt;/p>
 &lt;p>Ubuntu用户：root&lt;/p>
-&lt;h3 id="ubuntu安装supervisor">Ubuntu安装supervisor&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>apt install supervisor
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ubuntu配置supervisor">Ubuntu配置supervisor&lt;/h3>
-&lt;p>安装完成后，会生成一个默认的配置文件/etc/supervisor/supervisord.conf， 这个默认配置里面也会load所有在conf.d目录下的配置&lt;/p>
+&lt;h3 id="ubuntu安装supervisor">Ubuntu安装supervisor
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>apt install supervisor
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ubuntu配置supervisor">Ubuntu配置supervisor
+&lt;/h3>&lt;p>安装完成后，会生成一个默认的配置文件/etc/supervisor/supervisord.conf， 这个默认配置里面也会load所有在conf.d目录下的配置&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# tree
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|-- conf.d
@@ -350,22 +109,135 @@ I would give merit to things not for what they are worth, but for what they mean
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>startretries&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>redirect_stderr&lt;span style="color:#f92672">=&lt;/span>true
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_logfile&lt;span style="color:#f92672">=&lt;/span>/home/test/out.log
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>具体也可参照官方给的详细文档： &lt;a href="http://supervisord.org/configuration.html">http://supervisord.org/configuration.html&lt;/a>&lt;/p>
-&lt;h3 id="检查supervisor的状态">检查supervisor的状态&lt;/h3>
-&lt;p>1、检查supervisor的状态&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>具体也可参照官方给的详细文档： &lt;a class="link" href="http://supervisord.org/configuration.html" target="_blank" rel="noopener"
+>http://supervisord.org/configuration.html&lt;/a>&lt;/p>
+&lt;h3 id="检查supervisor的状态">检查supervisor的状态
+&lt;/h3>&lt;p>1、检查supervisor的状态&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>ps aux | grep supervisor
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# ps aux | grep supervisor
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#ae81ff">2551&lt;/span> 0.0 2.0 &lt;span style="color:#ae81ff">65580&lt;/span> &lt;span style="color:#ae81ff">21508&lt;/span> ? Ss 12:39 0:09 /usr/bin/python /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#ae81ff">7720&lt;/span> 0.0 0.1 &lt;span style="color:#ae81ff">13116&lt;/span> &lt;span style="color:#ae81ff">1044&lt;/span> pts/0 S+ 16:46 0:00 grep --color&lt;span style="color:#f92672">=&lt;/span>auto supervisor
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>当看到如上对应的进程，就说明supervisor启动是成功的。&lt;/p></description></item><item><title>Vue Vite初学报错大全</title><link>/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</link><pubDate>Sun, 07 Aug 2022 15:23:20 +0800</pubDate><guid>/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</guid><description>&lt;h3 id="项目环境">项目环境&lt;/h3>
-&lt;p>机器：mac&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>当看到如上对应的进程，就说明supervisor启动是成功的。&lt;/p>
+&lt;p>2、检查守护的进程的状态&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# supervisorctl
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>we RUNNING pid 2603, uptime 4:05:59
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>我们就可以看到我们配置的守护进程的状态，如果不在运行，会有相应的错误信息，可以去刚才配置的log目录查看日志：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>less /home/test/out.log
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="supervisorctl-常用命令">supervisorctl 常用命令
+&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">command&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">supervisorctl stop program_name&lt;/td>
+&lt;td style="text-align: left">停止某个进程&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">supervisorctl start program_name&lt;/td>
+&lt;td style="text-align: left">启动某个进程&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">supervisorctl restart program_name&lt;/td>
+&lt;td style="text-align: left">重启某个进程&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">supervisorctl stop all&lt;/td>
+&lt;td style="text-align: left">停止全部进程&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">supervisorctl reload&lt;/td>
+&lt;td style="text-align: left">载入最新的配置文件，停止原有进程并按新的配置启动、管理所有进程&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">supervisorctl update&lt;/td>
+&lt;td style="text-align: left">根据最新的配置文件，启动新配置或有改动的进程，配置没有改动的进程不会受影响而重启&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="设置supervisor开机启动">设置supervisor开机启动
+&lt;/h3>&lt;p>如果使用apt安装的，一般来说会自动设置好开机启动，但是如果你重启之后发现没有开机自动启动，可以按照下面的方法配置。&lt;/p>
+&lt;p>把下面的命令写进 rc.local 即可：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>/usr/bin/supervisord
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="mac设置supervisor">mac设置supervisor
+&lt;/h3>&lt;p>1、brew 安装supervisor&lt;/p>
+&lt;p>如果你还没有安装brew，这里使他们的官网https://brew.sh/，安装brew的命令：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>/bin/bash -c &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>brew install supervisor
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>brew services restart supervisor
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2、配置文件，先打开默认配置文件&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>vim /usr/local/etc/supervisord.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>3、这是它的默认配置：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#f92672">[&lt;/span>program:theprogramname&lt;span style="color:#f92672">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;command&lt;span style="color:#f92672">=&lt;/span>/bin/cat ; the program &lt;span style="color:#f92672">(&lt;/span>relative uses PATH, can take args&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;process_name&lt;span style="color:#f92672">=&lt;/span>%&lt;span style="color:#f92672">(&lt;/span>program_name&lt;span style="color:#f92672">)&lt;/span>s ; process_name expr &lt;span style="color:#f92672">(&lt;/span>default %&lt;span style="color:#f92672">(&lt;/span>program_name&lt;span style="color:#f92672">)&lt;/span>s&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;numprocs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ; number of processes copies to start &lt;span style="color:#f92672">(&lt;/span>def 1&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;directory&lt;span style="color:#f92672">=&lt;/span>/tmp ; directory to cwd to before exec &lt;span style="color:#f92672">(&lt;/span>def no cwd&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;umask&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">022&lt;/span> ; umask &lt;span style="color:#66d9ef">for&lt;/span> process &lt;span style="color:#f92672">(&lt;/span>default None&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;priority&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">999&lt;/span> ; the relative start priority &lt;span style="color:#f92672">(&lt;/span>default 999&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;autostart&lt;span style="color:#f92672">=&lt;/span>true ; start at supervisord start &lt;span style="color:#f92672">(&lt;/span>default: true&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;startsecs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ; &lt;span style="color:#75715e"># of secs prog must stay up to be running (def. 1)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;startretries&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">3&lt;/span> ; max &lt;span style="color:#75715e"># of serial start failures when starting (default 3)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;autorestart&lt;span style="color:#f92672">=&lt;/span>unexpected ; when to restart &lt;span style="color:#66d9ef">if&lt;/span> exited after running &lt;span style="color:#f92672">(&lt;/span>def: unexpected&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;exitcodes&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span> ; &lt;span style="color:#e6db74">&amp;#39;expected&amp;#39;&lt;/span> exit codes used with autorestart &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stopsignal&lt;span style="color:#f92672">=&lt;/span>QUIT ; signal used to kill process &lt;span style="color:#f92672">(&lt;/span>default TERM&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stopwaitsecs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; max num secs to wait b4 SIGKILL &lt;span style="color:#f92672">(&lt;/span>default 10&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stopasgroup&lt;span style="color:#f92672">=&lt;/span>false ; send stop signal to the UNIX process group &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;killasgroup&lt;span style="color:#f92672">=&lt;/span>false ; SIGKILL the UNIX process group &lt;span style="color:#f92672">(&lt;/span>def false&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;user&lt;span style="color:#f92672">=&lt;/span>chrism ; setuid to this UNIX account to run the program
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;redirect_stderr&lt;span style="color:#f92672">=&lt;/span>true ; redirect proc stderr to stdout &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_logfile&lt;span style="color:#f92672">=&lt;/span>/a/path ; stdout log path, NONE &lt;span style="color:#66d9ef">for&lt;/span> none; default AUTO
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_logfile_maxbytes&lt;span style="color:#f92672">=&lt;/span>1MB ; max &lt;span style="color:#75715e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_logfile_backups&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; &lt;span style="color:#75715e"># of stdout logfile backups (0 means none, default 10)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_capture_maxbytes&lt;span style="color:#f92672">=&lt;/span>1MB ; number of bytes in &lt;span style="color:#e6db74">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_events_enabled&lt;span style="color:#f92672">=&lt;/span>false ; emit events on stdout writes &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_syslog&lt;span style="color:#f92672">=&lt;/span>false ; send stdout to syslog with process name &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_logfile&lt;span style="color:#f92672">=&lt;/span>/a/path ; stderr log path, NONE &lt;span style="color:#66d9ef">for&lt;/span> none; default AUTO
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_logfile_maxbytes&lt;span style="color:#f92672">=&lt;/span>1MB ; max &lt;span style="color:#75715e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_logfile_backups&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; &lt;span style="color:#75715e"># of stderr logfile backups (0 means none, default 10)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_capture_maxbytes&lt;span style="color:#f92672">=&lt;/span>1MB ; number of bytes in &lt;span style="color:#e6db74">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_events_enabled&lt;span style="color:#f92672">=&lt;/span>false ; emit events on stderr writes &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_syslog&lt;span style="color:#f92672">=&lt;/span>false ; send stderr to syslog with process name &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;environment&lt;span style="color:#f92672">=&lt;/span>A&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;1&amp;#34;&lt;/span>,B&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;2&amp;#34;&lt;/span> ; process environment additions &lt;span style="color:#f92672">(&lt;/span>def no adds&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;serverurl&lt;span style="color:#f92672">=&lt;/span>AUTO ; override serverurl computation &lt;span style="color:#f92672">(&lt;/span>childutils&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>4、我们可以复制一份，改一改，改成我们自己想要启动程序的配置，比如我想要启动gos&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>program:gitgos&lt;span style="color:#f92672">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>command&lt;span style="color:#f92672">=&lt;/span>/Users/yzw/Downloads/gitzub/gogs/gogs web -p &lt;span style="color:#ae81ff">3008&lt;/span> ; the program &lt;span style="color:#f92672">(&lt;/span>relative uses PATH, can take args&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>process_name&lt;span style="color:#f92672">=&lt;/span>%&lt;span style="color:#f92672">(&lt;/span>program_name&lt;span style="color:#f92672">)&lt;/span>s ; process_name expr &lt;span style="color:#f92672">(&lt;/span>default %&lt;span style="color:#f92672">(&lt;/span>program_name&lt;span style="color:#f92672">)&lt;/span>s&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>numprocs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ; number of processes copies to start &lt;span style="color:#f92672">(&lt;/span>def 1&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>directory&lt;span style="color:#f92672">=&lt;/span>/Users/yzw/Downloads/gitzub/gogs/ ; directory to cwd to before exec &lt;span style="color:#f92672">(&lt;/span>def no cwd&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>autostart&lt;span style="color:#f92672">=&lt;/span>true ; start at supervisord start &lt;span style="color:#f92672">(&lt;/span>default: true&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>startsecs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ; &lt;span style="color:#75715e"># of secs prog must stay up to be running (def. 1)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>startretries&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">3&lt;/span> ; max &lt;span style="color:#75715e"># of serial start failures when starting (default 3)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>; stopasgroup&lt;span style="color:#f92672">=&lt;/span>true ; send stop signal to the UNIX process group &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>; killasgroup&lt;span style="color:#f92672">=&lt;/span>true ; SIGKILL the UNIX process group &lt;span style="color:#f92672">(&lt;/span>def false&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>user&lt;span style="color:#f92672">=&lt;/span>zhiwei ; setuid to this UNIX account to run the program
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>redirect_stderr&lt;span style="color:#f92672">=&lt;/span>true ; redirect proc stderr to stdout &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_logfile&lt;span style="color:#f92672">=&lt;/span>/Users/zhiwei/Downloads/gitzub/gogs/log/data.log ; stdout log path, NONE &lt;span style="color:#66d9ef">for&lt;/span> none; default AUTO
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_logfile_maxbytes&lt;span style="color:#f92672">=&lt;/span>10MB ; max &lt;span style="color:#75715e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_logfile_backups&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; &lt;span style="color:#75715e"># of stdout logfile backups (0 means none, default 10)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_capture_maxbytes&lt;span style="color:#f92672">=&lt;/span>10MB ; number of bytes in &lt;span style="color:#e6db74">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stderr_logfile&lt;span style="color:#f92672">=&lt;/span>/Users/zhiwei/Downloads/gitzub/gogs/log/error.log ; stderr log path, NONE &lt;span style="color:#66d9ef">for&lt;/span> none; default AUTO
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stderr_logfile_maxbytes&lt;span style="color:#f92672">=&lt;/span>10MB ; max &lt;span style="color:#75715e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stderr_logfile_backups&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; &lt;span style="color:#75715e"># of stderr logfile backups (0 means none, default 10)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stderr_capture_maxbytes&lt;span style="color:#f92672">=&lt;/span>10MB ; number of bytes in &lt;span style="color:#e6db74">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>5、然后再执行命令重新加载下配置，使得新的配置生效， 然后再执行supervisorctl命令，查看gos是否启动成功，状态为RUNNING则成功启动。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>supervisorctl reload
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>➜ supervisorctl
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gitgos RUNNING pid 44926, uptime 0:41:54
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>supervisor&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Vue Vite初学报错大全</title><link>http://example.org/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</link><pubDate>Sun, 07 Aug 2022 15:23:20 +0800</pubDate><guid>http://example.org/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</guid><description>&lt;h3 id="项目环境">项目环境
+&lt;/h3>&lt;p>机器：mac&lt;/p>
 &lt;p>框架：vue3&lt;/p>
 &lt;p>版本：vue=^3.0.4&lt;/p>
 &lt;p>###报错信息&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>[&lt;span style="color:#a6e22e">vite&lt;/span>] &lt;span style="color:#a6e22e">Internal&lt;/span> &lt;span style="color:#a6e22e">server&lt;/span> &lt;span style="color:#a6e22e">error&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">Failed&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">parse&lt;/span> &lt;span style="color:#a6e22e">source&lt;/span> &lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#a6e22e">analysis&lt;/span> &lt;span style="color:#a6e22e">because&lt;/span> &lt;span style="color:#a6e22e">the&lt;/span> &lt;span style="color:#a6e22e">content&lt;/span> &lt;span style="color:#a6e22e">contains&lt;/span> &lt;span style="color:#a6e22e">invalid&lt;/span> &lt;span style="color:#a6e22e">JS&lt;/span> &lt;span style="color:#a6e22e">syntax&lt;/span>. &lt;span style="color:#a6e22e">Install&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#a6e22e">vitejs&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#a6e22e">plugin&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">handle&lt;/span> .&lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">files&lt;/span>.
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="问题描述">问题描述&lt;/h3>
-&lt;p>1、安装Vite及初始化项目&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="问题描述">问题描述
+&lt;/h3>&lt;p>1、安装Vite及初始化项目&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">init&lt;/span> &lt;span style="color:#a6e22e">vite&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">app&lt;/span> &lt;span style="color:#a6e22e">vue3demo004&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">install&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">run&lt;/span> &lt;span style="color:#a6e22e">dev&lt;/span>
@@ -400,26 +272,136 @@ I would give merit to things not for what they are worth, but for what they mean
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;vite&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;^3.0.4&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>app.vue&lt;/p></description></item><item><title>寻找Mac java_home</title><link>/post/mac_java_home/</link><pubDate>Sun, 31 Jul 2022 11:24:38 +0800</pubDate><guid>/post/mac_java_home/</guid><description>&lt;h2 id="前期准备">&lt;strong>前期准备&lt;/strong>&lt;/h2>
-&lt;ol>
-&lt;li>下载JDK安装包：在&lt;a href="https://link.zhihu.com/?target=http%3A//www.oracle.com/technetwork/cn/java/javase/downloads/jdk8-downloads-2133151-zhs.html">JDK1.8下载&lt;/a>中选择Mac的JDK安装包&lt;/li>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>app.vue&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">template&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">img&lt;/span> &lt;span style="color:#a6e22e">alt&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Vue logo&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">src&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;./assets/logo.png&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">HelloWorld&lt;/span> &lt;span style="color:#a6e22e">msg&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Hello Vue 3.0 + Vite&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/template&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">script&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#a6e22e">HelloWorld&lt;/span> &lt;span style="color:#a6e22e">from&lt;/span> &lt;span style="color:#e6db74">&amp;#39;./components/HelloWorld.vue&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">export&lt;/span> &lt;span style="color:#66d9ef">default&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#e6db74">&amp;#39;App&amp;#39;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">components&lt;/span>&lt;span style="color:#f92672">:&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">HelloWorld&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/script&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>HelloWorld.vue&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">template&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">h1&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>{{ &lt;span style="color:#a6e22e">msg&lt;/span> }}&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/h1&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">button&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#a6e22e">click&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;count++&amp;#34;&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">count&lt;/span> &lt;span style="color:#a6e22e">is&lt;/span>&lt;span style="color:#f92672">:&lt;/span> {{ &lt;span style="color:#a6e22e">count&lt;/span> }}&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/button&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">p&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">Edit&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">code&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">components&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#a6e22e">HelloWorld&lt;/span>.&lt;span style="color:#a6e22e">vue&lt;/span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/code&amp;gt; to test hot module replacement.&amp;lt;/p&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/template&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">script&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">export&lt;/span> &lt;span style="color:#66d9ef">default&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#e6db74">&amp;#39;HelloWorld&amp;#39;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">props&lt;/span>&lt;span style="color:#f92672">:&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">msg&lt;/span>&lt;span style="color:#f92672">:&lt;/span> String
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">data&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">count&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/script&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>main.js&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">import&lt;/span> { &lt;span style="color:#a6e22e">createApp&lt;/span> } &lt;span style="color:#a6e22e">from&lt;/span> &lt;span style="color:#e6db74">&amp;#39;vue&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#a6e22e">App&lt;/span> &lt;span style="color:#a6e22e">from&lt;/span> &lt;span style="color:#e6db74">&amp;#39;./App.vue&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#e6db74">&amp;#39;./index.css&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">createApp&lt;/span>(&lt;span style="color:#a6e22e">App&lt;/span>).&lt;span style="color:#a6e22e">mount&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;#app&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>index.html&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">html&lt;/span> &lt;span style="color:#a6e22e">lang&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;en&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">head&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">meta&lt;/span> &lt;span style="color:#a6e22e">charset&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;UTF-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">link&lt;/span> &lt;span style="color:#a6e22e">rel&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;icon&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">href&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;/favicon.ico&amp;#34;&lt;/span> /&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">meta&lt;/span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;viewport&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">content&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">title&lt;/span>&amp;gt;Vite App&amp;lt;/&lt;span style="color:#f92672">title&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">head&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">body&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">div&lt;/span> &lt;span style="color:#a6e22e">id&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;app&amp;#34;&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">div&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">script&lt;/span> &lt;span style="color:#a6e22e">type&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;module&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">src&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;/src/main.js&amp;#34;&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">script&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">body&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">html&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>###报错信息分析&lt;/p>
+&lt;p>1、npm run dev后, Terminal显示报错，报错信息如下&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">3&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#ae81ff">41&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#ae81ff">19&lt;/span> &lt;span style="color:#a6e22e">PM&lt;/span> [&lt;span style="color:#a6e22e">vite&lt;/span>] &lt;span style="color:#a6e22e">Internal&lt;/span> &lt;span style="color:#a6e22e">server&lt;/span> &lt;span style="color:#a6e22e">error&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">Failed&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">parse&lt;/span> &lt;span style="color:#a6e22e">source&lt;/span> &lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#a6e22e">analysis&lt;/span> &lt;span style="color:#a6e22e">because&lt;/span> &lt;span style="color:#a6e22e">the&lt;/span> &lt;span style="color:#a6e22e">content&lt;/span> &lt;span style="color:#a6e22e">contains&lt;/span> &lt;span style="color:#a6e22e">invalid&lt;/span> &lt;span style="color:#a6e22e">JS&lt;/span> &lt;span style="color:#a6e22e">syntax&lt;/span>. &lt;span style="color:#a6e22e">Install&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#a6e22e">vitejs&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#a6e22e">plugin&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">handle&lt;/span> .&lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">files&lt;/span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">Plugin&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">vite&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#66d9ef">import&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">analysis&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">File&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">/Users/username/Documents/4_code/learnvue/vue3demo004/src/App.vue&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ae81ff">3&lt;/span> &lt;span style="color:#f92672">|&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">img&lt;/span> &lt;span style="color:#a6e22e">alt&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Vue logo&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">src&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;./assets/logo.png&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ae81ff">4&lt;/span> &lt;span style="color:#f92672">|&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">HelloWorld&lt;/span> &lt;span style="color:#a6e22e">msg&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Hello Vue 3.0 + Vite&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ae81ff">5&lt;/span> &lt;span style="color:#f92672">|&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/template&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">|&lt;/span> &lt;span style="color:#f92672">^&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ae81ff">6&lt;/span> &lt;span style="color:#f92672">|&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ae81ff">7&lt;/span> &lt;span style="color:#f92672">|&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">at&lt;/span> &lt;span style="color:#a6e22e">formatError&lt;/span> (&lt;span style="color:#a6e22e">file&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#75715e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:35035:46)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">at&lt;/span> &lt;span style="color:#a6e22e">TransformContext&lt;/span>.&lt;span style="color:#a6e22e">error&lt;/span> (&lt;span style="color:#a6e22e">file&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#75715e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:35031:19)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">at&lt;/span> &lt;span style="color:#a6e22e">TransformContext&lt;/span>.&lt;span style="color:#a6e22e">transform&lt;/span> (&lt;span style="color:#a6e22e">file&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#75715e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:40116:22)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">at&lt;/span> &lt;span style="color:#66d9ef">async&lt;/span> Object.&lt;span style="color:#a6e22e">transform&lt;/span> (&lt;span style="color:#a6e22e">file&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#75715e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:35284:30)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">at&lt;/span> &lt;span style="color:#66d9ef">async&lt;/span> &lt;span style="color:#a6e22e">loadAndTransform&lt;/span> (&lt;span style="color:#a6e22e">file&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#75715e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:39812:29) (x4)
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>###解决办法&lt;/p>
+&lt;p>1、根据Terminal报错提示安装@vitejs/plugin-vue&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#a6e22e">vitejs&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#a6e22e">plugin&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">vue&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2、在项目根目录下新增vite.config.js文件，内容如下&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">import&lt;/span> {&lt;span style="color:#a6e22e">defineConfig&lt;/span>} &lt;span style="color:#a6e22e">from&lt;/span> &lt;span style="color:#e6db74">&amp;#34;vite&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">from&lt;/span> &lt;span style="color:#e6db74">&amp;#34;@vitejs/plugin-vue&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">export&lt;/span> &lt;span style="color:#66d9ef">default&lt;/span> &lt;span style="color:#a6e22e">defineConfig&lt;/span>({
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">plugins&lt;/span>&lt;span style="color:#f92672">:&lt;/span> [&lt;span style="color:#a6e22e">vue&lt;/span>()]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>})
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>3、新增vite.config.js后的项目目录如下&lt;/p>
+&lt;pre tabindex="0">&lt;code>├── node_modules
+├── package-lock.json
+├── package.json
+├── public
+│   └── favicon.ico
+├── src
+│   ├── App.vue
+│   ├── assets
+│   │   └── logo.png
+│   ├── components
+│   │   └── HelloWorld.vue
+│   ├── index.css
+│   └── main.js
+└── vite.config.js
+&lt;/code>&lt;/pre>&lt;p>4、重新运行npm run dev&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">➜&lt;/span> &lt;span style="color:#a6e22e">vue3demo004&lt;/span> &lt;span style="color:#a6e22e">git&lt;/span>&lt;span style="color:#f92672">:&lt;/span>(&lt;span style="color:#a6e22e">master&lt;/span>) &lt;span style="color:#960050;background-color:#1e0010">✗&lt;/span> &lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">run&lt;/span> &lt;span style="color:#a6e22e">dev&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#a6e22e">vue3demo004&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#ae81ff">0.0&lt;/span>.&lt;span style="color:#ae81ff">0&lt;/span> &lt;span style="color:#a6e22e">dev&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#a6e22e">vite&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">Port&lt;/span> &lt;span style="color:#ae81ff">5173&lt;/span> &lt;span style="color:#a6e22e">is&lt;/span> &lt;span style="color:#66d9ef">in&lt;/span> &lt;span style="color:#a6e22e">use&lt;/span>, &lt;span style="color:#a6e22e">trying&lt;/span> &lt;span style="color:#a6e22e">another&lt;/span> &lt;span style="color:#a6e22e">one&lt;/span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">VITE&lt;/span> &lt;span style="color:#a6e22e">v3&lt;/span>.&lt;span style="color:#ae81ff">0.4&lt;/span> &lt;span style="color:#a6e22e">ready&lt;/span> &lt;span style="color:#66d9ef">in&lt;/span> &lt;span style="color:#ae81ff">299&lt;/span> &lt;span style="color:#a6e22e">ms&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#960050;background-color:#1e0010">➜&lt;/span> &lt;span style="color:#a6e22e">Local&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">http&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#75715e">//localhost:5174/
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">➜&lt;/span> &lt;span style="color:#a6e22e">Network&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">use&lt;/span> &lt;span style="color:#f92672">--&lt;/span>&lt;span style="color:#a6e22e">host&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">expose&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>重新运行后，发现已经可以正常访问页面。&lt;/p></description></item><item><title>寻找Mac java_home</title><link>http://example.org/post/mac_java_home/</link><pubDate>Sun, 31 Jul 2022 11:24:38 +0800</pubDate><guid>http://example.org/post/mac_java_home/</guid><description>&lt;h2 id="前期准备">&lt;strong>前期准备&lt;/strong>
+&lt;/h2>&lt;ol>
+&lt;li>下载JDK安装包：在&lt;a class="link" href="https://link.zhihu.com/?target=http%3A//www.oracle.com/technetwork/cn/java/javase/downloads/jdk8-downloads-2133151-zhs.html" target="_blank" rel="noopener"
+>JDK1.8下载&lt;/a>中选择Mac的JDK安装包&lt;/li>
 &lt;li>安装JDK：这里只要按照安装指引一步一步安装即可&lt;/li>
 &lt;/ol>
-&lt;h2 id="查找java_home">&lt;strong>查找JAVA_HOME&lt;/strong>&lt;/h2>
-&lt;ol>
+&lt;h2 id="查找java_home">&lt;strong>查找JAVA_HOME&lt;/strong>
+&lt;/h2>&lt;ol>
 &lt;li>打开Mac的终端，检查JDK是否安装成功：&lt;code>java -version&lt;/code>&lt;/li>
 &lt;li>查看java指令所在的目录：&lt;code>which java&lt;/code>。输出结果：&lt;code>/usr/bin/java&lt;/code>&lt;/li>
 &lt;li>显示java指令文件的属性：&lt;code>ls -l /usr/bin/java&lt;/code>。输出结果如下：&lt;code>lrwxr-xr-x 1 root wheel 74 12 2 06:44 /usr/bin/java -&amp;gt; /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java&lt;/code>，从输出结果可以知道**/usr/bin/java&lt;strong>文件是一个链接文件，实际是指向&lt;/strong>/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java**文件的。&lt;/li>
 &lt;li>进入实际指令所在的文件夹：&lt;code>cd /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands&lt;/code>。但是这个目录并不是JAVA_HOME目录。&lt;/li>
 &lt;li>然后就是最重点的地方，在这个目录下面有一个mac的JDK特有的&lt;code>java_home&lt;/code>指令可以查看JDK的JAVA_HOME目录。执行指令：&lt;code>./java_home&lt;/code>执行结果如下：&lt;code>/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home&lt;/code>&lt;/li>
 &lt;/ol>
-&lt;h2 id="设置java_home">&lt;strong>设置JAVA_HOME&lt;/strong>&lt;/h2>
-&lt;ol>
+&lt;h2 id="设置java_home">&lt;strong>设置JAVA_HOME&lt;/strong>
+&lt;/h2>&lt;ol>
 &lt;li>编辑.bash_profile文件：&lt;code>vim ~/.bash_profile&lt;/code>&lt;/li>
 &lt;li>添加以下内容：&lt;code>export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Homeexport PATH=$JAVA_HOME/bin:$PATH&lt;/code>&lt;/li>
 &lt;li>使修改的文件生效：&lt;code>source ~/.bash_profile&lt;/code>&lt;/li>
-&lt;/ol></description></item><item><title>Linux command</title><link>/post/linuxcommand/</link><pubDate>Sun, 31 Jul 2022 11:22:04 +0800</pubDate><guid>/post/linuxcommand/</guid><description>&lt;h1 id="一些命令">一些命令&lt;/h1>
-&lt;ul>
+&lt;/ol></description></item><item><title>Linux command</title><link>http://example.org/post/linuxcommand/</link><pubDate>Sun, 31 Jul 2022 11:22:04 +0800</pubDate><guid>http://example.org/post/linuxcommand/</guid><description>&lt;h1 id="一些命令">一些命令
+&lt;/h1>&lt;ul>
 &lt;li>查看目录结构
 tree
 mac默认是没有tree命令的，所以可以有2种办法:&lt;/li>
@@ -443,44 +425,67 @@ git log &amp;ndash;graph &amp;ndash;abbrev-commit &amp;ndash;decorate &amp;ndash
 git log &amp;ndash;graph &amp;ndash;abbrev-commit &amp;ndash;decorate &amp;ndash;date=relative &amp;ndash;format=format:&amp;rsquo;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)&amp;rsquo; &amp;ndash;all -p&lt;/li>
 &lt;li>curl相关命令&lt;/li>
 &lt;li>直接输出到命令行
-curl &lt;a href="http://www.centos.org/">http:&lt;em>//www.centos.org&lt;/em>&lt;/a>&lt;/li>
+curl &lt;a class="link" href="http://www.centos.org/" target="_blank" rel="noopener"
+>http:&lt;em>//www.centos.org&lt;/em>&lt;/a>&lt;/li>
 &lt;li>输出到指定文件
-curl -o mygettext.html &lt;a href="http://www.gnu.org/software/gettext/manual/gettext.html">http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>or 直接用url里面的文件名
-curl -O &lt;a href="http://www.gnu.org/software/gettext/manual/gettext.html">http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>&lt;/li>
+curl -o mygettext.html &lt;a class="link" href="http://www.gnu.org/software/gettext/manual/gettext.html" target="_blank" rel="noopener"
+>http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>or 直接用url里面的文件名
+curl -O &lt;a class="link" href="http://www.gnu.org/software/gettext/manual/gettext.html" target="_blank" rel="noopener"
+>http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>&lt;/li>
 &lt;li>允许redirects
-curl -L &lt;a href="http://www.google.com/">http:&lt;em>//www.google.com&lt;/em>&lt;/a>&lt;/li>
+curl -L &lt;a class="link" href="http://www.google.com/" target="_blank" rel="noopener"
+>http:&lt;em>//www.google.com&lt;/em>&lt;/a>&lt;/li>
 &lt;li>断点续传
-curl -C - -O &lt;a href="http://www.gnu.org/software/gettext/manual/gettext.html">http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>也可指定续传的位置&lt;/li>
+curl -C - -O &lt;a class="link" href="http://www.gnu.org/software/gettext/manual/gettext.html" target="_blank" rel="noopener"
+>http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>也可指定续传的位置&lt;/li>
 &lt;li>限定下载速度
-curl &amp;ndash;limit-rate 1000B -O &lt;a href="http://www.gnu.org/software/gettext/manual/gettext.html">http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>&lt;/li>
+curl &amp;ndash;limit-rate 1000B -O &lt;a class="link" href="http://www.gnu.org/software/gettext/manual/gettext.html" target="_blank" rel="noopener"
+>http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>&lt;/li>
 &lt;li>需要认证
 curl -u username:password URL&lt;/li>
 &lt;li>使用代理
-curl -x proxysever.test.com:3128 &lt;a href="http://google.co.in/">http:&lt;em>//google.co.in&lt;/em>&lt;/a>&lt;/li>
+curl -x proxysever.test.com:3128 &lt;a class="link" href="http://google.co.in/" target="_blank" rel="noopener"
+>http:&lt;em>//google.co.in&lt;/em>&lt;/a>&lt;/li>
 &lt;li>发邮件
-curl &amp;ndash;mail-from &lt;a href="mailto:blah@test.com">blah@test.com&lt;/a> &amp;ndash;mail-rcpt &lt;a href="mailto:foo@test.com">foo@test.com&lt;/a> smtp:&lt;em>//mailserver.com&lt;/em>输入后，就可以开始写邮件内容， .表示结束
+curl &amp;ndash;mail-from &lt;a class="link" href="mailto:blah@test.com" >blah@test.com&lt;/a> &amp;ndash;mail-rcpt &lt;a class="link" href="mailto:foo@test.com" >foo@test.com&lt;/a> smtp:&lt;em>//mailserver.com&lt;/em>输入后，就可以开始写邮件内容， .表示结束
 Subject: Testing
 This is a test mail
 .&lt;/li>
 &lt;li>HTTP Method
-curl &amp;ndash;request GET &amp;lsquo;&lt;a href="http://www.somedomain.com/">http:*//www.somedomain.com/&lt;/a>&amp;rsquo;*curl &amp;ndash;request POST &amp;lsquo;&lt;a href="http://www.somedomain.com/">http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;em>curl &amp;ndash;request DELETE &amp;lsquo;&lt;a href="http://www.somedomain.com/">http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;em>curl &amp;ndash;request PUT &amp;lsquo;&lt;a href="http://www.somedomain.com/">http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;/em>&lt;/em> 传入参数
-curl &amp;ndash;request POST &amp;lsquo;&lt;a href="http://www.somedomain.com/login/">http:*//www.somedomain.com/login/&lt;/a>&amp;rsquo; &amp;ndash;data &amp;lsquo;username=myusername&amp;amp;password=mypassword&amp;rsquo;*curl &amp;ndash;data-urlencode &amp;ldquo;date=April 1&amp;rdquo; &amp;lsquo;&lt;a href="http://example.com/form.cgi">http:*//example.com/form.cgi&lt;/a>&amp;rsquo;&lt;em>上传文件:
-curl &amp;ndash;request POST &amp;lsquo;&lt;a href="http://127.0.0.1:8008/api/trace_file">http:*//127.0.0.1:8008/api/trace_file&lt;/a>&amp;rsquo; -F &amp;rsquo;&lt;a href="mailto:trace_file=@journal.txt">trace_file=@journal.txt&lt;/a>;type=text/plain&amp;rsquo;&lt;/em>&lt;/li>
+curl &amp;ndash;request GET &amp;lsquo;&lt;a class="link" href="http://www.somedomain.com/" target="_blank" rel="noopener"
+>http:*//www.somedomain.com/&lt;/a>&amp;rsquo;*curl &amp;ndash;request POST &amp;lsquo;&lt;a class="link" href="http://www.somedomain.com/" target="_blank" rel="noopener"
+>http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;em>curl &amp;ndash;request DELETE &amp;lsquo;&lt;a class="link" href="http://www.somedomain.com/" target="_blank" rel="noopener"
+>http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;em>curl &amp;ndash;request PUT &amp;lsquo;&lt;a class="link" href="http://www.somedomain.com/" target="_blank" rel="noopener"
+>http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;/em>&lt;/em> 传入参数
+curl &amp;ndash;request POST &amp;lsquo;&lt;a class="link" href="http://www.somedomain.com/login/" target="_blank" rel="noopener"
+>http:*//www.somedomain.com/login/&lt;/a>&amp;rsquo; &amp;ndash;data &amp;lsquo;username=myusername&amp;amp;password=mypassword&amp;rsquo;*curl &amp;ndash;data-urlencode &amp;ldquo;date=April 1&amp;rdquo; &amp;lsquo;&lt;a class="link" href="http://example.com/form.cgi" target="_blank" rel="noopener"
+>http:*//example.com/form.cgi&lt;/a>&amp;rsquo;&lt;em>上传文件:
+curl &amp;ndash;request POST &amp;lsquo;&lt;a class="link" href="http://127.0.0.1:8008/api/trace_file" target="_blank" rel="noopener"
+>http:*//127.0.0.1:8008/api/trace_file&lt;/a>&amp;rsquo; -F &amp;rsquo;&lt;a class="link" href="mailto:trace_file=@journal.txt" >trace_file=@journal.txt&lt;/a>;type=text/plain&amp;rsquo;&lt;/em>&lt;/li>
 &lt;li>带上头部信息
-curl &amp;ndash;request GET &amp;lsquo;&lt;a href="http://www.somedomain.com/user/info/">http:*//www.somedomain.com/user/info/&lt;/a>&amp;rsquo; &amp;ndash;header &amp;lsquo;sessionid:1234567890987654321&amp;rsquo;&lt;em>需要请求返回带上头信息:
-curl &amp;ndash;request GET &amp;lsquo;&lt;a href="http://somedomain.com/">http:*//somedomain.com/&lt;/a>&amp;rsquo; &amp;ndash;include&lt;/em>-I 则是只显示头信息&lt;/li>
+curl &amp;ndash;request GET &amp;lsquo;&lt;a class="link" href="http://www.somedomain.com/user/info/" target="_blank" rel="noopener"
+>http:*//www.somedomain.com/user/info/&lt;/a>&amp;rsquo; &amp;ndash;header &amp;lsquo;sessionid:1234567890987654321&amp;rsquo;&lt;em>需要请求返回带上头信息:
+curl &amp;ndash;request GET &amp;lsquo;&lt;a class="link" href="http://somedomain.com/" target="_blank" rel="noopener"
+>http:*//somedomain.com/&lt;/a>&amp;rsquo; &amp;ndash;include&lt;/em>-I 则是只显示头信息&lt;/li>
 &lt;li>获取详细返回结果
-curl -v &amp;lsquo;&lt;a href="http://somedomain.com/">http:*//somedomain.com/&lt;/a>&amp;rsquo;*还不够详细？
-curl &amp;ndash;trace output.txt &amp;lsquo;&lt;a href="http://somedomain.com/">http:*//somedomain.com/&lt;/a>&amp;rsquo;&lt;em>or
-curl &amp;ndash;trace-ascii output.txt &amp;lsquo;&lt;a href="http://somedomain.com/">http:*//somedomain.com/&lt;/a>&amp;rsquo;&lt;/em>&lt;/li>
+curl -v &amp;lsquo;&lt;a class="link" href="http://somedomain.com/" target="_blank" rel="noopener"
+>http:*//somedomain.com/&lt;/a>&amp;rsquo;*还不够详细？
+curl &amp;ndash;trace output.txt &amp;lsquo;&lt;a class="link" href="http://somedomain.com/" target="_blank" rel="noopener"
+>http:*//somedomain.com/&lt;/a>&amp;rsquo;&lt;em>or
+curl &amp;ndash;trace-ascii output.txt &amp;lsquo;&lt;a class="link" href="http://somedomain.com/" target="_blank" rel="noopener"
+>http:*//somedomain.com/&lt;/a>&amp;rsquo;&lt;/em>&lt;/li>
 &lt;li>提供referer信息
-curl &amp;ndash;referer &amp;lsquo;&lt;a href="http://www.example.com/">http:*//www.example.com&lt;/a> &lt;a href="http://www.example.com">http://www.example.com&lt;/a>&amp;rsquo;*&lt;/li>
+curl &amp;ndash;referer &amp;lsquo;&lt;a class="link" href="http://www.example.com/" target="_blank" rel="noopener"
+>http:*//www.example.com&lt;/a> &lt;a class="link" href="http://www.example.com" target="_blank" rel="noopener"
+>http://www.example.com&lt;/a>&amp;rsquo;*&lt;/li>
 &lt;li>UA
 curl &amp;ndash;user-agent &amp;ldquo;[User Agent]&amp;rdquo; [URL]&lt;/li>
 &lt;li>cookie
-curl &amp;ndash;cookie &amp;ldquo;name=xxx&amp;rdquo; &lt;a href="http://www.example.com/">www.example.com&lt;/a>&lt;/li>
+curl &amp;ndash;cookie &amp;ldquo;name=xxx&amp;rdquo; &lt;a class="link" href="http://www.example.com/" target="_blank" rel="noopener"
+>www.example.com&lt;/a>&lt;/li>
 &lt;li>带host访问
-curl -H &amp;lsquo;Host: project1.loc&amp;rsquo; &amp;lsquo;&lt;a href="http://127.0.0.1/something">http:*//127.0.0.1/something&lt;/a>&amp;rsquo;*&lt;/li>
+curl -H &amp;lsquo;Host: project1.loc&amp;rsquo; &amp;lsquo;&lt;a class="link" href="http://127.0.0.1/something" target="_blank" rel="noopener"
+>http:*//127.0.0.1/something&lt;/a>&amp;rsquo;*&lt;/li>
 &lt;li>命令行打开任一程序(限OSX)
 open /Applications/Safari.app/
 or 打开一个目录
@@ -506,7 +511,7 @@ mkdir -p /Volumes/1 &amp;amp;&amp;amp; sudo mount -t ntfs /dev/disk1s1 /Volumes/
 之后操作1文件夹就行了
 弹出:
 sudo umount /dev/disk1s1&lt;/li>
-&lt;/ul></description></item><item><title>Wget用法</title><link>/post/wget%E7%94%A8%E6%B3%95/</link><pubDate>Sun, 31 Jul 2022 11:20:32 +0800</pubDate><guid>/post/wget%E7%94%A8%E6%B3%95/</guid><description>&lt;p>我会向你展示10个 Wget 命令的实际案例. Wget 是一个用于下载文件的免费工具，它支持大多数常用的Internet协议，包括 HTTP, HTTPS, 以及 FTP.&lt;/p>
+&lt;/ul></description></item><item><title>Wget用法</title><link>http://example.org/post/wget%E7%94%A8%E6%B3%95/</link><pubDate>Sun, 31 Jul 2022 11:20:32 +0800</pubDate><guid>http://example.org/post/wget%E7%94%A8%E6%B3%95/</guid><description>&lt;p>我会向你展示10个 Wget 命令的实际案例. Wget 是一个用于下载文件的免费工具，它支持大多数常用的Internet协议，包括 HTTP, HTTPS, 以及 FTP.&lt;/p>
 &lt;p>Wget这个名字来源于 World Wide Web + get. Wget 有很多功能，可以很方便地做到下载大型文件,递归下载,一次下载多个文件以及镜像web网站和FTP站点.&lt;/p>
 &lt;p>Wget是非交互式的，但是使用起来相当的灵活. 你可以在脚本，cron任务，终端等地方调用它. 它可以在用户未登陆的情况下运行在后台. 也就是说你可以开始下载文件，然后退出系统，wget会在后台运行直到完成任务.&lt;/p>
 &lt;p>在本文中，我将演示一些wget的使用例子, 这些例子都很常见,比如下载文件，比如镜像整个网站.&lt;/p>
@@ -523,14 +528,77 @@ apt-get upgrade&lt;/p>
 &lt;p>下载单个文件
 wget最常用也是最简单的用法就是用来下载单个文件.&lt;/p>
 &lt;p>你可以用下面命令想下载最新版的WordPress&lt;/p>
-&lt;p>wget &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>wget &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
+>https://wordpress.org/latest.zip&lt;/a>&lt;/p>
 &lt;p>你会看到如下输出:&lt;/p>
-&lt;p>&amp;ndash;2017-10-14 03:46:06&amp;ndash; &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>
+&lt;p>&amp;ndash;2017-10-14 03:46:06&amp;ndash; &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
+>https://wordpress.org/latest.zip&lt;/a>
 Resolving wordpress.org (wordpress.org)&amp;hellip; 66.155.40.250, 66.155.40.249
 Connecting to wordpress.org (wordpress.org)|66.155.40.250|:443&amp;hellip; connected.
 HTTP request sent, awaiting response&amp;hellip; 200 OK
 Length: 8912693 (8.5M) [application/zip]
-Saving to: &amp;rsquo;latest.zip'&lt;/p></description></item><item><title>同一台电脑双Github账号配置</title><link>/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</link><pubDate>Sat, 23 Jul 2022 13:35:10 +0800</pubDate><guid>/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</guid><description>&lt;p>因为用Hugo开了一个新Blog，然后原来github账号的blog我想一直保留，所以就有了2个github账号，这样放在一台电脑上就不好管理。&lt;/p>
+Saving to: &amp;rsquo;latest.zip'&lt;/p>
+&lt;p>latest.zip 100%[=====================================================================================================&amp;gt;] 8.50M 5.03MB/s in 1.7s&lt;/p>
+&lt;p>2017-10-14 03:46:07 (5.03 MB/s) - &amp;rsquo;latest.zip&amp;rsquo; saved [8912693/8912693]&lt;/p>
+&lt;p>从中可以看出，wget还会显示出下载的进度, 当前下载速度, 文件大小, 当前日期时间 以及待下载文件的名称.&lt;/p>
+&lt;p>在我们的例子中, wget会下载文件并以”latest.zip”为名存放到当前目录中.zip” name.&lt;/p>
+&lt;p>下载文件并重命名
+若你想以其他名称保存下载的文件，可以使用 -O 选项:&lt;/p>
+&lt;p>wget -O wordpress.zip &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
+>https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>wget会下载文件并以”wordpress.zip”为名存放到当前目录中.zip” name.&lt;/p>
+&lt;p>指定下载目录
+使用 -P 选项指定下载目录:&lt;/p>
+&lt;p>wget -P /opt/wordpress &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
+>https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>就会把文件下载到 /opt/wordpress 目录中.&lt;/p>
+&lt;p>限制下载速度
+当你下载大型文件时,可能耗时很长,这事你可以限制wget的下载速度以防止它把整个带宽都占满了.&lt;/p>
+&lt;p>下面命令就将下载速度限制在了每秒300k:&lt;/p>
+&lt;p>wget &amp;ndash;limit-rate=300k &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
+>https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>断点续传
+在下载大型文件时，可能会由于网络连接抖动造成下载中断.&lt;/p>
+&lt;p>为了避免重新下载，可以使用 -c 选项进行断点续传:&lt;/p>
+&lt;p>wget -c &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
+>https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>若下载中断后你没有用 -c 进行断点续传，而是重新下载, wget 会在文件名后加上 “.1” 防止与前面下载的文件重名.&lt;/p>
+&lt;p>后台下载
+当下载大型文件时, 可以使用 -b 选项让wget在后台下载文件.&lt;/p>
+&lt;p>wget -b &lt;a class="link" href="http://example.com/big-file.zip" target="_blank" rel="noopener"
+>http://example.com/big-file.zip&lt;/a>&lt;/p>
+&lt;p>输出内容会写入同目录下的 “wget-log” 文件, 这样你就可以用下面命令来检查下载状态了:&lt;/p>
+&lt;p>tail -f wget-log&lt;/p>
+&lt;p>设置重试次数
+若网络有问题导致下载时常中断,就可以使用 -tries 选项增加重试次数:&lt;/p>
+&lt;p>wget -tries=100 &lt;a class="link" href="https://example.com/file.zip" target="_blank" rel="noopener"
+>https://example.com/file.zip&lt;/a>&lt;/p>
+&lt;p>下载多文件
+若你想同时下载多个文件,你可以将要在的文件URL存放在一个文本文件中(假设该文件名为download.txt).&lt;/p>
+&lt;p>下面命令创建一个文本文件:&lt;/p>
+&lt;p>touch download.txt&lt;/p>
+&lt;p>然后可以用 nano 编辑该文件，输入所有想下载的文件URL:&lt;/p>
+&lt;p>nano download.txt&lt;/p>
+&lt;p>&lt;a class="link" href="http://example.com/file1.zip" target="_blank" rel="noopener"
+>http://example.com/file1.zip&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="http://example.com/file2.zip" target="_blank" rel="noopener"
+>http://example.com/file2.zip&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="http://example.com/file3.zip" target="_blank" rel="noopener"
+>http://example.com/file3.zip&lt;/a>&lt;/p>
+&lt;p>保存该文件, 然后使用 -i 选项下载文本文件中保存的所有文件:&lt;/p>
+&lt;p>wget -i download.txt&lt;/p>
+&lt;p>下载FTP文件
+wget还支持下载FTP文件，可以为它设置用户名和密码，如下所示:&lt;/p>
+&lt;p>wget &amp;ndash;ftp-user=username &amp;ndash;ftp-password=password ftp://url-to-ftp-file&lt;/p>
+&lt;p>下载整个网站
+你甚至可以用wget下载完整的站点, 然后进行离线浏览. 方法是使用如下命令:&lt;/p>
+&lt;p>wget &amp;ndash;mirror &amp;ndash;convert-links &amp;ndash;page-requisites &amp;mdash;-no-parent -P /path/to/download &lt;a class="link" href="https://example-domain.com" target="_blank" rel="noopener"
+>https://example-domain.com&lt;/a>&lt;/p>
+&lt;p>—mirror 会开启镜像所需要的所有选项.&lt;/p>
+&lt;p>–convert-links 会将所有链接转换成本地链接以便离线浏览.&lt;/p>
+&lt;p>–page-requisites 表示下载包括CSS样式文件，图片等所有所需的文件，以便离线时能正确地现实页面.&lt;/p>
+&lt;p>–no-parent 用于限制只下载网站的某一部分内容.&lt;/p>
+&lt;p>此外, 你可以使用 P 设置下载路径.&lt;/p></description></item><item><title>同一台电脑双Github账号配置</title><link>http://example.org/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</link><pubDate>Sat, 23 Jul 2022 13:35:10 +0800</pubDate><guid>http://example.org/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</guid><description>&lt;p>因为用Hugo开了一个新Blog，然后原来github账号的blog我想一直保留，所以就有了2个github账号，这样放在一台电脑上就不好管理。&lt;/p>
 &lt;p>因为github不支持同一个SSH绑定不同的github账号。这样如果我想用github A账号，我就要换成A账号的私钥，用github B账号就要换成B账号的密钥，挺麻烦的。于是网上找到教程，搞成功了。&lt;/p>
 &lt;p>第一步：假设已经有了A B密钥账号，分别保存在~/.ssh目录下，名字为id_rsa_public, id_rsa_private，当然公钥也是与之对应。&lt;/p>
 &lt;p>第二步：编辑 &lt;code>~/.ssh/config&lt;/code> 文件。如果该文件不存在的话，直接创建一个就好。里面的内容如下：&lt;/p>
@@ -539,7 +607,6 @@ Host github_public
 HostName ssh.github.com
 IdentityFile ~/.ssh/id_rsa_public
 port 22
-
 # private account
 Host github_private
 HostName ssh.github.com
@@ -556,12 +623,17 @@ Hi YOURNAME! You&amp;#39;ve successfully authenticated, but GitHub does not prov
 &lt;pre tabindex="0">&lt;code># 删除全局设置
 git config --global --unset user.name
 git config --global --unset user.email
-
 # 添加本地设置
 # 设置为私有仓库的GitHub账号邮箱和公有账号的GitHub邮箱。
 git config --local user.name xxxx
 git config --local user.email xxx
-&lt;/code>&lt;/pre>&lt;p>第六步，进入你的github项目根目录，然后执行命令&lt;/p></description></item><item><title>DABDA</title><link>/post/dabda/</link><pubDate>Sun, 17 Jul 2022 09:14:08 +0800</pubDate><guid>/post/dabda/</guid><description>&lt;p>from &lt;a href="https://twitter.com/cryptoismyjam/status/1548114053247012865">https://twitter.com/cryptoismyjam/status/1548114053247012865&lt;/a>&lt;/p>
+&lt;/code>&lt;/pre>&lt;p>第六步，进入你的github项目根目录，然后执行命令&lt;/p>
+&lt;pre tabindex="0">&lt;code>vi .git/config
+&lt;/code>&lt;/pre>&lt;p>如下图所示，将git@后面的域名替换成github_public. 这样改的原因是，当你push或者pull代码的时候，git会先去查找&lt;code>~/.ssh/config&lt;/code> 配置文件 可以按照你设置远程仓库时使用不同的 Host 名称，然后使用不同的SSH文件连接到Github，这样你就将是以不同的身份访问 GitHub 仓库。
+&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207231348934.png"
+loading="lazy"
+>&lt;/p></description></item><item><title>DABDA</title><link>http://example.org/post/dabda/</link><pubDate>Sun, 17 Jul 2022 09:14:08 +0800</pubDate><guid>http://example.org/post/dabda/</guid><description>&lt;p>from &lt;a class="link" href="https://twitter.com/cryptoismyjam/status/1548114053247012865" target="_blank" rel="noopener"
+>https://twitter.com/cryptoismyjam/status/1548114053247012865&lt;/a>&lt;/p>
 &lt;p>1/ The future of our funds is in limbo.&lt;/p>
 &lt;p>The company that told us &amp;ldquo;Banks are Not Your Friends&amp;rdquo; &amp;amp; &amp;ldquo;Unbank Yourself&amp;rdquo; violated our trust in a most egregious manner.&lt;/p>
 &lt;p>We are sad. Angry. Brokenhearted.&lt;/p>
@@ -570,15 +642,266 @@ git config --local user.email xxx
 &lt;p>告诉我们“银行不是你的朋友”和“你自己取消银行”的公司以最令人震惊的方式违反了我们的信任。&lt;/p>
 &lt;p>我们都很伤心。生气的。心碎了。&lt;/p>
 &lt;p>这是根据 Celsian&lt;/p>
-&lt;p>2/ I am not a licensed psychologist, nor do I seek to provide any clinical advice.&lt;/p></description></item><item><title>The Webb Space Telescope Will Rewrite Cosmic History. If It Works.</title><link>/post/the_webb_space_telescope_will_rewrite_cosmic_history/</link><pubDate>Wed, 13 Jul 2022 22:20:09 +0800</pubDate><guid>/post/the_webb_space_telescope_will_rewrite_cosmic_history/</guid><description>&lt;p>&lt;strong>《韦伯天文望远镜将会改写宇宙历史，如果它能正常工作的话》&lt;/strong>&lt;/p>
+&lt;p>2/ I am not a licensed psychologist, nor do I seek to provide any clinical advice.&lt;/p>
+&lt;p>I wrote V1 of this 🧵 a week or so after getting REKT on LUNA.&lt;/p>
+&lt;p>Now I&amp;rsquo;ve been REKT again by Celsius. Hence V2.&lt;/p>
+&lt;p>Writing my thoughts has helped me reflect &amp;amp; think clearly.&lt;/p>
+&lt;p>I hope it helps you too.&lt;/p>
+&lt;p>2/ 我不是有执照的心理学家，也不寻求提供任何临床建议。&lt;/p>
+&lt;p>在 LUNA 上获得 REKT 一周左右后，我写了这个🧵的 V1。&lt;/p>
+&lt;p>现在我又被摄氏REKT了。因此 V2。&lt;/p>
+&lt;p>写下我的想法帮助我清晰地思考和思考。&lt;/p>
+&lt;p>我希望它也能帮助你。&lt;/p>
+&lt;p>3/ “Should you shield the valleys from the windstorms, you would never see the beauty of their canyons.”&lt;/p>
+&lt;p>―Dr. Elizabeth Kübler-Ross&lt;/p>
+&lt;p>3/“如果你保护山谷免受暴风雨的侵袭，你将永远看不到峡谷的美丽。”&lt;/p>
+&lt;p>——博士伊丽莎白·库伯勒-罗斯&lt;/p>
+&lt;p>4/ The Five Stages of Grief, DABDA, were first introduced by Swiss Psychiatrist Elizabeth Kübler-Ross in her 1969 book &amp;ldquo;On Death &amp;amp; Dying.&amp;rdquo;&lt;/p>
+&lt;p>The 5 Stages:&lt;/p>
+&lt;ol>
+&lt;li>Denial&lt;/li>
+&lt;li>Anger&lt;/li>
+&lt;li>Bargaining&lt;/li>
+&lt;li>Depression&lt;/li>
+&lt;li>Acceptance&lt;/li>
+&lt;/ol>
+&lt;p>4/ 悲伤的五个阶段，DABDA，由瑞士精神病学家 Elizabeth Kübler-Ross 在她 1969 年的著作《论死亡与临终》中首次提出。&lt;/p>
+&lt;p>5个阶段：&lt;/p>
+&lt;ol>
+&lt;li>否认&lt;/li>
+&lt;li>愤怒&lt;/li>
+&lt;li>讨价还价
+4）抑郁症&lt;/li>
+&lt;li>验收&lt;/li>
+&lt;/ol>
+&lt;p>5/ In the simplest terms:&lt;/p>
+&lt;p>The book describes the emotional state of grieving individuals &amp;amp; how they make sense of their new reality.&lt;/p>
+&lt;p>book: 50th Anniversary Edition
+Fifty years after its original publication, a commemorative edition of “On Death &amp;amp; Dying” has now been published with a new introduction and updated resources section.&lt;/p>
+&lt;p>book link: &lt;a class="link" href="https://www.ekrfoundation.org/5-stages-of-grief/on-death-and-dying/" target="_blank" rel="noopener"
+>https://www.ekrfoundation.org/5-stages-of-grief/on-death-and-dying/&lt;/a>&lt;/p>
+&lt;p>5/ 用最简单的话来说：&lt;/p>
+&lt;p>这本书描述了悲伤个体的情绪状态以及他们如何理解他们的新现实。&lt;/p>
+&lt;p>6/ While DABDA was initially meant to describe the grief process for terminally-ill patients &amp;amp; their loved ones, the grief stages have since been expanded to include other personal losses or significant life-changes.&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;blockquote>
+&lt;p>Major rejection
+Breakups
+Loss of job/income&lt;/p>
+&lt;/blockquote>
+&lt;p>6/ 虽然 DABDA 最初旨在描述绝症患者及其亲人的悲痛过程，但此后悲痛阶段已扩大到包括其他个人损失或重大生活变化。&lt;/p>
+&lt;p>例如：&lt;/p>
+&lt;blockquote>
+&lt;p>主要拒绝
+分手
+失去工作/收入&lt;/p>
+&lt;/blockquote>
+&lt;p>7/ “The most beautiful ppl&amp;hellip;are those who have known&amp;hellip;loss &amp;amp; found their way out of the depths. These ppl have an appreciation &amp;amp; understanding of life that fills them w/ compassion, gentleness &amp;amp; a deep loving concern. Beautiful ppl do not just happen.”
+― Elizabeth Kübler-Ross&lt;/p>
+&lt;p>7/“最美丽的人……是那些知道……失落并从深渊中找到出路的人。这些人对生活充满了欣赏和理解，这让他们充满了同情、温柔和深切的关爱。美丽的人不只是发生。”
+——伊丽莎白·库伯勒-罗斯&lt;/p>
+&lt;p>8/ DENIAL - Stage 1&lt;/p>
+&lt;p>The first step. Shock. There must be a mistake.&lt;/p>
+&lt;p>Cling to false hope. Keep trying!&lt;/p>
+&lt;p>Isolate away from anyone that might understand what&amp;rsquo;s actually going on.&lt;/p>
+&lt;p>8/ 否认——第一阶段&lt;/p>
+&lt;p>第一步。震惊。肯定弄错了。&lt;/p>
+&lt;p>坚持虚假的希望。继续尝试！&lt;/p>
+&lt;p>与任何可能了解实际情况的人隔离开来。&lt;/p>
+&lt;p>9/ MY DENIAL&lt;/p>
+&lt;p>I&amp;rsquo;d just landed from
+@consensus2022
+&amp;amp; turned on my phone to see my notifications - Celsius halts ALL withdrawals.&lt;/p>
+&lt;p>I&amp;rsquo;d been in such deep depression from being REKT on $LUNA I hadn&amp;rsquo;t begun to consider the aftershocks.&lt;/p>
+&lt;p>It&amp;rsquo;s Fine. I&amp;rsquo;m Fine. We&amp;rsquo;re going to be FINE.&lt;/p>
+&lt;p>9/ 我的否认&lt;/p>
+&lt;p>我刚从
+@consensus2022
+降落并打开手机查看我的通知 - 摄氏停止所有提款。&lt;/p>
+&lt;p>在$LUNA上被 REKT 后，我一直处于如此严重的沮丧之中，我还没有开始考虑余震。&lt;/p>
+&lt;p>没关系。我很好。我们会没事的。&lt;/p>
+&lt;p>10/ ANGER - Stage 2&lt;/p>
+&lt;p>Once the realization of what&amp;rsquo;s actually happening occurs.&lt;/p>
+&lt;p>Being in denial is no longer possible.&lt;/p>
+&lt;p>Mad at the world. Who to blame?&lt;/p>
+&lt;p>You might want to scream or throw something.&lt;/p>
+&lt;p>10/ 愤怒 - 第 2 阶段&lt;/p>
+&lt;p>一旦意识到实际发生的事情发生。&lt;/p>
+&lt;p>不再可能拒绝。&lt;/p>
+&lt;p>对世界发狂。怪谁？&lt;/p>
+&lt;p>你可能想尖叫或扔东西。&lt;/p>
+&lt;p>11/ MY ANGER&lt;/p>
+&lt;p>I&amp;rsquo;m an avid DeFi user.&lt;/p>
+&lt;p>I understand &amp;ldquo;Not Your Keys, Not Your Crypto&amp;rdquo;&lt;/p>
+&lt;p>I should have seen the signs.&lt;/p>
+&lt;p>Add a divided community, mixed messages from
+@SimonDixonTwitt
+/
+@TheRealPlanC
+&amp;amp; silence from
+@Mashinsky
+&amp;hellip;&lt;/p>
+&lt;p>I was mad - at everyone, but mostly at myself.&lt;/p>
+&lt;p>11/我的愤怒&lt;/p>
+&lt;p>我是一个狂热的 DeFi 用户。&lt;/p>
+&lt;p>我理解“不是您的密钥，不是您的加密货币”&lt;/p>
+&lt;p>我应该看到的迹象。&lt;/p>
+&lt;p>添加一个分裂的社区，来自
+@SimonDixonTwitt
+/
+@TheRealPlanC
+的混合消息和来自
+@Mashinsky
+的沉默&amp;hellip;&amp;hellip;&lt;/p>
+&lt;p>我很生气——对每个人，但主要是对我自己。&lt;/p>
+&lt;p>12/ BARGAINING - Stage 3&lt;/p>
+&lt;p>At this stage, you might feel a sense of hope that your suffering can be avoided &amp;ldquo;if.&amp;rdquo;&lt;/p>
+&lt;p>You might pray to a higher power.&lt;/p>
+&lt;p>You&amp;rsquo;ll do anything to stop the grief.&lt;/p>
+&lt;p>12/ 讨价还价 - 第 3 阶段&lt;/p>
+&lt;p>在这个阶段，您可能会感到一种希望，即“如果”可以避免您的痛苦。&lt;/p>
+&lt;p>你可以祈求更高的力量。&lt;/p>
+&lt;p>你会做任何事情来阻止悲伤。&lt;/p>
+&lt;p>13/ MY BARGAINING&lt;/p>
+&lt;p>Enter #CELShortSqueeze&lt;/p>
+&lt;p>I read
+@otisa502
+&amp;rsquo;s 🧵 &amp;amp; I had hope.&lt;/p>
+&lt;p>I couldn&amp;rsquo;t sit on my hands &amp;amp; get REKT again. Not after $LUNA. I would do anything to help avoid that crippling pain for me &amp;amp; the Celsius community.&lt;/p>
+&lt;p>I had to do something to make a difference.&lt;/p>
+&lt;p>13/ 我的讨价还价&lt;/p>
+&lt;p>输入#CELShortSqueeze&lt;/p>
+&lt;p>我读了
+@otisa502
+的🧵并且我有希望。&lt;/p>
+&lt;p>我不能坐在我的手上再次获得 REKT。不在$LUNA之后。我会做任何事情来帮助避免对我和摄氏社区造成严重的痛苦。&lt;/p>
+&lt;p>我必须做点什么才能有所作为。&lt;/p>
+&lt;p>14/ DEPRESSION - Stage 4&lt;/p>
+&lt;p>Reliving the past over &amp;amp; over again.&lt;/p>
+&lt;p>Melancholy. Despair. Isolation from loved ones.&lt;/p>
+&lt;p>You refuse to socialize.&lt;/p>
+&lt;p>What&amp;rsquo;s the point?&lt;/p>
+&lt;p>14/ 抑郁——第 4 阶段&lt;/p>
+&lt;p>一遍又一遍地重温过去。&lt;/p>
+&lt;p>忧郁。绝望。与亲人隔离。&lt;/p>
+&lt;p>你拒绝社交。&lt;/p>
+&lt;p>重点是什么？&lt;/p>
+&lt;p>15/ MY DEPRESSION&lt;/p>
+&lt;p>I was still depressed over $LUNA when my funds were locked on Celsius.&lt;/p>
+&lt;p>Rugged on two projects in a row? Talk about a pretty devastating blow to my ego AND my portfolio.&lt;/p>
+&lt;p>The thought of crypto made me sick. I wanted to leave the space &amp;amp; never come back.&lt;/p>
+&lt;p>15/ 我的抑郁症&lt;/p>
+&lt;p>当我的资金被锁定在摄氏度时，我仍然对$LUNA感到沮丧。&lt;/p>
+&lt;p>连续完成两个项目？谈论对我的自我和我的投资组合的毁灭性打击。&lt;/p>
+&lt;p>加密的想法让我感到恶心。我想离开这个空间，再也不回来了。&lt;/p>
+&lt;p>16/ ACCEPTANCE - Stage 5&lt;/p>
+&lt;p>The progress of moving on begins at this stage.&lt;/p>
+&lt;p>You accept the reality of the loss.&lt;/p>
+&lt;p>Emotions begin to stabilize. You pick up the pieces.&lt;/p>
+&lt;p>You might feel a sense of calm.&lt;/p>
+&lt;p>16/ 接受 - 第 5 阶段&lt;/p>
+&lt;p>继续前进的进程从这个阶段开始。&lt;/p>
+&lt;p>你接受损失的现实。&lt;/p>
+&lt;p>情绪开始稳定。你收拾残局。&lt;/p>
+&lt;p>你可能会感到平静。&lt;/p>
+&lt;p>17/ MY ACCEPTANCE&lt;/p>
+&lt;p>The day after Celsius blocked withdrawals, I forced myself to consider my $BTC gone forever.&lt;/p>
+&lt;p>I cannot control this outcome. Though I am an optimist, I know it will be years before seeing any funds.&lt;/p>
+&lt;p>I will focus my time &amp;amp; energy finding ways to rebuild.&lt;/p>
+&lt;p>17/ 我的接受&lt;/p>
+&lt;p>在摄氏阻止提款后的第二天，我强迫自己认为我的$BTC永远消失了。&lt;/p>
+&lt;p>我无法控制这个结果。虽然我是一个乐观主义者，但我知道要看到任何资金都需要数年时间。&lt;/p>
+&lt;p>我将集中我的时间和精力寻找重建的方法。&lt;/p>
+&lt;p>18/ I know you are hurting. I am too. I wish I could rewind the clock &amp;amp; pretend like none of this ever happened.&lt;/p>
+&lt;p>But don&amp;rsquo;t beat yourself up. This is not your fault.&lt;/p>
+&lt;p>You did the best you could with the knowledge you had at the time.&lt;/p>
+&lt;p>18/ 我知道你很痛苦。我也是。我希望我可以倒带时钟并假装这一切都没有发生过。&lt;/p>
+&lt;p>但不要自暴自弃。这不是你的错。&lt;/p>
+&lt;p>你用你当时所拥有的知识尽了最大的努力。&lt;/p>
+&lt;p>19/ Where do we go from here? For me, that looks like:&lt;/p>
+&lt;blockquote>
+&lt;p>Staying apprised of Celsius/Ch. 11 news.&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>What lessons am I meant to learn?&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>Is there a silver lining? (this might take a while to figure out)&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>How can I increase my income to rebuild?&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>Red flags to look for next time?&lt;/p>
+&lt;/blockquote>
+&lt;p>19/ 我们从这里去哪里？对我来说，这看起来像：&lt;/p>
+&lt;blockquote>
+&lt;p>随时了解摄氏/Ch。 11 条新闻。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>我应该学习什么课程？&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>有一线希望吗？ （这可能需要一段时间才能弄清楚）&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>我怎样才能增加收入来重建？&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>下次要寻找的危险信号？&lt;/p>
+&lt;/blockquote>
+&lt;p>20/ Let&amp;rsquo;s also take a moment to appreciate the resilience of our community.&lt;/p>
+&lt;p>Whether it be marathon 12 hour Twitter Spaces/therapy sessions hosted by
+@otisa502
+or seeing FTX w/ only 380 $CEL cuz #CELShortSqueeze, I&amp;rsquo;m continually amazed by Celsians.&lt;/p>
+&lt;p>20/ 让我们也花一点时间来欣赏我们社区的复原力。&lt;/p>
+&lt;p>无论是由
+@otisa502
+主持的马拉松式 12 小时 Twitter 空间/治疗课程，还是仅看到 380 $CEL cuz #CELShortSqueeze的 FTX，我都对 Celsians 感到惊讶。&lt;/p>
+&lt;p>21/ I&amp;rsquo;m no expert on BK laws but Ch. 11 is NOT Ch. 7.&lt;/p>
+&lt;p>This isn&amp;rsquo;t over.&lt;/p>
+&lt;p>I truly believe that this experience will introduce new opportunities into our lives if only we reach out &amp;amp; take them 🙏&lt;/p>
+&lt;p>It’s ok, it’s ok, it’s ok, it’s ok&lt;/p>
+&lt;p>Nightbirde sings it best: &lt;a class="link" href="https://www.youtube.com/watch?v=CZJvBfoHDk0&amp;amp;ab_channel=America%27sGotTalent" target="_blank" rel="noopener"
+>https://www.youtube.com/watch?v=CZJvBfoHDk0&amp;ab_channel=America%27sGotTalent&lt;/a>&lt;/p>
+&lt;p>22/ “There are no mistakes, no coincidences. All events are blessings given to us to learn from.”&lt;/p>
+&lt;p>― Elizabeth Kubler-Ross, M.D.&lt;/p>
+&lt;p>22/“没有错误，没有巧合。所有的事件都是赐予我们学习的祝福。”&lt;/p>
+&lt;p>——伊丽莎白·库布勒-罗斯，医学博士&lt;/p>
+&lt;p>23/ Depression hotline numbers you can call:&lt;/p>
+&lt;blockquote>
+&lt;p>National Suicide Prevention Lifeline: 800-273-8255 (TALK)
+SAMHSA: 800-662-4357 (HELP)
+Samaritans: 877-870-4673 (HOPE) (call or text)
+Crisis Text Line: Text “HOME” to 741741
+Friendship Line: 800-971-0016&lt;/p>
+&lt;/blockquote>
+&lt;p>24/ “You will not ‘get over’ the loss&amp;hellip;you will learn to live with it. You will heal &amp;amp; you will rebuild yourself around the loss you have suffered. You will be whole again but you will never be the same. Nor should you be the same nor would you want to.”&lt;/p>
+&lt;p>― Elizabeth Kubler-Ross&lt;/p>
+&lt;p>24/“你不会‘克服’失去的……你会学会忍受它。你会痊愈，你会围绕你所遭受的损失重建自己。你会再次完整，但你永远不会是原来的样子。你也不应该和你一样，你也不想这样。”&lt;/p>
+&lt;p>——伊丽莎白·库布勒-罗斯&lt;/p>
+&lt;p>luna: &lt;a class="link" href="https://twitter.com/cryptoismyjam/status/1526662250559246336" target="_blank" rel="noopener"
+>https://twitter.com/cryptoismyjam/status/1526662250559246336&lt;/a>&lt;/p></description></item><item><title>The Webb Space Telescope Will Rewrite Cosmic History. If It Works.</title><link>http://example.org/post/the_webb_space_telescope_will_rewrite_cosmic_history/</link><pubDate>Wed, 13 Jul 2022 22:20:09 +0800</pubDate><guid>http://example.org/post/the_webb_space_telescope_will_rewrite_cosmic_history/</guid><description>&lt;p>&lt;strong>《韦伯天文望远镜将会改写宇宙历史，如果它能正常工作的话》&lt;/strong>&lt;/p>
 &lt;p>作者：娜塔莉·沃尔乔弗&lt;/p>
-&lt;p>和菜头整理,谷歌翻译: &lt;a href="https://mp.weixin.qq.com/s/YSEmlentq3pwhLsNIfT8Dw">https://mp.weixin.qq.com/s/YSEmlentq3pwhLsNIfT8Dw&lt;/a>&lt;/p>
-&lt;p>原文地址: &lt;a href="https://www.quantamagazine.org/why-nasas-james-webb-space-telescope-matters-so-much-20211203">https://www.quantamagazine.org/why-nasas-james-webb-space-telescope-matters-so-much-20211203&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222330.png" alt="">&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222329.png" alt="">&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222328.png" alt="">&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222327.png" alt="">&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222325.png" alt="">&lt;/p>
+&lt;p>和菜头整理,谷歌翻译: &lt;a class="link" href="https://mp.weixin.qq.com/s/YSEmlentq3pwhLsNIfT8Dw" target="_blank" rel="noopener"
+>https://mp.weixin.qq.com/s/YSEmlentq3pwhLsNIfT8Dw&lt;/a>&lt;/p>
+&lt;p>原文地址: &lt;a class="link" href="https://www.quantamagazine.org/why-nasas-james-webb-space-telescope-matters-so-much-20211203" target="_blank" rel="noopener"
+>https://www.quantamagazine.org/why-nasas-james-webb-space-telescope-matters-so-much-20211203&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222330.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222329.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222328.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222327.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222325.png"
+loading="lazy"
+>&lt;/p>
 &lt;p>回首宇宙的幼年，见证第一颗星星的闪烁，你必须先磨出一面房子那么大的镜子。它的表面必须非常光滑，如果镜子是一个大陆的比例，它的特征就不会超过脚踝高度的山丘或山谷。只有一面如此巨大和光滑的镜子才能收集和聚焦来自天空中最远星系的微弱光线——这些光线很久以前就离开了它的源头，因此显示了宇宙年轻时在远古时代出现的星系。我们所能看到的最微弱、最远的星系仍在诞生的过程中，那时神秘的力量在黑暗中合谋，第一批恒星开始发光。&lt;/p>
 &lt;p>但要阅读宇宙历史的早期篇章——了解那些第一批恒星的性质，可能是巨大的恒星，了解引力诱使它们形成的不可见物质，磁力和湍流的作用，以及巨大的黑洞成长并进入星系中心——一个特殊的镜子是远远不够的。&lt;/p>
 &lt;p>之所以没有人看到星系形成的时代，是因为古老的星光在穿过不断膨胀的空间结构到达我们这里数十亿年之后，变得拉长了。天空中最远的恒星喷出的紫外线和可见光在这里的旅程中被拉长到大约 20 倍的波长，变成了红外线辐射。但红外光是一种我们称之为热的原子抖动光，与我们的身体、大气和脚下的地面辐射的热相同。唉，这些局部热源淹没了原始恒星可怜的火焰。要感知这些恒星，带有完美大镜子的望远镜必须非常冷。它必须发射到太空中。&lt;/p>
@@ -594,9 +917,107 @@ git config --local user.email xxx
 &lt;p>“请工作，”Tremblay 补充道，他的眼睛向上飘动。&lt;/p>
 &lt;p>&lt;strong>从光滑到块状&lt;/strong>&lt;/p>
 &lt;p>美国宇航局上一次发射如此重要的天文台——哈勃太空望远镜，是在 1990 年——那是一场灾难。“绝对是灾难性的”，资深天文学家桑德拉·法伯告诉我。Faber 所在的团队在马里兰州格林贝尔特的 NASA 戈达德太空飞行中心露营，以诊断这种疾病。从哈勃的一张照片中的一颗恒星看起来像一个环，她和一位同事推断，主镜 - 将光线反射到副镜，然后将其反射到相机镜头的大凹面镜 - 没有被研磨降低到非常合适的凹度以聚焦光线；它在边缘周围太厚了半个波长。如果主镜和副镜在发射前一起测试过，这种像差就会被注意到，但在急于将拖延已久且超预算的望远镜升空的过程中，这种测试从未发生过。&lt;/p>
-&lt;p>一些 NASA 领导人呼吁放弃望远镜，这已经是一个有争议的项目。相反，马里兰州参议员芭芭拉·米库尔斯基获得了救援任务的资金。修复它是可能的，因为作为对彩虹颜色而不是红外光敏感的光学望远镜，哈勃可以从仅 340 英里高的低地球轨道获得清晰的视野，而不必走一百万英里远. 1993 年，航天飞机与哈勃对接，宇航员安装了一种隐形眼镜。望远镜将继续彻底改变天文学和宇宙学。&lt;/p></description></item><item><title>Advice for lack of discipline</title><link>/post/advice_for_lack_of_discipline/</link><pubDate>Sun, 26 Jun 2022 12:55:34 +0800</pubDate><guid>/post/advice_for_lack_of_discipline/</guid><description>&lt;p>&amp;ldquo;If you lack discipline, open this&amp;rdquo;&lt;/p>
+&lt;p>一些 NASA 领导人呼吁放弃望远镜，这已经是一个有争议的项目。相反，马里兰州参议员芭芭拉·米库尔斯基获得了救援任务的资金。修复它是可能的，因为作为对彩虹颜色而不是红外光敏感的光学望远镜，哈勃可以从仅 340 英里高的低地球轨道获得清晰的视野，而不必走一百万英里远. 1993 年，航天飞机与哈勃对接，宇航员安装了一种隐形眼镜。望远镜将继续彻底改变天文学和宇宙学。&lt;/p>
+&lt;p>在 20 世纪的大部分时间里，关于宇宙的最重要的问题也许是它是否有一个开端，或者它是否一直如此。威斯康星大学麦迪逊分校的天文学家和名誉教授杰伊·加拉格尔说，对于英国宇宙学家弗雷德·霍伊尔和其他后一种“稳态”理论的信徒来说，“令人信服的逻辑很简单”。“在某一时刻发生了一些变化，宇宙创造了物质，为什么一定要这样呢？” 稳态的支持者霍伊尔将他的对手对“大爆炸”（他称之为“大爆炸”）的信念归因于《创世纪》的影响。&lt;/p>
+&lt;p>然后是 1964 年新泽西州贝尔实验室的无线电天线发出嘶嘶声。这种嘶嘶声是由来自天空各处的微波产生的，正如大爆炸理论所预测的那样。（随着炽热、稠密的宇宙冷却，在早期相变中释放出光。）所谓的宇宙微波背景的发现并没有立即结束争论——像霍伊尔这样的稳态人不相信它的解释并坚持几十年来，他们的理论。但对于其他人，当他们看到大爆炸的余辉时，他们就认出了它，CMB创造了一个谜。来自天空各个部分的微波近乎完美的均匀性表明新生的宇宙非常光滑——一种物质的泥浆。“令人困惑的是，我们今天看到了一个非常凹凸不平的宇宙，”费伯说，他是 60 年代后期研究星系的研究生。“因此，了解星系的第一个挑战是了解宇宙是如何从光滑变为凹凸不平的。”&lt;/p>
+&lt;p>宇宙学家知道原子一定是由于重力逐渐聚集在一起，最终分裂成恒星和星系等结构。但在纸面上，结构的增长似乎会异常缓慢。不仅物质最初分布平稳，因此不会被引力拉向特定的方向，而且空间的膨胀和光本身产生的压力都会起到分离物质的作用，抵消其微弱的引力。&lt;/p>
+&lt;p>进入暗物质。在 1970 年代，华盛顿卡内基研究所的维拉·鲁宾观察到，星系外围的旋转速度比预期的要快得多，就好像被一些额外的、看不见的引力源鞭打一样。这一关于星系内部和周围大量缺失物质（被称为暗物质）的证据与弗里茨·兹维克（Fritz Zwicky）在 1930 年代的观察结果相吻合，即星系之间的相互吸引似乎超过了仅基于其发光物质的应有程度。同样在 70 年代，普林斯顿大学的 Jim Peebles 和 Jerry Ostriker计算出，仅由恒星、气体和尘埃组成的旋转星系盘会变得不稳定并膨胀成球体；他们假设不可见的物质一定会产生更强的引力井，可见圆盘在其中旋转。1979 年，Faber 和 Gallagher 写道一篇有影响力的论文汇编了暗物质的所有证据，他们将暗物质与宇宙中大约 90% 的物质挂钩。（目前的估计约为 85%。）&lt;/p>
+&lt;p>这些研究人员意识到，具有巨大引力和不受光压影响的暗物质可能在早期宇宙中相对较快地聚集在一起。皮布尔斯获得了2019 年诺贝尔物理学奖的一半由于他对宇宙学的贡献，他绘制了一幅定性图景，其中暗物质粒子会聚集在一起形成团块（称为光晕），然后组合成越来越大的团块。英国天体物理学家西蒙怀特在 1980 年代的原始计算机模拟中展示了这种“分层聚类”过程。虽然当时可见物质过于复杂而无法模拟，但研究人员推测，聚集的暗物质会带来发光物质：聚集在暗物质光晕中，原子会碰撞在一起，加热，沉入中心，最终引力坍缩成恒星和圆盘状星系。&lt;/p>
+&lt;p>尽管大多数宇宙学家对这张图深信不疑，但一个大问题是物质密度的变化最初是如何产生的，从而启动了引力聚集过程。“人们不清楚什么是宇宙结构形成的合理初始条件，”现已退休并居住在德国的怀特通过 Zoom 告诉我。“你可以运行这些模拟，但一开始你不知道应该输入什么。”&lt;/p>
+&lt;p>1979 年，宇宙学家艾伦·古斯 (Alan Guth) 在他的笔记本上潦草地写着“壮观的实现”。他计算过，如果宇宙在大爆炸开始时突然像气球的表面一样爆炸，这就可以解释它是如何变得如此巨大、如此光滑和平坦的。宇宙暴胀，正如古斯所说的原始增长突增，作为大爆炸的附加物迅速流行起来。宇宙学家很快注意到，在暴胀期间，随着空间爆炸，空间结构中的量子涨落会被冻结，从而在整个宇宙中产生细微的密度变化。通货膨胀造成的假定密集点可能是未来结构的种子。&lt;/p>
+&lt;p>这些微小的密度变化确实在 1990 年代初期在 CMB 中进行了测量——这一壮举为韦伯望远镜的顶级科学家约翰·马瑟赢得了诺贝尔奖。但即使在它们被测量之前，像 Faber 这样的人就已经将这些密集点加入了情节中。1984 年，她和三位合著者在《自然》杂志上发表了一篇将所有内容串联起来的论文。她说：“这是对通货膨胀如何产生波动以及这些波动后来对星系产生的影响的第一个简明扼要的描述。”&lt;/p>
+&lt;p>但这个故事从头到尾都是推测性的。即使它大体上是正确的，关键日期和细节也是未知的。&lt;/p>
+&lt;p>哈勃望远镜最有影响力的发现之一，也是建造其继任者韦伯望远镜的主要动力，发生在 1995 年，即安装校正透镜两年后。时任巴尔的摩太空望远镜科学研究所所长的鲍勃·威廉姆斯（Bob Williams）是哈勃的运营中心，也是韦伯的运营中心，在一些博士后的建议下，他决定将所有 100 小时的“所长自由支配时间”用于可以将哈勃指向他想要的任何地方，将它指向任何东西——一片黑暗、毫无特色的小天空，比缩略图中的月亮还窄。这个想法是寻找任何可能隐藏在不太敏感的望远镜范围之外的令人难以置信的微弱、遥远的物体。&lt;/p>
+&lt;p>同事们认为这是一种浪费。已故的约翰·巴考尔试图说服威廉姆斯不要这样做。Bahcall 和他的妻子 Neta Bahcall 是著名的天体物理学家，他们通常认为恒星和星系等结构在宇宙历史上相对较晚才出现。如果是这样，那么试图解析微弱、遥远、很久以前的物体是行不通的，因为它们都不存在。Bahcalls 和许多其他理论家认为威廉姆斯的照片会变暗。&lt;/p>
+&lt;p>但在 100 小时的曝光过程中，一个宝箱的盖子打开了：这个小长方形的空间闪烁着成千上万个形状、大小和颜色各异的星系。天文学家惊呆了。&lt;/p>
+&lt;p>哈勃深场照片中更远的星系看起来更红，因为它们的光穿过膨胀的空间到达这里的时间更长，因此被拉伸或“红移”到更长的波长。通过这种颜色编码，深场图像提供了宇宙的 3D 视图和星系演化的时间线。星系出现在所有年龄和发展阶段——证明宇宙随着时间的推移发生了根本性的变化。“稳态理论消失了，再也听不见了，”费伯说。“这是一个伟大的智力突破，你可以用望远镜拍一张照片，你可以回顾过去，你可以看到当时的宇宙是不同的野兽。” &lt;/p>
+&lt;p>这张照片显示，宇宙中明亮物体的形成速度远远快于大多数专家的预期。这支持了这样的理论，即它们不是仅靠重力形成的，而是在合并的暗物质晕的背后携带的。 &lt;/p>
+&lt;p>早期的星系看起来很奇怪——小而凌乱，就像需要数十亿年才能长成天鹅的丑小鸭。“今天拥有美丽[螺旋和椭圆星系]的美丽宇宙确实是一种后期发展，”费伯说，“这在图片中也很明显。” 一些小鸭星系正在碰撞和合并，支持宇宙结构增长的层次聚类理论。很久以前星系中的星团异常明亮，表明这些恒星比现代太阳型恒星更大更亮。 &lt;/p>
+&lt;p>天文学家观察到，大多数星系的光度达到峰值，形成恒星的速度最快，大约在“红移 2”附近——光到达这里时已经拉伸到其发射波长的两倍，相当于大爆炸后约 20 亿年。在那之后，由于现在被认为与生长在星系中心的神秘超大质量黑洞有关的原因，许多星系变暗了。 &lt;/p>
+&lt;p>然而，在深场照片中可见的星系演化时间线最引人注目的是，看不到起点。就哈勃的玻璃眼所见，有星系。在宇航员后来安装在望远镜上的升级相机拍摄的更深场照片中，暂时发现了红移 10 的光斑，这相当于大爆炸后约 5 亿年。现在认为，结构很可能在数亿年前就开始形成。&lt;/p>
+&lt;p>但是，处于形成过程中的星系，它们的物质首次以某种方式分裂成恒星，对于哈勃望远镜来说既太远太微弱，又太红移了：来自这些星系的光已经直接从可见光部分延伸出来了。电磁波谱和红外线。要看到它们，我们需要一个更大的红外感应望远镜。&lt;/p>
+&lt;p>“哈勃在哈勃深场上的成功之处在于发现存在红移的星系比我们想象的要高得多，”Neta Bahcall 告诉我。“詹姆斯韦伯的一个问题是它是什么时候开始的，它是怎么开始的这么早的。&lt;/p>
+&lt;p>&lt;strong>行星出没的地方&lt;/strong>&lt;/p>
+&lt;p>1995 年 10 月，在哈勃无视任何东西并瞥见时间历史的两个月前，瑞士天文学家米歇尔·马约尔在意大利佛罗伦萨的一次会议上宣布了另一项重大发现：他和他的研究生 Didier Queloz 发现了一颗行星绕着另一颗行星运行。星星。&lt;/p>
+&lt;p>在市长演讲的礼堂后面，当时来自加利福尼亚的研究生娜塔莉·巴塔利亚（Natalie Batalha）未能意识到她刚刚听到的内容的重要性。“这些事情是如何发生的很有趣，因为回想起来这是一个关键时刻，”巴塔利亚最近说，在她的虚拟背景中，三颗行星围绕一颗恒星运行。“这是这个系外行星探索新时代的曙光，但也是我生命中的一个转变时刻，我还不知道。”&lt;/p>
+&lt;p>当时，寻找系外行星是一潭死水，Mayor 和 Queloz 的方法似乎遥遥无期. 使用光谱仪，将星光分成其颜色成分，他们监测了 100 多颗类似太阳的恒星，希望检测到多普勒频移，即当物体接近或后退时，物体看起来更蓝或更红。这可能表明恒星正在摇晃，因为它受到轨道行星引力的干扰。这项技术似乎有些牵强，因为一颗行星必须非常重并且靠近它的主恒星，才能让恒星摇晃到足以用最好的光谱仪看到。然而，当 Mayor 和 Queloz 观察 51 Pegasi，一颗 50 光年外的类太阳恒星时，摆动是巨大的：排除其他可能性后，他们确定一颗木星大小的行星每 4.2 天围绕恒星旋转一次，距离比它近 8 倍。水星与我们太阳的距离。&lt;/p>
+&lt;p>Mayor 和 Queloz 不仅获得了一颗系外行星（最终获得了与 Peebles 分享的 2019 年诺贝尔物理学奖的另一半），而且这颗行星本身，51 Pegasi b，单枪匹马地颠覆了教科书对太阳系是什么的理解喜欢。正如行星科学家海蒂·哈梅尔所说，“我们被教导了一个关于太阳系如何形成的可爱童话故事”，这个故事旨在解释为什么岩石行星靠近恒星，而巨大的气体和冰行星形成很远。那么飞马座 51 b，一颗“热木星”，实际上在吃草它的太阳是什么？ &lt;/p>
+&lt;p>巴塔利亚记得佛罗伦萨的观众对市长演讲的反应——沉默。不过，很快，怀疑论就让位于更多热木星的发现。随着望远镜和技术的改进，其他系外行星也出现了。在佛罗伦萨的那一天之后的 16 年，巴塔利亚将带领美国宇航局团队发现第一颗已确认的岩石系外行星开普勒 10b。&lt;/p>
+&lt;p>Batalha（当时的 Natalie Stout）在加利福尼亚的东湾长大，几乎没有想过科学，尽管在 17 岁时，她对 1983 年 Sally Ride 的太空之旅感到兴奋。虽然她的父母都没有上过大学，但她还是被大学录取了。加州大学伯克利分校，进入商科专业。但随后，当她在大二的一个周末洗衣服时，她记得突然对自己说：“忘记人才，忘记资源。如果我可以在世界上做任何事情，那会是什么？令人惊讶的是，我立即得到了答案，那就是为太空计划工作。”&lt;/p>
+&lt;p>她报名参加了物理课。她挣扎，但爱它。Batalha 说，每天发生的事情都可以用数学方程式来解释，“这让我的生活有了意义”。“这让我以不同的方式看待自己在宇宙中的位置。我想，如果你能写出一个方程式来解释薄膜的干扰”——油坑产生彩虹闪光的原因——“我们对自然界的了解有什么限制？” &lt;/p>
+&lt;p>Batalha 认为她会以某种方式将科学与商业结合起来。她继续上课，然后在怀俄明州红外天文台进行暑期实习，这是为数不多的地面红外望远镜之一。当她到达那里时，她告诉她的顾问和同事，她不像他们，她不打算成为一名科学家。但当她的顾问给她一个问题要解决时，她解决了这个问题，后来出版了，他告诉她“不要卖空自己”，她说，并在她回到伯克利时敲敲 Gibor Basri 的门。&lt;/p>
+&lt;p>恒星天文学家巴斯里让她从事分析恒星光谱的工作。亲身体验科学方法让她着迷。她还爱上了她的办公室伙伴，Basri 的博士后 Celso Batalha。她嫁给了他，在加州大学圣克鲁斯分校读了天文学研究生，并相继生了一个儿子诺兰和女儿娜塔莎。后面还会跟着两个孩子。这些年来，她和巴西人 Celso Batalha 一家人在加利福尼亚和里约热内卢之间来回搬家。里约的生活美好而复杂；她记得开车经过一些贫民窟，看到路边有一具烧焦的尸体。他们最终定居在湾区。 &lt;/p>
+&lt;p>考虑到自己主要是一位从事天文学的母亲，巴塔利亚从未参加过会议。但当她被邀请在 1995 年秋天在维也纳举行的一次恒星光谱会议上展示星点的新数据时，她破例了，带着她的父母去欧洲照顾她最小的孩子。她决定留下来参加下周在佛罗伦萨举行的另一场关于行星的会议。在第二次会议的最后一天，Batalha 注意到一台电视摄像机正在设置一个演讲，该演讲已在最后一分钟被添加到日程表中。“然后米歇尔市长站起来，漫不经心地谈论这个星球的发现，”她说。 &lt;/p>
+&lt;p>起初，巴塔利亚对新发现的热木星很少考虑，并一直在研究圣克鲁斯的星点。大约一年后，她听说美国宇航局位于硅谷的艾姆斯研究中心有一位名叫比尔·博鲁基的科学家，他决心建造一个能够探测岩石、地球大小的系外行星的太空望远镜，而不仅仅是气态巨行星。Borucki 计划使用凌日法：他不会像 Mayor 和 Queloz 那样跟踪星光颜色的变化，而是会寻找由在恒星前方穿过的轨道行星造成的星光强度的周期性下降，阻挡一小部分它的光。&lt;/p>
+&lt;p>巴塔利亚认为这行不通。正如她碰巧知道的那样，星点的大小与地球差不多。所以她认为一颗小的凌日行星与一个在旋转恒星上扫过的星点无法区分。她就这个问题写信给博鲁基。他回信说，美国宇航局拒绝了他的提议，部分原因就是这个原因，她会来艾姆斯和他一起研究如何区分恒星和岩石世界吗？ &lt;/p>
+&lt;p>她愿意，他们做到了。下一次，NASA 批准了 Borucki 的提议，而 Batalha 成为了项目科学家。2009 年 3 月，由 Borucki 和他的团队设计的开普勒太空望远镜发射升空，用于持续监测大约 150,000 颗恒星的亮度以寻找凌日行星的倾角。Batalhas 带着四个孩子前往佛罗里达州卡纳维拉尔角进行发射。&lt;/p>
+&lt;p>开普勒在地球大小的行星上交付。“开普勒 10b 是在我们从航天器返回的前 10 天数据中发现的，”巴塔利亚说。当他们绘制主星的亮度随时间变化的曲线时，眼睛可以看到下降。来自地面的后续观察证实它是一颗真正的行星，并且根据它的质量和半径，它必须是岩石的。Batalha 在 2011 年 1 月提出了明确的检测结果，此前欧洲天文学家对一颗岩石系外行星标记为 CoRoT-7b 进行了更初步的声明。开普勒 10b 和 CoRoT-7b 都没有获得梦寐以求的“类地”称号，因为它们在母星附近运行，而不是在水是液态的“宜居带”中运行。（第一个岩石、水和可能类地行星，开普勒 186f，在 2014 年成为头条新闻。巴塔利亚没有正式参与分析。）&lt;/p>
+&lt;p>开普勒望远镜在因两台发动机故障而过早地步履蹒跚之前，发现了 2,600 多颗系外行星。总共有 4,500 多个，足以让天文学家研究它们的统计特性。正如 51 Pegasi b 所暗示的那样，我们的太阳系是非典型的。例如，银河系中最常见的行星类型是我们没有的大小，介于岩石行星和巨行星之间。行星天文学家还不了解这些所谓的超级地球或次海王星的过剩，或者这些中型行星是什么样的，或者它们是如何形成的。需要行星形成和演化的新原则。&lt;/p>
+&lt;p>根据迄今为止的数据推断，研究人员认为我们的银河系拥有数十亿颗岩石、水行星，这表明生命也可能很普遍。然而，在我们发现生命实际上居住在另一个星球上的证据之前，它在地球上的出现仍然有可能是侥幸，而且我们是孤独的。 &lt;/p>
+&lt;p>令人高兴的是，韦伯望远镜将足够强大，可以探测其他地球的大气和气候——或者，如果我们非常幸运，甚至可以找到真正的外星生物圈的证据。&lt;/p>
+&lt;p>“红外线对于系外行星来说非常棒，”巴塔利亚说。&lt;/p>
+&lt;p>&lt;strong>一次罢工，你就出局了&lt;/strong> &lt;/p>
+&lt;p>1987 年的一天早晨，时任太空望远镜科学研究所 (STScI) 和尚未发射的哈勃望远镜主任的天体物理学家里卡多·贾科尼 (Riccardo Giacconi) 要求副主任加思·伊林沃思 (Garth Illingworth) 开始考虑哈勃的继任者。“我的第一反应是，‘啊，我们甚至还没有发射哈勃望远镜，我们还有一百万件事情要做——它有很大的问题——那么我们怎么能做到这一点呢？’”伊林沃思回忆道最近。“他说，‘相信我，你必须早点开始，因为我知道这样做需要很长时间。’”哈勃望远镜自 1970 年左右开始开发，早年由美国宇航局天文学家南希·罗曼在经过数十年的普林斯顿大学的莱曼·斯皮策的竞选活动；他们被称为哈勃的母亲和父亲。&lt;/p>
+&lt;p>来自澳大利亚的 Illingworth 与他的 STScI 同事法国的 Pierre Bely 和美国的 Peter Stockman 一起就下一代太空望远镜进行了头脑风暴。他们基本上无事可做。“我们开始考虑超越哈勃望远镜并补充它所做的一切并探索新领域的好处，”伊林沃思说，“而红外是一个明确的领域。” 从地面观察红外光非常困难。三人认为，在红外背景低 100 万倍以上的太空中，会有很多东西可以看。“当你把一个强大的新能力放在那里时，你就会打开大量的科学视野。” &lt;/p>
+&lt;p>红外望远镜要像哈勃望远镜一样灵敏，它有一个 2.4 米宽的主镜，伊林沃思、贝利和斯托克曼意识到它需要更大，因为它可以探测到更大的波长。他们认为镜子可能必须折叠才能装入火箭。他们也知道它必须是冷的，否则它的热量会使它自己的传感器饱和。他们没有主动冷却望远镜，而是认为通过阻挡地球、月球和太阳的热量来利用外层空间的极度寒冷。他们对大型被动冷却红外望远镜的模糊构想，经过详细阐述，将成为现在在库鲁等待发射的货物。&lt;/p>
+&lt;p>领先的天文学家于 1989 年在 STScI 召开会议，讨论红外太空望远镜可能适用的科学。在哈勃望远镜灾难性的开始和拯救期间，讨论放缓，然后在 90 年代中期再次升温。1995 年，戈达德太空飞行中心的一位绅士绅士的天体物理学家约翰·马瑟接到美国宇航局总部的电话，询问他是否愿意加入该项目。意识到红外望远镜“可以为这么多人做这么多”，他放弃了一切并签约。从那以后，他一直是 JWST 的顶级科学家。 &lt;/p>
+&lt;p>马瑟称自己为“理论仪器制造者”。他小时候在新泽西州的田园牧区开始建造望远镜，从目录中组装零件，希望能更仔细地观察火星表面。作为 1970 年代的年轻人，Mather 研究了一种气球式仪器，但失败了。他和他的同事得出的结论是，他们在发射前没有对其进行足够的测试。“墨菲定律再次被证明，”他在自传中写道。但是吸取的教训导致了 COBE 的胜利，这是美国宇航局的卫星实验，他和乔治·斯穆特将分享诺贝尔奖。在 90 年代初，COBE 测量了宇宙微波背景的细微变化，这些变化被认为是后来所有宇宙学结构的种子。在马瑟看来，关于宇宙的理论很好，但是你需要巧妙的工具才能确定任何事情。“所以让我们制造设备吧，”今年秋天他告诉我。“对我来说，这是一件英勇的事。”&lt;/p>
+&lt;p>马瑟曾考虑过疯狂的设计，包括可折叠的望远镜。然而，在 1996 年预算困难的情况下，一个研究红外望远镜概念的顶级天文学家委员会提出了一个 4 米长的镜子，该镜子可以安装在火箭整流罩中，从而大大降低了成本和复杂性。伊林沃思认为这是“愚蠢的”。它不会像哈勃那么好。” 美国宇航局当时的领导人丹·戈尔丁显然也有类似的感受。在当年的美国天文学会会议上，戈尔丁在演讲中说：“你为什么要这么谦虚的事情？为什么不跑六七米呢？” 正如委员会成员温迪弗里德曼所记得的那样，“戈尔丁基本上说，&amp;lsquo;你们真是一群胆小鬼。&amp;rsquo;”他得到了起立鼓掌。“在我看来，他拯救了望远镜，”伊林沃思说。它会更大。&lt;/p>
+&lt;p>在关于 8 米的一些令人兴奋的讨论之后，2001 年，美国宇航局最终确定了 6.5 米的分段镜直径，使下一代望远镜的光收集面积超过哈勃的六倍。问题是：如何在 5.4 米宽的火箭整流罩中安装 6.5 米宽的镜子？ &lt;/p>
+&lt;p>“设计的很大一部分是你如何折叠它，”马瑟说。外部承包商开发了相互竞争的镜子设计。Lockheed Martin 的镜子折叠起来像六瓣花瓣，Ball Aerospace 的像折页桌面。TRW 建议像旧的点唱机放置唱片一样放置镜像片段。在考虑了一年的提议后，马瑟和他的团队采纳了每个提议的点点滴滴。主要合同给了 TRW，因为该公司在为美国军方建造复杂卫星方面拥有丰富的经验，并且成功建造了钱德拉 X 射线天文台。（TRW 很快被诺斯罗普·格鲁曼公司收购。）镜子的设计将更接近 Ball Aerospace 的：由 18 个六边形部分组成的阵列，形成一个更大的六边形，可以在两侧折叠。洛克希德·马丁公司提议的带头人迈克·门泽尔，&lt;/p>
+&lt;p>镜子将由铍制成——轻质、坚固、坚硬的粉末形式的有毒物质（“铍是一种颈部疼痛，但它是唯一有效的东西，”根据马瑟的说法）。铍粉在俄亥俄州被压制成块，然后在阿拉巴马州被切割成型。然后在 18 个镜段顶部涂上一层金，这种金对红外光的反射率极高，并在专门为此目的建造的加利福尼亚工厂中抛光。“塑造和抛光望远镜镜子是一门可以追溯到数百年前的黑暗艺术，”在韦伯的仪器之一 MIRI 上工作的比利时裔英国天文学家莎拉·肯德鲁 (Sarah Kendrew) 说。&lt;/p>
+&lt;p>将需要具有前所未有的精细度的电机将六角镜段带入太空中的集体焦点。“这是我们必须马上发明的东西，”马瑟说。“如果你不能做到这一点，你就不能让整个天文台工作。” Ball Aerospace 提供的致动器能够以 10 纳米的增量轻推每个金色六边形，即头发宽度的万分之一。马瑟说，电机通过“弯曲”或“将大动作转换为小动作”来工作，尽管鲍尔的设计虽然是由纳税人资助的，但它是专有的。“当我们为望远镜拍照时，我们必须确保没有人能看到电机，”他说。&lt;/p>
+&lt;p>2002年，望远镜有了名字。美国宇航局局长肖恩·奥基夫打破了为科学家命名望远镜的传统——例如，哈勃望远镜指的是美国天文学家埃德温·哈勃——取而代之的是向更早的管理员詹姆斯韦伯致敬，他是阿波罗期间航天局的负责人时代。这一选择立即不受天文学家的欢迎，而且越来越受欢迎。去年，1,200 名天文学家签署了一份请愿书，要求重新命名望远镜，原因是韦伯在麦肯锡恐慌期间帮助或选择无视解雇同性恋政府雇员。经过调查，美国宇航局在 10 月宣布，历史学家没有发现任何证据证明需要改名。 &lt;/p>
+&lt;p>从亚利桑那大学到欧洲航天局，各种机构都签约建造相机、光谱仪和日冕仪，这些相机、光谱仪和日冕仪将在光学系统的焦点处旋转到位，对汇集的红外光的不同块进行切片和切割。作为交换，这些机构合作伙伴将拥有大量的望远镜时间。 &lt;/p>
+&lt;p>至于遮阳板，红外望远镜赖以生存的脆弱材料，该团队很快就选择了 Kapton，这是一种光滑的银色塑料，看起来像薯片袋的内部，但有人类头发的厚度。由于它可能会撕裂，因此遮阳罩需要多层冗余——团队决定使用五层——并且必须通过吊杆、电缆和绳索系统展开、分离和拉紧这些层。推进系统和太阳能电池板将位于朝阳的一侧，而必须在零下 223 摄氏度以下运行的光学器件和仪器将挤在黑暗的一侧。“JWST 有很多第一次，很多重要的第一次，”总工程师门泽尔告诉我，“但那个遮阳板就是其中之一。”&lt;/p>
+&lt;p>门泽尔身材魁梧，留着修剪整齐的灰色胡须，负责监督数千人在历史上最复杂的工程项目之一上的工作；他也是那种会马上告诉你他们来自哪里的人。那将是新泽西州的伊丽莎白——收费公路的 13 号出口——他父亲在那里开出租车。在最近的一次 Zoom 通话中，门泽尔在肘部前后弯曲手臂，以解释遮阳板带来的挑战。“如果你拿一些刚性的东西，比如一扇门，然后建造一个漂亮的铰链，你就可以预测它的移动方式，”他说。“那是小菜一碟。” 他停止弯曲手臂。“现在你有毯子了。它们是软盘的。试着在你的床上铺一条毯子，然后预测它会进入的形状。这太可怕了。绳子也是一样——拉紧[遮阳板]的绳子。一根绳子有上百万种不同的移动方式。” 情况变得更糟：“现在把所有这些经验都放在零重力环境中，这些东西可以去你不想去的地方。” 顺利展开遮阳罩“成为一个非常棘手的问题”。 &lt;/p>
+&lt;p>2004 年左右，NASA 工程师 Chuck Perrygo 和 Keith Parrish 来到 Menzel 在戈达德的办公室，并表示他们有办法做到这一点。Perrygo 在 Menzel 的桌子上拿起一张纸，将它折叠成 Z 形。遮阳罩可以折叠成更多这样的锯齿形，有时称为手风琴式折叠。“我很擅长识别错误的答案，我也很擅长识别正确的答案，”门泽尔告诉我，他举起一张他折叠成 Z 形的纸。“所以我们都看到了这一点，并认为这是追求它的一种方式。” 诺斯罗普·格鲁曼公司分别得出了同样的结论。 &lt;/p>
+&lt;p>下一个问题是如何在遮阳板准备展开之前将手风琴折叠固定到位。诺斯罗普·格鲁曼公司的工程师 Andy Tao 找到了解决方案：107 个可像猫爪一样缩回的销钉。 &lt;/p>
+&lt;p>针法引发了另一个棘手的问题：针会造成针孔。如果在展开后，所有五个 Kapton 层上的针孔都排成一行，这将使阳光通过，加热光学器件。“这是你永远猜不到的那些神秘的小细节之一，直到你开始进入它并开始发现，啊，天哪，五个针孔排成一列，这会让阳光直射进来，”门泽尔说。“这听起来并不多，但它让安迪喝酒。上帝保佑他，他想通了。” Tao 努力寻找合适的引脚配置，以使五个大小略有不同的 Kapton 层中的孔从任何角度都不会对齐。 &lt;/p>
+&lt;p>打地鼠的速度如此之慢，以至于天文学家开始将这种情况称为“JWST 问题”。早在 1996 年，马瑟和他的团队估计这台望远镜将耗资 5.64 亿美元——这是一个有点虚伪的猜测，旨在让国会参与进来——而且它将在 2007 年发射。随着价格飙升，发射日期越来越远未来，国会变得不耐烦了。2011 年，JWST 差点被取消，但小学生写信给华盛顿，参议员米库尔斯基再次前来救援。 &lt;/p>
+&lt;p>玻璃、金属和塑料逐渐在戈达德、诺斯罗普·格鲁曼、鲍尔航空航天公司和其他地方的洁净室中连接在一起。但是组装好的硬件不能简单地送到天空，因为望远镜要飞到一百万英里之外，带着扳手的宇航员无法访问。正如诺斯罗普·格鲁曼公司的工程师乔恩·阿伦伯格 (Jon Arenberg) 曾经说过的那样，“这是一项一劳永逸的生意。” 韦伯必须在第一次也是唯一一次尝试时完美部署。这意味着它必须在地面上进行广泛、艰苦的测试。而在 2017 年和 2018 年，这些测试又出现了一个又一个问题。 &lt;/p>
+&lt;p>经过“摇晃测试”后，在地板上发现了一堆固定遮阳罩的螺丝和垫圈；他们没有正确扭转。还有一次，遮阳板被卡住并撕裂了。有一次，它展开了，但总有一根绳子缠绕在它不应该缠绕的东西上。 &lt;/p>
+&lt;p>这台望远镜在被运送到休斯顿的约翰逊航天中心时又遇到了麻烦，它被放置在阿波罗宇航员曾经练习月球行走的房间里，并进行低温冷却以模拟外层空间的条件。当像 Sarah Kendrew 这样的仪器制造商正在测试冷硬件时，飓风哈维袭击了。整个城市发生了灾难性的洪水，但韦伯团队最大的担忧是液氮供应。如果它用完了，望远镜的温度会上升得太快，从而损坏仪器。必须敦促液氮供应商将卡车运送到洪水中，作为国家重要事项。 &lt;/p>
+&lt;p>问题不断。今年早些时候，将数据传回地球的转发器被发现存在故障，必须进行维修。“延误会引发一连串的问题，”Tremblay 说 - 以及更多的费用：“为了让 James Webb 留在洁净室的地板上，每月要花费 1000 万美元。” 随着投资的增加，任务成功的必要性也增加了。“如果 NASA 愿意承担更多风险，JWST 将是成本的一半，”Tremblay 解释说。 &lt;/p>
+&lt;p>最后，问题减轻了。诺斯罗普·格鲁曼公司的工程师在其位于加利福尼亚州雷东多海滩的工厂中多次成功展开遮阳板。但根据 Menzel 的说法，即使在闪光层顺利展开之后，“我们并不像你想象的那样兴高采烈。因为我们都知道，遮阳板只有上次折叠时的效果才会好。” &lt;/p>
+&lt;p>韦伯的最终成本接近 100 亿美元。这几乎是其标价的 20 倍，但仍比航空母舰少几十亿。在一些与大流行相关的最终延迟之后，2021 年末成为其目标发布日期。9 月，望远镜在雷东多海滩通过了最后一次测试：金耳朵被钉在后面，毯子被藏起来，整个天文台倒过来，然后纠正，然后检查是否有任何变化。然后将其侧放放回集装箱并带走。Garth Illingworth 从一开始就以各种身份参与了该望远镜，他前往雷东多海滩为它送行。他在一封电子邮件中写道，它站在那里，“高大而雄伟”。“到第二天，洁净室甚至没有任何与 JWST 相关的支持硬件。 &lt;/p>
+&lt;p>在韦伯前往拉格朗日点 2 的为期一个月的旅程中，韦伯团队正忙于排练他们将在巴尔的摩 24/7 执行的例程，随后是为期五个月的调试期。“我有信心吗？” 门泽尔说。“是的。我有信心我们已经做了我们可能做的一切。风险低到可以接受。它和它一样好。我非常有信心我们会做得很好。 &lt;/p>
+&lt;p>“会不会出事了？见鬼，是的。”&lt;/p>
+&lt;p>&lt;strong>合理的猜测&lt;/strong>&lt;/p>
+&lt;p>一旦哈勃开始工作，人类就会像第一次戴眼镜的近视孩子一样沉浸在宇宙的视野中。我们还了解到那里有我们看不到的东西。 &lt;/p>
+&lt;p>1998 年，两个敌对的天文学家团队使用哈勃和其他望远镜观察遥远星系中的超新星，并确定宇宙的膨胀正在加速。这暴露了一种注入所有空间的加速剂的存在，即暗能量。空间如此之大，以至于暗能量占了一切的 70%。（另外 26% 是暗物质，4% 是发光原子和辐射。） &lt;/p>
+&lt;p>很快就出现了其他谜题。天文学家温迪·弗里德曼利用哈勃望远镜观察称为造父变星的脉动恒星。从这些数据中，2001 年她和她的团队测量了宇宙当前膨胀的速度，达到了 10% 的准确度，比以前的测量结果有了巨大的改进。自弗里德曼测量以来，宇宙膨胀率已成为宇宙学最大争议的中心. 问题在于，根据宇宙已知的成分和控制方程，理论家推断，空间目前的膨胀速度应该比测量所暗示的要慢。它的快速膨胀可能指向宇宙中除了暗物质和暗能量之外的其他未知成分。但冷静而权威的弗里德曼还不相信测量结果是正确的。她将带领一个团队使用韦伯望远镜更仔细地观察造父变星和其他恒星；他们希望能够准确地测量扩张速度，以确定是否存在一种奇异的基本成分。&lt;/p>
+&lt;p>与此同时，哈勃深场照片讲述了一个有趣的星系演化故事，极大地扩展了人类对宇宙历史的了解。但是韦伯仍然需要阅读故事的前几章。&lt;/p>
+&lt;p>亚利桑那大学的长期教授 Marcia Rieke 被认为是红外天文学的先驱之一，在过去 20 年中一直在监督 NIRCam（如“近红外相机”）的设计和建造，这是韦伯的四大主要技术之一仪器。她和她在亚利桑那州的团队正计划利用他们 900 小时的保证望远镜时间中的一半以上进行新的深场调查，这项调查将比以往任何时候都更深入地了解过去。哈勃可以在红移 10 处看到微弱的星系污迹，相当于大爆炸后 5 亿年，而韦伯应该能够非常清楚地看到这些污迹，并发现在更远的地方发芽的全新星系，可能早在 50 或大爆炸之后的一亿年。&lt;/p>
+&lt;p>Rieke 和她的团队将比哈勃深场做得更好。在使用 NIRCam 获得了他们黑暗的天空斑块的图像后，他们将识别斑块中最远的星系，并使用韦伯的近红外光谱仪 NIRSpec 获取星系的光谱，Rieke 和她的同事可以推断出他们的化学成分。&lt;/p>
+&lt;p>光谱将显示每个原星系中存在元素周期表的哪些元素，以及它们的元素如何随时间演变。标准的说法是，早期的气体云、恒星和星系主要由氢组成，超新星和其他爆炸事件逐渐形成了更重的元素。“但有一些奇怪的事情，”里克说。“接近哈勃可以达到的极限，有类星体”——由超大质量黑洞驱动的超亮星系中心——“看起来它们具有与太阳几乎相同的元素。这很难相信。所以有些事情发生在早期，我们没有很好地处理。”&lt;/p>
+&lt;p>想要看到第一批恒星和星系的原因与天文学家、天体物理学家和宇宙学家一样多。对于斯坦福大学的宇宙学家 Risa Wechsler 来说，这是一种观察暗物质杰作的方式。她和她的同事将利用原星系来推断一定存在于早期宇宙中的暗物质晕的大小分布，以及它们形成的时间。这可以揭示暗物质是“冷的”，即由缓慢移动的粒子组成，还是“温暖的”，因为周围呼啸而过的粒子需要更长的时间才能挤成光晕。这种温度检查将是暗物质性质的重要线索。&lt;/p>
+&lt;p>其他研究人员想了解第一颗恒星。一些人认为韦伯会看到所谓的“第三族恒星”，即被假设为比我们的太阳重约 10,000 倍的原始野兽。这样的恒星将有助于解开星系形成的另一个主要谜团：星系的中心是如何形成超大质量黑洞的——它们体积虽小，但威力惊人，重量可达太阳质量的数十亿倍。没有人知道超大质量黑洞是如何变得如此重的，或者它们的属性何时或为什么与它们的宿主星系的属性相关。一种理论是第三族恒星造成了这些洞，但还有一百万种其他理论。韦伯将寻找不同场景的特征。&lt;/p>
+&lt;p>理论家已经模拟了许多结构如何在年轻宇宙中出现的可能性。但他们不能简单地从宇宙微波背景开始，然后在计算机上向前演进这张图片，看看发生了什么。“很多初始条件都没有被很好地理解——比如磁场，以及气体中有多少湍流，”Rieke 在亚利桑那州模拟恒星和星系形成的理论家同事 Peter Behroozi 说。他说，要从宇宙微波背景中的一个巨大的、极其密集的点变成一团微小的气体云，它会在引力作用下收缩并形成一颗恒星，这是“大量的工作”。&lt;/p>
+&lt;p>“通常人们会做的是，他们会跳过那个，”Behroozi 说，“从球形气体云开始。他们不知道[暗物质]团块大小的分布是什么，所以他们猜测。他们不知道磁场；他们对气体的旋转或湍流一无所知，所以他们会用猜测来填充所有这些。” &lt;/p>
+&lt;p>最近，随着研究人员竞相在韦伯展示恒星和星系的形成如何真正下降之前将他们的预测记录在案，猜测工作加速了。即使是保守的猜测也可以产生具有截然不同结果的模拟。“我研究的主要结论，”Behroozi 说，“即使你试图做出合理的猜测，我们仍然不知道 James Webb 会看到什么。”&lt;/p>
+&lt;p>&lt;strong>桥梁行星&lt;/strong>&lt;/p>
+&lt;p>娜塔莉·巴塔利亚 (Natalie Batalha) 的第二个孩子娜塔莎·巴塔利亚 (Natasha Batalha) 去佛罗里达参加开普勒发射时 18 岁。她记得在美国宇航局科学团队聚集的观察室里和她的妹妹一起标记。“在发射期间，那个领域的焦虑令人不寒而栗，”她在最近的一次视频通话中说。起飞后，现场一片欢腾。她发现看到一个团队完成如此宏伟的事情令人鼓舞，但发现如此近在咫尺的可能性“这真的是让我开始思考系外行星概念的原因，”Natasha Batalha 说，她是严肃而严谨，就像她的母亲一样。 &lt;/p>
+&lt;p>太空并不是巴塔利亚家族经常讨论的话题。“我不想让他们的生活充满科学，”娜塔莉巴塔利亚说。“我一直希望他们觉得自己是第一名。” 但她和塞尔索确实对娜塔莎抱有“秘密希望”。1996 年的一个晚上，当 Celso 教授夜校时，Natalie 把半睡半醒的孩子们载到草地上，以便他们寻找路过的彗星 Hyakutake。在他们驶出车道之前，五岁的娜塔莎在后座上说：“那是什么？” 她指着彗星。&lt;/p>
+&lt;p>娜塔莎八岁时住在巴西，她的母亲让她和她的兄弟姐妹画一个天文学家。娜塔莎画了一个白人，娜塔莉问她为什么。“这对我来说太疯狂了，我是拉丁裔科学家和女科学家的女儿；这些刻板印象仍然在我的脑海中根深蒂固，”娜塔莎说。一想到自己可以投身于科学，她突然觉得自己充满了力量。&lt;/p>
+&lt;p>娜塔莎·巴塔利亚 (Natasha Batalha) 作为一个微笑的孩子，穿着宇航员飞行服，手里拿着一本剪贴簿，里面装满了 NASA 和太空相关的图像。&lt;/p>
+&lt;p>几年后，她读了莎莉·莱德的自传。正如她的母亲受到莱德的启发一样，娜塔莎决定要么成为一名天文学家，要么成为一名宇航员。她梦想成为火星上的第一人。开普勒发射后，随着越来越多的系外行星被发现，她对外星生命的可能性以及我们如何通过望远镜观测它们的天空来推断它们在这些行星上的存在产生了兴趣。她获得了双博士学位。在天文学和天体生物学。然后，在开普勒结束后不久，她的妈妈离开了 NASA 艾姆斯，成为圣克鲁斯的教授，娜塔莎在艾姆斯找到了一份研究系外行星大气的工作。 &lt;/p>
+&lt;p>Natasha Batalha 是一个不断壮大的研究团体的一员，该团体的最终目标是检测“生物特征气体”——行星大气中的气体，这些气体只能存在于生命中。每种分子都有其吸收的特征波长。因此，通过在行星在和不在其前面凌日时收集来自恒星的光，并检查当行星在那里时哪些星光波长变暗，你可以看到行星的天空中存在哪些分子。 &lt;/p>
+&lt;p>氧气是生物特征气体的明显候选者：它的反应性如此之大，以至于除非地球的氧气供应不断地通过进行光合作用的生物圈来补充，否则它不太可能被发现。光合作用是一种简单而有效的能量捕获过程，天体生物学家认为它可能会在任何有生命的星球上进化，因此寻找氧气是明智之举。 &lt;/p>
+&lt;p>但单独看到氧气并不一定令人信服。计算机模拟表明，在某些条件下，氧气可以填满无生命行星的天空。“挑战在于没有一种气体会成为生物特征气体，”行星科学家哈梅尔说。“地球上的甲烷主要是由奶牛产生的……但你看看海王星，你会看到那里有成吨的甲烷，而这不是奶牛产生的。” &lt;/p>
+&lt;p>更好的生物印记是一种特殊的气体混合物。“它不会是一种单一的气体，它必须是多种气体的组合，这种组合告诉我们它们处于不平衡状态，”哈默尔说。“它们不可能自然形成。”&lt;/p>
+&lt;p>现有的望远镜已经在热木星的天空中发现了分子指纹，但这些都是没有生命的行星。探测来自岩石、可能适合居住的行星天空的较弱信号将需要 JWST。该望远镜不仅将拥有接近哈勃望远镜 100 倍的分辨率，而且在其主恒星的背景下，它还能更清楚地看到系外行星，因为行星发出的红外线比光学光多，而恒星发出的光则更少。重要的是，韦伯对系外行星的观察不会被云层遮挡，这通常会阻止光学望远镜看到最密集的低空大气层。“想象一下，在飞机上俯视一个疯狂的云层，你根本看不到表面，”娜塔莎·巴塔利亚说。“当你看红外光时，你可以一下子看穿云层。”&lt;/p>
+&lt;p>系外行星将成为 JWST “第 1 周期”观测的目标之一，一旦部署和调试完成——发射后大约 6 个月，它将开始着手解决这些问题。作为这些早期观测的一部分，系外行星社区选举 Natalie Batalha 领导对三颗气态巨行星的过境光谱研究。她的团队还将开发数据管道和处理技术，供社区复制。&lt;/p>
+&lt;p>第 1 周期还包括对特定天文学家群体的观测。去年，超过 2000 个团体在第一轮提交了使用 JWST 的提案；一个时间分配委员会选择了 266 个。其中数十个项目将关注行星。当我与 Hammel 视频聊天时，她在屏幕上共享 PowerPoint 幻灯片，突出显示 Webb 将代表不同观察者将目光转向的各种感兴趣的外星世界：围绕两颗恒星运行的开普勒 16b；疑似“熔岩世界”55 Cancri e；以及附近 Trappist-1 恒星系统的七颗岩石行星。（作为韦伯科学团队的长期成员，哈默尔将获得 100 小时的保证观察时间，他将浏览我们自己的太阳系，包括木星的红斑、柯伊伯带的神秘、遥远的物体，以及哈默尔经常被忽视的天体最爱，天王星和海王星， &lt;/p>
+&lt;p>在 JWST 将在第 1 周期观察的所有系外行星中，Natasha Batalha 认为，在其恒星宜居带内运行的三颗 Trappist 行星可能最有可能具有可检测到的生物特征气体。“特拉普系统的独特之处在于恒星非常小，因此大气的相对特征尺寸不需要很大就可以让你看到它，”她说。然而，韦伯是否有机会发现生物特征气体是有争议的。“经常会出现关于氧气检测的争议，”她说。氧气会吸收韦伯敏感范围内的一个红外波长，因此理论上，一颗富含氧气的凌日行星可能会在该波长的恒星光谱中显着下降。“不过，”她说，波长“就在检测器失去灵敏度的边缘”。其他类型和组合的气体将更容易检测到，但可能更难明确归咎于生命。 &lt;/p>
+&lt;p>韦伯可能只是确定可能存在的行星，然后用未来的太空望远镜进行更仔细的检查。天文学家现在正忙于计划这些。NASA 的 Nancy Grace Roman 太空望远镜计划于本十年晚些时候发射，主要用于研究暗能量。类地系外行星是未来望远镜概念的范围，暂时称为 LuvEx，这是一种紫外、光学和红外望远镜（如果由国会资助），将于 2040 年代中期发射。&lt;/p>
+&lt;p>我们将看什么取决于我们在接下来的几年中学到的东西。&lt;/p>
+&lt;p>今年春天的一个早晨，娜塔莎·巴塔利亚一觉醒来，听到来自系外行星天文学家约翰娜·特斯克的一封信：“我们明白了！” 刚刚宣布了 266 个选定的第 1 周期计划，由 Batalha 领导的提案，Teske 作为她的副手，列入了名单。 &lt;/p>
+&lt;p>他们将是第一个周期中所有系外行星观测活动中最广泛的：对超级地球和次海王星进行 142 小时的调查，这是我们太阳系所缺乏的无处不在的中型“桥梁”行星，它们的组成、可居住性和形成历史不详。假设在接下来的几个月里，一切都按原样展开并且詹姆斯韦伯太空望远镜找到了焦点，它将代表娜塔莎巴塔利亚和她的团队指向其中的 11 颗行星。当她醒来听到这个好消息时，她首先给特斯克打了电话。然后她给妈妈打了电话。&lt;/p></description></item><item><title>Advice for lack of discipline</title><link>http://example.org/post/advice_for_lack_of_discipline/</link><pubDate>Sun, 26 Jun 2022 12:55:34 +0800</pubDate><guid>http://example.org/post/advice_for_lack_of_discipline/</guid><description>&lt;p>&amp;ldquo;If you lack discipline, open this&amp;rdquo;&lt;/p>
 &lt;p>Psychology Thread&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202206261258258.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202206261258258.jpeg"
+loading="lazy"
+>&lt;/p>
 &lt;ol>
 &lt;li>Choose a Goal&lt;/li>
 &lt;/ol>
@@ -605,13 +1026,129 @@ git config --local user.email xxx
 &lt;ol start="2">
 &lt;li>Nutrition, Sleep and Exercise Are Key&lt;/li>
 &lt;/ol>
-&lt;p>If you are trying to improve your self discipline and you&amp;rsquo;re not getting enough sleep, healthy food and exercise, you&amp;rsquo;re fighting an uphill battle.&lt;/p></description></item><item><title>Advice from ArtOfLife_</title><link>/post/advice_from_artoflife_/</link><pubDate>Sun, 26 Jun 2022 12:52:06 +0800</pubDate><guid>/post/advice_from_artoflife_/</guid><description>&lt;p>&amp;ldquo;Overthinkers&amp;rdquo;, open this:&lt;/p>
+&lt;p>If you are trying to improve your self discipline and you&amp;rsquo;re not getting enough sleep, healthy food and exercise, you&amp;rsquo;re fighting an uphill battle.&lt;/p>
+&lt;p>If you do the above, you&amp;rsquo;ll have more energy and an overall positive attitude.&lt;/p>
+&lt;ol start="3">
+&lt;li>It&amp;rsquo;s About the Habit, Not the Outcome&lt;/li>
+&lt;/ol>
+&lt;p>Rather than saying &amp;ldquo;I want to lose weight&amp;rdquo; say &amp;ldquo;I want to walk at least 10,000 steps per day.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Losing weight&amp;rdquo; is something difficult to pin down.&lt;/p>
+&lt;p>Walking 10,000 steps per day is something concrete that you can track and measure.&lt;/p>
+&lt;ol start="4">
+&lt;li>Time flies&lt;/li>
+&lt;/ol>
+&lt;p>Take a close look at where you are spending your time and energy.&lt;/p>
+&lt;p>The average adult spends five hours per day looking at their smartphone.&lt;/p>
+&lt;p>With this in mind, NOT constantly scrolling through social media on your phone can make a huge difference in your day.&lt;/p>
+&lt;ol start="5">
+&lt;li>You Don&amp;rsquo;t Need Permission From Anyone&lt;/li>
+&lt;/ol>
+&lt;p>Building self discipline means that you will need to learn how to find that approval within yourself.&lt;/p>
+&lt;p>Once we let go of this need for approval from others, we are free to follow our goals and work on what is important to us.&lt;/p>
+&lt;ol start="6">
+&lt;li>Be Nice to Yourself&lt;/li>
+&lt;/ol>
+&lt;p>Change is hard. New habits are hard.&lt;/p>
+&lt;p>Our minds are wired for familiarity and if you’re doing something new, part of you is going to be fighting against it.&lt;/p>
+&lt;p>Don’t allow obstacles to cause you to give up on your bigger vision or goal.&lt;/p>
+&lt;ol start="7">
+&lt;li>Just one pushup&lt;/li>
+&lt;/ol>
+&lt;p>Do one pushup, once you get started you&amp;rsquo;ll end up doing more.&lt;/p>
+&lt;p>It works for self discipline in any area.&lt;/p>
+&lt;p>Don&amp;rsquo;t worry if the goal you set for yourself is easy - that&amp;rsquo;s the point.&lt;/p>
+&lt;p>The key is to choose something that is so easy that you can&amp;rsquo;t say no.&lt;/p>
+&lt;ol start="8">
+&lt;li>Punch the Clock&lt;/li>
+&lt;/ol>
+&lt;p>You will have good days and bad days, but what matters is that you show up.&lt;/p>
+&lt;p>There will be some mornings where you feel tired and you won&amp;rsquo;t have your best workout ever.&lt;/p>
+&lt;p>It&amp;rsquo;s still incredibly important to follow through and go to the gym anyways.&lt;/p>
+&lt;ol start="9">
+&lt;li>You live your life on auto pilot because you don&amp;rsquo;t know what to do with your life.&lt;/li>
+&lt;/ol>
+&lt;p>Get &amp;ldquo;Live Intentionally&amp;rdquo; and become;&lt;/p>
+&lt;p>• Motivated
+• Disciplined
+• Your best self
+• Self-confident&lt;/p>
+&lt;p>Get the book here: Live Intentionally: 90 Day Self-Improvement Program (&lt;a class="link" href="https://lifemathmoney.gumroad.com/l/tough" target="_blank" rel="noopener"
+>https://lifemathmoney.gumroad.com/l/tough&lt;/a>)&lt;/p>
+&lt;p>Twitter Link: &lt;a class="link" href="https://twitter.com/Art0fLife_/status/1533361596323569665" target="_blank" rel="noopener"
+>https://twitter.com/Art0fLife_/status/1533361596323569665&lt;/a>&lt;/p></description></item><item><title>Advice from ArtOfLife_</title><link>http://example.org/post/advice_from_artoflife_/</link><pubDate>Sun, 26 Jun 2022 12:52:06 +0800</pubDate><guid>http://example.org/post/advice_from_artoflife_/</guid><description>&lt;p>&amp;ldquo;Overthinkers&amp;rdquo;, open this:&lt;/p>
 &lt;p>• You&amp;rsquo;re loved, someone out there loves you more than you think.&lt;/p>
 &lt;p>• Your anxiety will tell you the worst case scenario. It’s a damn liar!&lt;/p>
 &lt;p>• You mean so much to your friends and family, they may not say it as often but they really do love you.&lt;/p>
 &lt;p>• You’ve already survived things you didn’t think you’d survive.&lt;/p>
-&lt;p>• You&amp;rsquo;re strong and you can get through everything one step at a time.&lt;/p></description></item><item><title>Advice from LongShortHC</title><link>/post/advice_from_longshorthc/</link><pubDate>Sun, 26 Jun 2022 12:30:18 +0800</pubDate><guid>/post/advice_from_longshorthc/</guid><description>&lt;p>Had a DM question asking for advice for a brand new analyst working at a pod shop. Noodled on it, and figured I would share the thoughts broadly in case helpful. I am far from the most tenured and successful pod PM - spent 4 years as a PM at combo of D.E. Shaw (not a pod)…&lt;/p>
-&lt;p>Citadel/Aptigon and Schonfeld, over which time I hired/employed/trained a dozen or so analysts. (And then threw up two middle fingers and retired…more on that later). So I’m by no means the absolute authority on pods. But here is my advice:&lt;/p></description></item><item><title>如何利用GithubAction发布Hugo博客</title><link>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</link><pubDate>Tue, 05 Apr 2022 15:07:33 +0800</pubDate><guid>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p>作为一个老网民，我还是很喜欢折腾博客的。从07年开始就玩各种博客，比如07年搜狐博客，那时候博客热很火，不亚于微博兴起的时候，于是我每天去刷我的搜狐博客访问量，是不是还专门去网吧写文章。 后来还开了新浪博客，一直在新浪博客混混文字，大概一直在新浪博客写了4年。&lt;/p>
+&lt;p>• You&amp;rsquo;re strong and you can get through everything one step at a time.&lt;/p>
+&lt;p>• You&amp;rsquo;re not a failure! Never!&lt;/p>
+&lt;p>• No matter what anyone tells you, you&amp;rsquo;re beautiful, smart and you matter.&lt;/p>
+&lt;p>• Keep your mind off things that don&amp;rsquo;t help you think positively.&lt;/p>
+&lt;p>• You are not bothering anyone at all, they would love to hear more of your thoughts.&lt;/p>
+&lt;p>• It&amp;rsquo;s okay not to be okay. But make sure you speak to someone and let go of any negative emotions&lt;/p>
+&lt;p>• Stop feeding bad thoughts.&lt;/p>
+&lt;p>• Stop caring what other&amp;rsquo;s think. You&amp;rsquo;re unique and amazing! That&amp;rsquo;s all that matters!&lt;/p>
+&lt;p>• As long as you&amp;rsquo;re breathing, people will judge. Learn to not give a f*ck about them.&lt;/p>
+&lt;p>• Do what&amp;rsquo;s right for you. Start putting yourself and your own happiness first.&lt;/p>
+&lt;p>If you enjoyed this thread, please retweet the first tweet and follow me
+@Art0fLife_&lt;/p>
+&lt;p>This account exists to help you:&lt;/p>
+&lt;ul>
+&lt;li>Become your best self&lt;/li>
+&lt;li>Live a happier and healthier life&lt;/li>
+&lt;li>Grow mentally and emotionally&lt;/li>
+&lt;/ul>
+&lt;p>Have an amazing day, because you are amazing :)&lt;/p>
+&lt;p>Twitter Link: &lt;a class="link" href="https://twitter.com/Art0fLife_/status/1513853742541676546" target="_blank" rel="noopener"
+>https://twitter.com/Art0fLife_/status/1513853742541676546&lt;/a>&lt;/p></description></item><item><title>Advice from LongShortHC</title><link>http://example.org/post/advice_from_longshorthc/</link><pubDate>Sun, 26 Jun 2022 12:30:18 +0800</pubDate><guid>http://example.org/post/advice_from_longshorthc/</guid><description>&lt;p>Had a DM question asking for advice for a brand new analyst working at a pod shop. Noodled on it, and figured I would share the thoughts broadly in case helpful. I am far from the most tenured and successful pod PM - spent 4 years as a PM at combo of D.E. Shaw (not a pod)…&lt;/p>
+&lt;p>Citadel/Aptigon and Schonfeld, over which time I hired/employed/trained a dozen or so analysts. (And then threw up two middle fingers and retired…more on that later). So I’m by no means the absolute authority on pods. But here is my advice:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>You’re job is make your PM’s life easier. Full stop. Don’t forget this. Run through walls for PM. Let PM know this. Don’t whine and complain about your “career development” or comp in your first two years. Don’t do it. That era will come. Be a ride or die, and let PM know it&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Use your “golden three months”. Life happens fast at pods. It has to - it’s sink or swim. However, you CAN be the naive newbie for 3 months. So ask questions!! Create a running list, ask PM for 10
+min a week and ask anything you don’t understand. Don’t pretend like you do!!!&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>2 contd) Use more senior analysts on team as resource. But you have 3 months. By month 6 the naive newbie schtick will be old, and you will be expected to contribute. Sell side teach in calls can be helpful. Be a sponge. Be a sponge. Be a sponge.&lt;/p>
+&lt;ol start="3">
+&lt;li>
+&lt;p>learn to communicate. Seasoned pod players have a distinct communication style. Terse. Direct. No BS. Tell me what I need to know and no more. They don’t have time to waste on 15 minute convos about your weekend. This isn’t I-banking. Mimic how Sr analysts speak to PM.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Zero defect mentality. This isn’t I-banking where you send a deck to associate, get 56 markups and turn the deck 6 more times. Don’t send anything to PM until it has been 5x checked and perfect. Fastest way to ruin reputation is to send sloppy work.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Study compliance procedures very carefully. Contrary to some beliefs, pod PMs are insanely careful about MNPI and don’t want to touch gray areas. Personal trading, consultant calls and mgmt meetings are focus areas. Make sure you don’t foot fault here. If you make a mistake…&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>5 contd) …that gets firm involved it will be very bad for you. You are easy to fire. Compliance and the GC are your friends and use them proactively (don’t assume you know the answer). Even if you can own individual stocks I would just own indexes first few years.&lt;/p>
+&lt;ol start="6">
+&lt;li>
+&lt;p>become the “techie,
+data guy”. Learn all the risk model UI, excel pulls, Bloomberg bells and whistles, etc. There is a lot of this and PMs are older and less tech savvy. Become friends with the data science team and become your teams internal data guy. Add value like this.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>FILO. First in, last out. Shouldn’t have to say this, but i do. It matters. Don’t take vacation your first year. Sounds harsh, but your first 12 months isn’t a career, it’s a try out. Treat it that way.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Find your voice. You don’t want to be the arrogant know it all, but you don’t want be the person who can’t take a stand. Observe, listen more than you speak, contemplate, but when you have an opinion you must voice it. Use data, analogs, and facts to support, not opinion.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>be a culture carrier. Make it about your team, not yourself. Be even keeled in drawdowns. Be yourself, tell jokes, do your best to be likeable. Obsessively identify ways to be helpful. Be a fixture at team happy hours, etc&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>know the game you chose, and embrace it. Pod life is fundamentally impermanent. You could make a million+ a year by year 3 or be fired in 3 months. You cannot be too attached for either outcome or you will drive yourself mad. Embrace the uncertainty. Some teams/seats last…&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>10 contd) …for years. But the pod GP’s are fundamentally PM traders who cut losers and let winers run. Given the leverage, it can’t be any other way. So ride the ride - highs will be euphoric and lows will be depressive. Thats life. In 3-5 years, you will have battle scars…&lt;/p>
+&lt;p>10 contd) …and tons of lessons learned (keep a trading journal), and if you do it right you will turn into a total badass money maker. But it’s a journey, and you won’t be there day 1. Best luck!&lt;/p>
+&lt;ol start="11">
+&lt;li>please add any helpful advice i omitted in the comments!!!&lt;/li>
+&lt;/ol>
+&lt;p>Twitter link: &lt;a class="link" href="https://twitter.com/LongShortHC/status/1540530560631578624" target="_blank" rel="noopener"
+>https://twitter.com/LongShortHC/status/1540530560631578624&lt;/a>&lt;/p></description></item><item><title>如何利用GithubAction发布Hugo博客</title><link>http://example.org/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</link><pubDate>Tue, 05 Apr 2022 15:07:33 +0800</pubDate><guid>http://example.org/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p>作为一个老网民，我还是很喜欢折腾博客的。从07年开始就玩各种博客，比如07年搜狐博客，那时候博客热很火，不亚于微博兴起的时候，于是我每天去刷我的搜狐博客访问量，是不是还专门去网吧写文章。 后来还开了新浪博客，一直在新浪博客混混文字，大概一直在新浪博客写了4年。&lt;/p>
 &lt;p>再后来又买了独立主机，自己开WordPress写博客，无奈后来被人把主机给黑了。但是那时候很快啦，天天找WordPress好看的主题，去别的的WP 搜索好用的插件。各种互加友链。&lt;/p>
 &lt;p>当然后来还玩了很多其他的博客，比如Google的BlogSpot，Tumbler，对就是那个Tumbler。 还有网易的LOFTER，新浪的绿洲。腾讯的QQ空间，微信公众号。&lt;/p>
 &lt;p>工作以后，有了Github page，看着大家都用Travis去自动化部署，于是也用HEXO搭建了一个。不过18年后一直没维护了，中途有次冲动想维护起来，发现怎么都跑不起来，于是就懒得动了。&lt;/p>
@@ -622,7 +1159,8 @@ git config --local user.email xxx
 4、将生成的静态站点内容推送到Github发布&lt;/p>
 &lt;p>一、安装Hugo&lt;/p>
 &lt;p>&lt;code>mac： brew install hugo&lt;/code>&lt;/p>
-&lt;p>其他系统安装方式见：&lt;a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/&lt;/a>&lt;/p>
+&lt;p>其他系统安装方式见：&lt;a class="link" href="https://gohugo.io/getting-started/installing/" target="_blank" rel="noopener"
+>https://gohugo.io/getting-started/installing/&lt;/a>&lt;/p>
 &lt;p>二、生成静态站点&lt;/p>
 &lt;p>1、初始化站点&lt;/p>
 &lt;p>Hugo命令可以自动生成站点需要的文件，后续我们所有的操作命令将会在Hugo生成的目录下执行。&lt;/p>
@@ -641,11 +1179,142 @@ git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
 &lt;p>6、启动 Hugo 预览服务器&lt;/p>
 &lt;p>Hugo 可以启动一个 Web 服务器，同时构建站点内容到内存中并在检测到文件更改后重新渲染，方便我们在开发环境实时预览对站点所做的更改。命令如下：&lt;/p>
 &lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">hugo server -D
-&lt;/code>&lt;/pre>&lt;p>添加 &lt;code>-D&lt;/code> 选项以输出草稿状态的文章，执行成功后可以通过 &lt;code>http://localhost:1313/&lt;/code> 访问站点。&lt;/p></description></item><item><title>如果我有一段生命</title><link>/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</link><pubDate>Tue, 05 Apr 2022 00:17:28 +0800</pubDate><guid>/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</guid><description>&lt;p>If God, for a second, forgot what I have become and granted me a little bit more of life, I would use it to the best of my ability.&lt;/p>
+&lt;/code>&lt;/pre>&lt;p>添加 &lt;code>-D&lt;/code> 选项以输出草稿状态的文章，执行成功后可以通过 &lt;code>http://localhost:1313/&lt;/code> 访问站点。&lt;/p>
+&lt;p>7、生成静态站点文件&lt;/p>
+&lt;p>当主题和文章等配置ok了，就可以生成静态站点界面。&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">hugo -D
+&lt;/code>&lt;/pre>&lt;p>添加 &lt;code>-D&lt;/code> 选项可以在结果中包括草稿内容，默认情况下静态页面会输出到根目录下的 &lt;code>public&lt;/code> 文件夹中。&lt;/p>
+&lt;p>三、利用Github Action发布&lt;/p>
+&lt;p>1、创建静态站点项目&lt;/p>
+&lt;p>在Github创建一个公共项目，名为username.github.io，这个仓库只放静态内容。注意，username一定要和github用户名相同。&lt;/p>
+&lt;p>2、创建hugo-blog项目&lt;/p>
+&lt;p>然后再Github新创建一个私有项目，名字为hugo-blog（保持与上面 第二步《生成静态站点》的目录名字相同），然后添加为我们本地项目文件夹的远程仓库（第二步创建的利用Hugo自动生成的目录）。这个仓库用来维护站点配置和原始的文章内容。&lt;/p>
+&lt;p>3、添加子模块&lt;/p>
+&lt;p>因为public里面存的是静态站点文件，所以我们在public创建一个git的子模块，之后这个目录将以 &lt;a class="link" href="mailto:git@github.com" >git@github.com&lt;/a>:JerryGoodLuck/JerryGoodLuck.github.io.git 作为远程仓库。&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">git submodule add -b main git@github.com:JerryGoodLuck/JerryGoodLuck.github.io.git public
+&lt;/code>&lt;/pre>&lt;p>4、baseurl配置&lt;/p>
+&lt;p>确保配置文件中的 &lt;code>baseUrl&lt;/code> 已经设置为了 &lt;code>&amp;lt;USERNAME&amp;gt;.github.io&lt;/code>&lt;/p>
+&lt;p>5、其他配置&lt;/p>
+&lt;p>一般还有其他的很多配置，可以根据自己的偏好来配置&lt;/p>
+&lt;p>6、添加workflows&lt;/p>
+&lt;p>这个文件所定义的workflow 基于项目仓库运行，但我们需要将运行过程生成的静态文件推送到个人主页仓库 &lt;code>JerryGoodLuck.github.io&lt;/code> 完成发布.
+相关的deploy任务中按照文档的 &lt;a class="link" href="https://github.com/peaceiris/actions-gh-pages" target="_blank" rel="noopener"
+>Deploy to external repository external_repository&lt;/a> 一节做了专门的配置。&lt;/p>
+&lt;p>我的配置文件如下&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">github pages&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">on&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">push&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">branches&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">jobs&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">deploy&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">runs-on&lt;/span>: &lt;span style="color:#ae81ff">ubuntu-18.04&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">steps&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">actions/checkout@v2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">submodules&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span> &lt;span style="color:#75715e"># Fetch Hugo themes (true OR recursive)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">fetch-depth&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span> &lt;span style="color:#75715e"># Fetch all history for .GitInfo and .Lastmod&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Setup Hugo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">peaceiris/actions-hugo@v2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">hugo-version&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;0.79.1&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">extended&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Build&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>: &lt;span style="color:#ae81ff">hugo --minify&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Deploy&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">peaceiris/actions-gh-pages@v3&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">deploy_key&lt;/span>: &lt;span style="color:#ae81ff">${{ secrets.ACTIONS_DEPLOY_KEY }}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">external_repository&lt;/span>: &lt;span style="color:#ae81ff">JerryGoodLuck/JerryGoodLuck.github.io&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">publish_branch&lt;/span>: &lt;span style="color:#ae81ff">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">publish_dir&lt;/span>: &lt;span style="color:#ae81ff">./public&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>7、在本地电脑生成SSH密钥&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">ssh-keygen -t rsa -b 4096 -C &amp;#34;$(git config user.email)&amp;#34; -f gh-pages -N &amp;#34;&amp;#34;
+# 将在当前目录生成如下密钥文件:
+# gh-pages.pub (公钥)
+# gh-pages (私钥)
+&lt;/code>&lt;/pre>&lt;p>8、配置密钥&lt;/p>
+&lt;p>在 GitHub 分别进入项目仓库和个人主页仓库的 Settings 页面：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>将公钥 gh-page.pub添加到 JerryGoodLuck.github.io项目的setting下的Deploy Keys， 命名为&lt;strong>HEXO_DEPLOY_PUB，&lt;/strong> 并设置为 Allow write access。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>将私钥 gh-pages 添加到hugo-blog的secrets下的Actions，命名为ACTIONS_DEPLOY_KEY&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>9、测试&lt;/p>
+&lt;p>接下来我们测试一下。在本地新增一个测试文章，git提交并推送到Github，预览效果后提交并推送，然后在项目仓库的 GitHub Actions 页面检查相应的 workflow 是否运行成功。&lt;/p>
+&lt;p>不出意外的话，很快个人主页仓库将新增一个由该 workflow 创建的提交，访问个人博客页面也会发现页面已经更新。&lt;/p>
+&lt;p>四、总结：&lt;/p>
+&lt;p>这次利用Github Action搭建Hugo的过程中，还是遇到不少坑。&lt;/p>
+&lt;p>1、不知道Github Action的语法以及配置文件怎么写，&lt;a class="link" href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-deploy-to-external-repository-external_repository" target="_blank" rel="noopener"
+>参考文档&lt;/a>&lt;/p>
+&lt;p>2、运行workflow总是失败，后来发现几个关键点：&lt;/p>
+&lt;pre>&lt;code>一个就是静态站点要以submodule的模式放在public目录下
+二个是主题也要是submodule的模式
+&lt;/code>&lt;/pre>
+&lt;p>3、公私钥Key配置的不正确。&lt;/p>
+&lt;h4 id="update-2022-08-07-170639-sunday">update 2022-08-07 17:06:39 Sunday
+&lt;/h4>&lt;p>Jane主题 full-config : &lt;a class="link" href="https://github.com/xianmin/hugo-theme-jane/blob/master/exampleSite/full-config.toml" target="_blank" rel="noopener"
+>https://github.com/xianmin/hugo-theme-jane/blob/master/exampleSite/full-config.toml&lt;/a>&lt;/p></description></item><item><title>如果我有一段生命</title><link>http://example.org/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</link><pubDate>Tue, 05 Apr 2022 00:17:28 +0800</pubDate><guid>http://example.org/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</guid><description>&lt;p>If God, for a second, forgot what I have become and granted me a little bit more of life, I would use it to the best of my ability.&lt;/p>
 &lt;p>如果有一刹那，上帝忘记我是一只布偶并赋予我片刻生命，我会最大限度的利用起来。&lt;/p>
 &lt;p>I wouldn&amp;rsquo;t possibly, say everything that is in my mind, but I would be more thoughtful of all I say…&lt;/p>
 &lt;p>我可能不会说出我心中的一切所想，但我必定会思考我所说的一切。&lt;/p>
-&lt;p>I would give merit to things not for what they are worth, but for what they mean to express.&lt;/p></description></item><item><title>不装蒜</title><link>/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</link><pubDate>Mon, 04 Apr 2022 22:16:02 +0800</pubDate><guid>/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</guid><description>&lt;p>顾城 (1956-1993)&lt;/p>
+&lt;p>I would give merit to things not for what they are worth, but for what they mean to express.&lt;/p>
+&lt;p>我会评价事物，按其意义大小而非价值多少。&lt;/p>
+&lt;p>I would sleep less, I would dream more, because I know that for every minute that we close our eyes, we waste 60 seconds of light. I would walk while others stop; I would awake while others sleep, and I would listen when others talk, and how I would enjoy a good chocolate ice cream!&lt;/p>
+&lt;p>我会少睡觉，多思考。因为我知道，每当我们闭上一分钟眼睛，我们也就同时失去了60秒。当他人停滞时我会前行，当他人入梦时我会清醒，当他人讲话时我会倾听，就像享受一支美味的巧克力冰激凌！&lt;/p>
+&lt;p>If God would give me a little bit more of life, I would dress in a simple manner, I would place myself in front of the sun, leaving not only my body, but my soul naked.&lt;/p>
+&lt;p>如果上帝赏我一段生命，我会简单装束，伏在阳光下，袒露的不仅是身体，还有我的魂灵。&lt;/p>
+&lt;p>My God, if I had a heart, I would write my hatred on ice and wait for the sun to come out. With a dream of Van Gogh I would paint on the stars a poem by Benedetti, and a song by Serrat would be my serenade to the moon. With my tears I would water the roses, to feel the pain of their thorns and the incarnated kiss of their petals &amp;hellip; My God, if I only had a scrap of life.&lt;/p>
+&lt;p>上帝呀，如果我有一颗心，我会将仇恨写在冰上，然后期待太阳的升起；我会用凡高的梦在星星上画一首贝内德第的诗，而塞莱特的歌将是我献给月亮的小夜曲。我会用泪水浇灌玫瑰，以此体味花刺的痛苦和花瓣的亲吻……上帝呀，如果我有一段生命……&lt;/p>
+&lt;p>I wouldn&amp;rsquo;t let a single day pass without telling the people I love that I love them. I would convince each woman and each man that they are my favorites, and I would live in love with love.&lt;/p>
+&lt;p>我不会放过哪怕是一天，而不对我所爱的人说我爱他们。我会使每个男人和女人都了解他们皆我所爱，我要怀着爱而生活。&lt;/p>
+&lt;p>To all, I would say how mistaken they are when they think that they stop falling in love when they grow old, without knowing that they grow old when they stop falling in love.&lt;/p>
+&lt;p>对于大人，我会向他们证明，那种认为因衰老而失去爱的想法是多么错误，我们是因为失去爱而衰老而不是与之相反。&lt;/p>
+&lt;p>I would give wings to children, but I would leave it to them to learn how to fly by themselves.&lt;/p>
+&lt;p>对于孩子，我会给他们插上翅膀而让他们自己学会飞翔；&lt;/p>
+&lt;p>To old people I would say that death doesn&amp;rsquo;t arrive when they grow old, but with forgetfulness.&lt;/p>
+&lt;p>对于老人，我会教给他们死亡的来临不是因为衰老而是因为遗忘。&lt;/p>
+&lt;p>I have learned so much with you all, I have learned that everybody wants to live on top of the mountain, without knowing that true happiness is obtained in the journey taken and the form used to reach the top of the hill.&lt;/p>
+&lt;p>人呀，我从你们身上学会了太多的东西&amp;hellip; &amp;hellip;我知道，人们都想伫立在颠峰上，殊不知，真正的幸福恰恰就在于攀登险阻的过程。&lt;/p>
+&lt;p>I have learned that when a newborn baby holds, with its little hand, his father&amp;rsquo;s finger, it has trapped him for the rest of his life.&lt;/p>
+&lt;p>我懂得，当婴儿用小拳头第一次抓住爸爸的手指时，他也就永远地抓住了它。&lt;/p>
+&lt;p>I have learned that a man has the right and obligation to look down at another man, only when that man needs help to get up from the ground.&lt;/p>
+&lt;p>我明白，一个人只有在帮助他人站起时才有权利俯视他。&lt;/p>
+&lt;p>From you I have learned so many things, but in truth they won&amp;rsquo;t be of much use, for when I keep them within this suitcase, unhappily shall I be dying.&lt;/p>
+&lt;p>我能够从你们身上学到的东西是如此之多，可事实上已经意义寥寥，因为当人们将我敛入棺木时，我正在死去。&lt;/p>
+&lt;p>Say always what you feel, not what you think.&lt;/p>
+&lt;p>永远说你感到的，做你想到的吧！&lt;/p>
+&lt;p>If I knew that today is the last time that I am going to see you asleep, I would hug you with all my strength and I would pray to the Lord to let me be the guardian angel of your soul.&lt;/p>
+&lt;p>如果我知道今天是我最后一次看你入睡，我会热烈地拥抱你，祈求上帝守护你的灵魂。&lt;/p>
+&lt;p>If I knew that this is the last time I’m going to see you leave the house, I would hug you and kiss you, then I would call you, I would hug you and kiss you again.&lt;/p>
+&lt;p>如果我知道这是最后一次看你离开家门，我会给你一个拥抱一个吻，然后重新叫住你，再度拥抱亲吻。&lt;/p>
+&lt;p>If I knew that this is the last time to hear your voice, I would record each word and each sentence of you, so that I could listen to it over and over again.&lt;/p>
+&lt;p>如果我知道这是最后一次听到你的声音，我会录下你的每个字句，以便可以一遍又一遍永无穷尽地倾听。&lt;/p>
+&lt;p>If I knew that these are the last moments to see you, I would say &amp;ldquo;I love you&amp;rdquo; instead of silly to think that you already knew.&lt;/p>
+&lt;p>如果我知道这是看到你的最后几分钟，我会说&amp;quot;我爱你&amp;quot;，而不是傻傻地以为你早已知道。&lt;/p>
+&lt;p>There is always tomorrow, and life gives us another opportunity to do things right, but in case I am wrong, and today is all that is left to me, I would love to tell you how much I love you and that I will never forget you.&lt;/p>
+&lt;p>永远有一个明天，生活给我们另一个机会将事情做好，可是如果我搞错了，今天就是我们所剩的全部，我会对你说我多么爱你，我永远不会忘记你。&lt;/p>
+&lt;p>Tomorrow is never guaranteed to anyone, young or old. Today could be the last time to see your loved ones, which is why you mustn&amp;rsquo;t wait; do it today, in case tomorrow never arrives. I am sure you will be sorry you wasted the opportunity today to give a smile, a hug, a kiss, and that you were too busy to grant them their last wish.&lt;/p>
+&lt;p>明天从不向任何人作保证，无论青年或老人，今天可能就是你最后一次看到你所爱的人。因此，别再等待了，今天就开始！因为如果明天永远不来，你也许会遗憾今天没来得及微笑，拥抱，亲吻，会遗憾自己忙碌得只能把它们归为一个最后的愿望。&lt;/p>
+&lt;p>Keep your loved ones near you; tell them in their ears and to their faces how much you need them and love them. Love them and treat them well; take your time to tell them &amp;ldquo;I am sorry&amp;rdquo;; &amp;ldquo;forgive me&amp;rdquo;, &amp;ldquo;please&amp;rdquo;, &amp;ldquo;thank you&amp;rdquo;, and all those loving words you know!&lt;/p>
+&lt;p>保护周围你爱的人吧，告诉他们你多么需要他们。爱他们，善待他们，用些时间对他们说：&amp;ldquo;对不起&amp;rdquo;，&amp;ldquo;原谅我&amp;rdquo;，&amp;ldquo;劳驾&amp;rdquo;，&amp;ldquo;谢谢&amp;rdquo;，以及你知道的所有爱的话语。&lt;/p>
+&lt;p>Nobody will know you for your secret thought. Ask the Lord for wisdom and strength to express them. Show your friends and loved ones how important they are to you.&lt;/p>
+&lt;p>没有人会因为你秘而不宣的思想而记住你。向上帝祈求力量和智慧来表达它们吧，向你的朋友证明，他们对你来说是多么的重要。&lt;/p>
+&lt;p>For you, With much love,&lt;/p>
+&lt;p>写给你们，带着我无尽的爱&lt;/p>
+&lt;p>Your Friend,&lt;/p>
+&lt;p>你们的朋友&lt;/p>
+&lt;p>Gabriel Garcia Marquez&lt;/p></description></item><item><title>不装蒜</title><link>http://example.org/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</link><pubDate>Mon, 04 Apr 2022 22:16:02 +0800</pubDate><guid>http://example.org/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</guid><description>&lt;p>顾城 (1956-1993)&lt;/p>
 &lt;p>人的生命里有一种能量，它使你不安宁。说它是欲望也行，幻想也行，妄想也行，总之它不可能停下来，它需要一个表达形式。这个形式可能是革命，也可能是爱情；可能是搬一块石头，也可能是写一首诗。只要这个形式和生命力里的这个能量吻合了，就有了一个完美的过程。&lt;/p>
 &lt;p>一个彻底诚实的人是从不面对选择的，那条路永远会清楚无二地呈现在你面前，这和你的憧憬无关，就像你是一棵苹果树，你憧憬结橘子，但是你还是诚实地结出苹果一样。&lt;/p>
 &lt;p>西方爱情是强烈开放的花朵，东方爱情是两朵花之间微妙的芳香。&lt;/p>
@@ -656,4 +1325,3 @@ git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
 &lt;p>从叶到花，或从花到叶，于科研是一个过程，而于生命自身则永远只在此刻。花和叶都是一种记忆方式。果子同时也是叶子。生命是闪耀的此刻，不是过程，就像芳香不需要道路一样。&lt;/p>
 &lt;p>中国人只创造了两个理想，一个是山中的桃花源，一个是墙里的大观园。我的笑话不过是把大观园搬到了山里，忘了林黛玉的药锄是葬花用的。&lt;/p>
 &lt;p>我到了新西兰一个小岛上，把身体交给了劳动。四年之后，有一天，我忽然看见黑色的鸟停在月亮里，树上的花早就开了，红花已经落了满地。这时候我才感到我从文化中间、文字中间走了出来。万物清清楚楚地呈现在你的心里，一阵风吹过，鸟就开始叫了，树就开始响了。这个时候我明白了一个道理：只有在你生命美丽的时候，世界才是美丽的。&lt;/p></description></item></channel></rss>
->>>>>>> c2831dde1e4b55539240969f8f4e41355e629d77
