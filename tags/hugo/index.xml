@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><follow_challenge><feedId>60623584562065408</feedId><userId>60599027243183104</userId></follow_challenge><channel><title>Hugo on Lost Temple</title><link>https://jerrygoodluck.github.io/about/tags/hugo/</link><description> Recent content in Hugo on Lost Temple feedId:60623584562065408+userId:60599027243183104</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 05 Apr 2022 15:07:33 +0800</lastBuildDate><atom:link href="https://jerrygoodluck.github.io/about/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>如何利用GithubAction发布Hugo博客</title><link>https://jerrygoodluck.github.io/about/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</link><pubDate>Tue, 05 Apr 2022 15:07:33 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p>作为一个老网民，我还是很喜欢折腾博客的。从07年开始就玩各种博客，比如07年搜狐博客，那时候博客热很火，不亚于微博兴起的时候，于是我每天去刷我的搜狐博客访问量，是不是还专门去网吧写文章。 后来还开了新浪博客，一直在新浪博客混混文字，大概一直在新浪博客写了4年。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><follow_challenge><feedId>60623584562065408</feedId><userId>60599027243183104</userId></follow_challenge><channel><title>Hugo on Lost Temple</title><link>/tags/hugo/</link><description>feedId:60623584562065408+userId:60599027243183104 Lost Temple (Hugo)</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 05 Apr 2022 15:07:33 +0800</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>如何利用GithubAction发布Hugo博客</title><link>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</link><pubDate>Tue, 05 Apr 2022 15:07:33 +0800</pubDate><guid>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p>作为一个老网民，我还是很喜欢折腾博客的。从07年开始就玩各种博客，比如07年搜狐博客，那时候博客热很火，不亚于微博兴起的时候，于是我每天去刷我的搜狐博客访问量，是不是还专门去网吧写文章。 后来还开了新浪博客，一直在新浪博客混混文字，大概一直在新浪博客写了4年。&lt;/p>
 &lt;p>再后来又买了独立主机，自己开WordPress写博客，无奈后来被人把主机给黑了。但是那时候很快啦，天天找WordPress好看的主题，去别的的WP 搜索好用的插件。各种互加友链。&lt;/p>
 &lt;p>当然后来还玩了很多其他的博客，比如Google的BlogSpot，Tumbler，对就是那个Tumbler。 还有网易的LOFTER，新浪的绿洲。腾讯的QQ空间，微信公众号。&lt;/p>
 &lt;p>工作以后，有了Github page，看着大家都用Travis去自动化部署，于是也用HEXO搭建了一个。不过18年后一直没维护了，中途有次冲动想维护起来，发现怎么都跑不起来，于是就懒得动了。&lt;/p>
@@ -9,8 +9,7 @@
 4、将生成的静态站点内容推送到Github发布&lt;/p>
 &lt;p>一、安装Hugo&lt;/p>
 &lt;p>&lt;code>mac： brew install hugo&lt;/code>&lt;/p>
-&lt;p>其他系统安装方式见：&lt;a class="link" href="https://gohugo.io/getting-started/installing/" target="_blank" rel="noopener"
->https://gohugo.io/getting-started/installing/&lt;/a>&lt;/p>
+&lt;p>其他系统安装方式见：&lt;a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/&lt;/a>&lt;/p>
 &lt;p>二、生成静态站点&lt;/p>
 &lt;p>1、初始化站点&lt;/p>
 &lt;p>Hugo命令可以自动生成站点需要的文件，后续我们所有的操作命令将会在Hugo生成的目录下执行。&lt;/p>
@@ -40,7 +39,7 @@ git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
 &lt;p>2、创建hugo-blog项目&lt;/p>
 &lt;p>然后再Github新创建一个私有项目，名字为hugo-blog（保持与上面 第二步《生成静态站点》的目录名字相同），然后添加为我们本地项目文件夹的远程仓库（第二步创建的利用Hugo自动生成的目录）。这个仓库用来维护站点配置和原始的文章内容。&lt;/p>
 &lt;p>3、添加子模块&lt;/p>
-&lt;p>因为public里面存的是静态站点文件，所以我们在public创建一个git的子模块，之后这个目录将以 &lt;a class="link" href="mailto:git@github.com" >git@github.com&lt;/a>:JerryGoodLuck/JerryGoodLuck.github.io.git 作为远程仓库。&lt;/p>
+&lt;p>因为public里面存的是静态站点文件，所以我们在public创建一个git的子模块，之后这个目录将以 &lt;a href="mailto:git@github.com">git@github.com&lt;/a>:JerryGoodLuck/JerryGoodLuck.github.io.git 作为远程仓库。&lt;/p>
 &lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">git submodule add -b main git@github.com:JerryGoodLuck/JerryGoodLuck.github.io.git public
 &lt;/code>&lt;/pre>&lt;p>4、baseurl配置&lt;/p>
 &lt;p>确保配置文件中的 &lt;code>baseUrl&lt;/code> 已经设置为了 &lt;code>&amp;lt;USERNAME&amp;gt;.github.io&lt;/code>&lt;/p>
@@ -48,43 +47,42 @@ git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
 &lt;p>一般还有其他的很多配置，可以根据自己的偏好来配置&lt;/p>
 &lt;p>6、添加workflows&lt;/p>
 &lt;p>这个文件所定义的workflow 基于项目仓库运行，但我们需要将运行过程生成的静态文件推送到个人主页仓库 &lt;code>JerryGoodLuck.github.io&lt;/code> 完成发布.
-相关的deploy任务中按照文档的 &lt;a class="link" href="https://github.com/peaceiris/actions-gh-pages" target="_blank" rel="noopener"
->Deploy to external repository external_repository&lt;/a> 一节做了专门的配置。&lt;/p>
+相关的deploy任务中按照文档的 &lt;a href="https://github.com/peaceiris/actions-gh-pages">Deploy to external repository external_repository&lt;/a> 一节做了专门的配置。&lt;/p>
 &lt;p>我的配置文件如下&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">github pages&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">name&lt;/span>: github pages
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">on&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">push&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">branches&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">on&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">push&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">branches&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - main
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">jobs&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">deploy&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">runs-on&lt;/span>: &lt;span style="color:#ae81ff">ubuntu-18.04&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">steps&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">actions/checkout@v2&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">submodules&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span> &lt;span style="color:#75715e"># Fetch Hugo themes (true OR recursive)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">fetch-depth&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span> &lt;span style="color:#75715e"># Fetch all history for .GitInfo and .Lastmod&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">jobs&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">deploy&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">runs-on&lt;/span>: ubuntu-18.04
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">steps&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ff6ac1">uses&lt;/span>: actions/checkout@v2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">with&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">submodules&lt;/span>: &lt;span style="color:#ff6ac1">true&lt;/span> &lt;span style="color:#78787e"># Fetch Hugo themes (true OR recursive)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">fetch-depth&lt;/span>: &lt;span style="color:#ff9f43">0&lt;/span> &lt;span style="color:#78787e"># Fetch all history for .GitInfo and .Lastmod&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Setup Hugo&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">peaceiris/actions-hugo@v2&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">hugo-version&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;0.79.1&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">extended&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ff6ac1">name&lt;/span>: Setup Hugo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">uses&lt;/span>: peaceiris/actions-hugo@v2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">with&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">hugo-version&lt;/span>: &lt;span style="color:#5af78e">&amp;#39;0.79.1&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">extended&lt;/span>: &lt;span style="color:#ff6ac1">true&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Build&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>: &lt;span style="color:#ae81ff">hugo --minify&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ff6ac1">name&lt;/span>: Build
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">run&lt;/span>: hugo --minify
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Deploy&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">peaceiris/actions-gh-pages@v3&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">deploy_key&lt;/span>: &lt;span style="color:#ae81ff">${{ secrets.ACTIONS_DEPLOY_KEY }}&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">external_repository&lt;/span>: &lt;span style="color:#ae81ff">JerryGoodLuck/JerryGoodLuck.github.io&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">publish_branch&lt;/span>: &lt;span style="color:#ae81ff">main&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">publish_dir&lt;/span>: &lt;span style="color:#ae81ff">./public&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ff6ac1">name&lt;/span>: Deploy
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">uses&lt;/span>: peaceiris/actions-gh-pages@v3
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">with&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">deploy_key&lt;/span>: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">external_repository&lt;/span>: JerryGoodLuck/JerryGoodLuck.github.io
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">publish_branch&lt;/span>: main
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">publish_dir&lt;/span>: ./public
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>7、在本地电脑生成SSH密钥&lt;/p>
 &lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">ssh-keygen -t rsa -b 4096 -C &amp;#34;$(git config user.email)&amp;#34; -f gh-pages -N &amp;#34;&amp;#34;
 # 将在当前目录生成如下密钥文件:
@@ -105,13 +103,18 @@ git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
 &lt;p>不出意外的话，很快个人主页仓库将新增一个由该 workflow 创建的提交，访问个人博客页面也会发现页面已经更新。&lt;/p>
 &lt;p>四、总结：&lt;/p>
 &lt;p>这次利用Github Action搭建Hugo的过程中，还是遇到不少坑。&lt;/p>
-&lt;p>1、不知道Github Action的语法以及配置文件怎么写，&lt;a class="link" href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-deploy-to-external-repository-external_repository" target="_blank" rel="noopener"
->参考文档&lt;/a>&lt;/p>
+&lt;p>1、不知道Github Action的语法以及配置文件怎么写，&lt;a href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-deploy-to-external-repository-external_repository">参考文档&lt;/a>&lt;/p>
 &lt;p>2、运行workflow总是失败，后来发现几个关键点：&lt;/p>
 &lt;pre>&lt;code>一个就是静态站点要以submodule的模式放在public目录下
 二个是主题也要是submodule的模式
 &lt;/code>&lt;/pre>
 &lt;p>3、公私钥Key配置的不正确。&lt;/p>
-&lt;h4 id="update-2022-08-07-170639-sunday">update 2022-08-07 17:06:39 Sunday
-&lt;/h4>&lt;p>Jane主题 full-config : &lt;a class="link" href="https://github.com/xianmin/hugo-theme-jane/blob/master/exampleSite/full-config.toml" target="_blank" rel="noopener"
->https://github.com/xianmin/hugo-theme-jane/blob/master/exampleSite/full-config.toml&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;h4 id="update-2022-08-07-170639-sunday" >
+&lt;div>
+&lt;a href="#update-2022-08-07-170639-sunday">
+###
+&lt;/a>
+update 2022-08-07 17:06:39 Sunday
+&lt;/div>
+&lt;/h4>
+&lt;p>Jane主题 full-config : &lt;a href="https://github.com/xianmin/hugo-theme-jane/blob/master/exampleSite/full-config.toml">https://github.com/xianmin/hugo-theme-jane/blob/master/exampleSite/full-config.toml&lt;/a>&lt;/p></description></item></channel></rss>

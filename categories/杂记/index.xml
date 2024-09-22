@@ -1,22 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><follow_challenge><feedId>60623584562065408</feedId><userId>60599027243183104</userId></follow_challenge><channel><title>杂记 on Lost Temple</title><link>https://jerrygoodluck.github.io/about/categories/%E6%9D%82%E8%AE%B0/</link><description> Recent content in 杂记 on Lost Temple feedId:60623584562065408+userId:60599027243183104</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 17 Sep 2023 16:45:45 +0800</lastBuildDate><atom:link href="https://jerrygoodluck.github.io/about/categories/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>好久没写博客了</title><link>https://jerrygoodluck.github.io/about/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</link><pubDate>Sun, 17 Sep 2023 16:45:45 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</guid><description>&lt;p>好久没来写点东西了。打算不写技术博客了，人要学技术，网上写的人还是太多了。而且写的比我更好，我也就不在这方面去费时间了。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><follow_challenge><feedId>60623584562065408</feedId><userId>60599027243183104</userId></follow_challenge><channel><title>杂记 on Lost Temple</title><link>/categories/%E6%9D%82%E8%AE%B0/</link><description>feedId:60623584562065408+userId:60599027243183104 Lost Temple (杂记)</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 17 Sep 2023 16:45:45 +0800</lastBuildDate><atom:link href="/categories/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>好久没写博客了</title><link>/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</link><pubDate>Sun, 17 Sep 2023 16:45:45 +0800</pubDate><guid>/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</guid><description>&lt;p>好久没来写点东西了。打算不写技术博客了，人要学技术，网上写的人还是太多了。而且写的比我更好，我也就不在这方面去费时间了。&lt;/p>
 &lt;p>打算就写点我的所见，所闻，所感，记录下岁月吧。可能还能引起一些共鸣。&lt;/p>
 &lt;p>从2007年我就喜欢博客，那时候有搜狐博客，新浪博客，经常去看韩寒，老徐，还有个极地阳光。想想现在的网红，其实逻辑没变。那时候写博客人气高的也是网红。&lt;/p>
-&lt;p>现如今变成了短视频的天下了，不过现在也有微博，知乎，小红书之类的。但是本质还是没变，还是看访问量，看粉丝。以前粉丝经济没这么强，现在粉丝经济那就是相当强了。&lt;/p></description></item><item><title>我的oh My Zsh主题</title><link>https://jerrygoodluck.github.io/about/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link><pubDate>Sat, 13 Aug 2022 10:23:30 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid><description>&lt;p>最近想改下iTerm的oh-my-zsh主题，看知乎讨论，有一款简洁的主题映入眼帘。&lt;/p>
-&lt;h3 id="主题名称">主题名称
-&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>half-life
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改prompt">修改PROMPT
-&lt;/h3>&lt;p>然后去oh-my-zsh.sh修改PROMPT&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>vim ~/.oh-my-zsh/oh-my-zsh.sh
+&lt;p>现如今变成了短视频的天下了，不过现在也有微博，知乎，小红书之类的。但是本质还是没变，还是看访问量，看粉丝。以前粉丝经济没这么强，现在粉丝经济那就是相当强了。&lt;/p></description></item><item><title>我的oh My Zsh主题</title><link>/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link><pubDate>Sat, 13 Aug 2022 10:23:30 +0800</pubDate><guid>/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid><description>&lt;p>最近想改下iTerm的oh-my-zsh主题，看知乎讨论，有一款简洁的主题映入眼帘。&lt;/p>
+&lt;h3 id="主题名称" >
+&lt;div>
+&lt;a href="#%e4%b8%bb%e9%a2%98%e5%90%8d%e7%a7%b0">
+##
+&lt;/a>
+主题名称
+&lt;/div>
+&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>half-life
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改prompt" >
+&lt;div>
+&lt;a href="#%e4%bf%ae%e6%94%b9prompt">
+##
+&lt;/a>
+修改PROMPT
+&lt;/div>
+&lt;/h3>
+&lt;p>然后去oh-my-zsh.sh修改PROMPT&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>vim ~/.oh-my-zsh/oh-my-zsh.sh
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在文件末尾添加一行：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>PROMPT&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">$&amp;#39;%{$purple%}%n%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info &amp;#34; with%{$fg[red]%} &amp;#34; v g &amp;#34;%{$reset_color%}&amp;#34;)$vcs_info_msg_0_%{$orange%}%{$reset_color%} at %{$hotpink%}%* %{$orange%}λ%{$reset_color%} &amp;#39;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">PROMPT&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">$&amp;#39;%{$purple%}%n%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info &amp;#34; with%{$fg[red]%} &amp;#34; v g &amp;#34;%{$reset_color%}&amp;#34;)$vcs_info_msg_0_%{$orange%}%{$reset_color%} at %{$hotpink%}%* %{$orange%}λ%{$reset_color%} &amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>效果如下&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202208131028385.png"
-loading="lazy"
->&lt;/p></description></item><item><title>Ubuntu18.04/Mysql5.7改成utf8编码</title><link>https://jerrygoodluck.github.io/about/post/mysql57_character/</link><pubDate>Mon, 08 Aug 2022 22:11:13 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/mysql57_character/</guid><description>&lt;h3 id="问题背景">问题背景
-&lt;/h3>&lt;p>向MySQL插入中文内容显示问号&lt;/p>
-&lt;h3 id="原因">原因
-&lt;/h3>&lt;p>Server端的MySQL不支持utf8， 部分是latin1编码格式。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>mysql&amp;gt;show variables like &lt;span style="color:#e6db74">&amp;#34;%char%&amp;#34;&lt;/span>;
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202208131028385.png">&lt;/p></description></item><item><title>Ubuntu18.04/Mysql5.7改成utf8编码</title><link>/post/mysql57_character/</link><pubDate>Mon, 08 Aug 2022 22:11:13 +0800</pubDate><guid>/post/mysql57_character/</guid><description>&lt;h3 id="问题背景" >
+&lt;div>
+&lt;a href="#%e9%97%ae%e9%a2%98%e8%83%8c%e6%99%af">
+##
+&lt;/a>
+问题背景
+&lt;/div>
+&lt;/h3>
+&lt;p>向MySQL插入中文内容显示问号&lt;/p>
+&lt;h3 id="原因" >
+&lt;div>
+&lt;a href="#%e5%8e%9f%e5%9b%a0">
+##
+&lt;/a>
+原因
+&lt;/div>
+&lt;/h3>
+&lt;p>Server端的MySQL不支持utf8， 部分是latin1编码格式。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>mysql&amp;gt;show variables like &lt;span style="color:#5af78e">&amp;#34;%char%&amp;#34;&lt;/span>;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| Variable_name | Value |
@@ -29,42 +55,49 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_server | latin1 |
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_system | utf8 |
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_sets_dir | /usr/share/mysql/charsets/ |
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| validate_password_special_char_count | &lt;span style="color:#ae81ff">1&lt;/span> |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| validate_password_special_char_count | &lt;span style="color:#ff9f43">1&lt;/span> |
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">9&lt;/span> rows in set &lt;span style="color:#f92672">(&lt;/span>0.02 sec&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="解决办法">解决办法
-&lt;/h3>&lt;p>1、直接登录MySQL改数据库, 但是MySQL重启后，修改会失效。&lt;/p>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff9f43">9&lt;/span> rows in &lt;span style="color:#ff5c57">set&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>0.02 sec&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="解决办法" >
+&lt;div>
+&lt;a href="#%e8%a7%a3%e5%86%b3%e5%8a%9e%e6%b3%95">
+##
+&lt;/a>
+解决办法
+&lt;/div>
+&lt;/h3>
+&lt;p>1、直接登录MySQL改数据库, 但是MySQL重启后，修改会失效。&lt;/p>
 &lt;p>2、修改MySQL配置&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /etc/mysql/conf.d
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">cd&lt;/span> /etc/mysql/conf.d
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>vim mysql.cnf
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.1、在[mysql]添加 default-character-set=utf8&lt;/p>
 &lt;pre tabindex="0">&lt;code>[mysql]
 default-character-set=utf8
 &lt;/code>&lt;/pre>&lt;p>2.2、进入/etc/mysql/mysql.conf.d目录，打开mysql.conf.d，在[mysqld]添加一行 character-set-server=utf8，如下所示&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>cd /etc/mysql/mysql.conf.d
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">cd&lt;/span> /etc/mysql/mysql.conf.d
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>mysqld&lt;span style="color:#f92672">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># * Basic Settings&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>user &lt;span style="color:#f92672">=&lt;/span> mysql
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pid-file &lt;span style="color:#f92672">=&lt;/span> /var/run/mysqld/mysqld.pid
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>socket &lt;span style="color:#f92672">=&lt;/span> /var/run/mysqld/mysqld.sock
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>port &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">3306&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>basedir &lt;span style="color:#f92672">=&lt;/span> /usr
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>datadir &lt;span style="color:#f92672">=&lt;/span> /var/lib/mysql
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tmpdir &lt;span style="color:#f92672">=&lt;/span> /tmp
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>lc-messages-dir &lt;span style="color:#f92672">=&lt;/span> /usr/share/mysql
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">[&lt;/span>mysqld&lt;span style="color:#ff6ac1">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#78787e">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#78787e"># * Basic Settings&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#78787e">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">user&lt;/span> &lt;span style="color:#ff6ac1">=&lt;/span> mysql
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pid-file &lt;span style="color:#ff6ac1">=&lt;/span> /var/run/mysqld/mysqld.pid
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">socket&lt;/span> &lt;span style="color:#ff6ac1">=&lt;/span> /var/run/mysqld/mysqld.sock
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">port&lt;/span> &lt;span style="color:#ff6ac1">=&lt;/span> &lt;span style="color:#ff9f43">3306&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">basedir&lt;/span> &lt;span style="color:#ff6ac1">=&lt;/span> /usr
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">datadir&lt;/span> &lt;span style="color:#ff6ac1">=&lt;/span> /var/lib/mysql
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">tmpdir&lt;/span> &lt;span style="color:#ff6ac1">=&lt;/span> /tmp
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>lc-messages-dir &lt;span style="color:#ff6ac1">=&lt;/span> /usr/share/mysql
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>skip-external-locking
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>character-set-server&lt;span style="color:#f92672">=&lt;/span>utf8
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Instead of skip-networking the default is now to listen only on&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># localhost which is more compatible and is not less secure.&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bind-address &lt;span style="color:#f92672">=&lt;/span> 127.0.0.1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>character-set-server&lt;span style="color:#ff6ac1">=&lt;/span>utf8
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#78787e">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#78787e"># Instead of skip-networking the default is now to listen only on&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#78787e"># localhost which is more compatible and is not less secure.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bind-address &lt;span style="color:#ff6ac1">=&lt;/span> 127.0.0.1
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.3、配置成功修改后，重启MySQL服务&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>service mysql restart
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>service mysql restart
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.4、检查编码是否修改成功&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>mysql&amp;gt;show variables like &lt;span style="color:#e6db74">&amp;#34;%char%&amp;#34;&lt;/span>;
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>mysql&amp;gt;show variables like &lt;span style="color:#5af78e">&amp;#34;%char%&amp;#34;&lt;/span>;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| Variable_name | Value |
@@ -77,55 +110,96 @@ default-character-set=utf8
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_server | utf8 |
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_system | utf8 |
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_sets_dir | /usr/share/mysql/charsets/ |
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| validate_password_special_char_count | &lt;span style="color:#ae81ff">1&lt;/span> |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| validate_password_special_char_count | &lt;span style="color:#ff9f43">1&lt;/span> |
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">9&lt;/span> rows in set &lt;span style="color:#f92672">(&lt;/span>0.02 sec&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff9f43">9&lt;/span> rows in &lt;span style="color:#ff5c57">set&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>0.02 sec&lt;span style="color:#ff6ac1">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.5、配置成utf8生效后，再插入中文内容就可以正常显示了。&lt;/p>
-&lt;hr></description></item><item><title>Ubuntu18.04使用supervisor守护进程</title><link>https://jerrygoodluck.github.io/about/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link><pubDate>Sun, 07 Aug 2022 15:54:02 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid><description>&lt;h3 id="问题背景">问题背景
-&lt;/h3>&lt;p>最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。&lt;/p>
+&lt;hr></description></item><item><title>Ubuntu18.04使用supervisor守护进程</title><link>/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link><pubDate>Sun, 07 Aug 2022 15:54:02 +0800</pubDate><guid>/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid><description>&lt;h3 id="问题背景" >
+&lt;div>
+&lt;a href="#%e9%97%ae%e9%a2%98%e8%83%8c%e6%99%af">
+##
+&lt;/a>
+问题背景
+&lt;/div>
+&lt;/h3>
+&lt;p>最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。&lt;/p>
 &lt;p>于是想着用supervisor来做守护进程, 本文就是记录supervisor 的安装、配置、使用技巧，并设置如何supervisor开机自动启动&lt;/p>
-&lt;h3 id="机器环境">机器环境
-&lt;/h3>&lt;p>Ubuntu版本：18.04&lt;/p>
+&lt;h3 id="机器环境" >
+&lt;div>
+&lt;a href="#%e6%9c%ba%e5%99%a8%e7%8e%af%e5%a2%83">
+##
+&lt;/a>
+机器环境
+&lt;/div>
+&lt;/h3>
+&lt;p>Ubuntu版本：18.04&lt;/p>
 &lt;p>Ubuntu用户：root&lt;/p>
-&lt;h3 id="ubuntu安装supervisor">Ubuntu安装supervisor
-&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>apt install supervisor
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ubuntu配置supervisor">Ubuntu配置supervisor
-&lt;/h3>&lt;p>安装完成后，会生成一个默认的配置文件/etc/supervisor/supervisord.conf， 这个默认配置里面也会load所有在conf.d目录下的配置&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# tree
+&lt;h3 id="ubuntu安装supervisor" >
+&lt;div>
+&lt;a href="#ubuntu%e5%ae%89%e8%a3%85supervisor">
+##
+&lt;/a>
+Ubuntu安装supervisor
+&lt;/div>
+&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>apt install supervisor
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ubuntu配置supervisor" >
+&lt;div>
+&lt;a href="#ubuntu%e9%85%8d%e7%bd%aesupervisor">
+##
+&lt;/a>
+Ubuntu配置supervisor
+&lt;/div>
+&lt;/h3>
+&lt;p>安装完成后，会生成一个默认的配置文件/etc/supervisor/supervisord.conf， 这个默认配置里面也会load所有在conf.d目录下的配置&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# tree
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|-- conf.d
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| &lt;span style="color:#e6db74">`&lt;/span>-- we.conf
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">`&lt;/span>-- supervisord.conf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| &lt;span style="color:#5af78e">`&lt;/span>-- we.conf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#5af78e">`&lt;/span>-- supervisord.conf
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">1&lt;/span> directory, &lt;span style="color:#ae81ff">2&lt;/span> files
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff9f43">1&lt;/span> directory, &lt;span style="color:#ff9f43">2&lt;/span> files
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>supervisord.conf这个默认配置会load所有在conf.d目录下的配置，所以我们接下来在conf.d目录下新建一个我们自己的配置&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>touch /etc/supervisor/conf.d/we.conf
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>touch /etc/supervisor/conf.d/we.conf
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>参照默认配置文件supervisord.conf里的内容改改，配置内容如下&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>program:we&lt;span style="color:#f92672">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>directory&lt;span style="color:#f92672">=&lt;/span>/home/test/
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>command&lt;span style="color:#f92672">=&lt;/span>sh we.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>autostart&lt;span style="color:#f92672">=&lt;/span>true
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>autorestart&lt;span style="color:#f92672">=&lt;/span>true
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>startretries&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>redirect_stderr&lt;span style="color:#f92672">=&lt;/span>true
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_logfile&lt;span style="color:#f92672">=&lt;/span>/home/test/out.log
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>具体也可参照官方给的详细文档： &lt;a class="link" href="http://supervisord.org/configuration.html" target="_blank" rel="noopener"
->http://supervisord.org/configuration.html&lt;/a>&lt;/p>
-&lt;h3 id="检查supervisor的状态">检查supervisor的状态
-&lt;/h3>&lt;p>1、检查supervisor的状态&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>ps aux | grep supervisor
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">[&lt;/span>program:we&lt;span style="color:#ff6ac1">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">directory&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/home/test/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">command&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>sh we.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">autostart&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">autorestart&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">startretries&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">redirect_stderr&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stdout_logfile&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/home/test/out.log
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>具体也可参照官方给的详细文档： &lt;a href="http://supervisord.org/configuration.html">http://supervisord.org/configuration.html&lt;/a>&lt;/p>
+&lt;h3 id="检查supervisor的状态" >
+&lt;div>
+&lt;a href="#%e6%a3%80%e6%9f%a5supervisor%e7%9a%84%e7%8a%b6%e6%80%81">
+##
+&lt;/a>
+检查supervisor的状态
+&lt;/div>
+&lt;/h3>
+&lt;p>1、检查supervisor的状态&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>ps aux | grep supervisor
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# ps aux | grep supervisor
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#ae81ff">2551&lt;/span> 0.0 2.0 &lt;span style="color:#ae81ff">65580&lt;/span> &lt;span style="color:#ae81ff">21508&lt;/span> ? Ss 12:39 0:09 /usr/bin/python /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#ae81ff">7720&lt;/span> 0.0 0.1 &lt;span style="color:#ae81ff">13116&lt;/span> &lt;span style="color:#ae81ff">1044&lt;/span> pts/0 S+ 16:46 0:00 grep --color&lt;span style="color:#f92672">=&lt;/span>auto supervisor
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#ff9f43">2551&lt;/span> 0.0 2.0 &lt;span style="color:#ff9f43">65580&lt;/span> &lt;span style="color:#ff9f43">21508&lt;/span> ? Ss 12:39 0:09 /usr/bin/python /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#ff9f43">7720&lt;/span> 0.0 0.1 &lt;span style="color:#ff9f43">13116&lt;/span> &lt;span style="color:#ff9f43">1044&lt;/span> pts/0 S+ 16:46 0:00 grep --color&lt;span style="color:#ff6ac1">=&lt;/span>auto supervisor
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>当看到如上对应的进程，就说明supervisor启动是成功的。&lt;/p>
 &lt;p>2、检查守护的进程的状态&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# supervisorctl
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# supervisorctl
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>we RUNNING pid 2603, uptime 4:05:59
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>我们就可以看到我们配置的守护进程的状态，如果不在运行，会有相应的错误信息，可以去刚才配置的log目录查看日志：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>less /home/test/out.log
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="supervisorctl-常用命令">supervisorctl 常用命令
-&lt;/h3>&lt;table>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>less /home/test/out.log
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="supervisorctl-常用命令" >
+&lt;div>
+&lt;a href="#supervisorctl-%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4">
+##
+&lt;/a>
+supervisorctl 常用命令
+&lt;/div>
+&lt;/h3>
+&lt;table>
 &lt;thead>
 &lt;tr>
 &lt;th style="text-align: left">command&lt;/th>
@@ -159,88 +233,116 @@ default-character-set=utf8
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h3 id="设置supervisor开机启动">设置supervisor开机启动
-&lt;/h3>&lt;p>如果使用apt安装的，一般来说会自动设置好开机启动，但是如果你重启之后发现没有开机自动启动，可以按照下面的方法配置。&lt;/p>
+&lt;h3 id="设置supervisor开机启动" >
+&lt;div>
+&lt;a href="#%e8%ae%be%e7%bd%aesupervisor%e5%bc%80%e6%9c%ba%e5%90%af%e5%8a%a8">
+##
+&lt;/a>
+设置supervisor开机启动
+&lt;/div>
+&lt;/h3>
+&lt;p>如果使用apt安装的，一般来说会自动设置好开机启动，但是如果你重启之后发现没有开机自动启动，可以按照下面的方法配置。&lt;/p>
 &lt;p>把下面的命令写进 rc.local 即可：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>/usr/bin/supervisord
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="mac设置supervisor">mac设置supervisor
-&lt;/h3>&lt;p>1、brew 安装supervisor&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>/usr/bin/supervisord
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="mac设置supervisor" >
+&lt;div>
+&lt;a href="#mac%e8%ae%be%e7%bd%aesupervisor">
+##
+&lt;/a>
+mac设置supervisor
+&lt;/div>
+&lt;/h3>
+&lt;p>1、brew 安装supervisor&lt;/p>
 &lt;p>如果你还没有安装brew，这里使他们的官网https://brew.sh/，安装brew的命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>/bin/bash -c &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>brew install supervisor
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>/bin/bash -c &lt;span style="color:#5af78e">&amp;#34;&lt;/span>&lt;span style="color:#ff6ac1">$(&lt;/span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span style="color:#ff6ac1">)&lt;/span>&lt;span style="color:#5af78e">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>brew install supervisor
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>brew services restart supervisor
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2、配置文件，先打开默认配置文件&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>vim /usr/local/etc/supervisord.conf
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>vim /usr/local/etc/supervisord.conf
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>3、这是它的默认配置：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#f92672">[&lt;/span>program:theprogramname&lt;span style="color:#f92672">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;command&lt;span style="color:#f92672">=&lt;/span>/bin/cat ; the program &lt;span style="color:#f92672">(&lt;/span>relative uses PATH, can take args&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;process_name&lt;span style="color:#f92672">=&lt;/span>%&lt;span style="color:#f92672">(&lt;/span>program_name&lt;span style="color:#f92672">)&lt;/span>s ; process_name expr &lt;span style="color:#f92672">(&lt;/span>default %&lt;span style="color:#f92672">(&lt;/span>program_name&lt;span style="color:#f92672">)&lt;/span>s&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;numprocs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ; number of processes copies to start &lt;span style="color:#f92672">(&lt;/span>def 1&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;directory&lt;span style="color:#f92672">=&lt;/span>/tmp ; directory to cwd to before exec &lt;span style="color:#f92672">(&lt;/span>def no cwd&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;umask&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">022&lt;/span> ; umask &lt;span style="color:#66d9ef">for&lt;/span> process &lt;span style="color:#f92672">(&lt;/span>default None&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;priority&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">999&lt;/span> ; the relative start priority &lt;span style="color:#f92672">(&lt;/span>default 999&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;autostart&lt;span style="color:#f92672">=&lt;/span>true ; start at supervisord start &lt;span style="color:#f92672">(&lt;/span>default: true&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;startsecs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ; &lt;span style="color:#75715e"># of secs prog must stay up to be running (def. 1)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;startretries&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">3&lt;/span> ; max &lt;span style="color:#75715e"># of serial start failures when starting (default 3)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;autorestart&lt;span style="color:#f92672">=&lt;/span>unexpected ; when to restart &lt;span style="color:#66d9ef">if&lt;/span> exited after running &lt;span style="color:#f92672">(&lt;/span>def: unexpected&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;exitcodes&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span> ; &lt;span style="color:#e6db74">&amp;#39;expected&amp;#39;&lt;/span> exit codes used with autorestart &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stopsignal&lt;span style="color:#f92672">=&lt;/span>QUIT ; signal used to kill process &lt;span style="color:#f92672">(&lt;/span>default TERM&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stopwaitsecs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; max num secs to wait b4 SIGKILL &lt;span style="color:#f92672">(&lt;/span>default 10&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stopasgroup&lt;span style="color:#f92672">=&lt;/span>false ; send stop signal to the UNIX process group &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;killasgroup&lt;span style="color:#f92672">=&lt;/span>false ; SIGKILL the UNIX process group &lt;span style="color:#f92672">(&lt;/span>def false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;user&lt;span style="color:#f92672">=&lt;/span>chrism ; setuid to this UNIX account to run the program
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;redirect_stderr&lt;span style="color:#f92672">=&lt;/span>true ; redirect proc stderr to stdout &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_logfile&lt;span style="color:#f92672">=&lt;/span>/a/path ; stdout log path, NONE &lt;span style="color:#66d9ef">for&lt;/span> none; default AUTO
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_logfile_maxbytes&lt;span style="color:#f92672">=&lt;/span>1MB ; max &lt;span style="color:#75715e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_logfile_backups&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; &lt;span style="color:#75715e"># of stdout logfile backups (0 means none, default 10)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_capture_maxbytes&lt;span style="color:#f92672">=&lt;/span>1MB ; number of bytes in &lt;span style="color:#e6db74">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_events_enabled&lt;span style="color:#f92672">=&lt;/span>false ; emit events on stdout writes &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_syslog&lt;span style="color:#f92672">=&lt;/span>false ; send stdout to syslog with process name &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_logfile&lt;span style="color:#f92672">=&lt;/span>/a/path ; stderr log path, NONE &lt;span style="color:#66d9ef">for&lt;/span> none; default AUTO
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_logfile_maxbytes&lt;span style="color:#f92672">=&lt;/span>1MB ; max &lt;span style="color:#75715e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_logfile_backups&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; &lt;span style="color:#75715e"># of stderr logfile backups (0 means none, default 10)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_capture_maxbytes&lt;span style="color:#f92672">=&lt;/span>1MB ; number of bytes in &lt;span style="color:#e6db74">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_events_enabled&lt;span style="color:#f92672">=&lt;/span>false ; emit events on stderr writes &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_syslog&lt;span style="color:#f92672">=&lt;/span>false ; send stderr to syslog with process name &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;environment&lt;span style="color:#f92672">=&lt;/span>A&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;1&amp;#34;&lt;/span>,B&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;2&amp;#34;&lt;/span> ; process environment additions &lt;span style="color:#f92672">(&lt;/span>def no adds&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;serverurl&lt;span style="color:#f92672">=&lt;/span>AUTO ; override serverurl computation &lt;span style="color:#f92672">(&lt;/span>childutils&lt;span style="color:#f92672">)&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff6ac1">[&lt;/span>program:theprogramname&lt;span style="color:#ff6ac1">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">command&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/bin/cat ; the program &lt;span style="color:#ff6ac1">(&lt;/span>relative uses PATH, can take args&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">process_name&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>%&lt;span style="color:#ff6ac1">(&lt;/span>program_name&lt;span style="color:#ff6ac1">)&lt;/span>s ; process_name expr &lt;span style="color:#ff6ac1">(&lt;/span>default %&lt;span style="color:#ff6ac1">(&lt;/span>program_name&lt;span style="color:#ff6ac1">)&lt;/span>s&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">numprocs&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">1&lt;/span> ; number of processes copies to start &lt;span style="color:#ff6ac1">(&lt;/span>def 1&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">directory&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/tmp ; directory to cwd to before &lt;span style="color:#ff5c57">exec&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>def no cwd&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">umask&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">022&lt;/span> ; &lt;span style="color:#ff5c57">umask&lt;/span> &lt;span style="color:#ff6ac1">for&lt;/span> process &lt;span style="color:#ff6ac1">(&lt;/span>default None&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">priority&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">999&lt;/span> ; the relative start priority &lt;span style="color:#ff6ac1">(&lt;/span>default 999&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">autostart&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span> ; start at supervisord start &lt;span style="color:#ff6ac1">(&lt;/span>default: &lt;span style="color:#ff5c57">true&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">startsecs&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">1&lt;/span> ; &lt;span style="color:#78787e"># of secs prog must stay up to be running (def. 1)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">startretries&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">3&lt;/span> ; max &lt;span style="color:#78787e"># of serial start failures when starting (default 3)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">autorestart&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>unexpected ; when to restart &lt;span style="color:#ff6ac1">if&lt;/span> exited after running &lt;span style="color:#ff6ac1">(&lt;/span>def: unexpected&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">exitcodes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">0&lt;/span> ; &lt;span style="color:#5af78e">&amp;#39;expected&amp;#39;&lt;/span> &lt;span style="color:#ff5c57">exit&lt;/span> codes used with autorestart &lt;span style="color:#ff6ac1">(&lt;/span>default 0&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stopsignal&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>QUIT ; signal used to &lt;span style="color:#ff5c57">kill&lt;/span> process &lt;span style="color:#ff6ac1">(&lt;/span>default TERM&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stopwaitsecs&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">10&lt;/span> ; max num secs to &lt;span style="color:#ff5c57">wait&lt;/span> b4 SIGKILL &lt;span style="color:#ff6ac1">(&lt;/span>default 10&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stopasgroup&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">false&lt;/span> ; send stop signal to the UNIX process group &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">killasgroup&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">false&lt;/span> ; SIGKILL the UNIX process group &lt;span style="color:#ff6ac1">(&lt;/span>def &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">user&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>chrism ; setuid to this UNIX account to run the program
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">redirect_stderr&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span> ; redirect proc stderr to stdout &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stdout_logfile&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/a/path ; stdout log path, NONE &lt;span style="color:#ff6ac1">for&lt;/span> none; default AUTO
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stdout_logfile_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>1MB ; max &lt;span style="color:#78787e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stdout_logfile_backups&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">10&lt;/span> ; &lt;span style="color:#78787e"># of stdout logfile backups (0 means none, default 10)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stdout_capture_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>1MB ; number of bytes in &lt;span style="color:#5af78e">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>default 0&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stdout_events_enabled&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">false&lt;/span> ; emit events on stdout writes &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stdout_syslog&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">false&lt;/span> ; send stdout to syslog with process name &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stderr_logfile&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/a/path ; stderr log path, NONE &lt;span style="color:#ff6ac1">for&lt;/span> none; default AUTO
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stderr_logfile_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>1MB ; max &lt;span style="color:#78787e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stderr_logfile_backups&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">10&lt;/span> ; &lt;span style="color:#78787e"># of stderr logfile backups (0 means none, default 10)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stderr_capture_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>1MB ; number of bytes in &lt;span style="color:#5af78e">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>default 0&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stderr_events_enabled&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">false&lt;/span> ; emit events on stderr writes &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stderr_syslog&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">false&lt;/span> ; send stderr to syslog with process name &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">environment&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">A&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;1&amp;#34;&lt;/span>,B&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;2&amp;#34;&lt;/span> ; process environment additions &lt;span style="color:#ff6ac1">(&lt;/span>def no adds&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">serverurl&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>AUTO ; override serverurl computation &lt;span style="color:#ff6ac1">(&lt;/span>childutils&lt;span style="color:#ff6ac1">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>4、我们可以复制一份，改一改，改成我们自己想要启动程序的配置，比如我想要启动gos&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>program:gitgos&lt;span style="color:#f92672">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>command&lt;span style="color:#f92672">=&lt;/span>/Users/yzw/Downloads/gitzub/gogs/gogs web -p &lt;span style="color:#ae81ff">3008&lt;/span> ; the program &lt;span style="color:#f92672">(&lt;/span>relative uses PATH, can take args&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>process_name&lt;span style="color:#f92672">=&lt;/span>%&lt;span style="color:#f92672">(&lt;/span>program_name&lt;span style="color:#f92672">)&lt;/span>s ; process_name expr &lt;span style="color:#f92672">(&lt;/span>default %&lt;span style="color:#f92672">(&lt;/span>program_name&lt;span style="color:#f92672">)&lt;/span>s&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>numprocs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ; number of processes copies to start &lt;span style="color:#f92672">(&lt;/span>def 1&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>directory&lt;span style="color:#f92672">=&lt;/span>/Users/yzw/Downloads/gitzub/gogs/ ; directory to cwd to before exec &lt;span style="color:#f92672">(&lt;/span>def no cwd&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>autostart&lt;span style="color:#f92672">=&lt;/span>true ; start at supervisord start &lt;span style="color:#f92672">(&lt;/span>default: true&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>startsecs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ; &lt;span style="color:#75715e"># of secs prog must stay up to be running (def. 1)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>startretries&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">3&lt;/span> ; max &lt;span style="color:#75715e"># of serial start failures when starting (default 3)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>; stopasgroup&lt;span style="color:#f92672">=&lt;/span>true ; send stop signal to the UNIX process group &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>; killasgroup&lt;span style="color:#f92672">=&lt;/span>true ; SIGKILL the UNIX process group &lt;span style="color:#f92672">(&lt;/span>def false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>user&lt;span style="color:#f92672">=&lt;/span>zhiwei ; setuid to this UNIX account to run the program
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>redirect_stderr&lt;span style="color:#f92672">=&lt;/span>true ; redirect proc stderr to stdout &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_logfile&lt;span style="color:#f92672">=&lt;/span>/Users/zhiwei/Downloads/gitzub/gogs/log/data.log ; stdout log path, NONE &lt;span style="color:#66d9ef">for&lt;/span> none; default AUTO
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_logfile_maxbytes&lt;span style="color:#f92672">=&lt;/span>10MB ; max &lt;span style="color:#75715e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_logfile_backups&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; &lt;span style="color:#75715e"># of stdout logfile backups (0 means none, default 10)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_capture_maxbytes&lt;span style="color:#f92672">=&lt;/span>10MB ; number of bytes in &lt;span style="color:#e6db74">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stderr_logfile&lt;span style="color:#f92672">=&lt;/span>/Users/zhiwei/Downloads/gitzub/gogs/log/error.log ; stderr log path, NONE &lt;span style="color:#66d9ef">for&lt;/span> none; default AUTO
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stderr_logfile_maxbytes&lt;span style="color:#f92672">=&lt;/span>10MB ; max &lt;span style="color:#75715e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stderr_logfile_backups&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; &lt;span style="color:#75715e"># of stderr logfile backups (0 means none, default 10)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stderr_capture_maxbytes&lt;span style="color:#f92672">=&lt;/span>10MB ; number of bytes in &lt;span style="color:#e6db74">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">[&lt;/span>program:gitgos&lt;span style="color:#ff6ac1">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">command&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/Users/yzw/Downloads/gitzub/gogs/gogs web -p &lt;span style="color:#ff9f43">3008&lt;/span> ; the program &lt;span style="color:#ff6ac1">(&lt;/span>relative uses PATH, can take args&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">process_name&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>%&lt;span style="color:#ff6ac1">(&lt;/span>program_name&lt;span style="color:#ff6ac1">)&lt;/span>s ; process_name expr &lt;span style="color:#ff6ac1">(&lt;/span>default %&lt;span style="color:#ff6ac1">(&lt;/span>program_name&lt;span style="color:#ff6ac1">)&lt;/span>s&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">numprocs&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">1&lt;/span> ; number of processes copies to start &lt;span style="color:#ff6ac1">(&lt;/span>def 1&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">directory&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/Users/yzw/Downloads/gitzub/gogs/ ; directory to cwd to before &lt;span style="color:#ff5c57">exec&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>def no cwd&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">autostart&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span> ; start at supervisord start &lt;span style="color:#ff6ac1">(&lt;/span>default: &lt;span style="color:#ff5c57">true&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">startsecs&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">1&lt;/span> ; &lt;span style="color:#78787e"># of secs prog must stay up to be running (def. 1)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">startretries&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">3&lt;/span> ; max &lt;span style="color:#78787e"># of serial start failures when starting (default 3)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>; &lt;span style="color:#ff5c57">stopasgroup&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span> ; send stop signal to the UNIX process group &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>; &lt;span style="color:#ff5c57">killasgroup&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span> ; SIGKILL the UNIX process group &lt;span style="color:#ff6ac1">(&lt;/span>def &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">user&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>zhiwei ; setuid to this UNIX account to run the program
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">redirect_stderr&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span> ; redirect proc stderr to stdout &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stdout_logfile&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/Users/zhiwei/Downloads/gitzub/gogs/log/data.log ; stdout log path, NONE &lt;span style="color:#ff6ac1">for&lt;/span> none; default AUTO
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stdout_logfile_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>10MB ; max &lt;span style="color:#78787e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stdout_logfile_backups&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">10&lt;/span> ; &lt;span style="color:#78787e"># of stdout logfile backups (0 means none, default 10)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stdout_capture_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>10MB ; number of bytes in &lt;span style="color:#5af78e">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>default 0&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stderr_logfile&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/Users/zhiwei/Downloads/gitzub/gogs/log/error.log ; stderr log path, NONE &lt;span style="color:#ff6ac1">for&lt;/span> none; default AUTO
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stderr_logfile_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>10MB ; max &lt;span style="color:#78787e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stderr_logfile_backups&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">10&lt;/span> ; &lt;span style="color:#78787e"># of stderr logfile backups (0 means none, default 10)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stderr_capture_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>10MB ; number of bytes in &lt;span style="color:#5af78e">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>default 0&lt;span style="color:#ff6ac1">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>5、然后再执行命令重新加载下配置，使得新的配置生效， 然后再执行supervisorctl命令，查看gos是否启动成功，状态为RUNNING则成功启动。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>supervisorctl reload
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>supervisorctl reload
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>➜ supervisorctl
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gitgos RUNNING pid 44926, uptime 0:41:54
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>supervisor&amp;gt;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Vue Vite初学报错大全</title><link>https://jerrygoodluck.github.io/about/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</link><pubDate>Sun, 07 Aug 2022 15:23:20 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</guid><description>&lt;h3 id="项目环境">项目环境
-&lt;/h3>&lt;p>机器：mac&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Vue Vite初学报错大全</title><link>/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</link><pubDate>Sun, 07 Aug 2022 15:23:20 +0800</pubDate><guid>/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</guid><description>&lt;h3 id="项目环境" >
+&lt;div>
+&lt;a href="#%e9%a1%b9%e7%9b%ae%e7%8e%af%e5%a2%83">
+##
+&lt;/a>
+项目环境
+&lt;/div>
+&lt;/h3>
+&lt;p>机器：mac&lt;/p>
 &lt;p>框架：vue3&lt;/p>
 &lt;p>版本：vue=^3.0.4&lt;/p>
 &lt;p>###报错信息&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>[&lt;span style="color:#a6e22e">vite&lt;/span>] &lt;span style="color:#a6e22e">Internal&lt;/span> &lt;span style="color:#a6e22e">server&lt;/span> &lt;span style="color:#a6e22e">error&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">Failed&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">parse&lt;/span> &lt;span style="color:#a6e22e">source&lt;/span> &lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#a6e22e">analysis&lt;/span> &lt;span style="color:#a6e22e">because&lt;/span> &lt;span style="color:#a6e22e">the&lt;/span> &lt;span style="color:#a6e22e">content&lt;/span> &lt;span style="color:#a6e22e">contains&lt;/span> &lt;span style="color:#a6e22e">invalid&lt;/span> &lt;span style="color:#a6e22e">JS&lt;/span> &lt;span style="color:#a6e22e">syntax&lt;/span>. &lt;span style="color:#a6e22e">Install&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#a6e22e">vitejs&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#a6e22e">plugin&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">handle&lt;/span> .&lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">files&lt;/span>.
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="问题描述">问题描述
-&lt;/h3>&lt;p>1、安装Vite及初始化项目&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">init&lt;/span> &lt;span style="color:#a6e22e">vite&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">app&lt;/span> &lt;span style="color:#a6e22e">vue3demo004&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">install&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">run&lt;/span> &lt;span style="color:#a6e22e">dev&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>[vite] Internal server error&lt;span style="color:#ff6ac1">:&lt;/span> Failed to parse source &lt;span style="color:#ff6ac1">for&lt;/span> &lt;span style="color:#ff6ac1">import&lt;/span> analysis because the content contains invalid JS syntax. Install &lt;span style="color:#ff5c57">@&lt;/span>vitejs&lt;span style="color:#ff6ac1">/&lt;/span>plugin&lt;span style="color:#ff6ac1">-&lt;/span>vue to handle .vue files.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="问题描述" >
+&lt;div>
+&lt;a href="#%e9%97%ae%e9%a2%98%e6%8f%8f%e8%bf%b0">
+##
+&lt;/a>
+问题描述
+&lt;/div>
+&lt;/h3>
+&lt;p>1、安装Vite及初始化项目&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>npm init vite&lt;span style="color:#ff6ac1">-&lt;/span>app vue3demo004
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm install
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm run dev
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2、手动配置完项目后， 项目目录如下&lt;/p>
 &lt;pre tabindex="0">&lt;code>├── node_modules
 ├── package-lock.json
@@ -257,102 +359,102 @@ default-character-set=utf8
 │   └── main.js
 &lt;/code>&lt;/pre>&lt;p>###关键文件信息&lt;/p>
 &lt;p>package.json&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;vue3demo004&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;version&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;0.0.0&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;scripts&amp;#34;&lt;/span>: {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;dev&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;vite&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;build&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;vite build&amp;#34;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;#34;name&amp;#34;&lt;/span>: &lt;span style="color:#5af78e">&amp;#34;vue3demo004&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;#34;version&amp;#34;&lt;/span>: &lt;span style="color:#5af78e">&amp;#34;0.0.0&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;#34;scripts&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;#34;dev&amp;#34;&lt;/span>: &lt;span style="color:#5af78e">&amp;#34;vite&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;#34;build&amp;#34;&lt;/span>: &lt;span style="color:#5af78e">&amp;#34;vite build&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;dependencies&amp;#34;&lt;/span>: {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;vue&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;^3.0.4&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;#34;dependencies&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;#34;vue&amp;#34;&lt;/span>: &lt;span style="color:#5af78e">&amp;#34;^3.0.4&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;devDependencies&amp;#34;&lt;/span>: {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;@vue/compiler-sfc&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;^3.0.4&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;vite&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;^3.0.4&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;#34;devDependencies&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;#34;@vue/compiler-sfc&amp;#34;&lt;/span>: &lt;span style="color:#5af78e">&amp;#34;^3.0.4&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;#34;vite&amp;#34;&lt;/span>: &lt;span style="color:#5af78e">&amp;#34;^3.0.4&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>app.vue&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">template&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">img&lt;/span> &lt;span style="color:#a6e22e">alt&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Vue logo&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">src&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;./assets/logo.png&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">HelloWorld&lt;/span> &lt;span style="color:#a6e22e">msg&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Hello Vue 3.0 + Vite&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/template&amp;gt;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>template&lt;span style="color:#ff6ac1">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>img alt&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;Vue logo&amp;#34;&lt;/span> src&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;./assets/logo.png&amp;#34;&lt;/span> &lt;span style="color:#ff6ac1">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>HelloWorld msg&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;Hello Vue 3.0 + Vite&amp;#34;&lt;/span> &lt;span style="color:#ff6ac1">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>&lt;span style="color:#ff5c57">/template&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">script&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#a6e22e">HelloWorld&lt;/span> &lt;span style="color:#a6e22e">from&lt;/span> &lt;span style="color:#e6db74">&amp;#39;./components/HelloWorld.vue&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>script&lt;span style="color:#ff6ac1">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">import&lt;/span> HelloWorld from &lt;span style="color:#5af78e">&amp;#39;./components/HelloWorld.vue&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">export&lt;/span> &lt;span style="color:#66d9ef">default&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#e6db74">&amp;#39;App&amp;#39;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">components&lt;/span>&lt;span style="color:#f92672">:&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">HelloWorld&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">export&lt;/span> &lt;span style="color:#ff6ac1">default&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> name&lt;span style="color:#ff6ac1">:&lt;/span> &lt;span style="color:#5af78e">&amp;#39;App&amp;#39;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> components&lt;span style="color:#ff6ac1">:&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> HelloWorld
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/script&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>&lt;span style="color:#ff5c57">/script&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>HelloWorld.vue&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">template&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">h1&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>{{ &lt;span style="color:#a6e22e">msg&lt;/span> }}&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/h1&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">button&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#a6e22e">click&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;count++&amp;#34;&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">count&lt;/span> &lt;span style="color:#a6e22e">is&lt;/span>&lt;span style="color:#f92672">:&lt;/span> {{ &lt;span style="color:#a6e22e">count&lt;/span> }}&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/button&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">p&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">Edit&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">code&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">components&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#a6e22e">HelloWorld&lt;/span>.&lt;span style="color:#a6e22e">vue&lt;/span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/code&amp;gt; to test hot module replacement.&amp;lt;/p&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/template&amp;gt;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>template&lt;span style="color:#ff6ac1">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>h1&lt;span style="color:#ff6ac1">&amp;gt;&lt;/span>{{ msg }}&lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>&lt;span style="color:#ff5c57">/h1&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>button &lt;span style="color:#ff5c57">@&lt;/span>click&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;count++&amp;#34;&lt;/span>&lt;span style="color:#ff6ac1">&amp;gt;&lt;/span>count is&lt;span style="color:#ff6ac1">:&lt;/span> {{ count }}&lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>&lt;span style="color:#ff5c57">/button&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>p&lt;span style="color:#ff6ac1">&amp;gt;&lt;/span>Edit &lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>code&lt;span style="color:#ff6ac1">&amp;gt;&lt;/span>components&lt;span style="color:#ff6ac1">/&lt;/span>HelloWorld.vue&lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>&lt;span style="color:#ff5c57">/code&amp;gt; to test hot module replacement.&amp;lt;/p&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>&lt;span style="color:#ff5c57">/template&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">script&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">export&lt;/span> &lt;span style="color:#66d9ef">default&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#e6db74">&amp;#39;HelloWorld&amp;#39;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">props&lt;/span>&lt;span style="color:#f92672">:&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">msg&lt;/span>&lt;span style="color:#f92672">:&lt;/span> String
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>script&lt;span style="color:#ff6ac1">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">export&lt;/span> &lt;span style="color:#ff6ac1">default&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> name&lt;span style="color:#ff6ac1">:&lt;/span> &lt;span style="color:#5af78e">&amp;#39;HelloWorld&amp;#39;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> props&lt;span style="color:#ff6ac1">:&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> msg&lt;span style="color:#ff6ac1">:&lt;/span> &lt;span style="color:#ff5c57">String&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">data&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">count&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">return&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> count&lt;span style="color:#ff6ac1">:&lt;/span> &lt;span style="color:#ff9f43">0&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/script&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>&lt;span style="color:#ff5c57">/script&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>main.js&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">import&lt;/span> { &lt;span style="color:#a6e22e">createApp&lt;/span> } &lt;span style="color:#a6e22e">from&lt;/span> &lt;span style="color:#e6db74">&amp;#39;vue&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#a6e22e">App&lt;/span> &lt;span style="color:#a6e22e">from&lt;/span> &lt;span style="color:#e6db74">&amp;#39;./App.vue&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#e6db74">&amp;#39;./index.css&amp;#39;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">import&lt;/span> { createApp } from &lt;span style="color:#5af78e">&amp;#39;vue&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">import&lt;/span> App from &lt;span style="color:#5af78e">&amp;#39;./App.vue&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">import&lt;/span> &lt;span style="color:#5af78e">&amp;#39;./index.css&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">createApp&lt;/span>(&lt;span style="color:#a6e22e">App&lt;/span>).&lt;span style="color:#a6e22e">mount&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;#app&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>createApp(App).mount(&lt;span style="color:#5af78e">&amp;#39;#app&amp;#39;&lt;/span>)
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>index.html&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">html&lt;/span> &lt;span style="color:#a6e22e">lang&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;en&amp;#34;&lt;/span>&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">head&lt;/span>&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">meta&lt;/span> &lt;span style="color:#a6e22e">charset&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;UTF-8&amp;#34;&lt;/span>&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">link&lt;/span> &lt;span style="color:#a6e22e">rel&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;icon&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">href&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;/favicon.ico&amp;#34;&lt;/span> /&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">meta&lt;/span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;viewport&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">content&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span>&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">title&lt;/span>&amp;gt;Vite App&amp;lt;/&lt;span style="color:#f92672">title&lt;/span>&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">head&lt;/span>&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">body&lt;/span>&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">div&lt;/span> &lt;span style="color:#a6e22e">id&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;app&amp;#34;&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">div&lt;/span>&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">script&lt;/span> &lt;span style="color:#a6e22e">type&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;module&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">src&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;/src/main.js&amp;#34;&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">script&lt;/span>&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">body&lt;/span>&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">html&lt;/span>&amp;gt;
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#78787e">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#ff6ac1">html&lt;/span> &lt;span style="color:#57c7ff">lang&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;en&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#ff6ac1">head&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#ff6ac1">meta&lt;/span> &lt;span style="color:#57c7ff">charset&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;UTF-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#ff6ac1">link&lt;/span> &lt;span style="color:#57c7ff">rel&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;icon&amp;#34;&lt;/span> &lt;span style="color:#57c7ff">href&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;/favicon.ico&amp;#34;&lt;/span> /&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#ff6ac1">meta&lt;/span> &lt;span style="color:#57c7ff">name&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;viewport&amp;#34;&lt;/span> &lt;span style="color:#57c7ff">content&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#ff6ac1">title&lt;/span>&amp;gt;Vite App&amp;lt;/&lt;span style="color:#ff6ac1">title&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#ff6ac1">head&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#ff6ac1">body&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#ff6ac1">div&lt;/span> &lt;span style="color:#57c7ff">id&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;app&amp;#34;&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#ff6ac1">div&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#ff6ac1">script&lt;/span> &lt;span style="color:#57c7ff">type&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;module&amp;#34;&lt;/span> &lt;span style="color:#57c7ff">src&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;/src/main.js&amp;#34;&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#ff6ac1">script&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#ff6ac1">body&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#ff6ac1">html&lt;/span>&amp;gt;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>###报错信息分析&lt;/p>
 &lt;p>1、npm run dev后, Terminal显示报错，报错信息如下&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">3&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#ae81ff">41&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#ae81ff">19&lt;/span> &lt;span style="color:#a6e22e">PM&lt;/span> [&lt;span style="color:#a6e22e">vite&lt;/span>] &lt;span style="color:#a6e22e">Internal&lt;/span> &lt;span style="color:#a6e22e">server&lt;/span> &lt;span style="color:#a6e22e">error&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">Failed&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">parse&lt;/span> &lt;span style="color:#a6e22e">source&lt;/span> &lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#a6e22e">analysis&lt;/span> &lt;span style="color:#a6e22e">because&lt;/span> &lt;span style="color:#a6e22e">the&lt;/span> &lt;span style="color:#a6e22e">content&lt;/span> &lt;span style="color:#a6e22e">contains&lt;/span> &lt;span style="color:#a6e22e">invalid&lt;/span> &lt;span style="color:#a6e22e">JS&lt;/span> &lt;span style="color:#a6e22e">syntax&lt;/span>. &lt;span style="color:#a6e22e">Install&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#a6e22e">vitejs&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#a6e22e">plugin&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">handle&lt;/span> .&lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">files&lt;/span>.
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">Plugin&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">vite&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#66d9ef">import&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">analysis&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">File&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">/Users/username/Documents/4_code/learnvue/vue3demo004/src/App.vue&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ae81ff">3&lt;/span> &lt;span style="color:#f92672">|&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">img&lt;/span> &lt;span style="color:#a6e22e">alt&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Vue logo&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">src&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;./assets/logo.png&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ae81ff">4&lt;/span> &lt;span style="color:#f92672">|&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">HelloWorld&lt;/span> &lt;span style="color:#a6e22e">msg&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Hello Vue 3.0 + Vite&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ae81ff">5&lt;/span> &lt;span style="color:#f92672">|&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">/template&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">|&lt;/span> &lt;span style="color:#f92672">^&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ae81ff">6&lt;/span> &lt;span style="color:#f92672">|&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ae81ff">7&lt;/span> &lt;span style="color:#f92672">|&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">at&lt;/span> &lt;span style="color:#a6e22e">formatError&lt;/span> (&lt;span style="color:#a6e22e">file&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#75715e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:35035:46)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">at&lt;/span> &lt;span style="color:#a6e22e">TransformContext&lt;/span>.&lt;span style="color:#a6e22e">error&lt;/span> (&lt;span style="color:#a6e22e">file&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#75715e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:35031:19)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">at&lt;/span> &lt;span style="color:#a6e22e">TransformContext&lt;/span>.&lt;span style="color:#a6e22e">transform&lt;/span> (&lt;span style="color:#a6e22e">file&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#75715e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:40116:22)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">at&lt;/span> &lt;span style="color:#66d9ef">async&lt;/span> Object.&lt;span style="color:#a6e22e">transform&lt;/span> (&lt;span style="color:#a6e22e">file&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#75715e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:35284:30)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">at&lt;/span> &lt;span style="color:#66d9ef">async&lt;/span> &lt;span style="color:#a6e22e">loadAndTransform&lt;/span> (&lt;span style="color:#a6e22e">file&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#75715e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:39812:29) (x4)
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff9f43">3&lt;/span>&lt;span style="color:#ff6ac1">:&lt;/span>&lt;span style="color:#ff9f43">41&lt;/span>&lt;span style="color:#ff6ac1">:&lt;/span>&lt;span style="color:#ff9f43">19&lt;/span> PM [vite] Internal server error&lt;span style="color:#ff6ac1">:&lt;/span> Failed to parse source &lt;span style="color:#ff6ac1">for&lt;/span> &lt;span style="color:#ff6ac1">import&lt;/span> analysis because the content contains invalid JS syntax. Install &lt;span style="color:#ff5c57">@&lt;/span>vitejs&lt;span style="color:#ff6ac1">/&lt;/span>plugin&lt;span style="color:#ff6ac1">-&lt;/span>vue to handle .vue files.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Plugin&lt;span style="color:#ff6ac1">:&lt;/span> vite&lt;span style="color:#ff6ac1">:&lt;/span>&lt;span style="color:#ff6ac1">import&lt;/span>&lt;span style="color:#ff6ac1">-&lt;/span>analysis
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> File&lt;span style="color:#ff6ac1">:&lt;/span> &lt;span style="color:#ff5c57">/Users/username/Documents/4_code/learnvue/vue3demo004/src/App.vue&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff9f43">3&lt;/span> &lt;span style="color:#ff6ac1">|&lt;/span> &lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>img alt&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;Vue logo&amp;#34;&lt;/span> src&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;./assets/logo.png&amp;#34;&lt;/span> &lt;span style="color:#ff6ac1">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff9f43">4&lt;/span> &lt;span style="color:#ff6ac1">|&lt;/span> &lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>HelloWorld msg&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;Hello Vue 3.0 + Vite&amp;#34;&lt;/span> &lt;span style="color:#ff6ac1">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff9f43">5&lt;/span> &lt;span style="color:#ff6ac1">|&lt;/span> &lt;span style="color:#ff6ac1">&amp;lt;&lt;/span>&lt;span style="color:#ff5c57">/template&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">|&lt;/span> &lt;span style="color:#ff6ac1">^&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff9f43">6&lt;/span> &lt;span style="color:#ff6ac1">|&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff9f43">7&lt;/span> &lt;span style="color:#ff6ac1">|&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> at formatError (file&lt;span style="color:#ff6ac1">:&lt;/span>&lt;span style="color:#78787e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:35035:46)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#78787e">&lt;/span> at TransformContext.error (file&lt;span style="color:#ff6ac1">:&lt;/span>&lt;span style="color:#78787e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:35031:19)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#78787e">&lt;/span> at TransformContext.transform (file&lt;span style="color:#ff6ac1">:&lt;/span>&lt;span style="color:#78787e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:40116:22)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#78787e">&lt;/span> at &lt;span style="color:#ff6ac1">async&lt;/span> &lt;span style="color:#ff5c57">Object&lt;/span>.transform (file&lt;span style="color:#ff6ac1">:&lt;/span>&lt;span style="color:#78787e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:35284:30)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#78787e">&lt;/span> at &lt;span style="color:#ff6ac1">async&lt;/span> loadAndTransform (file&lt;span style="color:#ff6ac1">:&lt;/span>&lt;span style="color:#78787e">///Users/username/Documents/4_code/learnvue/vue3demo004/node_modules/vite/dist/node/chunks/dep-71eb12cb.js:39812:29) (x4)
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>###解决办法&lt;/p>
 &lt;p>1、根据Terminal报错提示安装@vitejs/plugin-vue&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#a6e22e">vitejs&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#a6e22e">plugin&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">vue&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>npm i &lt;span style="color:#ff5c57">@&lt;/span>vitejs&lt;span style="color:#ff6ac1">/&lt;/span>plugin&lt;span style="color:#ff6ac1">-&lt;/span>vue
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2、在项目根目录下新增vite.config.js文件，内容如下&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">import&lt;/span> {&lt;span style="color:#a6e22e">defineConfig&lt;/span>} &lt;span style="color:#a6e22e">from&lt;/span> &lt;span style="color:#e6db74">&amp;#34;vite&amp;#34;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">from&lt;/span> &lt;span style="color:#e6db74">&amp;#34;@vitejs/plugin-vue&amp;#34;&lt;/span>;
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">import&lt;/span> {defineConfig} from &lt;span style="color:#5af78e">&amp;#34;vite&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">import&lt;/span> vue from &lt;span style="color:#5af78e">&amp;#34;@vitejs/plugin-vue&amp;#34;&lt;/span>;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">export&lt;/span> &lt;span style="color:#66d9ef">default&lt;/span> &lt;span style="color:#a6e22e">defineConfig&lt;/span>({
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">plugins&lt;/span>&lt;span style="color:#f92672">:&lt;/span> [&lt;span style="color:#a6e22e">vue&lt;/span>()]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">export&lt;/span> &lt;span style="color:#ff6ac1">default&lt;/span> defineConfig({
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> plugins&lt;span style="color:#ff6ac1">:&lt;/span> [vue()]
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>})
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>3、新增vite.config.js后的项目目录如下&lt;/p>
 &lt;pre tabindex="0">&lt;code>├── node_modules
@@ -370,38 +472,65 @@ default-character-set=utf8
 │   └── main.js
 └── vite.config.js
 &lt;/code>&lt;/pre>&lt;p>4、重新运行npm run dev&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">➜&lt;/span> &lt;span style="color:#a6e22e">vue3demo004&lt;/span> &lt;span style="color:#a6e22e">git&lt;/span>&lt;span style="color:#f92672">:&lt;/span>(&lt;span style="color:#a6e22e">master&lt;/span>) &lt;span style="color:#960050;background-color:#1e0010">✗&lt;/span> &lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">run&lt;/span> &lt;span style="color:#a6e22e">dev&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">➜&lt;/span> vue3demo004 git&lt;span style="color:#ff6ac1">:&lt;/span>(master) &lt;span style="color:#ff5c57">✗&lt;/span> npm run dev
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#a6e22e">vue3demo004&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#ae81ff">0.0&lt;/span>.&lt;span style="color:#ae81ff">0&lt;/span> &lt;span style="color:#a6e22e">dev&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#a6e22e">vite&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">&amp;gt;&lt;/span> vue3demo004&lt;span style="color:#ff5c57">@&lt;/span>&lt;span style="color:#ff9f43">0.0&lt;/span>.&lt;span style="color:#ff9f43">0&lt;/span> dev
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">&amp;gt;&lt;/span> vite
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">Port&lt;/span> &lt;span style="color:#ae81ff">5173&lt;/span> &lt;span style="color:#a6e22e">is&lt;/span> &lt;span style="color:#66d9ef">in&lt;/span> &lt;span style="color:#a6e22e">use&lt;/span>, &lt;span style="color:#a6e22e">trying&lt;/span> &lt;span style="color:#a6e22e">another&lt;/span> &lt;span style="color:#a6e22e">one&lt;/span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Port &lt;span style="color:#ff9f43">5173&lt;/span> is &lt;span style="color:#ff6ac1">in&lt;/span> use, trying another one...
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">VITE&lt;/span> &lt;span style="color:#a6e22e">v3&lt;/span>.&lt;span style="color:#ae81ff">0.4&lt;/span> &lt;span style="color:#a6e22e">ready&lt;/span> &lt;span style="color:#66d9ef">in&lt;/span> &lt;span style="color:#ae81ff">299&lt;/span> &lt;span style="color:#a6e22e">ms&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> VITE v3.&lt;span style="color:#ff9f43">0.4&lt;/span> ready &lt;span style="color:#ff6ac1">in&lt;/span> &lt;span style="color:#ff9f43">299&lt;/span> ms
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#960050;background-color:#1e0010">➜&lt;/span> &lt;span style="color:#a6e22e">Local&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">http&lt;/span>&lt;span style="color:#f92672">:&lt;/span>&lt;span style="color:#75715e">//localhost:5174/
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">➜&lt;/span> &lt;span style="color:#a6e22e">Network&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">use&lt;/span> &lt;span style="color:#f92672">--&lt;/span>&lt;span style="color:#a6e22e">host&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">expose&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>重新运行后，发现已经可以正常访问页面。&lt;/p></description></item><item><title>寻找Mac java_home</title><link>https://jerrygoodluck.github.io/about/post/mac_java_home/</link><pubDate>Sun, 31 Jul 2022 11:24:38 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/mac_java_home/</guid><description>&lt;h2 id="前期准备">&lt;strong>前期准备&lt;/strong>
-&lt;/h2>&lt;ol>
-&lt;li>下载JDK安装包：在&lt;a class="link" href="https://link.zhihu.com/?target=http%3A//www.oracle.com/technetwork/cn/java/javase/downloads/jdk8-downloads-2133151-zhs.html" target="_blank" rel="noopener"
->JDK1.8下载&lt;/a>中选择Mac的JDK安装包&lt;/li>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff5c57">➜&lt;/span> Local&lt;span style="color:#ff6ac1">:&lt;/span> http&lt;span style="color:#ff6ac1">:&lt;/span>&lt;span style="color:#78787e">//localhost:5174/
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#78787e">&lt;/span> &lt;span style="color:#ff5c57">➜&lt;/span> Network&lt;span style="color:#ff6ac1">:&lt;/span> use &lt;span style="color:#ff6ac1">--&lt;/span>host to expose
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>重新运行后，发现已经可以正常访问页面。&lt;/p></description></item><item><title>寻找Mac java_home</title><link>/post/mac_java_home/</link><pubDate>Sun, 31 Jul 2022 11:24:38 +0800</pubDate><guid>/post/mac_java_home/</guid><description>&lt;h2 id="前期准备" >
+&lt;div>
+&lt;a href="#%e5%89%8d%e6%9c%9f%e5%87%86%e5%a4%87">
+#
+&lt;/a>
+&lt;strong>前期准备&lt;/strong>
+&lt;/div>
+&lt;/h2>
+&lt;ol>
+&lt;li>下载JDK安装包：在&lt;a href="https://link.zhihu.com/?target=http%3A//www.oracle.com/technetwork/cn/java/javase/downloads/jdk8-downloads-2133151-zhs.html">JDK1.8下载&lt;/a>中选择Mac的JDK安装包&lt;/li>
 &lt;li>安装JDK：这里只要按照安装指引一步一步安装即可&lt;/li>
 &lt;/ol>
-&lt;h2 id="查找java_home">&lt;strong>查找JAVA_HOME&lt;/strong>
-&lt;/h2>&lt;ol>
+&lt;h2 id="查找java_home" >
+&lt;div>
+&lt;a href="#%e6%9f%a5%e6%89%bejava_home">
+#
+&lt;/a>
+&lt;strong>查找JAVA_HOME&lt;/strong>
+&lt;/div>
+&lt;/h2>
+&lt;ol>
 &lt;li>打开Mac的终端，检查JDK是否安装成功：&lt;code>java -version&lt;/code>&lt;/li>
 &lt;li>查看java指令所在的目录：&lt;code>which java&lt;/code>。输出结果：&lt;code>/usr/bin/java&lt;/code>&lt;/li>
 &lt;li>显示java指令文件的属性：&lt;code>ls -l /usr/bin/java&lt;/code>。输出结果如下：&lt;code>lrwxr-xr-x 1 root wheel 74 12 2 06:44 /usr/bin/java -&amp;gt; /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java&lt;/code>，从输出结果可以知道**/usr/bin/java&lt;strong>文件是一个链接文件，实际是指向&lt;/strong>/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java**文件的。&lt;/li>
 &lt;li>进入实际指令所在的文件夹：&lt;code>cd /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands&lt;/code>。但是这个目录并不是JAVA_HOME目录。&lt;/li>
 &lt;li>然后就是最重点的地方，在这个目录下面有一个mac的JDK特有的&lt;code>java_home&lt;/code>指令可以查看JDK的JAVA_HOME目录。执行指令：&lt;code>./java_home&lt;/code>执行结果如下：&lt;code>/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home&lt;/code>&lt;/li>
 &lt;/ol>
-&lt;h2 id="设置java_home">&lt;strong>设置JAVA_HOME&lt;/strong>
-&lt;/h2>&lt;ol>
+&lt;h2 id="设置java_home" >
+&lt;div>
+&lt;a href="#%e8%ae%be%e7%bd%aejava_home">
+#
+&lt;/a>
+&lt;strong>设置JAVA_HOME&lt;/strong>
+&lt;/div>
+&lt;/h2>
+&lt;ol>
 &lt;li>编辑.bash_profile文件：&lt;code>vim ~/.bash_profile&lt;/code>&lt;/li>
 &lt;li>添加以下内容：&lt;code>export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Homeexport PATH=$JAVA_HOME/bin:$PATH&lt;/code>&lt;/li>
 &lt;li>使修改的文件生效：&lt;code>source ~/.bash_profile&lt;/code>&lt;/li>
-&lt;/ol></description></item><item><title>Linux command</title><link>https://jerrygoodluck.github.io/about/post/linuxcommand/</link><pubDate>Sun, 31 Jul 2022 11:22:04 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/linuxcommand/</guid><description>&lt;h1 id="一些命令">一些命令
-&lt;/h1>&lt;ul>
+&lt;/ol></description></item><item><title>Linux command</title><link>/post/linuxcommand/</link><pubDate>Sun, 31 Jul 2022 11:22:04 +0800</pubDate><guid>/post/linuxcommand/</guid><description>&lt;h1 id="一些命令" >
+&lt;div>
+&lt;a href="#%e4%b8%80%e4%ba%9b%e5%91%bd%e4%bb%a4">
+##
+&lt;/a>
+一些命令
+&lt;/div>
+&lt;/h1>
+&lt;ul>
 &lt;li>查看目录结构
 tree
 mac默认是没有tree命令的，所以可以有2种办法:&lt;/li>
@@ -425,67 +554,44 @@ git log &amp;ndash;graph &amp;ndash;abbrev-commit &amp;ndash;decorate &amp;ndash
 git log &amp;ndash;graph &amp;ndash;abbrev-commit &amp;ndash;decorate &amp;ndash;date=relative &amp;ndash;format=format:&amp;rsquo;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)&amp;rsquo; &amp;ndash;all -p&lt;/li>
 &lt;li>curl相关命令&lt;/li>
 &lt;li>直接输出到命令行
-curl &lt;a class="link" href="http://www.centos.org/" target="_blank" rel="noopener"
->http:&lt;em>//www.centos.org&lt;/em>&lt;/a>&lt;/li>
+curl &lt;a href="http://www.centos.org/">http:&lt;em>//www.centos.org&lt;/em>&lt;/a>&lt;/li>
 &lt;li>输出到指定文件
-curl -o mygettext.html &lt;a class="link" href="http://www.gnu.org/software/gettext/manual/gettext.html" target="_blank" rel="noopener"
->http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>or 直接用url里面的文件名
-curl -O &lt;a class="link" href="http://www.gnu.org/software/gettext/manual/gettext.html" target="_blank" rel="noopener"
->http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>&lt;/li>
+curl -o mygettext.html &lt;a href="http://www.gnu.org/software/gettext/manual/gettext.html">http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>or 直接用url里面的文件名
+curl -O &lt;a href="http://www.gnu.org/software/gettext/manual/gettext.html">http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>&lt;/li>
 &lt;li>允许redirects
-curl -L &lt;a class="link" href="http://www.google.com/" target="_blank" rel="noopener"
->http:&lt;em>//www.google.com&lt;/em>&lt;/a>&lt;/li>
+curl -L &lt;a href="http://www.google.com/">http:&lt;em>//www.google.com&lt;/em>&lt;/a>&lt;/li>
 &lt;li>断点续传
-curl -C - -O &lt;a class="link" href="http://www.gnu.org/software/gettext/manual/gettext.html" target="_blank" rel="noopener"
->http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>也可指定续传的位置&lt;/li>
+curl -C - -O &lt;a href="http://www.gnu.org/software/gettext/manual/gettext.html">http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>也可指定续传的位置&lt;/li>
 &lt;li>限定下载速度
-curl &amp;ndash;limit-rate 1000B -O &lt;a class="link" href="http://www.gnu.org/software/gettext/manual/gettext.html" target="_blank" rel="noopener"
->http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>&lt;/li>
+curl &amp;ndash;limit-rate 1000B -O &lt;a href="http://www.gnu.org/software/gettext/manual/gettext.html">http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>&lt;/li>
 &lt;li>需要认证
 curl -u username:password URL&lt;/li>
 &lt;li>使用代理
-curl -x proxysever.test.com:3128 &lt;a class="link" href="http://google.co.in/" target="_blank" rel="noopener"
->http:&lt;em>//google.co.in&lt;/em>&lt;/a>&lt;/li>
+curl -x proxysever.test.com:3128 &lt;a href="http://google.co.in/">http:&lt;em>//google.co.in&lt;/em>&lt;/a>&lt;/li>
 &lt;li>发邮件
-curl &amp;ndash;mail-from &lt;a class="link" href="mailto:blah@test.com" >blah@test.com&lt;/a> &amp;ndash;mail-rcpt &lt;a class="link" href="mailto:foo@test.com" >foo@test.com&lt;/a> smtp:&lt;em>//mailserver.com&lt;/em>输入后，就可以开始写邮件内容， .表示结束
+curl &amp;ndash;mail-from &lt;a href="mailto:blah@test.com">blah@test.com&lt;/a> &amp;ndash;mail-rcpt &lt;a href="mailto:foo@test.com">foo@test.com&lt;/a> smtp:&lt;em>//mailserver.com&lt;/em>输入后，就可以开始写邮件内容， .表示结束
 Subject: Testing
 This is a test mail
 .&lt;/li>
 &lt;li>HTTP Method
-curl &amp;ndash;request GET &amp;lsquo;&lt;a class="link" href="http://www.somedomain.com/" target="_blank" rel="noopener"
->http:*//www.somedomain.com/&lt;/a>&amp;rsquo;*curl &amp;ndash;request POST &amp;lsquo;&lt;a class="link" href="http://www.somedomain.com/" target="_blank" rel="noopener"
->http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;em>curl &amp;ndash;request DELETE &amp;lsquo;&lt;a class="link" href="http://www.somedomain.com/" target="_blank" rel="noopener"
->http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;em>curl &amp;ndash;request PUT &amp;lsquo;&lt;a class="link" href="http://www.somedomain.com/" target="_blank" rel="noopener"
->http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;/em>&lt;/em> 传入参数
-curl &amp;ndash;request POST &amp;lsquo;&lt;a class="link" href="http://www.somedomain.com/login/" target="_blank" rel="noopener"
->http:*//www.somedomain.com/login/&lt;/a>&amp;rsquo; &amp;ndash;data &amp;lsquo;username=myusername&amp;amp;password=mypassword&amp;rsquo;*curl &amp;ndash;data-urlencode &amp;ldquo;date=April 1&amp;rdquo; &amp;lsquo;&lt;a class="link" href="http://example.com/form.cgi" target="_blank" rel="noopener"
->http:*//example.com/form.cgi&lt;/a>&amp;rsquo;&lt;em>上传文件:
-curl &amp;ndash;request POST &amp;lsquo;&lt;a class="link" href="http://127.0.0.1:8008/api/trace_file" target="_blank" rel="noopener"
->http:*//127.0.0.1:8008/api/trace_file&lt;/a>&amp;rsquo; -F &amp;rsquo;&lt;a class="link" href="mailto:trace_file=@journal.txt" >trace_file=@journal.txt&lt;/a>;type=text/plain&amp;rsquo;&lt;/em>&lt;/li>
+curl &amp;ndash;request GET &amp;lsquo;&lt;a href="http://www.somedomain.com/">http:*//www.somedomain.com/&lt;/a>&amp;rsquo;*curl &amp;ndash;request POST &amp;lsquo;&lt;a href="http://www.somedomain.com/">http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;em>curl &amp;ndash;request DELETE &amp;lsquo;&lt;a href="http://www.somedomain.com/">http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;em>curl &amp;ndash;request PUT &amp;lsquo;&lt;a href="http://www.somedomain.com/">http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;/em>&lt;/em> 传入参数
+curl &amp;ndash;request POST &amp;lsquo;&lt;a href="http://www.somedomain.com/login/">http:*//www.somedomain.com/login/&lt;/a>&amp;rsquo; &amp;ndash;data &amp;lsquo;username=myusername&amp;amp;password=mypassword&amp;rsquo;*curl &amp;ndash;data-urlencode &amp;ldquo;date=April 1&amp;rdquo; &amp;lsquo;&lt;a href="http://example.com/form.cgi">http:*//example.com/form.cgi&lt;/a>&amp;rsquo;&lt;em>上传文件:
+curl &amp;ndash;request POST &amp;lsquo;&lt;a href="http://127.0.0.1:8008/api/trace_file">http:*//127.0.0.1:8008/api/trace_file&lt;/a>&amp;rsquo; -F &amp;rsquo;&lt;a href="mailto:trace_file=@journal.txt">trace_file=@journal.txt&lt;/a>;type=text/plain&amp;rsquo;&lt;/em>&lt;/li>
 &lt;li>带上头部信息
-curl &amp;ndash;request GET &amp;lsquo;&lt;a class="link" href="http://www.somedomain.com/user/info/" target="_blank" rel="noopener"
->http:*//www.somedomain.com/user/info/&lt;/a>&amp;rsquo; &amp;ndash;header &amp;lsquo;sessionid:1234567890987654321&amp;rsquo;&lt;em>需要请求返回带上头信息:
-curl &amp;ndash;request GET &amp;lsquo;&lt;a class="link" href="http://somedomain.com/" target="_blank" rel="noopener"
->http:*//somedomain.com/&lt;/a>&amp;rsquo; &amp;ndash;include&lt;/em>-I 则是只显示头信息&lt;/li>
+curl &amp;ndash;request GET &amp;lsquo;&lt;a href="http://www.somedomain.com/user/info/">http:*//www.somedomain.com/user/info/&lt;/a>&amp;rsquo; &amp;ndash;header &amp;lsquo;sessionid:1234567890987654321&amp;rsquo;&lt;em>需要请求返回带上头信息:
+curl &amp;ndash;request GET &amp;lsquo;&lt;a href="http://somedomain.com/">http:*//somedomain.com/&lt;/a>&amp;rsquo; &amp;ndash;include&lt;/em>-I 则是只显示头信息&lt;/li>
 &lt;li>获取详细返回结果
-curl -v &amp;lsquo;&lt;a class="link" href="http://somedomain.com/" target="_blank" rel="noopener"
->http:*//somedomain.com/&lt;/a>&amp;rsquo;*还不够详细？
-curl &amp;ndash;trace output.txt &amp;lsquo;&lt;a class="link" href="http://somedomain.com/" target="_blank" rel="noopener"
->http:*//somedomain.com/&lt;/a>&amp;rsquo;&lt;em>or
-curl &amp;ndash;trace-ascii output.txt &amp;lsquo;&lt;a class="link" href="http://somedomain.com/" target="_blank" rel="noopener"
->http:*//somedomain.com/&lt;/a>&amp;rsquo;&lt;/em>&lt;/li>
+curl -v &amp;lsquo;&lt;a href="http://somedomain.com/">http:*//somedomain.com/&lt;/a>&amp;rsquo;*还不够详细？
+curl &amp;ndash;trace output.txt &amp;lsquo;&lt;a href="http://somedomain.com/">http:*//somedomain.com/&lt;/a>&amp;rsquo;&lt;em>or
+curl &amp;ndash;trace-ascii output.txt &amp;lsquo;&lt;a href="http://somedomain.com/">http:*//somedomain.com/&lt;/a>&amp;rsquo;&lt;/em>&lt;/li>
 &lt;li>提供referer信息
-curl &amp;ndash;referer &amp;lsquo;&lt;a class="link" href="http://www.example.com/" target="_blank" rel="noopener"
->http:*//www.example.com&lt;/a> &lt;a class="link" href="http://www.example.com" target="_blank" rel="noopener"
->http://www.example.com&lt;/a>&amp;rsquo;*&lt;/li>
+curl &amp;ndash;referer &amp;lsquo;&lt;a href="http://www.example.com/">http:*//www.example.com&lt;/a> &lt;a href="http://www.example.com">http://www.example.com&lt;/a>&amp;rsquo;*&lt;/li>
 &lt;li>UA
 curl &amp;ndash;user-agent &amp;ldquo;[User Agent]&amp;rdquo; [URL]&lt;/li>
 &lt;li>cookie
-curl &amp;ndash;cookie &amp;ldquo;name=xxx&amp;rdquo; &lt;a class="link" href="http://www.example.com/" target="_blank" rel="noopener"
->www.example.com&lt;/a>&lt;/li>
+curl &amp;ndash;cookie &amp;ldquo;name=xxx&amp;rdquo; &lt;a href="http://www.example.com/">www.example.com&lt;/a>&lt;/li>
 &lt;li>带host访问
-curl -H &amp;lsquo;Host: project1.loc&amp;rsquo; &amp;lsquo;&lt;a class="link" href="http://127.0.0.1/something" target="_blank" rel="noopener"
->http:*//127.0.0.1/something&lt;/a>&amp;rsquo;*&lt;/li>
+curl -H &amp;lsquo;Host: project1.loc&amp;rsquo; &amp;lsquo;&lt;a href="http://127.0.0.1/something">http:*//127.0.0.1/something&lt;/a>&amp;rsquo;*&lt;/li>
 &lt;li>命令行打开任一程序(限OSX)
 open /Applications/Safari.app/
 or 打开一个目录
@@ -511,7 +617,7 @@ mkdir -p /Volumes/1 &amp;amp;&amp;amp; sudo mount -t ntfs /dev/disk1s1 /Volumes/
 之后操作1文件夹就行了
 弹出:
 sudo umount /dev/disk1s1&lt;/li>
-&lt;/ul></description></item><item><title>Wget用法</title><link>https://jerrygoodluck.github.io/about/post/wget%E7%94%A8%E6%B3%95/</link><pubDate>Sun, 31 Jul 2022 11:20:32 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/wget%E7%94%A8%E6%B3%95/</guid><description>&lt;p>我会向你展示10个 Wget 命令的实际案例. Wget 是一个用于下载文件的免费工具，它支持大多数常用的Internet协议，包括 HTTP, HTTPS, 以及 FTP.&lt;/p>
+&lt;/ul></description></item><item><title>Wget用法</title><link>/post/wget%E7%94%A8%E6%B3%95/</link><pubDate>Sun, 31 Jul 2022 11:20:32 +0800</pubDate><guid>/post/wget%E7%94%A8%E6%B3%95/</guid><description>&lt;p>我会向你展示10个 Wget 命令的实际案例. Wget 是一个用于下载文件的免费工具，它支持大多数常用的Internet协议，包括 HTTP, HTTPS, 以及 FTP.&lt;/p>
 &lt;p>Wget这个名字来源于 World Wide Web + get. Wget 有很多功能，可以很方便地做到下载大型文件,递归下载,一次下载多个文件以及镜像web网站和FTP站点.&lt;/p>
 &lt;p>Wget是非交互式的，但是使用起来相当的灵活. 你可以在脚本，cron任务，终端等地方调用它. 它可以在用户未登陆的情况下运行在后台. 也就是说你可以开始下载文件，然后退出系统，wget会在后台运行直到完成任务.&lt;/p>
 &lt;p>在本文中，我将演示一些wget的使用例子, 这些例子都很常见,比如下载文件，比如镜像整个网站.&lt;/p>
@@ -528,11 +634,9 @@ apt-get upgrade&lt;/p>
 &lt;p>下载单个文件
 wget最常用也是最简单的用法就是用来下载单个文件.&lt;/p>
 &lt;p>你可以用下面命令想下载最新版的WordPress&lt;/p>
-&lt;p>wget &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
->https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>wget &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>&lt;/p>
 &lt;p>你会看到如下输出:&lt;/p>
-&lt;p>&amp;ndash;2017-10-14 03:46:06&amp;ndash; &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
->https://wordpress.org/latest.zip&lt;/a>
+&lt;p>&amp;ndash;2017-10-14 03:46:06&amp;ndash; &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>
 Resolving wordpress.org (wordpress.org)&amp;hellip; 66.155.40.250, 66.155.40.249
 Connecting to wordpress.org (wordpress.org)|66.155.40.250|:443&amp;hellip; connected.
 HTTP request sent, awaiting response&amp;hellip; 200 OK
@@ -544,47 +648,38 @@ Saving to: &amp;rsquo;latest.zip'&lt;/p>
 &lt;p>在我们的例子中, wget会下载文件并以”latest.zip”为名存放到当前目录中.zip” name.&lt;/p>
 &lt;p>下载文件并重命名
 若你想以其他名称保存下载的文件，可以使用 -O 选项:&lt;/p>
-&lt;p>wget -O wordpress.zip &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
->https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>wget -O wordpress.zip &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>&lt;/p>
 &lt;p>wget会下载文件并以”wordpress.zip”为名存放到当前目录中.zip” name.&lt;/p>
 &lt;p>指定下载目录
 使用 -P 选项指定下载目录:&lt;/p>
-&lt;p>wget -P /opt/wordpress &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
->https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>wget -P /opt/wordpress &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>&lt;/p>
 &lt;p>就会把文件下载到 /opt/wordpress 目录中.&lt;/p>
 &lt;p>限制下载速度
 当你下载大型文件时,可能耗时很长,这事你可以限制wget的下载速度以防止它把整个带宽都占满了.&lt;/p>
 &lt;p>下面命令就将下载速度限制在了每秒300k:&lt;/p>
-&lt;p>wget &amp;ndash;limit-rate=300k &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
->https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>wget &amp;ndash;limit-rate=300k &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>&lt;/p>
 &lt;p>断点续传
 在下载大型文件时，可能会由于网络连接抖动造成下载中断.&lt;/p>
 &lt;p>为了避免重新下载，可以使用 -c 选项进行断点续传:&lt;/p>
-&lt;p>wget -c &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
->https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>wget -c &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>&lt;/p>
 &lt;p>若下载中断后你没有用 -c 进行断点续传，而是重新下载, wget 会在文件名后加上 “.1” 防止与前面下载的文件重名.&lt;/p>
 &lt;p>后台下载
 当下载大型文件时, 可以使用 -b 选项让wget在后台下载文件.&lt;/p>
-&lt;p>wget -b &lt;a class="link" href="http://example.com/big-file.zip" target="_blank" rel="noopener"
->http://example.com/big-file.zip&lt;/a>&lt;/p>
+&lt;p>wget -b &lt;a href="http://example.com/big-file.zip">http://example.com/big-file.zip&lt;/a>&lt;/p>
 &lt;p>输出内容会写入同目录下的 “wget-log” 文件, 这样你就可以用下面命令来检查下载状态了:&lt;/p>
 &lt;p>tail -f wget-log&lt;/p>
 &lt;p>设置重试次数
 若网络有问题导致下载时常中断,就可以使用 -tries 选项增加重试次数:&lt;/p>
-&lt;p>wget -tries=100 &lt;a class="link" href="https://example.com/file.zip" target="_blank" rel="noopener"
->https://example.com/file.zip&lt;/a>&lt;/p>
+&lt;p>wget -tries=100 &lt;a href="https://example.com/file.zip">https://example.com/file.zip&lt;/a>&lt;/p>
 &lt;p>下载多文件
 若你想同时下载多个文件,你可以将要在的文件URL存放在一个文本文件中(假设该文件名为download.txt).&lt;/p>
 &lt;p>下面命令创建一个文本文件:&lt;/p>
 &lt;p>touch download.txt&lt;/p>
 &lt;p>然后可以用 nano 编辑该文件，输入所有想下载的文件URL:&lt;/p>
 &lt;p>nano download.txt&lt;/p>
-&lt;p>&lt;a class="link" href="http://example.com/file1.zip" target="_blank" rel="noopener"
->http://example.com/file1.zip&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="http://example.com/file2.zip" target="_blank" rel="noopener"
->http://example.com/file2.zip&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="http://example.com/file3.zip" target="_blank" rel="noopener"
->http://example.com/file3.zip&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://example.com/file1.zip">http://example.com/file1.zip&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://example.com/file2.zip">http://example.com/file2.zip&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://example.com/file3.zip">http://example.com/file3.zip&lt;/a>&lt;/p>
 &lt;p>保存该文件, 然后使用 -i 选项下载文本文件中保存的所有文件:&lt;/p>
 &lt;p>wget -i download.txt&lt;/p>
 &lt;p>下载FTP文件
@@ -592,13 +687,12 @@ wget还支持下载FTP文件，可以为它设置用户名和密码，如下所�
 &lt;p>wget &amp;ndash;ftp-user=username &amp;ndash;ftp-password=password ftp://url-to-ftp-file&lt;/p>
 &lt;p>下载整个网站
 你甚至可以用wget下载完整的站点, 然后进行离线浏览. 方法是使用如下命令:&lt;/p>
-&lt;p>wget &amp;ndash;mirror &amp;ndash;convert-links &amp;ndash;page-requisites &amp;mdash;-no-parent -P /path/to/download &lt;a class="link" href="https://example-domain.com" target="_blank" rel="noopener"
->https://example-domain.com&lt;/a>&lt;/p>
+&lt;p>wget &amp;ndash;mirror &amp;ndash;convert-links &amp;ndash;page-requisites &amp;mdash;-no-parent -P /path/to/download &lt;a href="https://example-domain.com">https://example-domain.com&lt;/a>&lt;/p>
 &lt;p>—mirror 会开启镜像所需要的所有选项.&lt;/p>
 &lt;p>–convert-links 会将所有链接转换成本地链接以便离线浏览.&lt;/p>
 &lt;p>–page-requisites 表示下载包括CSS样式文件，图片等所有所需的文件，以便离线时能正确地现实页面.&lt;/p>
 &lt;p>–no-parent 用于限制只下载网站的某一部分内容.&lt;/p>
-&lt;p>此外, 你可以使用 P 设置下载路径.&lt;/p></description></item><item><title>同一台电脑双Github账号配置</title><link>https://jerrygoodluck.github.io/about/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</link><pubDate>Sat, 23 Jul 2022 13:35:10 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</guid><description>&lt;p>因为用Hugo开了一个新Blog，然后原来github账号的blog我想一直保留，所以就有了2个github账号，这样放在一台电脑上就不好管理。&lt;/p>
+&lt;p>此外, 你可以使用 P 设置下载路径.&lt;/p></description></item><item><title>同一台电脑双Github账号配置</title><link>/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</link><pubDate>Sat, 23 Jul 2022 13:35:10 +0800</pubDate><guid>/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</guid><description>&lt;p>因为用Hugo开了一个新Blog，然后原来github账号的blog我想一直保留，所以就有了2个github账号，这样放在一台电脑上就不好管理。&lt;/p>
 &lt;p>因为github不支持同一个SSH绑定不同的github账号。这样如果我想用github A账号，我就要换成A账号的私钥，用github B账号就要换成B账号的密钥，挺麻烦的。于是网上找到教程，搞成功了。&lt;/p>
 &lt;p>第一步：假设已经有了A B密钥账号，分别保存在~/.ssh目录下，名字为id_rsa_public, id_rsa_private，当然公钥也是与之对应。&lt;/p>
 &lt;p>第二步：编辑 &lt;code>~/.ssh/config&lt;/code> 文件。如果该文件不存在的话，直接创建一个就好。里面的内容如下：&lt;/p>
@@ -630,10 +724,7 @@ git config --local user.email xxx
 &lt;/code>&lt;/pre>&lt;p>第六步，进入你的github项目根目录，然后执行命令&lt;/p>
 &lt;pre tabindex="0">&lt;code>vi .git/config
 &lt;/code>&lt;/pre>&lt;p>如下图所示，将git@后面的域名替换成github_public. 这样改的原因是，当你push或者pull代码的时候，git会先去查找&lt;code>~/.ssh/config&lt;/code> 配置文件 可以按照你设置远程仓库时使用不同的 Host 名称，然后使用不同的SSH文件连接到Github，这样你就将是以不同的身份访问 GitHub 仓库。
-&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207231348934.png"
-loading="lazy"
->&lt;/p></description></item><item><title>DABDA</title><link>https://jerrygoodluck.github.io/about/post/dabda/</link><pubDate>Sun, 17 Jul 2022 09:14:08 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/dabda/</guid><description>&lt;p>from &lt;a class="link" href="https://twitter.com/cryptoismyjam/status/1548114053247012865" target="_blank" rel="noopener"
->https://twitter.com/cryptoismyjam/status/1548114053247012865&lt;/a>&lt;/p>
+&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207231348934.png">&lt;/p></description></item><item><title>DABDA</title><link>/post/dabda/</link><pubDate>Sun, 17 Jul 2022 09:14:08 +0800</pubDate><guid>/post/dabda/</guid><description>&lt;p>from &lt;a href="https://twitter.com/cryptoismyjam/status/1548114053247012865">https://twitter.com/cryptoismyjam/status/1548114053247012865&lt;/a>&lt;/p>
 &lt;p>1/ The future of our funds is in limbo.&lt;/p>
 &lt;p>The company that told us &amp;ldquo;Banks are Not Your Friends&amp;rdquo; &amp;amp; &amp;ldquo;Unbank Yourself&amp;rdquo; violated our trust in a most egregious manner.&lt;/p>
 &lt;p>We are sad. Angry. Brokenhearted.&lt;/p>
@@ -678,8 +769,7 @@ loading="lazy"
 &lt;p>The book describes the emotional state of grieving individuals &amp;amp; how they make sense of their new reality.&lt;/p>
 &lt;p>book: 50th Anniversary Edition
 Fifty years after its original publication, a commemorative edition of “On Death &amp;amp; Dying” has now been published with a new introduction and updated resources section.&lt;/p>
-&lt;p>book link: &lt;a class="link" href="https://www.ekrfoundation.org/5-stages-of-grief/on-death-and-dying/" target="_blank" rel="noopener"
->https://www.ekrfoundation.org/5-stages-of-grief/on-death-and-dying/&lt;/a>&lt;/p>
+&lt;p>book link: &lt;a href="https://www.ekrfoundation.org/5-stages-of-grief/on-death-and-dying/">https://www.ekrfoundation.org/5-stages-of-grief/on-death-and-dying/&lt;/a>&lt;/p>
 &lt;p>5/ 用最简单的话来说：&lt;/p>
 &lt;p>这本书描述了悲伤个体的情绪状态以及他们如何理解他们的新现实。&lt;/p>
 &lt;p>6/ While DABDA was initially meant to describe the grief process for terminally-ill patients &amp;amp; their loved ones, the grief stages have since been expanded to include other personal losses or significant life-changes.&lt;/p>
@@ -862,8 +952,7 @@ or seeing FTX w/ only 380 $CEL cuz #CELShortSqueeze, I&amp;rsquo;m continually a
 &lt;p>This isn&amp;rsquo;t over.&lt;/p>
 &lt;p>I truly believe that this experience will introduce new opportunities into our lives if only we reach out &amp;amp; take them 🙏&lt;/p>
 &lt;p>It’s ok, it’s ok, it’s ok, it’s ok&lt;/p>
-&lt;p>Nightbirde sings it best: &lt;a class="link" href="https://www.youtube.com/watch?v=CZJvBfoHDk0&amp;amp;ab_channel=America%27sGotTalent" target="_blank" rel="noopener"
->https://www.youtube.com/watch?v=CZJvBfoHDk0&amp;ab_channel=America%27sGotTalent&lt;/a>&lt;/p>
+&lt;p>Nightbirde sings it best: &lt;a href="https://www.youtube.com/watch?v=CZJvBfoHDk0&amp;ab_channel=America%27sGotTalent">https://www.youtube.com/watch?v=CZJvBfoHDk0&amp;ab_channel=America%27sGotTalent&lt;/a>&lt;/p>
 &lt;p>22/ “There are no mistakes, no coincidences. All events are blessings given to us to learn from.”&lt;/p>
 &lt;p>― Elizabeth Kubler-Ross, M.D.&lt;/p>
 &lt;p>22/“没有错误，没有巧合。所有的事件都是赐予我们学习的祝福。”&lt;/p>
@@ -880,28 +969,15 @@ Friendship Line: 800-971-0016&lt;/p>
 &lt;p>― Elizabeth Kubler-Ross&lt;/p>
 &lt;p>24/“你不会‘克服’失去的……你会学会忍受它。你会痊愈，你会围绕你所遭受的损失重建自己。你会再次完整，但你永远不会是原来的样子。你也不应该和你一样，你也不想这样。”&lt;/p>
 &lt;p>——伊丽莎白·库布勒-罗斯&lt;/p>
-&lt;p>luna: &lt;a class="link" href="https://twitter.com/cryptoismyjam/status/1526662250559246336" target="_blank" rel="noopener"
->https://twitter.com/cryptoismyjam/status/1526662250559246336&lt;/a>&lt;/p></description></item><item><title>The Webb Space Telescope Will Rewrite Cosmic History. If It Works.</title><link>https://jerrygoodluck.github.io/about/post/the_webb_space_telescope_will_rewrite_cosmic_history/</link><pubDate>Wed, 13 Jul 2022 22:20:09 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/the_webb_space_telescope_will_rewrite_cosmic_history/</guid><description>&lt;p>&lt;strong>《韦伯天文望远镜将会改写宇宙历史，如果它能正常工作的话》&lt;/strong>&lt;/p>
+&lt;p>luna: &lt;a href="https://twitter.com/cryptoismyjam/status/1526662250559246336">https://twitter.com/cryptoismyjam/status/1526662250559246336&lt;/a>&lt;/p></description></item><item><title>The Webb Space Telescope Will Rewrite Cosmic History. If It Works.</title><link>/post/the_webb_space_telescope_will_rewrite_cosmic_history/</link><pubDate>Wed, 13 Jul 2022 22:20:09 +0800</pubDate><guid>/post/the_webb_space_telescope_will_rewrite_cosmic_history/</guid><description>&lt;p>&lt;strong>《韦伯天文望远镜将会改写宇宙历史，如果它能正常工作的话》&lt;/strong>&lt;/p>
 &lt;p>作者：娜塔莉·沃尔乔弗&lt;/p>
-&lt;p>和菜头整理,谷歌翻译: &lt;a class="link" href="https://mp.weixin.qq.com/s/YSEmlentq3pwhLsNIfT8Dw" target="_blank" rel="noopener"
->https://mp.weixin.qq.com/s/YSEmlentq3pwhLsNIfT8Dw&lt;/a>&lt;/p>
-&lt;p>原文地址: &lt;a class="link" href="https://www.quantamagazine.org/why-nasas-james-webb-space-telescope-matters-so-much-20211203" target="_blank" rel="noopener"
->https://www.quantamagazine.org/why-nasas-james-webb-space-telescope-matters-so-much-20211203&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222330.png"
-loading="lazy"
->&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222329.png"
-loading="lazy"
->&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222328.png"
-loading="lazy"
->&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222327.png"
-loading="lazy"
->&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222325.png"
-loading="lazy"
->&lt;/p>
+&lt;p>和菜头整理,谷歌翻译: &lt;a href="https://mp.weixin.qq.com/s/YSEmlentq3pwhLsNIfT8Dw">https://mp.weixin.qq.com/s/YSEmlentq3pwhLsNIfT8Dw&lt;/a>&lt;/p>
+&lt;p>原文地址: &lt;a href="https://www.quantamagazine.org/why-nasas-james-webb-space-telescope-matters-so-much-20211203">https://www.quantamagazine.org/why-nasas-james-webb-space-telescope-matters-so-much-20211203&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222330.png">&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222329.png">&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222328.png">&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222327.png">&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222325.png">&lt;/p>
 &lt;p>回首宇宙的幼年，见证第一颗星星的闪烁，你必须先磨出一面房子那么大的镜子。它的表面必须非常光滑，如果镜子是一个大陆的比例，它的特征就不会超过脚踝高度的山丘或山谷。只有一面如此巨大和光滑的镜子才能收集和聚焦来自天空中最远星系的微弱光线——这些光线很久以前就离开了它的源头，因此显示了宇宙年轻时在远古时代出现的星系。我们所能看到的最微弱、最远的星系仍在诞生的过程中，那时神秘的力量在黑暗中合谋，第一批恒星开始发光。&lt;/p>
 &lt;p>但要阅读宇宙历史的早期篇章——了解那些第一批恒星的性质，可能是巨大的恒星，了解引力诱使它们形成的不可见物质，磁力和湍流的作用，以及巨大的黑洞成长并进入星系中心——一个特殊的镜子是远远不够的。&lt;/p>
 &lt;p>之所以没有人看到星系形成的时代，是因为古老的星光在穿过不断膨胀的空间结构到达我们这里数十亿年之后，变得拉长了。天空中最远的恒星喷出的紫外线和可见光在这里的旅程中被拉长到大约 20 倍的波长，变成了红外线辐射。但红外光是一种我们称之为热的原子抖动光，与我们的身体、大气和脚下的地面辐射的热相同。唉，这些局部热源淹没了原始恒星可怜的火焰。要感知这些恒星，带有完美大镜子的望远镜必须非常冷。它必须发射到太空中。&lt;/p>
@@ -1013,11 +1089,9 @@ loading="lazy"
 &lt;p>韦伯可能只是确定可能存在的行星，然后用未来的太空望远镜进行更仔细的检查。天文学家现在正忙于计划这些。NASA 的 Nancy Grace Roman 太空望远镜计划于本十年晚些时候发射，主要用于研究暗能量。类地系外行星是未来望远镜概念的范围，暂时称为 LuvEx，这是一种紫外、光学和红外望远镜（如果由国会资助），将于 2040 年代中期发射。&lt;/p>
 &lt;p>我们将看什么取决于我们在接下来的几年中学到的东西。&lt;/p>
 &lt;p>今年春天的一个早晨，娜塔莎·巴塔利亚一觉醒来，听到来自系外行星天文学家约翰娜·特斯克的一封信：“我们明白了！” 刚刚宣布了 266 个选定的第 1 周期计划，由 Batalha 领导的提案，Teske 作为她的副手，列入了名单。 &lt;/p>
-&lt;p>他们将是第一个周期中所有系外行星观测活动中最广泛的：对超级地球和次海王星进行 142 小时的调查，这是我们太阳系所缺乏的无处不在的中型“桥梁”行星，它们的组成、可居住性和形成历史不详。假设在接下来的几个月里，一切都按原样展开并且詹姆斯韦伯太空望远镜找到了焦点，它将代表娜塔莎巴塔利亚和她的团队指向其中的 11 颗行星。当她醒来听到这个好消息时，她首先给特斯克打了电话。然后她给妈妈打了电话。&lt;/p></description></item><item><title>Advice for lack of discipline</title><link>https://jerrygoodluck.github.io/about/post/advice_for_lack_of_discipline/</link><pubDate>Sun, 26 Jun 2022 12:55:34 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/advice_for_lack_of_discipline/</guid><description>&lt;p>&amp;ldquo;If you lack discipline, open this&amp;rdquo;&lt;/p>
+&lt;p>他们将是第一个周期中所有系外行星观测活动中最广泛的：对超级地球和次海王星进行 142 小时的调查，这是我们太阳系所缺乏的无处不在的中型“桥梁”行星，它们的组成、可居住性和形成历史不详。假设在接下来的几个月里，一切都按原样展开并且詹姆斯韦伯太空望远镜找到了焦点，它将代表娜塔莎巴塔利亚和她的团队指向其中的 11 颗行星。当她醒来听到这个好消息时，她首先给特斯克打了电话。然后她给妈妈打了电话。&lt;/p></description></item><item><title>Advice for lack of discipline</title><link>/post/advice_for_lack_of_discipline/</link><pubDate>Sun, 26 Jun 2022 12:55:34 +0800</pubDate><guid>/post/advice_for_lack_of_discipline/</guid><description>&lt;p>&amp;ldquo;If you lack discipline, open this&amp;rdquo;&lt;/p>
 &lt;p>Psychology Thread&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202206261258258.jpeg"
-loading="lazy"
->&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202206261258258.jpeg">&lt;/p>
 &lt;ol>
 &lt;li>Choose a Goal&lt;/li>
 &lt;/ol>
@@ -1072,10 +1146,8 @@ loading="lazy"
 • Disciplined
 • Your best self
 • Self-confident&lt;/p>
-&lt;p>Get the book here: Live Intentionally: 90 Day Self-Improvement Program (&lt;a class="link" href="https://lifemathmoney.gumroad.com/l/tough" target="_blank" rel="noopener"
->https://lifemathmoney.gumroad.com/l/tough&lt;/a>)&lt;/p>
-&lt;p>Twitter Link: &lt;a class="link" href="https://twitter.com/Art0fLife_/status/1533361596323569665" target="_blank" rel="noopener"
->https://twitter.com/Art0fLife_/status/1533361596323569665&lt;/a>&lt;/p></description></item><item><title>Advice from ArtOfLife_</title><link>https://jerrygoodluck.github.io/about/post/advice_from_artoflife_/</link><pubDate>Sun, 26 Jun 2022 12:52:06 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/advice_from_artoflife_/</guid><description>&lt;p>&amp;ldquo;Overthinkers&amp;rdquo;, open this:&lt;/p>
+&lt;p>Get the book here: Live Intentionally: 90 Day Self-Improvement Program (&lt;a href="https://lifemathmoney.gumroad.com/l/tough">https://lifemathmoney.gumroad.com/l/tough&lt;/a>)&lt;/p>
+&lt;p>Twitter Link: &lt;a href="https://twitter.com/Art0fLife_/status/1533361596323569665">https://twitter.com/Art0fLife_/status/1533361596323569665&lt;/a>&lt;/p></description></item><item><title>Advice from ArtOfLife_</title><link>/post/advice_from_artoflife_/</link><pubDate>Sun, 26 Jun 2022 12:52:06 +0800</pubDate><guid>/post/advice_from_artoflife_/</guid><description>&lt;p>&amp;ldquo;Overthinkers&amp;rdquo;, open this:&lt;/p>
 &lt;p>• You&amp;rsquo;re loved, someone out there loves you more than you think.&lt;/p>
 &lt;p>• Your anxiety will tell you the worst case scenario. It’s a damn liar!&lt;/p>
 &lt;p>• You mean so much to your friends and family, they may not say it as often but they really do love you.&lt;/p>
@@ -1099,8 +1171,7 @@ loading="lazy"
 &lt;li>Grow mentally and emotionally&lt;/li>
 &lt;/ul>
 &lt;p>Have an amazing day, because you are amazing :)&lt;/p>
-&lt;p>Twitter Link: &lt;a class="link" href="https://twitter.com/Art0fLife_/status/1513853742541676546" target="_blank" rel="noopener"
->https://twitter.com/Art0fLife_/status/1513853742541676546&lt;/a>&lt;/p></description></item><item><title>Advice from LongShortHC</title><link>https://jerrygoodluck.github.io/about/post/advice_from_longshorthc/</link><pubDate>Sun, 26 Jun 2022 12:30:18 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/advice_from_longshorthc/</guid><description>&lt;p>Had a DM question asking for advice for a brand new analyst working at a pod shop. Noodled on it, and figured I would share the thoughts broadly in case helpful. I am far from the most tenured and successful pod PM - spent 4 years as a PM at combo of D.E. Shaw (not a pod)…&lt;/p>
+&lt;p>Twitter Link: &lt;a href="https://twitter.com/Art0fLife_/status/1513853742541676546">https://twitter.com/Art0fLife_/status/1513853742541676546&lt;/a>&lt;/p></description></item><item><title>Advice from LongShortHC</title><link>/post/advice_from_longshorthc/</link><pubDate>Sun, 26 Jun 2022 12:30:18 +0800</pubDate><guid>/post/advice_from_longshorthc/</guid><description>&lt;p>Had a DM question asking for advice for a brand new analyst working at a pod shop. Noodled on it, and figured I would share the thoughts broadly in case helpful. I am far from the most tenured and successful pod PM - spent 4 years as a PM at combo of D.E. Shaw (not a pod)…&lt;/p>
 &lt;p>Citadel/Aptigon and Schonfeld, over which time I hired/employed/trained a dozen or so analysts. (And then threw up two middle fingers and retired…more on that later). So I’m by no means the absolute authority on pods. But here is my advice:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -1147,8 +1218,7 @@ data guy”. Learn all the risk model UI, excel pulls, Bloomberg bells and whist
 &lt;ol start="11">
 &lt;li>please add any helpful advice i omitted in the comments!!!&lt;/li>
 &lt;/ol>
-&lt;p>Twitter link: &lt;a class="link" href="https://twitter.com/LongShortHC/status/1540530560631578624" target="_blank" rel="noopener"
->https://twitter.com/LongShortHC/status/1540530560631578624&lt;/a>&lt;/p></description></item><item><title>如何利用GithubAction发布Hugo博客</title><link>https://jerrygoodluck.github.io/about/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</link><pubDate>Tue, 05 Apr 2022 15:07:33 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p>作为一个老网民，我还是很喜欢折腾博客的。从07年开始就玩各种博客，比如07年搜狐博客，那时候博客热很火，不亚于微博兴起的时候，于是我每天去刷我的搜狐博客访问量，是不是还专门去网吧写文章。 后来还开了新浪博客，一直在新浪博客混混文字，大概一直在新浪博客写了4年。&lt;/p>
+&lt;p>Twitter link: &lt;a href="https://twitter.com/LongShortHC/status/1540530560631578624">https://twitter.com/LongShortHC/status/1540530560631578624&lt;/a>&lt;/p></description></item><item><title>如何利用GithubAction发布Hugo博客</title><link>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</link><pubDate>Tue, 05 Apr 2022 15:07:33 +0800</pubDate><guid>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p>作为一个老网民，我还是很喜欢折腾博客的。从07年开始就玩各种博客，比如07年搜狐博客，那时候博客热很火，不亚于微博兴起的时候，于是我每天去刷我的搜狐博客访问量，是不是还专门去网吧写文章。 后来还开了新浪博客，一直在新浪博客混混文字，大概一直在新浪博客写了4年。&lt;/p>
 &lt;p>再后来又买了独立主机，自己开WordPress写博客，无奈后来被人把主机给黑了。但是那时候很快啦，天天找WordPress好看的主题，去别的的WP 搜索好用的插件。各种互加友链。&lt;/p>
 &lt;p>当然后来还玩了很多其他的博客，比如Google的BlogSpot，Tumbler，对就是那个Tumbler。 还有网易的LOFTER，新浪的绿洲。腾讯的QQ空间，微信公众号。&lt;/p>
 &lt;p>工作以后，有了Github page，看着大家都用Travis去自动化部署，于是也用HEXO搭建了一个。不过18年后一直没维护了，中途有次冲动想维护起来，发现怎么都跑不起来，于是就懒得动了。&lt;/p>
@@ -1159,8 +1229,7 @@ data guy”. Learn all the risk model UI, excel pulls, Bloomberg bells and whist
 4、将生成的静态站点内容推送到Github发布&lt;/p>
 &lt;p>一、安装Hugo&lt;/p>
 &lt;p>&lt;code>mac： brew install hugo&lt;/code>&lt;/p>
-&lt;p>其他系统安装方式见：&lt;a class="link" href="https://gohugo.io/getting-started/installing/" target="_blank" rel="noopener"
->https://gohugo.io/getting-started/installing/&lt;/a>&lt;/p>
+&lt;p>其他系统安装方式见：&lt;a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/&lt;/a>&lt;/p>
 &lt;p>二、生成静态站点&lt;/p>
 &lt;p>1、初始化站点&lt;/p>
 &lt;p>Hugo命令可以自动生成站点需要的文件，后续我们所有的操作命令将会在Hugo生成的目录下执行。&lt;/p>
@@ -1190,7 +1259,7 @@ git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
 &lt;p>2、创建hugo-blog项目&lt;/p>
 &lt;p>然后再Github新创建一个私有项目，名字为hugo-blog（保持与上面 第二步《生成静态站点》的目录名字相同），然后添加为我们本地项目文件夹的远程仓库（第二步创建的利用Hugo自动生成的目录）。这个仓库用来维护站点配置和原始的文章内容。&lt;/p>
 &lt;p>3、添加子模块&lt;/p>
-&lt;p>因为public里面存的是静态站点文件，所以我们在public创建一个git的子模块，之后这个目录将以 &lt;a class="link" href="mailto:git@github.com" >git@github.com&lt;/a>:JerryGoodLuck/JerryGoodLuck.github.io.git 作为远程仓库。&lt;/p>
+&lt;p>因为public里面存的是静态站点文件，所以我们在public创建一个git的子模块，之后这个目录将以 &lt;a href="mailto:git@github.com">git@github.com&lt;/a>:JerryGoodLuck/JerryGoodLuck.github.io.git 作为远程仓库。&lt;/p>
 &lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">git submodule add -b main git@github.com:JerryGoodLuck/JerryGoodLuck.github.io.git public
 &lt;/code>&lt;/pre>&lt;p>4、baseurl配置&lt;/p>
 &lt;p>确保配置文件中的 &lt;code>baseUrl&lt;/code> 已经设置为了 &lt;code>&amp;lt;USERNAME&amp;gt;.github.io&lt;/code>&lt;/p>
@@ -1198,43 +1267,42 @@ git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
 &lt;p>一般还有其他的很多配置，可以根据自己的偏好来配置&lt;/p>
 &lt;p>6、添加workflows&lt;/p>
 &lt;p>这个文件所定义的workflow 基于项目仓库运行，但我们需要将运行过程生成的静态文件推送到个人主页仓库 &lt;code>JerryGoodLuck.github.io&lt;/code> 完成发布.
-相关的deploy任务中按照文档的 &lt;a class="link" href="https://github.com/peaceiris/actions-gh-pages" target="_blank" rel="noopener"
->Deploy to external repository external_repository&lt;/a> 一节做了专门的配置。&lt;/p>
+相关的deploy任务中按照文档的 &lt;a href="https://github.com/peaceiris/actions-gh-pages">Deploy to external repository external_repository&lt;/a> 一节做了专门的配置。&lt;/p>
 &lt;p>我的配置文件如下&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">github pages&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">name&lt;/span>: github pages
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">on&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">push&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">branches&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">on&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">push&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">branches&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - main
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">jobs&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">deploy&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">runs-on&lt;/span>: &lt;span style="color:#ae81ff">ubuntu-18.04&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">steps&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">actions/checkout@v2&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">submodules&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span> &lt;span style="color:#75715e"># Fetch Hugo themes (true OR recursive)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">fetch-depth&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span> &lt;span style="color:#75715e"># Fetch all history for .GitInfo and .Lastmod&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">jobs&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">deploy&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">runs-on&lt;/span>: ubuntu-18.04
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">steps&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ff6ac1">uses&lt;/span>: actions/checkout@v2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">with&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">submodules&lt;/span>: &lt;span style="color:#ff6ac1">true&lt;/span> &lt;span style="color:#78787e"># Fetch Hugo themes (true OR recursive)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">fetch-depth&lt;/span>: &lt;span style="color:#ff9f43">0&lt;/span> &lt;span style="color:#78787e"># Fetch all history for .GitInfo and .Lastmod&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Setup Hugo&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">peaceiris/actions-hugo@v2&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">hugo-version&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;0.79.1&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">extended&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ff6ac1">name&lt;/span>: Setup Hugo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">uses&lt;/span>: peaceiris/actions-hugo@v2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">with&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">hugo-version&lt;/span>: &lt;span style="color:#5af78e">&amp;#39;0.79.1&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">extended&lt;/span>: &lt;span style="color:#ff6ac1">true&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Build&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>: &lt;span style="color:#ae81ff">hugo --minify&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ff6ac1">name&lt;/span>: Build
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">run&lt;/span>: hugo --minify
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Deploy&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">peaceiris/actions-gh-pages@v3&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">deploy_key&lt;/span>: &lt;span style="color:#ae81ff">${{ secrets.ACTIONS_DEPLOY_KEY }}&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">external_repository&lt;/span>: &lt;span style="color:#ae81ff">JerryGoodLuck/JerryGoodLuck.github.io&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">publish_branch&lt;/span>: &lt;span style="color:#ae81ff">main&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">publish_dir&lt;/span>: &lt;span style="color:#ae81ff">./public&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ff6ac1">name&lt;/span>: Deploy
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">uses&lt;/span>: peaceiris/actions-gh-pages@v3
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">with&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">deploy_key&lt;/span>: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">external_repository&lt;/span>: JerryGoodLuck/JerryGoodLuck.github.io
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">publish_branch&lt;/span>: main
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff6ac1">publish_dir&lt;/span>: ./public
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>7、在本地电脑生成SSH密钥&lt;/p>
 &lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">ssh-keygen -t rsa -b 4096 -C &amp;#34;$(git config user.email)&amp;#34; -f gh-pages -N &amp;#34;&amp;#34;
 # 将在当前目录生成如下密钥文件:
@@ -1255,16 +1323,21 @@ git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
 &lt;p>不出意外的话，很快个人主页仓库将新增一个由该 workflow 创建的提交，访问个人博客页面也会发现页面已经更新。&lt;/p>
 &lt;p>四、总结：&lt;/p>
 &lt;p>这次利用Github Action搭建Hugo的过程中，还是遇到不少坑。&lt;/p>
-&lt;p>1、不知道Github Action的语法以及配置文件怎么写，&lt;a class="link" href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-deploy-to-external-repository-external_repository" target="_blank" rel="noopener"
->参考文档&lt;/a>&lt;/p>
+&lt;p>1、不知道Github Action的语法以及配置文件怎么写，&lt;a href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-deploy-to-external-repository-external_repository">参考文档&lt;/a>&lt;/p>
 &lt;p>2、运行workflow总是失败，后来发现几个关键点：&lt;/p>
 &lt;pre>&lt;code>一个就是静态站点要以submodule的模式放在public目录下
 二个是主题也要是submodule的模式
 &lt;/code>&lt;/pre>
 &lt;p>3、公私钥Key配置的不正确。&lt;/p>
-&lt;h4 id="update-2022-08-07-170639-sunday">update 2022-08-07 17:06:39 Sunday
-&lt;/h4>&lt;p>Jane主题 full-config : &lt;a class="link" href="https://github.com/xianmin/hugo-theme-jane/blob/master/exampleSite/full-config.toml" target="_blank" rel="noopener"
->https://github.com/xianmin/hugo-theme-jane/blob/master/exampleSite/full-config.toml&lt;/a>&lt;/p></description></item><item><title>如果我有一段生命</title><link>https://jerrygoodluck.github.io/about/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</link><pubDate>Tue, 05 Apr 2022 00:17:28 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</guid><description>&lt;p>If God, for a second, forgot what I have become and granted me a little bit more of life, I would use it to the best of my ability.&lt;/p>
+&lt;h4 id="update-2022-08-07-170639-sunday" >
+&lt;div>
+&lt;a href="#update-2022-08-07-170639-sunday">
+###
+&lt;/a>
+update 2022-08-07 17:06:39 Sunday
+&lt;/div>
+&lt;/h4>
+&lt;p>Jane主题 full-config : &lt;a href="https://github.com/xianmin/hugo-theme-jane/blob/master/exampleSite/full-config.toml">https://github.com/xianmin/hugo-theme-jane/blob/master/exampleSite/full-config.toml&lt;/a>&lt;/p></description></item><item><title>如果我有一段生命</title><link>/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</link><pubDate>Tue, 05 Apr 2022 00:17:28 +0800</pubDate><guid>/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</guid><description>&lt;p>If God, for a second, forgot what I have become and granted me a little bit more of life, I would use it to the best of my ability.&lt;/p>
 &lt;p>如果有一刹那，上帝忘记我是一只布偶并赋予我片刻生命，我会最大限度的利用起来。&lt;/p>
 &lt;p>I wouldn&amp;rsquo;t possibly, say everything that is in my mind, but I would be more thoughtful of all I say…&lt;/p>
 &lt;p>我可能不会说出我心中的一切所想，但我必定会思考我所说的一切。&lt;/p>
@@ -1314,7 +1387,7 @@ git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
 &lt;p>写给你们，带着我无尽的爱&lt;/p>
 &lt;p>Your Friend,&lt;/p>
 &lt;p>你们的朋友&lt;/p>
-&lt;p>Gabriel Garcia Marquez&lt;/p></description></item><item><title>不装蒜</title><link>https://jerrygoodluck.github.io/about/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</link><pubDate>Mon, 04 Apr 2022 22:16:02 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</guid><description>&lt;p>顾城 (1956-1993)&lt;/p>
+&lt;p>Gabriel Garcia Marquez&lt;/p></description></item><item><title>不装蒜</title><link>/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</link><pubDate>Mon, 04 Apr 2022 22:16:02 +0800</pubDate><guid>/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</guid><description>&lt;p>顾城 (1956-1993)&lt;/p>
 &lt;p>人的生命里有一种能量，它使你不安宁。说它是欲望也行，幻想也行，妄想也行，总之它不可能停下来，它需要一个表达形式。这个形式可能是革命，也可能是爱情；可能是搬一块石头，也可能是写一首诗。只要这个形式和生命力里的这个能量吻合了，就有了一个完美的过程。&lt;/p>
 &lt;p>一个彻底诚实的人是从不面对选择的，那条路永远会清楚无二地呈现在你面前，这和你的憧憬无关，就像你是一棵苹果树，你憧憬结橘子，但是你还是诚实地结出苹果一样。&lt;/p>
 &lt;p>西方爱情是强烈开放的花朵，东方爱情是两朵花之间微妙的芳香。&lt;/p>

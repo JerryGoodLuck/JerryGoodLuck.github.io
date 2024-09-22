@@ -1,59 +1,112 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><follow_challenge><feedId>60623584562065408</feedId><userId>60599027243183104</userId></follow_challenge><channel><title>Linux on Lost Temple</title><link>https://jerrygoodluck.github.io/about/tags/linux/</link><description> Recent content in Linux on Lost Temple feedId:60623584562065408+userId:60599027243183104</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 13 Aug 2022 10:23:30 +0800</lastBuildDate><atom:link href="https://jerrygoodluck.github.io/about/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>我的oh My Zsh主题</title><link>https://jerrygoodluck.github.io/about/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link><pubDate>Sat, 13 Aug 2022 10:23:30 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid><description>&lt;p>最近想改下iTerm的oh-my-zsh主题，看知乎讨论，有一款简洁的主题映入眼帘。&lt;/p>
-&lt;h3 id="主题名称">主题名称
-&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>half-life
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改prompt">修改PROMPT
-&lt;/h3>&lt;p>然后去oh-my-zsh.sh修改PROMPT&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>vim ~/.oh-my-zsh/oh-my-zsh.sh
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><follow_challenge><feedId>60623584562065408</feedId><userId>60599027243183104</userId></follow_challenge><channel><title>Linux on Lost Temple</title><link>/tags/linux/</link><description>feedId:60623584562065408+userId:60599027243183104 Lost Temple (Linux)</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Aug 2022 10:23:30 +0800</lastBuildDate><atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>我的oh My Zsh主题</title><link>/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link><pubDate>Sat, 13 Aug 2022 10:23:30 +0800</pubDate><guid>/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid><description>&lt;p>最近想改下iTerm的oh-my-zsh主题，看知乎讨论，有一款简洁的主题映入眼帘。&lt;/p>
+&lt;h3 id="主题名称" >
+&lt;div>
+&lt;a href="#%e4%b8%bb%e9%a2%98%e5%90%8d%e7%a7%b0">
+##
+&lt;/a>
+主题名称
+&lt;/div>
+&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>half-life
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改prompt" >
+&lt;div>
+&lt;a href="#%e4%bf%ae%e6%94%b9prompt">
+##
+&lt;/a>
+修改PROMPT
+&lt;/div>
+&lt;/h3>
+&lt;p>然后去oh-my-zsh.sh修改PROMPT&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>vim ~/.oh-my-zsh/oh-my-zsh.sh
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在文件末尾添加一行：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>PROMPT&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">$&amp;#39;%{$purple%}%n%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info &amp;#34; with%{$fg[red]%} &amp;#34; v g &amp;#34;%{$reset_color%}&amp;#34;)$vcs_info_msg_0_%{$orange%}%{$reset_color%} at %{$hotpink%}%* %{$orange%}λ%{$reset_color%} &amp;#39;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">PROMPT&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">$&amp;#39;%{$purple%}%n%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info &amp;#34; with%{$fg[red]%} &amp;#34; v g &amp;#34;%{$reset_color%}&amp;#34;)$vcs_info_msg_0_%{$orange%}%{$reset_color%} at %{$hotpink%}%* %{$orange%}λ%{$reset_color%} &amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>效果如下&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202208131028385.png"
-loading="lazy"
->&lt;/p></description></item><item><title>Ubuntu18.04使用supervisor守护进程</title><link>https://jerrygoodluck.github.io/about/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link><pubDate>Sun, 07 Aug 2022 15:54:02 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid><description>&lt;h3 id="问题背景">问题背景
-&lt;/h3>&lt;p>最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202208131028385.png">&lt;/p></description></item><item><title>Ubuntu18.04使用supervisor守护进程</title><link>/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link><pubDate>Sun, 07 Aug 2022 15:54:02 +0800</pubDate><guid>/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid><description>&lt;h3 id="问题背景" >
+&lt;div>
+&lt;a href="#%e9%97%ae%e9%a2%98%e8%83%8c%e6%99%af">
+##
+&lt;/a>
+问题背景
+&lt;/div>
+&lt;/h3>
+&lt;p>最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。&lt;/p>
 &lt;p>于是想着用supervisor来做守护进程, 本文就是记录supervisor 的安装、配置、使用技巧，并设置如何supervisor开机自动启动&lt;/p>
-&lt;h3 id="机器环境">机器环境
-&lt;/h3>&lt;p>Ubuntu版本：18.04&lt;/p>
+&lt;h3 id="机器环境" >
+&lt;div>
+&lt;a href="#%e6%9c%ba%e5%99%a8%e7%8e%af%e5%a2%83">
+##
+&lt;/a>
+机器环境
+&lt;/div>
+&lt;/h3>
+&lt;p>Ubuntu版本：18.04&lt;/p>
 &lt;p>Ubuntu用户：root&lt;/p>
-&lt;h3 id="ubuntu安装supervisor">Ubuntu安装supervisor
-&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>apt install supervisor
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ubuntu配置supervisor">Ubuntu配置supervisor
-&lt;/h3>&lt;p>安装完成后，会生成一个默认的配置文件/etc/supervisor/supervisord.conf， 这个默认配置里面也会load所有在conf.d目录下的配置&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# tree
+&lt;h3 id="ubuntu安装supervisor" >
+&lt;div>
+&lt;a href="#ubuntu%e5%ae%89%e8%a3%85supervisor">
+##
+&lt;/a>
+Ubuntu安装supervisor
+&lt;/div>
+&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>apt install supervisor
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ubuntu配置supervisor" >
+&lt;div>
+&lt;a href="#ubuntu%e9%85%8d%e7%bd%aesupervisor">
+##
+&lt;/a>
+Ubuntu配置supervisor
+&lt;/div>
+&lt;/h3>
+&lt;p>安装完成后，会生成一个默认的配置文件/etc/supervisor/supervisord.conf， 这个默认配置里面也会load所有在conf.d目录下的配置&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# tree
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|-- conf.d
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| &lt;span style="color:#e6db74">`&lt;/span>-- we.conf
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">`&lt;/span>-- supervisord.conf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| &lt;span style="color:#5af78e">`&lt;/span>-- we.conf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#5af78e">`&lt;/span>-- supervisord.conf
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">1&lt;/span> directory, &lt;span style="color:#ae81ff">2&lt;/span> files
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff9f43">1&lt;/span> directory, &lt;span style="color:#ff9f43">2&lt;/span> files
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>supervisord.conf这个默认配置会load所有在conf.d目录下的配置，所以我们接下来在conf.d目录下新建一个我们自己的配置&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>touch /etc/supervisor/conf.d/we.conf
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>touch /etc/supervisor/conf.d/we.conf
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>参照默认配置文件supervisord.conf里的内容改改，配置内容如下&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>program:we&lt;span style="color:#f92672">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>directory&lt;span style="color:#f92672">=&lt;/span>/home/test/
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>command&lt;span style="color:#f92672">=&lt;/span>sh we.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>autostart&lt;span style="color:#f92672">=&lt;/span>true
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>autorestart&lt;span style="color:#f92672">=&lt;/span>true
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>startretries&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>redirect_stderr&lt;span style="color:#f92672">=&lt;/span>true
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_logfile&lt;span style="color:#f92672">=&lt;/span>/home/test/out.log
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>具体也可参照官方给的详细文档： &lt;a class="link" href="http://supervisord.org/configuration.html" target="_blank" rel="noopener"
->http://supervisord.org/configuration.html&lt;/a>&lt;/p>
-&lt;h3 id="检查supervisor的状态">检查supervisor的状态
-&lt;/h3>&lt;p>1、检查supervisor的状态&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>ps aux | grep supervisor
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">[&lt;/span>program:we&lt;span style="color:#ff6ac1">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">directory&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/home/test/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">command&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>sh we.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">autostart&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">autorestart&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">startretries&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">redirect_stderr&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stdout_logfile&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/home/test/out.log
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>具体也可参照官方给的详细文档： &lt;a href="http://supervisord.org/configuration.html">http://supervisord.org/configuration.html&lt;/a>&lt;/p>
+&lt;h3 id="检查supervisor的状态" >
+&lt;div>
+&lt;a href="#%e6%a3%80%e6%9f%a5supervisor%e7%9a%84%e7%8a%b6%e6%80%81">
+##
+&lt;/a>
+检查supervisor的状态
+&lt;/div>
+&lt;/h3>
+&lt;p>1、检查supervisor的状态&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>ps aux | grep supervisor
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# ps aux | grep supervisor
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#ae81ff">2551&lt;/span> 0.0 2.0 &lt;span style="color:#ae81ff">65580&lt;/span> &lt;span style="color:#ae81ff">21508&lt;/span> ? Ss 12:39 0:09 /usr/bin/python /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#ae81ff">7720&lt;/span> 0.0 0.1 &lt;span style="color:#ae81ff">13116&lt;/span> &lt;span style="color:#ae81ff">1044&lt;/span> pts/0 S+ 16:46 0:00 grep --color&lt;span style="color:#f92672">=&lt;/span>auto supervisor
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#ff9f43">2551&lt;/span> 0.0 2.0 &lt;span style="color:#ff9f43">65580&lt;/span> &lt;span style="color:#ff9f43">21508&lt;/span> ? Ss 12:39 0:09 /usr/bin/python /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#ff9f43">7720&lt;/span> 0.0 0.1 &lt;span style="color:#ff9f43">13116&lt;/span> &lt;span style="color:#ff9f43">1044&lt;/span> pts/0 S+ 16:46 0:00 grep --color&lt;span style="color:#ff6ac1">=&lt;/span>auto supervisor
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>当看到如上对应的进程，就说明supervisor启动是成功的。&lt;/p>
 &lt;p>2、检查守护的进程的状态&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# supervisorctl
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# supervisorctl
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>we RUNNING pid 2603, uptime 4:05:59
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>我们就可以看到我们配置的守护进程的状态，如果不在运行，会有相应的错误信息，可以去刚才配置的log目录查看日志：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>less /home/test/out.log
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="supervisorctl-常用命令">supervisorctl 常用命令
-&lt;/h3>&lt;table>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>less /home/test/out.log
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="supervisorctl-常用命令" >
+&lt;div>
+&lt;a href="#supervisorctl-%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4">
+##
+&lt;/a>
+supervisorctl 常用命令
+&lt;/div>
+&lt;/h3>
+&lt;table>
 &lt;thead>
 &lt;tr>
 &lt;th style="text-align: left">command&lt;/th>
@@ -87,78 +140,92 @@ loading="lazy"
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h3 id="设置supervisor开机启动">设置supervisor开机启动
-&lt;/h3>&lt;p>如果使用apt安装的，一般来说会自动设置好开机启动，但是如果你重启之后发现没有开机自动启动，可以按照下面的方法配置。&lt;/p>
+&lt;h3 id="设置supervisor开机启动" >
+&lt;div>
+&lt;a href="#%e8%ae%be%e7%bd%aesupervisor%e5%bc%80%e6%9c%ba%e5%90%af%e5%8a%a8">
+##
+&lt;/a>
+设置supervisor开机启动
+&lt;/div>
+&lt;/h3>
+&lt;p>如果使用apt安装的，一般来说会自动设置好开机启动，但是如果你重启之后发现没有开机自动启动，可以按照下面的方法配置。&lt;/p>
 &lt;p>把下面的命令写进 rc.local 即可：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>/usr/bin/supervisord
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="mac设置supervisor">mac设置supervisor
-&lt;/h3>&lt;p>1、brew 安装supervisor&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>/usr/bin/supervisord
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="mac设置supervisor" >
+&lt;div>
+&lt;a href="#mac%e8%ae%be%e7%bd%aesupervisor">
+##
+&lt;/a>
+mac设置supervisor
+&lt;/div>
+&lt;/h3>
+&lt;p>1、brew 安装supervisor&lt;/p>
 &lt;p>如果你还没有安装brew，这里使他们的官网https://brew.sh/，安装brew的命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>/bin/bash -c &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>brew install supervisor
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>/bin/bash -c &lt;span style="color:#5af78e">&amp;#34;&lt;/span>&lt;span style="color:#ff6ac1">$(&lt;/span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span style="color:#ff6ac1">)&lt;/span>&lt;span style="color:#5af78e">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>brew install supervisor
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>brew services restart supervisor
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2、配置文件，先打开默认配置文件&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>vim /usr/local/etc/supervisord.conf
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>vim /usr/local/etc/supervisord.conf
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>3、这是它的默认配置：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#f92672">[&lt;/span>program:theprogramname&lt;span style="color:#f92672">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;command&lt;span style="color:#f92672">=&lt;/span>/bin/cat ; the program &lt;span style="color:#f92672">(&lt;/span>relative uses PATH, can take args&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;process_name&lt;span style="color:#f92672">=&lt;/span>%&lt;span style="color:#f92672">(&lt;/span>program_name&lt;span style="color:#f92672">)&lt;/span>s ; process_name expr &lt;span style="color:#f92672">(&lt;/span>default %&lt;span style="color:#f92672">(&lt;/span>program_name&lt;span style="color:#f92672">)&lt;/span>s&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;numprocs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ; number of processes copies to start &lt;span style="color:#f92672">(&lt;/span>def 1&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;directory&lt;span style="color:#f92672">=&lt;/span>/tmp ; directory to cwd to before exec &lt;span style="color:#f92672">(&lt;/span>def no cwd&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;umask&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">022&lt;/span> ; umask &lt;span style="color:#66d9ef">for&lt;/span> process &lt;span style="color:#f92672">(&lt;/span>default None&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;priority&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">999&lt;/span> ; the relative start priority &lt;span style="color:#f92672">(&lt;/span>default 999&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;autostart&lt;span style="color:#f92672">=&lt;/span>true ; start at supervisord start &lt;span style="color:#f92672">(&lt;/span>default: true&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;startsecs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ; &lt;span style="color:#75715e"># of secs prog must stay up to be running (def. 1)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;startretries&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">3&lt;/span> ; max &lt;span style="color:#75715e"># of serial start failures when starting (default 3)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;autorestart&lt;span style="color:#f92672">=&lt;/span>unexpected ; when to restart &lt;span style="color:#66d9ef">if&lt;/span> exited after running &lt;span style="color:#f92672">(&lt;/span>def: unexpected&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;exitcodes&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span> ; &lt;span style="color:#e6db74">&amp;#39;expected&amp;#39;&lt;/span> exit codes used with autorestart &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stopsignal&lt;span style="color:#f92672">=&lt;/span>QUIT ; signal used to kill process &lt;span style="color:#f92672">(&lt;/span>default TERM&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stopwaitsecs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; max num secs to wait b4 SIGKILL &lt;span style="color:#f92672">(&lt;/span>default 10&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stopasgroup&lt;span style="color:#f92672">=&lt;/span>false ; send stop signal to the UNIX process group &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;killasgroup&lt;span style="color:#f92672">=&lt;/span>false ; SIGKILL the UNIX process group &lt;span style="color:#f92672">(&lt;/span>def false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;user&lt;span style="color:#f92672">=&lt;/span>chrism ; setuid to this UNIX account to run the program
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;redirect_stderr&lt;span style="color:#f92672">=&lt;/span>true ; redirect proc stderr to stdout &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_logfile&lt;span style="color:#f92672">=&lt;/span>/a/path ; stdout log path, NONE &lt;span style="color:#66d9ef">for&lt;/span> none; default AUTO
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_logfile_maxbytes&lt;span style="color:#f92672">=&lt;/span>1MB ; max &lt;span style="color:#75715e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_logfile_backups&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; &lt;span style="color:#75715e"># of stdout logfile backups (0 means none, default 10)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_capture_maxbytes&lt;span style="color:#f92672">=&lt;/span>1MB ; number of bytes in &lt;span style="color:#e6db74">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_events_enabled&lt;span style="color:#f92672">=&lt;/span>false ; emit events on stdout writes &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stdout_syslog&lt;span style="color:#f92672">=&lt;/span>false ; send stdout to syslog with process name &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_logfile&lt;span style="color:#f92672">=&lt;/span>/a/path ; stderr log path, NONE &lt;span style="color:#66d9ef">for&lt;/span> none; default AUTO
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_logfile_maxbytes&lt;span style="color:#f92672">=&lt;/span>1MB ; max &lt;span style="color:#75715e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_logfile_backups&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; &lt;span style="color:#75715e"># of stderr logfile backups (0 means none, default 10)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_capture_maxbytes&lt;span style="color:#f92672">=&lt;/span>1MB ; number of bytes in &lt;span style="color:#e6db74">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_events_enabled&lt;span style="color:#f92672">=&lt;/span>false ; emit events on stderr writes &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;stderr_syslog&lt;span style="color:#f92672">=&lt;/span>false ; send stderr to syslog with process name &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;environment&lt;span style="color:#f92672">=&lt;/span>A&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;1&amp;#34;&lt;/span>,B&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;2&amp;#34;&lt;/span> ; process environment additions &lt;span style="color:#f92672">(&lt;/span>def no adds&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;serverurl&lt;span style="color:#f92672">=&lt;/span>AUTO ; override serverurl computation &lt;span style="color:#f92672">(&lt;/span>childutils&lt;span style="color:#f92672">)&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff6ac1">[&lt;/span>program:theprogramname&lt;span style="color:#ff6ac1">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">command&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/bin/cat ; the program &lt;span style="color:#ff6ac1">(&lt;/span>relative uses PATH, can take args&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">process_name&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>%&lt;span style="color:#ff6ac1">(&lt;/span>program_name&lt;span style="color:#ff6ac1">)&lt;/span>s ; process_name expr &lt;span style="color:#ff6ac1">(&lt;/span>default %&lt;span style="color:#ff6ac1">(&lt;/span>program_name&lt;span style="color:#ff6ac1">)&lt;/span>s&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">numprocs&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">1&lt;/span> ; number of processes copies to start &lt;span style="color:#ff6ac1">(&lt;/span>def 1&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">directory&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/tmp ; directory to cwd to before &lt;span style="color:#ff5c57">exec&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>def no cwd&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">umask&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">022&lt;/span> ; &lt;span style="color:#ff5c57">umask&lt;/span> &lt;span style="color:#ff6ac1">for&lt;/span> process &lt;span style="color:#ff6ac1">(&lt;/span>default None&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">priority&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">999&lt;/span> ; the relative start priority &lt;span style="color:#ff6ac1">(&lt;/span>default 999&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">autostart&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span> ; start at supervisord start &lt;span style="color:#ff6ac1">(&lt;/span>default: &lt;span style="color:#ff5c57">true&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">startsecs&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">1&lt;/span> ; &lt;span style="color:#78787e"># of secs prog must stay up to be running (def. 1)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">startretries&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">3&lt;/span> ; max &lt;span style="color:#78787e"># of serial start failures when starting (default 3)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">autorestart&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>unexpected ; when to restart &lt;span style="color:#ff6ac1">if&lt;/span> exited after running &lt;span style="color:#ff6ac1">(&lt;/span>def: unexpected&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">exitcodes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">0&lt;/span> ; &lt;span style="color:#5af78e">&amp;#39;expected&amp;#39;&lt;/span> &lt;span style="color:#ff5c57">exit&lt;/span> codes used with autorestart &lt;span style="color:#ff6ac1">(&lt;/span>default 0&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stopsignal&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>QUIT ; signal used to &lt;span style="color:#ff5c57">kill&lt;/span> process &lt;span style="color:#ff6ac1">(&lt;/span>default TERM&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stopwaitsecs&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">10&lt;/span> ; max num secs to &lt;span style="color:#ff5c57">wait&lt;/span> b4 SIGKILL &lt;span style="color:#ff6ac1">(&lt;/span>default 10&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stopasgroup&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">false&lt;/span> ; send stop signal to the UNIX process group &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">killasgroup&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">false&lt;/span> ; SIGKILL the UNIX process group &lt;span style="color:#ff6ac1">(&lt;/span>def &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">user&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>chrism ; setuid to this UNIX account to run the program
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">redirect_stderr&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span> ; redirect proc stderr to stdout &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stdout_logfile&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/a/path ; stdout log path, NONE &lt;span style="color:#ff6ac1">for&lt;/span> none; default AUTO
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stdout_logfile_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>1MB ; max &lt;span style="color:#78787e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stdout_logfile_backups&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">10&lt;/span> ; &lt;span style="color:#78787e"># of stdout logfile backups (0 means none, default 10)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stdout_capture_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>1MB ; number of bytes in &lt;span style="color:#5af78e">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>default 0&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stdout_events_enabled&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">false&lt;/span> ; emit events on stdout writes &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stdout_syslog&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">false&lt;/span> ; send stdout to syslog with process name &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stderr_logfile&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/a/path ; stderr log path, NONE &lt;span style="color:#ff6ac1">for&lt;/span> none; default AUTO
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stderr_logfile_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>1MB ; max &lt;span style="color:#78787e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stderr_logfile_backups&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">10&lt;/span> ; &lt;span style="color:#78787e"># of stderr logfile backups (0 means none, default 10)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stderr_capture_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>1MB ; number of bytes in &lt;span style="color:#5af78e">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>default 0&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stderr_events_enabled&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">false&lt;/span> ; emit events on stderr writes &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">stderr_syslog&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">false&lt;/span> ; send stderr to syslog with process name &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">environment&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">A&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;1&amp;#34;&lt;/span>,B&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#5af78e">&amp;#34;2&amp;#34;&lt;/span> ; process environment additions &lt;span style="color:#ff6ac1">(&lt;/span>def no adds&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>;&lt;span style="color:#ff5c57">serverurl&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>AUTO ; override serverurl computation &lt;span style="color:#ff6ac1">(&lt;/span>childutils&lt;span style="color:#ff6ac1">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>4、我们可以复制一份，改一改，改成我们自己想要启动程序的配置，比如我想要启动gos&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>program:gitgos&lt;span style="color:#f92672">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>command&lt;span style="color:#f92672">=&lt;/span>/Users/yzw/Downloads/gitzub/gogs/gogs web -p &lt;span style="color:#ae81ff">3008&lt;/span> ; the program &lt;span style="color:#f92672">(&lt;/span>relative uses PATH, can take args&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>process_name&lt;span style="color:#f92672">=&lt;/span>%&lt;span style="color:#f92672">(&lt;/span>program_name&lt;span style="color:#f92672">)&lt;/span>s ; process_name expr &lt;span style="color:#f92672">(&lt;/span>default %&lt;span style="color:#f92672">(&lt;/span>program_name&lt;span style="color:#f92672">)&lt;/span>s&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>numprocs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ; number of processes copies to start &lt;span style="color:#f92672">(&lt;/span>def 1&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>directory&lt;span style="color:#f92672">=&lt;/span>/Users/yzw/Downloads/gitzub/gogs/ ; directory to cwd to before exec &lt;span style="color:#f92672">(&lt;/span>def no cwd&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>autostart&lt;span style="color:#f92672">=&lt;/span>true ; start at supervisord start &lt;span style="color:#f92672">(&lt;/span>default: true&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>startsecs&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ; &lt;span style="color:#75715e"># of secs prog must stay up to be running (def. 1)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>startretries&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">3&lt;/span> ; max &lt;span style="color:#75715e"># of serial start failures when starting (default 3)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>; stopasgroup&lt;span style="color:#f92672">=&lt;/span>true ; send stop signal to the UNIX process group &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>; killasgroup&lt;span style="color:#f92672">=&lt;/span>true ; SIGKILL the UNIX process group &lt;span style="color:#f92672">(&lt;/span>def false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>user&lt;span style="color:#f92672">=&lt;/span>zhiwei ; setuid to this UNIX account to run the program
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>redirect_stderr&lt;span style="color:#f92672">=&lt;/span>true ; redirect proc stderr to stdout &lt;span style="color:#f92672">(&lt;/span>default false&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_logfile&lt;span style="color:#f92672">=&lt;/span>/Users/zhiwei/Downloads/gitzub/gogs/log/data.log ; stdout log path, NONE &lt;span style="color:#66d9ef">for&lt;/span> none; default AUTO
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_logfile_maxbytes&lt;span style="color:#f92672">=&lt;/span>10MB ; max &lt;span style="color:#75715e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_logfile_backups&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; &lt;span style="color:#75715e"># of stdout logfile backups (0 means none, default 10)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_capture_maxbytes&lt;span style="color:#f92672">=&lt;/span>10MB ; number of bytes in &lt;span style="color:#e6db74">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stderr_logfile&lt;span style="color:#f92672">=&lt;/span>/Users/zhiwei/Downloads/gitzub/gogs/log/error.log ; stderr log path, NONE &lt;span style="color:#66d9ef">for&lt;/span> none; default AUTO
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stderr_logfile_maxbytes&lt;span style="color:#f92672">=&lt;/span>10MB ; max &lt;span style="color:#75715e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stderr_logfile_backups&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span> ; &lt;span style="color:#75715e"># of stderr logfile backups (0 means none, default 10)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stderr_capture_maxbytes&lt;span style="color:#f92672">=&lt;/span>10MB ; number of bytes in &lt;span style="color:#e6db74">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#f92672">(&lt;/span>default 0&lt;span style="color:#f92672">)&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff6ac1">[&lt;/span>program:gitgos&lt;span style="color:#ff6ac1">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">command&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/Users/yzw/Downloads/gitzub/gogs/gogs web -p &lt;span style="color:#ff9f43">3008&lt;/span> ; the program &lt;span style="color:#ff6ac1">(&lt;/span>relative uses PATH, can take args&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">process_name&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>%&lt;span style="color:#ff6ac1">(&lt;/span>program_name&lt;span style="color:#ff6ac1">)&lt;/span>s ; process_name expr &lt;span style="color:#ff6ac1">(&lt;/span>default %&lt;span style="color:#ff6ac1">(&lt;/span>program_name&lt;span style="color:#ff6ac1">)&lt;/span>s&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">numprocs&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">1&lt;/span> ; number of processes copies to start &lt;span style="color:#ff6ac1">(&lt;/span>def 1&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">directory&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/Users/yzw/Downloads/gitzub/gogs/ ; directory to cwd to before &lt;span style="color:#ff5c57">exec&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>def no cwd&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">autostart&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span> ; start at supervisord start &lt;span style="color:#ff6ac1">(&lt;/span>default: &lt;span style="color:#ff5c57">true&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">startsecs&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">1&lt;/span> ; &lt;span style="color:#78787e"># of secs prog must stay up to be running (def. 1)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">startretries&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">3&lt;/span> ; max &lt;span style="color:#78787e"># of serial start failures when starting (default 3)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>; &lt;span style="color:#ff5c57">stopasgroup&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span> ; send stop signal to the UNIX process group &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>; &lt;span style="color:#ff5c57">killasgroup&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span> ; SIGKILL the UNIX process group &lt;span style="color:#ff6ac1">(&lt;/span>def &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">user&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>zhiwei ; setuid to this UNIX account to run the program
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">redirect_stderr&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff5c57">true&lt;/span> ; redirect proc stderr to stdout &lt;span style="color:#ff6ac1">(&lt;/span>default &lt;span style="color:#ff5c57">false&lt;/span>&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stdout_logfile&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/Users/zhiwei/Downloads/gitzub/gogs/log/data.log ; stdout log path, NONE &lt;span style="color:#ff6ac1">for&lt;/span> none; default AUTO
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stdout_logfile_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>10MB ; max &lt;span style="color:#78787e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stdout_logfile_backups&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">10&lt;/span> ; &lt;span style="color:#78787e"># of stdout logfile backups (0 means none, default 10)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stdout_capture_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>10MB ; number of bytes in &lt;span style="color:#5af78e">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>default 0&lt;span style="color:#ff6ac1">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stderr_logfile&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>/Users/zhiwei/Downloads/gitzub/gogs/log/error.log ; stderr log path, NONE &lt;span style="color:#ff6ac1">for&lt;/span> none; default AUTO
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stderr_logfile_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>10MB ; max &lt;span style="color:#78787e"># logfile bytes b4 rotation (default 50MB)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stderr_logfile_backups&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>&lt;span style="color:#ff9f43">10&lt;/span> ; &lt;span style="color:#78787e"># of stderr logfile backups (0 means none, default 10)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff5c57">stderr_capture_maxbytes&lt;/span>&lt;span style="color:#ff6ac1">=&lt;/span>10MB ; number of bytes in &lt;span style="color:#5af78e">&amp;#39;capturemode&amp;#39;&lt;/span> &lt;span style="color:#ff6ac1">(&lt;/span>default 0&lt;span style="color:#ff6ac1">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>5、然后再执行命令重新加载下配置，使得新的配置生效， 然后再执行supervisorctl命令，查看gos是否启动成功，状态为RUNNING则成功启动。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>supervisorctl reload
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>supervisorctl reload
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>➜ supervisorctl
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gitgos RUNNING pid 44926, uptime 0:41:54
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>supervisor&amp;gt;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Wget用法</title><link>https://jerrygoodluck.github.io/about/post/wget%E7%94%A8%E6%B3%95/</link><pubDate>Sun, 31 Jul 2022 11:20:32 +0800</pubDate><guid>https://jerrygoodluck.github.io/about/post/wget%E7%94%A8%E6%B3%95/</guid><description>&lt;p>我会向你展示10个 Wget 命令的实际案例. Wget 是一个用于下载文件的免费工具，它支持大多数常用的Internet协议，包括 HTTP, HTTPS, 以及 FTP.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Wget用法</title><link>/post/wget%E7%94%A8%E6%B3%95/</link><pubDate>Sun, 31 Jul 2022 11:20:32 +0800</pubDate><guid>/post/wget%E7%94%A8%E6%B3%95/</guid><description>&lt;p>我会向你展示10个 Wget 命令的实际案例. Wget 是一个用于下载文件的免费工具，它支持大多数常用的Internet协议，包括 HTTP, HTTPS, 以及 FTP.&lt;/p>
 &lt;p>Wget这个名字来源于 World Wide Web + get. Wget 有很多功能，可以很方便地做到下载大型文件,递归下载,一次下载多个文件以及镜像web网站和FTP站点.&lt;/p>
 &lt;p>Wget是非交互式的，但是使用起来相当的灵活. 你可以在脚本，cron任务，终端等地方调用它. 它可以在用户未登陆的情况下运行在后台. 也就是说你可以开始下载文件，然后退出系统，wget会在后台运行直到完成任务.&lt;/p>
 &lt;p>在本文中，我将演示一些wget的使用例子, 这些例子都很常见,比如下载文件，比如镜像整个网站.&lt;/p>
@@ -175,11 +242,9 @@ apt-get upgrade&lt;/p>
 &lt;p>下载单个文件
 wget最常用也是最简单的用法就是用来下载单个文件.&lt;/p>
 &lt;p>你可以用下面命令想下载最新版的WordPress&lt;/p>
-&lt;p>wget &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
->https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>wget &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>&lt;/p>
 &lt;p>你会看到如下输出:&lt;/p>
-&lt;p>&amp;ndash;2017-10-14 03:46:06&amp;ndash; &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
->https://wordpress.org/latest.zip&lt;/a>
+&lt;p>&amp;ndash;2017-10-14 03:46:06&amp;ndash; &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>
 Resolving wordpress.org (wordpress.org)&amp;hellip; 66.155.40.250, 66.155.40.249
 Connecting to wordpress.org (wordpress.org)|66.155.40.250|:443&amp;hellip; connected.
 HTTP request sent, awaiting response&amp;hellip; 200 OK
@@ -191,47 +256,38 @@ Saving to: &amp;rsquo;latest.zip'&lt;/p>
 &lt;p>在我们的例子中, wget会下载文件并以”latest.zip”为名存放到当前目录中.zip” name.&lt;/p>
 &lt;p>下载文件并重命名
 若你想以其他名称保存下载的文件，可以使用 -O 选项:&lt;/p>
-&lt;p>wget -O wordpress.zip &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
->https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>wget -O wordpress.zip &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>&lt;/p>
 &lt;p>wget会下载文件并以”wordpress.zip”为名存放到当前目录中.zip” name.&lt;/p>
 &lt;p>指定下载目录
 使用 -P 选项指定下载目录:&lt;/p>
-&lt;p>wget -P /opt/wordpress &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
->https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>wget -P /opt/wordpress &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>&lt;/p>
 &lt;p>就会把文件下载到 /opt/wordpress 目录中.&lt;/p>
 &lt;p>限制下载速度
 当你下载大型文件时,可能耗时很长,这事你可以限制wget的下载速度以防止它把整个带宽都占满了.&lt;/p>
 &lt;p>下面命令就将下载速度限制在了每秒300k:&lt;/p>
-&lt;p>wget &amp;ndash;limit-rate=300k &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
->https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>wget &amp;ndash;limit-rate=300k &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>&lt;/p>
 &lt;p>断点续传
 在下载大型文件时，可能会由于网络连接抖动造成下载中断.&lt;/p>
 &lt;p>为了避免重新下载，可以使用 -c 选项进行断点续传:&lt;/p>
-&lt;p>wget -c &lt;a class="link" href="https://wordpress.org/latest.zip" target="_blank" rel="noopener"
->https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>wget -c &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>&lt;/p>
 &lt;p>若下载中断后你没有用 -c 进行断点续传，而是重新下载, wget 会在文件名后加上 “.1” 防止与前面下载的文件重名.&lt;/p>
 &lt;p>后台下载
 当下载大型文件时, 可以使用 -b 选项让wget在后台下载文件.&lt;/p>
-&lt;p>wget -b &lt;a class="link" href="http://example.com/big-file.zip" target="_blank" rel="noopener"
->http://example.com/big-file.zip&lt;/a>&lt;/p>
+&lt;p>wget -b &lt;a href="http://example.com/big-file.zip">http://example.com/big-file.zip&lt;/a>&lt;/p>
 &lt;p>输出内容会写入同目录下的 “wget-log” 文件, 这样你就可以用下面命令来检查下载状态了:&lt;/p>
 &lt;p>tail -f wget-log&lt;/p>
 &lt;p>设置重试次数
 若网络有问题导致下载时常中断,就可以使用 -tries 选项增加重试次数:&lt;/p>
-&lt;p>wget -tries=100 &lt;a class="link" href="https://example.com/file.zip" target="_blank" rel="noopener"
->https://example.com/file.zip&lt;/a>&lt;/p>
+&lt;p>wget -tries=100 &lt;a href="https://example.com/file.zip">https://example.com/file.zip&lt;/a>&lt;/p>
 &lt;p>下载多文件
 若你想同时下载多个文件,你可以将要在的文件URL存放在一个文本文件中(假设该文件名为download.txt).&lt;/p>
 &lt;p>下面命令创建一个文本文件:&lt;/p>
 &lt;p>touch download.txt&lt;/p>
 &lt;p>然后可以用 nano 编辑该文件，输入所有想下载的文件URL:&lt;/p>
 &lt;p>nano download.txt&lt;/p>
-&lt;p>&lt;a class="link" href="http://example.com/file1.zip" target="_blank" rel="noopener"
->http://example.com/file1.zip&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="http://example.com/file2.zip" target="_blank" rel="noopener"
->http://example.com/file2.zip&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="http://example.com/file3.zip" target="_blank" rel="noopener"
->http://example.com/file3.zip&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://example.com/file1.zip">http://example.com/file1.zip&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://example.com/file2.zip">http://example.com/file2.zip&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://example.com/file3.zip">http://example.com/file3.zip&lt;/a>&lt;/p>
 &lt;p>保存该文件, 然后使用 -i 选项下载文本文件中保存的所有文件:&lt;/p>
 &lt;p>wget -i download.txt&lt;/p>
 &lt;p>下载FTP文件
@@ -239,8 +295,7 @@ wget还支持下载FTP文件，可以为它设置用户名和密码，如下所�
 &lt;p>wget &amp;ndash;ftp-user=username &amp;ndash;ftp-password=password ftp://url-to-ftp-file&lt;/p>
 &lt;p>下载整个网站
 你甚至可以用wget下载完整的站点, 然后进行离线浏览. 方法是使用如下命令:&lt;/p>
-&lt;p>wget &amp;ndash;mirror &amp;ndash;convert-links &amp;ndash;page-requisites &amp;mdash;-no-parent -P /path/to/download &lt;a class="link" href="https://example-domain.com" target="_blank" rel="noopener"
->https://example-domain.com&lt;/a>&lt;/p>
+&lt;p>wget &amp;ndash;mirror &amp;ndash;convert-links &amp;ndash;page-requisites &amp;mdash;-no-parent -P /path/to/download &lt;a href="https://example-domain.com">https://example-domain.com&lt;/a>&lt;/p>
 &lt;p>—mirror 会开启镜像所需要的所有选项.&lt;/p>
 &lt;p>–convert-links 会将所有链接转换成本地链接以便离线浏览.&lt;/p>
 &lt;p>–page-requisites 表示下载包括CSS样式文件，图片等所有所需的文件，以便离线时能正确地现实页面.&lt;/p>
