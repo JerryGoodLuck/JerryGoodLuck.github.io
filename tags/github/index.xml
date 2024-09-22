@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on </title>
+    <link>/tags/github/</link>
+    <description>Recent content in github on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 23 Jul 2022 13:35:10 +0800</lastBuildDate><atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>同一台电脑双Github账号配置</title>
+      <link>/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sat, 23 Jul 2022 13:35:10 +0800</pubDate>
+      
+      <guid>/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</guid>
+      <description>因为用Hugo开了一个新Blog，然后原来github账号的blog我想一直保留，所以就有了2个github账号，这样放在一台电脑上就不好管理。
+因为github不支持同一个SSH绑定不同的github账号。这样如果我想用github A账号，我就要换成A账号的私钥，用github B账号就要换成B账号的密钥，挺麻烦的。于是网上找到教程，搞成功了。
+第一步：假设已经有了A B密钥账号，分别保存在~/.ssh目录下，名字为id_rsa_public, id_rsa_private，当然公钥也是与之对应。
+第二步：编辑 ~/.ssh/config 文件。如果该文件不存在的话，直接创建一个就好。里面的内容如下：
+# public account Host github_public HostName ssh.github.com IdentityFile ~/.ssh/id_rsa_public port 22 # private account Host github_private HostName ssh.github.com IdentityFile ~/.ssh/id_rsa_private port 22 第三步：把这两个密钥对应的公钥添加到对应的github账号上。
+第四步：执行bash命令，确认能够跟github那边鉴权成功
+ssh -T git@github_public ssh -T git@github_private 当你看到如下信息, 就说明成功了
+➜ ssh -T git@github_public Hi YOURNAME! You&amp;#39;ve successfully authenticated, but GitHub does not provide access. 第五步：仓库设置
+# 删除全局设置 git config --global --unset user.name git config --global --unset user.email # 添加本地设置 # 设置为私有仓库的GitHub账号邮箱和公有账号的GitHub邮箱。 git config --local user.</description>
+    </item>
+    
+  </channel>
+</rss>

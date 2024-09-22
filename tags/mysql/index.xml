@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysql on </title>
+    <link>/tags/mysql/</link>
+    <description>Recent content in mysql on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 08 Aug 2022 22:11:13 +0800</lastBuildDate><atom:link href="/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu18.04/Mysql5.7改成utf8编码</title>
+      <link>/post/mysql57_character/</link>
+      <pubDate>Mon, 08 Aug 2022 22:11:13 +0800</pubDate>
+      
+      <guid>/post/mysql57_character/</guid>
+      <description>问题背景 向MySQL插入中文内容显示问号
+原因 Server端的MySQL不支持utf8， 部分是latin1编码格式。
+mysql&amp;gt;show variables like &amp;#34;%char%&amp;#34;;  +--------------------------------------+----------------------------+ | Variable_name | Value | +--------------------------------------+----------------------------+ | character_set_client | latin1 | | character_set_connection | latin1 | | character_set_database | utf8mb4 | | character_set_filesystem | binary | | character_set_results | latin1 | | character_set_server | latin1 | | character_set_system | utf8 | | character_sets_dir | /usr/share/mysql/charsets/ | | validate_password_special_char_count | 1 | +--------------------------------------+----------------------------+ 9 rows in set (0.02 sec) 解决办法 1、直接登录MySQL改数据库, 但是MySQL重启后，修改会失效。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on </title>
+    <link>/tags/linux/</link>
+    <description>Recent content in linux on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 13 Aug 2022 10:23:30 +0800</lastBuildDate><atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的oh My Zsh主题</title>
+      <link>/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Sat, 13 Aug 2022 10:23:30 +0800</pubDate>
+      
+      <guid>/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid>
+      <description>最近想改下iTerm的oh-my-zsh主题，看知乎讨论，有一款简洁的主题映入眼帘。
+主题名称 half-life 修改PROMPT 然后去oh-my-zsh.sh修改PROMPT
+vim ~/.oh-my-zsh/oh-my-zsh.sh 在文件末尾添加一行：
+PROMPT=$&amp;#39;%{$purple%}%n%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info &amp;#34; with%{$fg[red]%} &amp;#34; v g &amp;#34;%{$reset_color%}&amp;#34;)$vcs_info_msg_0_%{$orange%}%{$reset_color%} at %{$hotpink%}%* %{$orange%}λ%{$reset_color%} &amp;#39; 效果如下</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu18.04使用supervisor守护进程</title>
+      <link>/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link>
+      <pubDate>Sun, 07 Aug 2022 15:54:02 +0800</pubDate>
+      
+      <guid>/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid>
+      <description>问题背景 最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。
+于是想着用supervisor来做守护进程, 本文就是记录supervisor 的安装、配置、使用技巧，并设置如何supervisor开机自动启动
+机器环境 Ubuntu版本：18.04
+Ubuntu用户：root
+Ubuntu安装supervisor apt install supervisor Ubuntu配置supervisor 安装完成后，会生成一个默认的配置文件/etc/supervisor/supervisord.conf， 这个默认配置里面也会load所有在conf.d目录下的配置
+root@test:/etc/supervisor# tree . |-- conf.d | `-- we.conf `-- supervisord.conf  1 directory, 2 files supervisord.conf这个默认配置会load所有在conf.d目录下的配置，所以我们接下来在conf.d目录下新建一个我们自己的配置
+touch /etc/supervisor/conf.d/we.conf 参照默认配置文件supervisord.conf里的内容改改，配置内容如下
+[program:we] directory=/home/test/ command=sh we.sh autostart=true autorestart=true startretries=10 redirect_stderr=true stdout_logfile=/home/test/out.log 具体也可参照官方给的详细文档： http://supervisord.org/configuration.html
+检查supervisor的状态 1、检查supervisor的状态
+ps aux | grep supervisor  root@test:/etc/supervisor# ps aux | grep supervisor root 2551 0.0 2.0 65580 21508 ? Ss 12:39 0:09 /usr/bin/python /usr/bin/supervisord -n -c /etc/supervisor/supervisord.</description>
+    </item>
+    
+    <item>
+      <title>Wget用法</title>
+      <link>/post/wget%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Sun, 31 Jul 2022 11:20:32 +0800</pubDate>
+      
+      <guid>/post/wget%E7%94%A8%E6%B3%95/</guid>
+      <description>我会向你展示10个 Wget 命令的实际案例. Wget 是一个用于下载文件的免费工具，它支持大多数常用的Internet协议，包括 HTTP, HTTPS, 以及 FTP.
+Wget这个名字来源于 World Wide Web + get. Wget 有很多功能，可以很方便地做到下载大型文件,递归下载,一次下载多个文件以及镜像web网站和FTP站点.
+Wget是非交互式的，但是使用起来相当的灵活. 你可以在脚本，cron任务，终端等地方调用它. 它可以在用户未登陆的情况下运行在后台. 也就是说你可以开始下载文件，然后退出系统，wget会在后台运行直到完成任务.
+在本文中，我将演示一些wget的使用例子, 这些例子都很常见,比如下载文件，比如镜像整个网站.
+在演示前,我们先在 Ubuntu 16.04 VPS 上安装wget.
+请注意，虽然该演示是在 Ubuntu 16.04 上进行的, 但是这些命令在其他 Linux 发行版中同样适用.
+登陆服务器并安装wget
+第一步是 通过SSH登陆服务器.
+使用下面命令更新你的服务器:
+apt-get update apt-get upgrade
+然后安装wget软件包:
+apt-get install wget
+安装完成后，就可以开始使用wget命令了.
+下载单个文件 wget最常用也是最简单的用法就是用来下载单个文件.
+你可以用下面命令想下载最新版的WordPress
+wget https://wordpress.org/latest.zip
+你会看到如下输出:
+&amp;ndash;2017-10-14 03:46:06&amp;ndash; https://wordpress.org/latest.zip Resolving wordpress.org (wordpress.org)&amp;hellip; 66.155.40.250, 66.155.40.249 Connecting to wordpress.org (wordpress.org)|66.155.40.250|:443&amp;hellip; connected. HTTP request sent, awaiting response&amp;hellip; 200 OK Length: 8912693 (8.</description>
+    </item>
+    
+  </channel>
+</rss>

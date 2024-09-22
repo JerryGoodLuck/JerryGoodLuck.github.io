@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mac on </title>
+    <link>/tags/mac/</link>
+    <description>Recent content in mac on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 31 Jul 2022 11:24:38 +0800</lastBuildDate><atom:link href="/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>寻找Mac java_home</title>
+      <link>/post/mac_java_home/</link>
+      <pubDate>Sun, 31 Jul 2022 11:24:38 +0800</pubDate>
+      
+      <guid>/post/mac_java_home/</guid>
+      <description>前期准备  下载JDK安装包：在JDK1.8下载中选择Mac的JDK安装包 安装JDK：这里只要按照安装指引一步一步安装即可  查找JAVA_HOME  打开Mac的终端，检查JDK是否安装成功：java -version 查看java指令所在的目录：which java。输出结果：/usr/bin/java 显示java指令文件的属性：ls -l /usr/bin/java。输出结果如下：lrwxr-xr-x 1 root wheel 74 12 2 06:44 /usr/bin/java -&amp;gt; /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java，从输出结果可以知道**/usr/bin/java文件是一个链接文件，实际是指向/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java**文件的。 进入实际指令所在的文件夹：cd /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands。但是这个目录并不是JAVA_HOME目录。 然后就是最重点的地方，在这个目录下面有一个mac的JDK特有的java_home指令可以查看JDK的JAVA_HOME目录。执行指令：./java_home执行结果如下：/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home  设置JAVA_HOME  编辑.bash_profile文件：vim ~/.bash_profile 添加以下内容：export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Homeexport PATH=$JAVA_HOME/bin:$PATH 使修改的文件生效：source ~/.bash_profile  </description>
+    </item>
+    
+  </channel>
+</rss>
