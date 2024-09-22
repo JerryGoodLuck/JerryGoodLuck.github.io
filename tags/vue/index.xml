@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -23,3 +24,48 @@ npm init vite-app vue3demo004 npm install npm run dev 2、手动配置完项目�
     
   </channel>
 </rss>
+=======
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vue on</title><link>/tags/vue/</link><description>Recent content in Vue on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 07 Aug 2022 15:23:20 +0800</lastBuildDate><atom:link href="/tags/vue/index.xml" rel="self" type="application/rss+xml"/><item><title>Vue Vite初学报错大全</title><link>/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</link><pubDate>Sun, 07 Aug 2022 15:23:20 +0800</pubDate><guid>/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</guid><description>&lt;h3 id="项目环境">项目环境&lt;/h3>
+&lt;p>机器：mac&lt;/p>
+&lt;p>框架：vue3&lt;/p>
+&lt;p>版本：vue=^3.0.4&lt;/p>
+&lt;p>###报错信息&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>[&lt;span style="color:#a6e22e">vite&lt;/span>] &lt;span style="color:#a6e22e">Internal&lt;/span> &lt;span style="color:#a6e22e">server&lt;/span> &lt;span style="color:#a6e22e">error&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">Failed&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">parse&lt;/span> &lt;span style="color:#a6e22e">source&lt;/span> &lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#a6e22e">analysis&lt;/span> &lt;span style="color:#a6e22e">because&lt;/span> &lt;span style="color:#a6e22e">the&lt;/span> &lt;span style="color:#a6e22e">content&lt;/span> &lt;span style="color:#a6e22e">contains&lt;/span> &lt;span style="color:#a6e22e">invalid&lt;/span> &lt;span style="color:#a6e22e">JS&lt;/span> &lt;span style="color:#a6e22e">syntax&lt;/span>. &lt;span style="color:#a6e22e">Install&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#a6e22e">vitejs&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#a6e22e">plugin&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">handle&lt;/span> .&lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">files&lt;/span>.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="问题描述">问题描述&lt;/h3>
+&lt;p>1、安装Vite及初始化项目&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">init&lt;/span> &lt;span style="color:#a6e22e">vite&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">app&lt;/span> &lt;span style="color:#a6e22e">vue3demo004&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">install&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">run&lt;/span> &lt;span style="color:#a6e22e">dev&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2、手动配置完项目后， 项目目录如下&lt;/p>
+&lt;pre tabindex="0">&lt;code>├── node_modules
+├── package-lock.json
+├── package.json
+├── public
+│   └── favicon.ico
+├── src
+│   ├── App.vue
+│   ├── assets
+│   │   └── logo.png
+│   ├── components
+│   │   └── HelloWorld.vue
+│   ├── index.css
+│   └── main.js
+&lt;/code>&lt;/pre>&lt;p>###关键文件信息&lt;/p>
+&lt;p>package.json&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;vue3demo004&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;version&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;0.0.0&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;scripts&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;dev&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;vite&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;build&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;vite build&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;dependencies&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;vue&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;^3.0.4&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;devDependencies&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;@vue/compiler-sfc&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;^3.0.4&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;vite&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;^3.0.4&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>app.vue&lt;/p></description></item></channel></rss>
+>>>>>>> c2831dde1e4b55539240969f8f4e41355e629d77

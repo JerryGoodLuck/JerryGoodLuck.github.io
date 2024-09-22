@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -286,3 +287,373 @@ I would give merit to things not for what they are worth, but for what they mean
     
   </channel>
 </rss>
+=======
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on</title><link>/post/</link><description>Recent content in Posts on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 17 Sep 2023 16:45:45 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml"/><item><title>好久没写博客了</title><link>/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</link><pubDate>Sun, 17 Sep 2023 16:45:45 +0800</pubDate><guid>/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</guid><description>&lt;p>好久没来写点东西了。打算不写技术博客了，人要学技术，网上写的人还是太多了。而且写的比我更好，我也就不在这方面去费时间了。&lt;/p>
+&lt;p>打算就写点我的所见，所闻，所感，记录下岁月吧。可能还能引起一些共鸣。&lt;/p>
+&lt;p>从2007年我就喜欢博客，那时候有搜狐博客，新浪博客，经常去看韩寒，老徐，还有个极地阳光。想想现在的网红，其实逻辑没变。那时候写博客人气高的也是网红。&lt;/p>
+&lt;p>现如今变成了短视频的天下了，不过现在也有微博，知乎，小红书之类的。但是本质还是没变，还是看访问量，看粉丝。以前粉丝经济没这么强，现在粉丝经济那就是相当强了。&lt;/p></description></item><item><title>我的oh My Zsh主题</title><link>/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link><pubDate>Sat, 13 Aug 2022 10:23:30 +0800</pubDate><guid>/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid><description>&lt;p>最近想改下iTerm的oh-my-zsh主题，看知乎讨论，有一款简洁的主题映入眼帘。&lt;/p>
+&lt;h3 id="主题名称">主题名称&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>half-life
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="修改prompt">修改PROMPT&lt;/h3>
+&lt;p>然后去oh-my-zsh.sh修改PROMPT&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>vim ~/.oh-my-zsh/oh-my-zsh.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在文件末尾添加一行：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>PROMPT&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">$&amp;#39;%{$purple%}%n%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info &amp;#34; with%{$fg[red]%} &amp;#34; v g &amp;#34;%{$reset_color%}&amp;#34;)$vcs_info_msg_0_%{$orange%}%{$reset_color%} at %{$hotpink%}%* %{$orange%}λ%{$reset_color%} &amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>效果如下&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202208131028385.png" alt="">&lt;/p></description></item><item><title>Ubuntu18.04/Mysql5.7改成utf8编码</title><link>/post/mysql57_character/</link><pubDate>Mon, 08 Aug 2022 22:11:13 +0800</pubDate><guid>/post/mysql57_character/</guid><description>&lt;h3 id="问题背景">问题背景&lt;/h3>
+&lt;p>向MySQL插入中文内容显示问号&lt;/p>
+&lt;h3 id="原因">原因&lt;/h3>
+&lt;p>Server端的MySQL不支持utf8， 部分是latin1编码格式。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>mysql&amp;gt;show variables like &lt;span style="color:#e6db74">&amp;#34;%char%&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| Variable_name | Value |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_client | latin1 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_connection | latin1 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_database | utf8mb4 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_filesystem | binary |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_results | latin1 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_server | latin1 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_set_system | utf8 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| character_sets_dir | /usr/share/mysql/charsets/ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| validate_password_special_char_count | &lt;span style="color:#ae81ff">1&lt;/span> |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+--------------------------------------+----------------------------+
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">9&lt;/span> rows in set &lt;span style="color:#f92672">(&lt;/span>0.02 sec&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="解决办法">解决办法&lt;/h3>
+&lt;p>1、直接登录MySQL改数据库, 但是MySQL重启后，修改会失效。&lt;/p>
+&lt;p>2、修改MySQL配置&lt;/p></description></item><item><title>Ubuntu18.04使用supervisor守护进程</title><link>/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link><pubDate>Sun, 07 Aug 2022 15:54:02 +0800</pubDate><guid>/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid><description>&lt;h3 id="问题背景">问题背景&lt;/h3>
+&lt;p>最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。&lt;/p>
+&lt;p>于是想着用supervisor来做守护进程, 本文就是记录supervisor 的安装、配置、使用技巧，并设置如何supervisor开机自动启动&lt;/p>
+&lt;h3 id="机器环境">机器环境&lt;/h3>
+&lt;p>Ubuntu版本：18.04&lt;/p>
+&lt;p>Ubuntu用户：root&lt;/p>
+&lt;h3 id="ubuntu安装supervisor">Ubuntu安装supervisor&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>apt install supervisor
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ubuntu配置supervisor">Ubuntu配置supervisor&lt;/h3>
+&lt;p>安装完成后，会生成一个默认的配置文件/etc/supervisor/supervisord.conf， 这个默认配置里面也会load所有在conf.d目录下的配置&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# tree
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|-- conf.d
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| &lt;span style="color:#e6db74">`&lt;/span>-- we.conf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">`&lt;/span>-- supervisord.conf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">1&lt;/span> directory, &lt;span style="color:#ae81ff">2&lt;/span> files
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>supervisord.conf这个默认配置会load所有在conf.d目录下的配置，所以我们接下来在conf.d目录下新建一个我们自己的配置&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>touch /etc/supervisor/conf.d/we.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>参照默认配置文件supervisord.conf里的内容改改，配置内容如下&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>program:we&lt;span style="color:#f92672">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>directory&lt;span style="color:#f92672">=&lt;/span>/home/test/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>command&lt;span style="color:#f92672">=&lt;/span>sh we.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>autostart&lt;span style="color:#f92672">=&lt;/span>true
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>autorestart&lt;span style="color:#f92672">=&lt;/span>true
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>startretries&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>redirect_stderr&lt;span style="color:#f92672">=&lt;/span>true
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>stdout_logfile&lt;span style="color:#f92672">=&lt;/span>/home/test/out.log
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>具体也可参照官方给的详细文档： &lt;a href="http://supervisord.org/configuration.html">http://supervisord.org/configuration.html&lt;/a>&lt;/p>
+&lt;h3 id="检查supervisor的状态">检查supervisor的状态&lt;/h3>
+&lt;p>1、检查supervisor的状态&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>ps aux | grep supervisor
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root@test:/etc/supervisor# ps aux | grep supervisor
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#ae81ff">2551&lt;/span> 0.0 2.0 &lt;span style="color:#ae81ff">65580&lt;/span> &lt;span style="color:#ae81ff">21508&lt;/span> ? Ss 12:39 0:09 /usr/bin/python /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>root &lt;span style="color:#ae81ff">7720&lt;/span> 0.0 0.1 &lt;span style="color:#ae81ff">13116&lt;/span> &lt;span style="color:#ae81ff">1044&lt;/span> pts/0 S+ 16:46 0:00 grep --color&lt;span style="color:#f92672">=&lt;/span>auto supervisor
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>当看到如上对应的进程，就说明supervisor启动是成功的。&lt;/p></description></item><item><title>Vue Vite初学报错大全</title><link>/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</link><pubDate>Sun, 07 Aug 2022 15:23:20 +0800</pubDate><guid>/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</guid><description>&lt;h3 id="项目环境">项目环境&lt;/h3>
+&lt;p>机器：mac&lt;/p>
+&lt;p>框架：vue3&lt;/p>
+&lt;p>版本：vue=^3.0.4&lt;/p>
+&lt;p>###报错信息&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>[&lt;span style="color:#a6e22e">vite&lt;/span>] &lt;span style="color:#a6e22e">Internal&lt;/span> &lt;span style="color:#a6e22e">server&lt;/span> &lt;span style="color:#a6e22e">error&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">Failed&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">parse&lt;/span> &lt;span style="color:#a6e22e">source&lt;/span> &lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#a6e22e">analysis&lt;/span> &lt;span style="color:#a6e22e">because&lt;/span> &lt;span style="color:#a6e22e">the&lt;/span> &lt;span style="color:#a6e22e">content&lt;/span> &lt;span style="color:#a6e22e">contains&lt;/span> &lt;span style="color:#a6e22e">invalid&lt;/span> &lt;span style="color:#a6e22e">JS&lt;/span> &lt;span style="color:#a6e22e">syntax&lt;/span>. &lt;span style="color:#a6e22e">Install&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#a6e22e">vitejs&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#a6e22e">plugin&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">to&lt;/span> &lt;span style="color:#a6e22e">handle&lt;/span> .&lt;span style="color:#a6e22e">vue&lt;/span> &lt;span style="color:#a6e22e">files&lt;/span>.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="问题描述">问题描述&lt;/h3>
+&lt;p>1、安装Vite及初始化项目&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">init&lt;/span> &lt;span style="color:#a6e22e">vite&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#a6e22e">app&lt;/span> &lt;span style="color:#a6e22e">vue3demo004&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">install&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">npm&lt;/span> &lt;span style="color:#a6e22e">run&lt;/span> &lt;span style="color:#a6e22e">dev&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2、手动配置完项目后， 项目目录如下&lt;/p>
+&lt;pre tabindex="0">&lt;code>├── node_modules
+├── package-lock.json
+├── package.json
+├── public
+│   └── favicon.ico
+├── src
+│   ├── App.vue
+│   ├── assets
+│   │   └── logo.png
+│   ├── components
+│   │   └── HelloWorld.vue
+│   ├── index.css
+│   └── main.js
+&lt;/code>&lt;/pre>&lt;p>###关键文件信息&lt;/p>
+&lt;p>package.json&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;vue3demo004&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;version&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;0.0.0&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;scripts&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;dev&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;vite&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;build&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;vite build&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;dependencies&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;vue&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;^3.0.4&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;devDependencies&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;@vue/compiler-sfc&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;^3.0.4&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;vite&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;^3.0.4&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>app.vue&lt;/p></description></item><item><title>寻找Mac java_home</title><link>/post/mac_java_home/</link><pubDate>Sun, 31 Jul 2022 11:24:38 +0800</pubDate><guid>/post/mac_java_home/</guid><description>&lt;h2 id="前期准备">&lt;strong>前期准备&lt;/strong>&lt;/h2>
+&lt;ol>
+&lt;li>下载JDK安装包：在&lt;a href="https://link.zhihu.com/?target=http%3A//www.oracle.com/technetwork/cn/java/javase/downloads/jdk8-downloads-2133151-zhs.html">JDK1.8下载&lt;/a>中选择Mac的JDK安装包&lt;/li>
+&lt;li>安装JDK：这里只要按照安装指引一步一步安装即可&lt;/li>
+&lt;/ol>
+&lt;h2 id="查找java_home">&lt;strong>查找JAVA_HOME&lt;/strong>&lt;/h2>
+&lt;ol>
+&lt;li>打开Mac的终端，检查JDK是否安装成功：&lt;code>java -version&lt;/code>&lt;/li>
+&lt;li>查看java指令所在的目录：&lt;code>which java&lt;/code>。输出结果：&lt;code>/usr/bin/java&lt;/code>&lt;/li>
+&lt;li>显示java指令文件的属性：&lt;code>ls -l /usr/bin/java&lt;/code>。输出结果如下：&lt;code>lrwxr-xr-x 1 root wheel 74 12 2 06:44 /usr/bin/java -&amp;gt; /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java&lt;/code>，从输出结果可以知道**/usr/bin/java&lt;strong>文件是一个链接文件，实际是指向&lt;/strong>/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java**文件的。&lt;/li>
+&lt;li>进入实际指令所在的文件夹：&lt;code>cd /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands&lt;/code>。但是这个目录并不是JAVA_HOME目录。&lt;/li>
+&lt;li>然后就是最重点的地方，在这个目录下面有一个mac的JDK特有的&lt;code>java_home&lt;/code>指令可以查看JDK的JAVA_HOME目录。执行指令：&lt;code>./java_home&lt;/code>执行结果如下：&lt;code>/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;h2 id="设置java_home">&lt;strong>设置JAVA_HOME&lt;/strong>&lt;/h2>
+&lt;ol>
+&lt;li>编辑.bash_profile文件：&lt;code>vim ~/.bash_profile&lt;/code>&lt;/li>
+&lt;li>添加以下内容：&lt;code>export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Homeexport PATH=$JAVA_HOME/bin:$PATH&lt;/code>&lt;/li>
+&lt;li>使修改的文件生效：&lt;code>source ~/.bash_profile&lt;/code>&lt;/li>
+&lt;/ol></description></item><item><title>Linux command</title><link>/post/linuxcommand/</link><pubDate>Sun, 31 Jul 2022 11:22:04 +0800</pubDate><guid>/post/linuxcommand/</guid><description>&lt;h1 id="一些命令">一些命令&lt;/h1>
+&lt;ul>
+&lt;li>查看目录结构
+tree
+mac默认是没有tree命令的，所以可以有2种办法:&lt;/li>
+&lt;li>brew install tree&lt;/li>
+&lt;li>find . -print | sed -e &amp;rsquo;s;[^/]*/;|&lt;strong>&lt;strong>;g;s;&lt;/strong>&lt;/strong>|; |;g'&lt;/li>
+&lt;li>查看代码有多少行
+find . -name &amp;ldquo;*.py&amp;rdquo; | xargs wc -l&lt;/li>
+&lt;li>删除所有的pyc文件
+find . -name &amp;ldquo;*.pyc&amp;rdquo; -delete&lt;/li>
+&lt;li>返回到上一个目录
+cd -&lt;/li>
+&lt;li>生成随机数
+jot -r [number_of_numbers] [lower_limit] [upper_limit]&lt;/li>
+&lt;li>显示当前谁登陆到了你的系统
+w&lt;/li>
+&lt;li>将一个字符串打印很多次
+yes [string]&lt;/li>
+&lt;li>更好看的git log
+git log &amp;ndash;graph &amp;ndash;abbrev-commit &amp;ndash;decorate &amp;ndash;date=relative &amp;ndash;format=format:&amp;rsquo;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)&amp;rsquo; &amp;ndash;all&lt;/li>
+&lt;li>更好看的git log(带详细信息)
+git log &amp;ndash;graph &amp;ndash;abbrev-commit &amp;ndash;decorate &amp;ndash;date=relative &amp;ndash;format=format:&amp;rsquo;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)&amp;rsquo; &amp;ndash;all -p&lt;/li>
+&lt;li>curl相关命令&lt;/li>
+&lt;li>直接输出到命令行
+curl &lt;a href="http://www.centos.org/">http:&lt;em>//www.centos.org&lt;/em>&lt;/a>&lt;/li>
+&lt;li>输出到指定文件
+curl -o mygettext.html &lt;a href="http://www.gnu.org/software/gettext/manual/gettext.html">http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>or 直接用url里面的文件名
+curl -O &lt;a href="http://www.gnu.org/software/gettext/manual/gettext.html">http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>&lt;/li>
+&lt;li>允许redirects
+curl -L &lt;a href="http://www.google.com/">http:&lt;em>//www.google.com&lt;/em>&lt;/a>&lt;/li>
+&lt;li>断点续传
+curl -C - -O &lt;a href="http://www.gnu.org/software/gettext/manual/gettext.html">http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>也可指定续传的位置&lt;/li>
+&lt;li>限定下载速度
+curl &amp;ndash;limit-rate 1000B -O &lt;a href="http://www.gnu.org/software/gettext/manual/gettext.html">http:&lt;em>//www.gnu.org/software/gettext/manual/gettext.html&lt;/em>&lt;/a>&lt;/li>
+&lt;li>需要认证
+curl -u username:password URL&lt;/li>
+&lt;li>使用代理
+curl -x proxysever.test.com:3128 &lt;a href="http://google.co.in/">http:&lt;em>//google.co.in&lt;/em>&lt;/a>&lt;/li>
+&lt;li>发邮件
+curl &amp;ndash;mail-from &lt;a href="mailto:blah@test.com">blah@test.com&lt;/a> &amp;ndash;mail-rcpt &lt;a href="mailto:foo@test.com">foo@test.com&lt;/a> smtp:&lt;em>//mailserver.com&lt;/em>输入后，就可以开始写邮件内容， .表示结束
+Subject: Testing
+This is a test mail
+.&lt;/li>
+&lt;li>HTTP Method
+curl &amp;ndash;request GET &amp;lsquo;&lt;a href="http://www.somedomain.com/">http:*//www.somedomain.com/&lt;/a>&amp;rsquo;*curl &amp;ndash;request POST &amp;lsquo;&lt;a href="http://www.somedomain.com/">http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;em>curl &amp;ndash;request DELETE &amp;lsquo;&lt;a href="http://www.somedomain.com/">http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;em>curl &amp;ndash;request PUT &amp;lsquo;&lt;a href="http://www.somedomain.com/">http:*//www.somedomain.com/&lt;/a>&amp;rsquo;&lt;/em>&lt;/em> 传入参数
+curl &amp;ndash;request POST &amp;lsquo;&lt;a href="http://www.somedomain.com/login/">http:*//www.somedomain.com/login/&lt;/a>&amp;rsquo; &amp;ndash;data &amp;lsquo;username=myusername&amp;amp;password=mypassword&amp;rsquo;*curl &amp;ndash;data-urlencode &amp;ldquo;date=April 1&amp;rdquo; &amp;lsquo;&lt;a href="http://example.com/form.cgi">http:*//example.com/form.cgi&lt;/a>&amp;rsquo;&lt;em>上传文件:
+curl &amp;ndash;request POST &amp;lsquo;&lt;a href="http://127.0.0.1:8008/api/trace_file">http:*//127.0.0.1:8008/api/trace_file&lt;/a>&amp;rsquo; -F &amp;rsquo;&lt;a href="mailto:trace_file=@journal.txt">trace_file=@journal.txt&lt;/a>;type=text/plain&amp;rsquo;&lt;/em>&lt;/li>
+&lt;li>带上头部信息
+curl &amp;ndash;request GET &amp;lsquo;&lt;a href="http://www.somedomain.com/user/info/">http:*//www.somedomain.com/user/info/&lt;/a>&amp;rsquo; &amp;ndash;header &amp;lsquo;sessionid:1234567890987654321&amp;rsquo;&lt;em>需要请求返回带上头信息:
+curl &amp;ndash;request GET &amp;lsquo;&lt;a href="http://somedomain.com/">http:*//somedomain.com/&lt;/a>&amp;rsquo; &amp;ndash;include&lt;/em>-I 则是只显示头信息&lt;/li>
+&lt;li>获取详细返回结果
+curl -v &amp;lsquo;&lt;a href="http://somedomain.com/">http:*//somedomain.com/&lt;/a>&amp;rsquo;*还不够详细？
+curl &amp;ndash;trace output.txt &amp;lsquo;&lt;a href="http://somedomain.com/">http:*//somedomain.com/&lt;/a>&amp;rsquo;&lt;em>or
+curl &amp;ndash;trace-ascii output.txt &amp;lsquo;&lt;a href="http://somedomain.com/">http:*//somedomain.com/&lt;/a>&amp;rsquo;&lt;/em>&lt;/li>
+&lt;li>提供referer信息
+curl &amp;ndash;referer &amp;lsquo;&lt;a href="http://www.example.com/">http:*//www.example.com&lt;/a> &lt;a href="http://www.example.com">http://www.example.com&lt;/a>&amp;rsquo;*&lt;/li>
+&lt;li>UA
+curl &amp;ndash;user-agent &amp;ldquo;[User Agent]&amp;rdquo; [URL]&lt;/li>
+&lt;li>cookie
+curl &amp;ndash;cookie &amp;ldquo;name=xxx&amp;rdquo; &lt;a href="http://www.example.com/">www.example.com&lt;/a>&lt;/li>
+&lt;li>带host访问
+curl -H &amp;lsquo;Host: project1.loc&amp;rsquo; &amp;lsquo;&lt;a href="http://127.0.0.1/something">http:*//127.0.0.1/something&lt;/a>&amp;rsquo;*&lt;/li>
+&lt;li>命令行打开任一程序(限OSX)
+open /Applications/Safari.app/
+or 打开一个目录
+open .&lt;/li>
+&lt;li>粘贴复制(限OSX)
+将一个文件内容拷贝到clipboard:
+pbcopy &amp;lt; blogpost.txt
+将clipboard的内容追加到文件:
+pbpaste &amp;raquo; tasklist.txt&lt;/li>
+&lt;li>截图(限OSX)
+屏幕截图保存到image.png并发送到Mail中
+screencapture -C -M image.png
+鼠标选择区域截图并保存到clipboard
+screencapture -c -W
+10秒之后截图并用Preview打开
+screencapture -T 10 -P image.png
+鼠标截取任意区域内容,保存为pdf
+screencapture -s -t pdf image.pdf&lt;/li>
+&lt;li>说出任意内容(限OSX)
+say &amp;lsquo;You love me.&amp;rsquo;&lt;/li>
+&lt;li>OSX读写ntfs格式移动硬盘
+mkdir -p /Volumes/1 &amp;amp;&amp;amp; sudo mount -t ntfs /dev/disk1s1 /Volumes/1
+之后操作1文件夹就行了
+弹出:
+sudo umount /dev/disk1s1&lt;/li>
+&lt;/ul></description></item><item><title>Wget用法</title><link>/post/wget%E7%94%A8%E6%B3%95/</link><pubDate>Sun, 31 Jul 2022 11:20:32 +0800</pubDate><guid>/post/wget%E7%94%A8%E6%B3%95/</guid><description>&lt;p>我会向你展示10个 Wget 命令的实际案例. Wget 是一个用于下载文件的免费工具，它支持大多数常用的Internet协议，包括 HTTP, HTTPS, 以及 FTP.&lt;/p>
+&lt;p>Wget这个名字来源于 World Wide Web + get. Wget 有很多功能，可以很方便地做到下载大型文件,递归下载,一次下载多个文件以及镜像web网站和FTP站点.&lt;/p>
+&lt;p>Wget是非交互式的，但是使用起来相当的灵活. 你可以在脚本，cron任务，终端等地方调用它. 它可以在用户未登陆的情况下运行在后台. 也就是说你可以开始下载文件，然后退出系统，wget会在后台运行直到完成任务.&lt;/p>
+&lt;p>在本文中，我将演示一些wget的使用例子, 这些例子都很常见,比如下载文件，比如镜像整个网站.&lt;/p>
+&lt;p>在演示前,我们先在 Ubuntu 16.04 VPS 上安装wget.&lt;/p>
+&lt;p>请注意，虽然该演示是在 Ubuntu 16.04 上进行的, 但是这些命令在其他 Linux 发行版中同样适用.&lt;/p>
+&lt;p>登陆服务器并安装wget&lt;/p>
+&lt;p>第一步是 通过SSH登陆服务器.&lt;/p>
+&lt;p>使用下面命令更新你的服务器:&lt;/p>
+&lt;p>apt-get update
+apt-get upgrade&lt;/p>
+&lt;p>然后安装wget软件包:&lt;/p>
+&lt;p>apt-get install wget&lt;/p>
+&lt;p>安装完成后，就可以开始使用wget命令了.&lt;/p>
+&lt;p>下载单个文件
+wget最常用也是最简单的用法就是用来下载单个文件.&lt;/p>
+&lt;p>你可以用下面命令想下载最新版的WordPress&lt;/p>
+&lt;p>wget &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>&lt;/p>
+&lt;p>你会看到如下输出:&lt;/p>
+&lt;p>&amp;ndash;2017-10-14 03:46:06&amp;ndash; &lt;a href="https://wordpress.org/latest.zip">https://wordpress.org/latest.zip&lt;/a>
+Resolving wordpress.org (wordpress.org)&amp;hellip; 66.155.40.250, 66.155.40.249
+Connecting to wordpress.org (wordpress.org)|66.155.40.250|:443&amp;hellip; connected.
+HTTP request sent, awaiting response&amp;hellip; 200 OK
+Length: 8912693 (8.5M) [application/zip]
+Saving to: &amp;rsquo;latest.zip'&lt;/p></description></item><item><title>同一台电脑双Github账号配置</title><link>/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</link><pubDate>Sat, 23 Jul 2022 13:35:10 +0800</pubDate><guid>/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</guid><description>&lt;p>因为用Hugo开了一个新Blog，然后原来github账号的blog我想一直保留，所以就有了2个github账号，这样放在一台电脑上就不好管理。&lt;/p>
+&lt;p>因为github不支持同一个SSH绑定不同的github账号。这样如果我想用github A账号，我就要换成A账号的私钥，用github B账号就要换成B账号的密钥，挺麻烦的。于是网上找到教程，搞成功了。&lt;/p>
+&lt;p>第一步：假设已经有了A B密钥账号，分别保存在~/.ssh目录下，名字为id_rsa_public, id_rsa_private，当然公钥也是与之对应。&lt;/p>
+&lt;p>第二步：编辑 &lt;code>~/.ssh/config&lt;/code> 文件。如果该文件不存在的话，直接创建一个就好。里面的内容如下：&lt;/p>
+&lt;pre tabindex="0">&lt;code># public account
+Host github_public
+HostName ssh.github.com
+IdentityFile ~/.ssh/id_rsa_public
+port 22
+
+# private account
+Host github_private
+HostName ssh.github.com
+IdentityFile ~/.ssh/id_rsa_private
+port 22
+&lt;/code>&lt;/pre>&lt;p>第三步：把这两个密钥对应的公钥添加到对应的github账号上。&lt;/p>
+&lt;p>第四步：执行bash命令，确认能够跟github那边鉴权成功&lt;/p>
+&lt;pre tabindex="0">&lt;code>ssh -T git@github_public
+ssh -T git@github_private
+&lt;/code>&lt;/pre>&lt;p>当你看到如下信息, 就说明成功了&lt;/p>
+&lt;pre tabindex="0">&lt;code>➜ ssh -T git@github_public
+Hi YOURNAME! You&amp;#39;ve successfully authenticated, but GitHub does not provide access.
+&lt;/code>&lt;/pre>&lt;p>第五步：仓库设置&lt;/p>
+&lt;pre tabindex="0">&lt;code># 删除全局设置
+git config --global --unset user.name
+git config --global --unset user.email
+
+# 添加本地设置
+# 设置为私有仓库的GitHub账号邮箱和公有账号的GitHub邮箱。
+git config --local user.name xxxx
+git config --local user.email xxx
+&lt;/code>&lt;/pre>&lt;p>第六步，进入你的github项目根目录，然后执行命令&lt;/p></description></item><item><title>DABDA</title><link>/post/dabda/</link><pubDate>Sun, 17 Jul 2022 09:14:08 +0800</pubDate><guid>/post/dabda/</guid><description>&lt;p>from &lt;a href="https://twitter.com/cryptoismyjam/status/1548114053247012865">https://twitter.com/cryptoismyjam/status/1548114053247012865&lt;/a>&lt;/p>
+&lt;p>1/ The future of our funds is in limbo.&lt;/p>
+&lt;p>The company that told us &amp;ldquo;Banks are Not Your Friends&amp;rdquo; &amp;amp; &amp;ldquo;Unbank Yourself&amp;rdquo; violated our trust in a most egregious manner.&lt;/p>
+&lt;p>We are sad. Angry. Brokenhearted.&lt;/p>
+&lt;p>Here are the 5 Stages of Grief (DABDA) according to a Celsian&lt;/p>
+&lt;p>1/ 我们的基金前途未卜。&lt;/p>
+&lt;p>告诉我们“银行不是你的朋友”和“你自己取消银行”的公司以最令人震惊的方式违反了我们的信任。&lt;/p>
+&lt;p>我们都很伤心。生气的。心碎了。&lt;/p>
+&lt;p>这是根据 Celsian&lt;/p>
+&lt;p>2/ I am not a licensed psychologist, nor do I seek to provide any clinical advice.&lt;/p></description></item><item><title>The Webb Space Telescope Will Rewrite Cosmic History. If It Works.</title><link>/post/the_webb_space_telescope_will_rewrite_cosmic_history/</link><pubDate>Wed, 13 Jul 2022 22:20:09 +0800</pubDate><guid>/post/the_webb_space_telescope_will_rewrite_cosmic_history/</guid><description>&lt;p>&lt;strong>《韦伯天文望远镜将会改写宇宙历史，如果它能正常工作的话》&lt;/strong>&lt;/p>
+&lt;p>作者：娜塔莉·沃尔乔弗&lt;/p>
+&lt;p>和菜头整理,谷歌翻译: &lt;a href="https://mp.weixin.qq.com/s/YSEmlentq3pwhLsNIfT8Dw">https://mp.weixin.qq.com/s/YSEmlentq3pwhLsNIfT8Dw&lt;/a>&lt;/p>
+&lt;p>原文地址: &lt;a href="https://www.quantamagazine.org/why-nasas-james-webb-space-telescope-matters-so-much-20211203">https://www.quantamagazine.org/why-nasas-james-webb-space-telescope-matters-so-much-20211203&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222330.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222329.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222328.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222327.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202207132222325.png" alt="">&lt;/p>
+&lt;p>回首宇宙的幼年，见证第一颗星星的闪烁，你必须先磨出一面房子那么大的镜子。它的表面必须非常光滑，如果镜子是一个大陆的比例，它的特征就不会超过脚踝高度的山丘或山谷。只有一面如此巨大和光滑的镜子才能收集和聚焦来自天空中最远星系的微弱光线——这些光线很久以前就离开了它的源头，因此显示了宇宙年轻时在远古时代出现的星系。我们所能看到的最微弱、最远的星系仍在诞生的过程中，那时神秘的力量在黑暗中合谋，第一批恒星开始发光。&lt;/p>
+&lt;p>但要阅读宇宙历史的早期篇章——了解那些第一批恒星的性质，可能是巨大的恒星，了解引力诱使它们形成的不可见物质，磁力和湍流的作用，以及巨大的黑洞成长并进入星系中心——一个特殊的镜子是远远不够的。&lt;/p>
+&lt;p>之所以没有人看到星系形成的时代，是因为古老的星光在穿过不断膨胀的空间结构到达我们这里数十亿年之后，变得拉长了。天空中最远的恒星喷出的紫外线和可见光在这里的旅程中被拉长到大约 20 倍的波长，变成了红外线辐射。但红外光是一种我们称之为热的原子抖动光，与我们的身体、大气和脚下的地面辐射的热相同。唉，这些局部热源淹没了原始恒星可怜的火焰。要感知这些恒星，带有完美大镜子的望远镜必须非常冷。它必须发射到太空中。&lt;/p>
+&lt;p>问题是，一个房子大小的镜子太大，无法装进任何火箭整流罩。那么，镜子必须能够折叠起来。一面镜子只有在被分割的情况下才能折叠——如果它不是一个单一的、不间断的表面，而是一个由镜子片段组成的蜂窝状阵列。但为了共同创造清晰的图像，镜段在空间中自主展开后，必须几乎完美对齐。需要极其精确的电机才能实现良好的聚焦——电机可以将每个镜像段微调病毒宽度的一半，直到它们全部到位。&lt;/p>
+&lt;p>看到微弱红外源的能力不仅能让你进入宇宙的形成篇章——大约是大爆炸后 5000 万到 5 亿年的时期——它还可以揭示宇宙的其他、可以说同样重要的方面，从围绕其他恒星运行的地球大小行星的特性到备受争议的空间扩张速度。但要使望远镜工作，还需要一个额外的元素，除了一面完美无瑕的镜子，它会在被射向天空后自动展开和聚焦。&lt;/p>
+&lt;p>即使在外太空，地球、月球和太阳仍然使望远镜过热，以至于它无法感知宇宙中最遥远结构的微弱闪烁。除非，也就是说，望远镜指向一个距离地球比月球远四倍的特定点，称为拉格朗日点 2。在那里，月球、地球和太阳都位于同一方向，让望远镜挡住了所有三个天体有一次是架设一个网球场大小的遮阳板。在这样的阴影下，望远镜终于可以进入深寒，终于探测到宇宙黎明微弱的热量。&lt;/p>
+&lt;p>遮阳板既是红外望远镜的唯一希望，也是它的致命弱点。&lt;/p>
+&lt;p>为了在不压垮火箭的情况下展开足够大的比例，遮阳罩必须由薄织物组成。（就此而言，整个天文台，包括它的镜子、照相机和其他仪器、它的发射器和它的电源，必须只有典型大型地面望远镜质量的 2% 左右。）轻型红外传感航天器很容易，但不可避免地使用织物使其成为一个固有的风险事件。工程师说，织物是“不确定的”，它的运动无法完美控制或预测。如果遮光罩在展开时被卡住，整个望远镜就会变成太空垃圾。&lt;/p>
+&lt;p>目前，令人难以置信的是，已经建成的望远镜已经折叠起来，准备放在阿丽亚娜 5 号火箭的顶部。该火箭计划于 12 月 22 日从法属圭亚那的库鲁发射升空，距其有效载荷詹姆斯韦伯太空望远镜 (JWST) 的首次设想和草图已超过 30 年。该望远镜比计划晚了 14 年，超出预算 20 倍。“我们已经尽了最大的努力去发现我们所有的错误，并进行测试和排练，”诺贝尔奖获得者、NASA 领导的项目的首席科学家约翰·马瑟 (John Mather) 说。现在，他说，“我们将把价值数十亿美元的望远镜放在一堆爆炸材料上”，然后把事情交给命运。&lt;/p>
+&lt;p>JWST 在过去三十年的发展历程与我们在理解宇宙方面取得的巨大进步并行不悖，尤其是因为韦伯的前辈。通过哈勃太空望远镜，我们了解到恒星、星系和超大质量黑洞在宇宙历史上的存在时间比任何人预期的要早得多，并且自那以后它们发生了根本性的变化。我们已经了解到暗物质和暗能量塑造了宇宙。通过开普勒望远镜和其他望远镜，我们已经看到各种各样的行星像圣诞树上的小玩意一样装饰着星系，仅在我们的银河系中就包括数十亿个潜在的宜居世界。这些发现提出了詹姆斯韦伯太空望远镜可以解决的问题。天文学家还希望，与其他望远镜一样，它的目击将提出新的问题。&lt;/p>
+&lt;p>这次发射将开始天文学家娜塔莉·巴塔利亚（Natalie Batalha）所说的“六个月如坐针毡”，因为这台极其复杂的望远镜将尝试以数百步展开并聚焦自身。该天文台将花费一个月的时间漂浮 100 万英里到达拉格朗日点 2。在此过程中，它将变成一朵天上的睡莲，将其巨大的镀金镜段花放在更大的银叶上。&lt;/p>
+&lt;p>“这将是我们自己‘敢于做大事’的时刻，”曾在该望远镜时间分配委员会任职的哈佛大学天体物理学家格兰特·特伦布莱 (Grant Tremblay) 说。“它会做出惊人的事情。我们将在《纽约时报》上谈论这是如何在时间边缘见证恒星的诞生，这是最早的星系之一，这是其他地球的故事。”&lt;/p>
+&lt;p>“请工作，”Tremblay 补充道，他的眼睛向上飘动。&lt;/p>
+&lt;p>&lt;strong>从光滑到块状&lt;/strong>&lt;/p>
+&lt;p>美国宇航局上一次发射如此重要的天文台——哈勃太空望远镜，是在 1990 年——那是一场灾难。“绝对是灾难性的”，资深天文学家桑德拉·法伯告诉我。Faber 所在的团队在马里兰州格林贝尔特的 NASA 戈达德太空飞行中心露营，以诊断这种疾病。从哈勃的一张照片中的一颗恒星看起来像一个环，她和一位同事推断，主镜 - 将光线反射到副镜，然后将其反射到相机镜头的大凹面镜 - 没有被研磨降低到非常合适的凹度以聚焦光线；它在边缘周围太厚了半个波长。如果主镜和副镜在发射前一起测试过，这种像差就会被注意到，但在急于将拖延已久且超预算的望远镜升空的过程中，这种测试从未发生过。&lt;/p>
+&lt;p>一些 NASA 领导人呼吁放弃望远镜，这已经是一个有争议的项目。相反，马里兰州参议员芭芭拉·米库尔斯基获得了救援任务的资金。修复它是可能的，因为作为对彩虹颜色而不是红外光敏感的光学望远镜，哈勃可以从仅 340 英里高的低地球轨道获得清晰的视野，而不必走一百万英里远. 1993 年，航天飞机与哈勃对接，宇航员安装了一种隐形眼镜。望远镜将继续彻底改变天文学和宇宙学。&lt;/p></description></item><item><title>Advice for lack of discipline</title><link>/post/advice_for_lack_of_discipline/</link><pubDate>Sun, 26 Jun 2022 12:55:34 +0800</pubDate><guid>/post/advice_for_lack_of_discipline/</guid><description>&lt;p>&amp;ldquo;If you lack discipline, open this&amp;rdquo;&lt;/p>
+&lt;p>Psychology Thread&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202206261258258.jpeg" alt="">&lt;/p>
+&lt;ol>
+&lt;li>Choose a Goal&lt;/li>
+&lt;/ol>
+&lt;p>Begin by choosing just one goal that you want to focus on to develop your self-discipline.&lt;/p>
+&lt;p>Remember, starting small is the best way to start developing your self-discipline.&lt;/p>
+&lt;ol start="2">
+&lt;li>Nutrition, Sleep and Exercise Are Key&lt;/li>
+&lt;/ol>
+&lt;p>If you are trying to improve your self discipline and you&amp;rsquo;re not getting enough sleep, healthy food and exercise, you&amp;rsquo;re fighting an uphill battle.&lt;/p></description></item><item><title>Advice from ArtOfLife_</title><link>/post/advice_from_artoflife_/</link><pubDate>Sun, 26 Jun 2022 12:52:06 +0800</pubDate><guid>/post/advice_from_artoflife_/</guid><description>&lt;p>&amp;ldquo;Overthinkers&amp;rdquo;, open this:&lt;/p>
+&lt;p>• You&amp;rsquo;re loved, someone out there loves you more than you think.&lt;/p>
+&lt;p>• Your anxiety will tell you the worst case scenario. It’s a damn liar!&lt;/p>
+&lt;p>• You mean so much to your friends and family, they may not say it as often but they really do love you.&lt;/p>
+&lt;p>• You’ve already survived things you didn’t think you’d survive.&lt;/p>
+&lt;p>• You&amp;rsquo;re strong and you can get through everything one step at a time.&lt;/p></description></item><item><title>Advice from LongShortHC</title><link>/post/advice_from_longshorthc/</link><pubDate>Sun, 26 Jun 2022 12:30:18 +0800</pubDate><guid>/post/advice_from_longshorthc/</guid><description>&lt;p>Had a DM question asking for advice for a brand new analyst working at a pod shop. Noodled on it, and figured I would share the thoughts broadly in case helpful. I am far from the most tenured and successful pod PM - spent 4 years as a PM at combo of D.E. Shaw (not a pod)…&lt;/p>
+&lt;p>Citadel/Aptigon and Schonfeld, over which time I hired/employed/trained a dozen or so analysts. (And then threw up two middle fingers and retired…more on that later). So I’m by no means the absolute authority on pods. But here is my advice:&lt;/p></description></item><item><title>如何利用GithubAction发布Hugo博客</title><link>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</link><pubDate>Tue, 05 Apr 2022 15:07:33 +0800</pubDate><guid>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p>作为一个老网民，我还是很喜欢折腾博客的。从07年开始就玩各种博客，比如07年搜狐博客，那时候博客热很火，不亚于微博兴起的时候，于是我每天去刷我的搜狐博客访问量，是不是还专门去网吧写文章。 后来还开了新浪博客，一直在新浪博客混混文字，大概一直在新浪博客写了4年。&lt;/p>
+&lt;p>再后来又买了独立主机，自己开WordPress写博客，无奈后来被人把主机给黑了。但是那时候很快啦，天天找WordPress好看的主题，去别的的WP 搜索好用的插件。各种互加友链。&lt;/p>
+&lt;p>当然后来还玩了很多其他的博客，比如Google的BlogSpot，Tumbler，对就是那个Tumbler。 还有网易的LOFTER，新浪的绿洲。腾讯的QQ空间，微信公众号。&lt;/p>
+&lt;p>工作以后，有了Github page，看着大家都用Travis去自动化部署，于是也用HEXO搭建了一个。不过18年后一直没维护了，中途有次冲动想维护起来，发现怎么都跑不起来，于是就懒得动了。&lt;/p>
+&lt;p>最近大家都用Github Action自动化部署Blog。于是又折腾起来了。整个过程花了几个小时，担心以后忘记又记不起来，在这里简单做个记录。整个流程如下&lt;/p>
+&lt;p>1、本地安装Hugo&lt;br>
+2、用Hugo写好Markdown文章 (hugo new posts/new_post.md)
+3、然后将Markdown生成为静态文件&lt;br>
+4、将生成的静态站点内容推送到Github发布&lt;/p>
+&lt;p>一、安装Hugo&lt;/p>
+&lt;p>&lt;code>mac： brew install hugo&lt;/code>&lt;/p>
+&lt;p>其他系统安装方式见：&lt;a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/&lt;/a>&lt;/p>
+&lt;p>二、生成静态站点&lt;/p>
+&lt;p>1、初始化站点&lt;/p>
+&lt;p>Hugo命令可以自动生成站点需要的文件，后续我们所有的操作命令将会在Hugo生成的目录下执行。&lt;/p>
+&lt;p>&lt;code>hugo new site hugo-blog&lt;/code>&lt;/p>
+&lt;p>2、进入到hugo-blog目录，cd hugo-blog&lt;/p>
+&lt;p>3、安装主题&lt;br>
+我是通过 &lt;code>git submodule&lt;/code> 安装的，确保自己在hugo-blog目录下，执行命令：&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">git init
+git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
+&lt;/code>&lt;/pre>&lt;p>4、启用主题&lt;/p>
+&lt;p>第三步完成后，需要在配置文件中启用主题，配置文件在hugo-blog根目录下。&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">echo &amp;#39;theme = &amp;#34;jane&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.toml
+&lt;/code>&lt;/pre>&lt;p>5、创建第一篇你的博文&lt;/p>
+&lt;p>&lt;code>hugo new posts/my-first-post.md&lt;/code>&lt;/p>
+&lt;p>在下方接着写入文章内容即可。注意此时该文件为草稿状态，写作完成后需要改成 &lt;code>draft: false&lt;/code> 才能部署。&lt;/p>
+&lt;p>6、启动 Hugo 预览服务器&lt;/p>
+&lt;p>Hugo 可以启动一个 Web 服务器，同时构建站点内容到内存中并在检测到文件更改后重新渲染，方便我们在开发环境实时预览对站点所做的更改。命令如下：&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">hugo server -D
+&lt;/code>&lt;/pre>&lt;p>添加 &lt;code>-D&lt;/code> 选项以输出草稿状态的文章，执行成功后可以通过 &lt;code>http://localhost:1313/&lt;/code> 访问站点。&lt;/p></description></item><item><title>如果我有一段生命</title><link>/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</link><pubDate>Tue, 05 Apr 2022 00:17:28 +0800</pubDate><guid>/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</guid><description>&lt;p>If God, for a second, forgot what I have become and granted me a little bit more of life, I would use it to the best of my ability.&lt;/p>
+&lt;p>如果有一刹那，上帝忘记我是一只布偶并赋予我片刻生命，我会最大限度的利用起来。&lt;/p>
+&lt;p>I wouldn&amp;rsquo;t possibly, say everything that is in my mind, but I would be more thoughtful of all I say…&lt;/p>
+&lt;p>我可能不会说出我心中的一切所想，但我必定会思考我所说的一切。&lt;/p>
+&lt;p>I would give merit to things not for what they are worth, but for what they mean to express.&lt;/p></description></item><item><title>不装蒜</title><link>/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</link><pubDate>Mon, 04 Apr 2022 22:16:02 +0800</pubDate><guid>/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</guid><description>&lt;p>顾城 (1956-1993)&lt;/p>
+&lt;p>人的生命里有一种能量，它使你不安宁。说它是欲望也行，幻想也行，妄想也行，总之它不可能停下来，它需要一个表达形式。这个形式可能是革命，也可能是爱情；可能是搬一块石头，也可能是写一首诗。只要这个形式和生命力里的这个能量吻合了，就有了一个完美的过程。&lt;/p>
+&lt;p>一个彻底诚实的人是从不面对选择的，那条路永远会清楚无二地呈现在你面前，这和你的憧憬无关，就像你是一棵苹果树，你憧憬结橘子，但是你还是诚实地结出苹果一样。&lt;/p>
+&lt;p>西方爱情是强烈开放的花朵，东方爱情是两朵花之间微妙的芳香。&lt;/p>
+&lt;p>自由并不是你不知道干什么好，也不是你干什么都可以不坐牢；自由是你清楚无疑你要干什么，不装蒜，不矫揉造作，无论什么功利结果，会不会坐牢或者送死，都不在话下了。对于惶惑不知道干什么的人来说，自由是不存在的；对于瞻前顾后、患得患失的人来说，自由是不可及的。&lt;/p>
+&lt;p>一个人，生活可以变得好，也可以变得坏；可以活得久，也可以活得不久；可以做一个艺术家，也可以锯木头，没有多大区别。但是有一点，就是他不能面目全非，他不能变成一个鬼，他不能说鬼话、说谎言，他不能在醒来的时候看见自己觉得不堪入目。一个人应该活得是自己并且干净。&lt;/p>
+&lt;p>命运不是风来回吹，命运是大地，走到哪里你都在命中。&lt;/p>
+&lt;p>贾宝玉是真性情，鲁智深也是真性情；鲁智深一句唱词儿“赤条条来去无牵挂”，贾宝玉眼泪就下来了，顿时就有了感觉。可是你让贾宝玉抡个棍子去打，那无疑是找死。他们爱好不同，性情很不一样，但是呢，都是真性情，它就通了。&lt;/p>
+&lt;p>从叶到花，或从花到叶，于科研是一个过程，而于生命自身则永远只在此刻。花和叶都是一种记忆方式。果子同时也是叶子。生命是闪耀的此刻，不是过程，就像芳香不需要道路一样。&lt;/p>
+&lt;p>中国人只创造了两个理想，一个是山中的桃花源，一个是墙里的大观园。我的笑话不过是把大观园搬到了山里，忘了林黛玉的药锄是葬花用的。&lt;/p>
+&lt;p>我到了新西兰一个小岛上，把身体交给了劳动。四年之后，有一天，我忽然看见黑色的鸟停在月亮里，树上的花早就开了，红花已经落了满地。这时候我才感到我从文化中间、文字中间走了出来。万物清清楚楚地呈现在你的心里，一阵风吹过，鸟就开始叫了，树就开始响了。这个时候我明白了一个道理：只有在你生命美丽的时候，世界才是美丽的。&lt;/p></description></item></channel></rss>
+>>>>>>> c2831dde1e4b55539240969f8f4e41355e629d77

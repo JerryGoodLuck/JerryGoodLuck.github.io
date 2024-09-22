@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -45,3 +46,23 @@ Citadel/Aptigon and Schonfeld, over which time I hired/employed/trained a dozen 
     
   </channel>
 </rss>
+=======
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Twitter on</title><link>/tags/twitter/</link><description>Recent content in Twitter on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 26 Jun 2022 12:55:34 +0800</lastBuildDate><atom:link href="/tags/twitter/index.xml" rel="self" type="application/rss+xml"/><item><title>Advice for lack of discipline</title><link>/post/advice_for_lack_of_discipline/</link><pubDate>Sun, 26 Jun 2022 12:55:34 +0800</pubDate><guid>/post/advice_for_lack_of_discipline/</guid><description>&lt;p>&amp;ldquo;If you lack discipline, open this&amp;rdquo;&lt;/p>
+&lt;p>Psychology Thread&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202206261258258.jpeg" alt="">&lt;/p>
+&lt;ol>
+&lt;li>Choose a Goal&lt;/li>
+&lt;/ol>
+&lt;p>Begin by choosing just one goal that you want to focus on to develop your self-discipline.&lt;/p>
+&lt;p>Remember, starting small is the best way to start developing your self-discipline.&lt;/p>
+&lt;ol start="2">
+&lt;li>Nutrition, Sleep and Exercise Are Key&lt;/li>
+&lt;/ol>
+&lt;p>If you are trying to improve your self discipline and you&amp;rsquo;re not getting enough sleep, healthy food and exercise, you&amp;rsquo;re fighting an uphill battle.&lt;/p></description></item><item><title>Advice from ArtOfLife_</title><link>/post/advice_from_artoflife_/</link><pubDate>Sun, 26 Jun 2022 12:52:06 +0800</pubDate><guid>/post/advice_from_artoflife_/</guid><description>&lt;p>&amp;ldquo;Overthinkers&amp;rdquo;, open this:&lt;/p>
+&lt;p>• You&amp;rsquo;re loved, someone out there loves you more than you think.&lt;/p>
+&lt;p>• Your anxiety will tell you the worst case scenario. It’s a damn liar!&lt;/p>
+&lt;p>• You mean so much to your friends and family, they may not say it as often but they really do love you.&lt;/p>
+&lt;p>• You’ve already survived things you didn’t think you’d survive.&lt;/p>
+&lt;p>• You&amp;rsquo;re strong and you can get through everything one step at a time.&lt;/p></description></item><item><title>Advice from LongShortHC</title><link>/post/advice_from_longshorthc/</link><pubDate>Sun, 26 Jun 2022 12:30:18 +0800</pubDate><guid>/post/advice_from_longshorthc/</guid><description>&lt;p>Had a DM question asking for advice for a brand new analyst working at a pod shop. Noodled on it, and figured I would share the thoughts broadly in case helpful. I am far from the most tenured and successful pod PM - spent 4 years as a PM at combo of D.E. Shaw (not a pod)…&lt;/p>
+&lt;p>Citadel/Aptigon and Schonfeld, over which time I hired/employed/trained a dozen or so analysts. (And then threw up two middle fingers and retired…more on that later). So I’m by no means the absolute authority on pods. But here is my advice:&lt;/p></description></item></channel></rss>
+>>>>>>> c2831dde1e4b55539240969f8f4e41355e629d77

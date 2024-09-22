@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -42,3 +43,36 @@ hugo server -D 添加 -D 选项以输出草稿状态的文章，执行成功后�
     
   </channel>
 </rss>
+=======
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on</title><link>/tags/hugo/</link><description>Recent content in Hugo on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 05 Apr 2022 15:07:33 +0800</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>如何利用GithubAction发布Hugo博客</title><link>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</link><pubDate>Tue, 05 Apr 2022 15:07:33 +0800</pubDate><guid>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p>作为一个老网民，我还是很喜欢折腾博客的。从07年开始就玩各种博客，比如07年搜狐博客，那时候博客热很火，不亚于微博兴起的时候，于是我每天去刷我的搜狐博客访问量，是不是还专门去网吧写文章。 后来还开了新浪博客，一直在新浪博客混混文字，大概一直在新浪博客写了4年。&lt;/p>
+&lt;p>再后来又买了独立主机，自己开WordPress写博客，无奈后来被人把主机给黑了。但是那时候很快啦，天天找WordPress好看的主题，去别的的WP 搜索好用的插件。各种互加友链。&lt;/p>
+&lt;p>当然后来还玩了很多其他的博客，比如Google的BlogSpot，Tumbler，对就是那个Tumbler。 还有网易的LOFTER，新浪的绿洲。腾讯的QQ空间，微信公众号。&lt;/p>
+&lt;p>工作以后，有了Github page，看着大家都用Travis去自动化部署，于是也用HEXO搭建了一个。不过18年后一直没维护了，中途有次冲动想维护起来，发现怎么都跑不起来，于是就懒得动了。&lt;/p>
+&lt;p>最近大家都用Github Action自动化部署Blog。于是又折腾起来了。整个过程花了几个小时，担心以后忘记又记不起来，在这里简单做个记录。整个流程如下&lt;/p>
+&lt;p>1、本地安装Hugo&lt;br>
+2、用Hugo写好Markdown文章 (hugo new posts/new_post.md)
+3、然后将Markdown生成为静态文件&lt;br>
+4、将生成的静态站点内容推送到Github发布&lt;/p>
+&lt;p>一、安装Hugo&lt;/p>
+&lt;p>&lt;code>mac： brew install hugo&lt;/code>&lt;/p>
+&lt;p>其他系统安装方式见：&lt;a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/&lt;/a>&lt;/p>
+&lt;p>二、生成静态站点&lt;/p>
+&lt;p>1、初始化站点&lt;/p>
+&lt;p>Hugo命令可以自动生成站点需要的文件，后续我们所有的操作命令将会在Hugo生成的目录下执行。&lt;/p>
+&lt;p>&lt;code>hugo new site hugo-blog&lt;/code>&lt;/p>
+&lt;p>2、进入到hugo-blog目录，cd hugo-blog&lt;/p>
+&lt;p>3、安装主题&lt;br>
+我是通过 &lt;code>git submodule&lt;/code> 安装的，确保自己在hugo-blog目录下，执行命令：&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">git init
+git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
+&lt;/code>&lt;/pre>&lt;p>4、启用主题&lt;/p>
+&lt;p>第三步完成后，需要在配置文件中启用主题，配置文件在hugo-blog根目录下。&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">echo &amp;#39;theme = &amp;#34;jane&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.toml
+&lt;/code>&lt;/pre>&lt;p>5、创建第一篇你的博文&lt;/p>
+&lt;p>&lt;code>hugo new posts/my-first-post.md&lt;/code>&lt;/p>
+&lt;p>在下方接着写入文章内容即可。注意此时该文件为草稿状态，写作完成后需要改成 &lt;code>draft: false&lt;/code> 才能部署。&lt;/p>
+&lt;p>6、启动 Hugo 预览服务器&lt;/p>
+&lt;p>Hugo 可以启动一个 Web 服务器，同时构建站点内容到内存中并在检测到文件更改后重新渲染，方便我们在开发环境实时预览对站点所做的更改。命令如下：&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-other" data-lang="other">hugo server -D
+&lt;/code>&lt;/pre>&lt;p>添加 &lt;code>-D&lt;/code> 选项以输出草稿状态的文章，执行成功后可以通过 &lt;code>http://localhost:1313/&lt;/code> 访问站点。&lt;/p></description></item></channel></rss>
+>>>>>>> c2831dde1e4b55539240969f8f4e41355e629d77
