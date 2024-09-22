@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mysql on PaperMod</title>
-    <link>https://adityatelange.github.io/hugo-PaperMod/tags/mysql/</link>
+    <link>https://jerrygoodluck.github.io/tags/mysql/</link>
         <follow_challenge>
     <feedId>60623584562065408</feedId>
     <userId>60599027243183104</userId>
@@ -10,19 +10,19 @@
     <description>Recent content in Mysql on PaperModfeedId:60623584562065408+userId:60599027243183104</description>
     <image>
       <title>PaperMod</title>
-      <url>https://adityatelange.github.io/hugo-PaperMod/images/papermod-cover.png</url>
-      <link>https://adityatelange.github.io/hugo-PaperMod/images/papermod-cover.png</link>
+      <url>https://jerrygoodluck.github.io/images/papermod-cover.png</url>
+      <link>https://jerrygoodluck.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Mon, 08 Aug 2022 22:11:13 +0800</lastBuildDate>
-    <atom:link href="https://adityatelange.github.io/hugo-PaperMod/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jerrygoodluck.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ubuntu18.04/Mysql5.7改成utf8编码</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/mysql57_character/</link>
+      <link>https://jerrygoodluck.github.io/post/mysql57_character/</link>
       <pubDate>Mon, 08 Aug 2022 22:11:13 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/mysql57_character/</guid>
+      <guid>https://jerrygoodluck.github.io/post/mysql57_character/</guid>
       <description>&lt;h3 id=&#34;问题背景&#34;&gt;问题背景&lt;/h3&gt;
 &lt;p&gt;向MySQL插入中文内容显示问号&lt;/p&gt;
 &lt;h3 id=&#34;原因&#34;&gt;原因&lt;/h3&gt;

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Fatags on PaperMod RTL</title>
-    <link>https://adityatelange.github.io/hugo-PaperMod/fa/fatags/</link>
+    <link>https://jerrygoodluck.github.io/fa/fatags/</link>
         <follow_challenge>
     <feedId>60623584562065408</feedId>
     <userId>60599027243183104</userId>
@@ -10,12 +10,12 @@
     <description>Recent content in Fatags on PaperMod RTLfeedId:60623584562065408+userId:60599027243183104</description>
     <image>
       <title>PaperMod RTL</title>
-      <url>https://adityatelange.github.io/hugo-PaperMod/images/papermod-cover.png</url>
-      <link>https://adityatelange.github.io/hugo-PaperMod/images/papermod-cover.png</link>
+      <url>https://jerrygoodluck.github.io/images/papermod-cover.png</url>
+      <link>https://jerrygoodluck.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>fa</language>
     <copyright>PaperMod Contributors</copyright>
-    <atom:link href="https://adityatelange.github.io/hugo-PaperMod/fa/fatags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jerrygoodluck.github.io/fa/fatags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Linux on PaperMod</title>
-    <link>https://adityatelange.github.io/hugo-PaperMod/tags/linux/</link>
+    <link>https://jerrygoodluck.github.io/tags/linux/</link>
         <follow_challenge>
     <feedId>60623584562065408</feedId>
     <userId>60599027243183104</userId>
@@ -10,19 +10,19 @@
     <description>Recent content in Linux on PaperModfeedId:60623584562065408+userId:60599027243183104</description>
     <image>
       <title>PaperMod</title>
-      <url>https://adityatelange.github.io/hugo-PaperMod/images/papermod-cover.png</url>
-      <link>https://adityatelange.github.io/hugo-PaperMod/images/papermod-cover.png</link>
+      <url>https://jerrygoodluck.github.io/images/papermod-cover.png</url>
+      <link>https://jerrygoodluck.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Sat, 13 Aug 2022 10:23:30 +0800</lastBuildDate>
-    <atom:link href="https://adityatelange.github.io/hugo-PaperMod/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jerrygoodluck.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的oh My Zsh主题</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link>
+      <link>https://jerrygoodluck.github.io/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Sat, 13 Aug 2022 10:23:30 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid>
+      <guid>https://jerrygoodluck.github.io/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid>
       <description>&lt;p&gt;最近想改下iTerm的oh-my-zsh主题，看知乎讨论，有一款简洁的主题映入眼帘。&lt;/p&gt;
 &lt;h3 id=&#34;主题名称&#34;&gt;主题名称&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;half-life
@@ -37,9 +37,9 @@
     </item>
     <item>
       <title>Ubuntu18.04使用supervisor守护进程</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link>
+      <link>https://jerrygoodluck.github.io/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link>
       <pubDate>Sun, 07 Aug 2022 15:54:02 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid>
+      <guid>https://jerrygoodluck.github.io/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid>
       <description>&lt;h3 id=&#34;问题背景&#34;&gt;问题背景&lt;/h3&gt;
 &lt;p&gt;最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。&lt;/p&gt;
 &lt;p&gt;于是想着用supervisor来做守护进程, 本文就是记录supervisor 的安装、配置、使用技巧，并设置如何supervisor开机自动启动&lt;/p&gt;
@@ -80,9 +80,9 @@
     </item>
     <item>
       <title>Wget用法</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/wget%E7%94%A8%E6%B3%95/</link>
+      <link>https://jerrygoodluck.github.io/post/wget%E7%94%A8%E6%B3%95/</link>
       <pubDate>Sun, 31 Jul 2022 11:20:32 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/wget%E7%94%A8%E6%B3%95/</guid>
+      <guid>https://jerrygoodluck.github.io/post/wget%E7%94%A8%E6%B3%95/</guid>
       <description>&lt;p&gt;我会向你展示10个 Wget 命令的实际案例. Wget 是一个用于下载文件的免费工具，它支持大多数常用的Internet协议，包括 HTTP, HTTPS, 以及 FTP.&lt;/p&gt;
 &lt;p&gt;Wget这个名字来源于 World Wide Web + get. Wget 有很多功能，可以很方便地做到下载大型文件,递归下载,一次下载多个文件以及镜像web网站和FTP站点.&lt;/p&gt;
 &lt;p&gt;Wget是非交互式的，但是使用起来相当的灵活. 你可以在脚本，cron任务，终端等地方调用它. 它可以在用户未登陆的情况下运行在后台. 也就是说你可以开始下载文件，然后退出系统，wget会在后台运行直到完成任务.&lt;/p&gt;

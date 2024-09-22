@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Github on PaperMod</title>
-    <link>https://adityatelange.github.io/hugo-PaperMod/tags/github/</link>
+    <link>https://jerrygoodluck.github.io/tags/github/</link>
         <follow_challenge>
     <feedId>60623584562065408</feedId>
     <userId>60599027243183104</userId>
@@ -10,19 +10,19 @@
     <description>Recent content in Github on PaperModfeedId:60623584562065408+userId:60599027243183104</description>
     <image>
       <title>PaperMod</title>
-      <url>https://adityatelange.github.io/hugo-PaperMod/images/papermod-cover.png</url>
-      <link>https://adityatelange.github.io/hugo-PaperMod/images/papermod-cover.png</link>
+      <url>https://jerrygoodluck.github.io/images/papermod-cover.png</url>
+      <link>https://jerrygoodluck.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Sat, 23 Jul 2022 13:35:10 +0800</lastBuildDate>
-    <atom:link href="https://adityatelange.github.io/hugo-PaperMod/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jerrygoodluck.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>同一台电脑双Github账号配置</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</link>
+      <link>https://jerrygoodluck.github.io/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sat, 23 Jul 2022 13:35:10 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://jerrygoodluck.github.io/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</guid>
       <description>&lt;p&gt;因为用Hugo开了一个新Blog，然后原来github账号的blog我想一直保留，所以就有了2个github账号，这样放在一台电脑上就不好管理。&lt;/p&gt;
 &lt;p&gt;因为github不支持同一个SSH绑定不同的github账号。这样如果我想用github A账号，我就要换成A账号的私钥，用github B账号就要换成B账号的密钥，挺麻烦的。于是网上找到教程，搞成功了。&lt;/p&gt;
 &lt;p&gt;第一步：假设已经有了A B密钥账号，分别保存在~/.ssh目录下，名字为id_rsa_public,   id_rsa_private，当然公钥也是与之对应。&lt;/p&gt;

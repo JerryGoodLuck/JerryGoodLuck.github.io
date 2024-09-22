@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>杂记 on PaperMod</title>
-    <link>https://adityatelange.github.io/hugo-PaperMod/categories/%E6%9D%82%E8%AE%B0/</link>
+    <link>https://jerrygoodluck.github.io/categories/%E6%9D%82%E8%AE%B0/</link>
         <follow_challenge>
     <feedId>60623584562065408</feedId>
     <userId>60599027243183104</userId>
@@ -10,19 +10,19 @@
     <description>Recent content in 杂记 on PaperModfeedId:60623584562065408+userId:60599027243183104</description>
     <image>
       <title>PaperMod</title>
-      <url>https://adityatelange.github.io/hugo-PaperMod/images/papermod-cover.png</url>
-      <link>https://adityatelange.github.io/hugo-PaperMod/images/papermod-cover.png</link>
+      <url>https://jerrygoodluck.github.io/images/papermod-cover.png</url>
+      <link>https://jerrygoodluck.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <copyright>PaperMod Contributors</copyright>
     <lastBuildDate>Sun, 17 Sep 2023 16:45:45 +0800</lastBuildDate>
-    <atom:link href="https://adityatelange.github.io/hugo-PaperMod/categories/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jerrygoodluck.github.io/categories/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>好久没写博客了</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</link>
+      <link>https://jerrygoodluck.github.io/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</link>
       <pubDate>Sun, 17 Sep 2023 16:45:45 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</guid>
+      <guid>https://jerrygoodluck.github.io/post/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/</guid>
       <description>&lt;p&gt;好久没来写点东西了。打算不写技术博客了，人要学技术，网上写的人还是太多了。而且写的比我更好，我也就不在这方面去费时间了。&lt;/p&gt;
 &lt;p&gt;打算就写点我的所见，所闻，所感，记录下岁月吧。可能还能引起一些共鸣。&lt;/p&gt;
 &lt;p&gt;从2007年我就喜欢博客，那时候有搜狐博客，新浪博客，经常去看韩寒，老徐，还有个极地阳光。想想现在的网红，其实逻辑没变。那时候写博客人气高的也是网红。&lt;/p&gt;
@@ -30,9 +30,9 @@
     </item>
     <item>
       <title>我的oh My Zsh主题</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link>
+      <link>https://jerrygoodluck.github.io/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Sat, 13 Aug 2022 10:23:30 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid>
+      <guid>https://jerrygoodluck.github.io/post/%E6%88%91%E7%9A%84oh-my-zsh%E4%B8%BB%E9%A2%98/</guid>
       <description>&lt;p&gt;最近想改下iTerm的oh-my-zsh主题，看知乎讨论，有一款简洁的主题映入眼帘。&lt;/p&gt;
 &lt;h3 id=&#34;主题名称&#34;&gt;主题名称&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;half-life
@@ -47,9 +47,9 @@
     </item>
     <item>
       <title>Ubuntu18.04/Mysql5.7改成utf8编码</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/mysql57_character/</link>
+      <link>https://jerrygoodluck.github.io/post/mysql57_character/</link>
       <pubDate>Mon, 08 Aug 2022 22:11:13 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/mysql57_character/</guid>
+      <guid>https://jerrygoodluck.github.io/post/mysql57_character/</guid>
       <description>&lt;h3 id=&#34;问题背景&#34;&gt;问题背景&lt;/h3&gt;
 &lt;p&gt;向MySQL插入中文内容显示问号&lt;/p&gt;
 &lt;h3 id=&#34;原因&#34;&gt;原因&lt;/h3&gt;
@@ -103,9 +103,9 @@ default-character-set=utf8
     </item>
     <item>
       <title>Ubuntu18.04使用supervisor守护进程</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link>
+      <link>https://jerrygoodluck.github.io/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</link>
       <pubDate>Sun, 07 Aug 2022 15:54:02 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid>
+      <guid>https://jerrygoodluck.github.io/post/ubuntu18.04%E4%BD%BF%E7%94%A8supervisor%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</guid>
       <description>&lt;h3 id=&#34;问题背景&#34;&gt;问题背景&lt;/h3&gt;
 &lt;p&gt;最近部署了一个python server在我买的服务器上，想让他一直运行，否则一断开服务器的话，python server提供的API就访问不了了。&lt;/p&gt;
 &lt;p&gt;于是想着用supervisor来做守护进程, 本文就是记录supervisor 的安装、配置、使用技巧，并设置如何supervisor开机自动启动&lt;/p&gt;
@@ -146,9 +146,9 @@ default-character-set=utf8
     </item>
     <item>
       <title>Vue Vite初学报错大全</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</link>
+      <link>https://jerrygoodluck.github.io/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</link>
       <pubDate>Sun, 07 Aug 2022 15:23:20 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</guid>
+      <guid>https://jerrygoodluck.github.io/post/vue%E6%8A%A5%E9%94%99%E5%A4%A7%E5%85%A8/</guid>
       <description>&lt;h3 id=&#34;项目环境&#34;&gt;项目环境&lt;/h3&gt;
 &lt;p&gt;机器：mac&lt;/p&gt;
 &lt;p&gt;框架：vue3&lt;/p&gt;
@@ -211,9 +211,9 @@ default-character-set=utf8
     </item>
     <item>
       <title>寻找Mac java_home</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/mac_java_home/</link>
+      <link>https://jerrygoodluck.github.io/post/mac_java_home/</link>
       <pubDate>Sun, 31 Jul 2022 11:24:38 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/mac_java_home/</guid>
+      <guid>https://jerrygoodluck.github.io/post/mac_java_home/</guid>
       <description>&lt;h2 id=&#34;前期准备&#34;&gt;&lt;strong&gt;前期准备&lt;/strong&gt;&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;下载JDK安装包：在&lt;a href=&#34;https://link.zhihu.com/?target=http%3A//www.oracle.com/technetwork/cn/java/javase/downloads/jdk8-downloads-2133151-zhs.html&#34;&gt;JDK1.8下载&lt;/a&gt;中选择Mac的JDK安装包&lt;/li&gt;
@@ -236,9 +236,9 @@ default-character-set=utf8
     </item>
     <item>
       <title>Linux command</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/linuxcommand/</link>
+      <link>https://jerrygoodluck.github.io/post/linuxcommand/</link>
       <pubDate>Sun, 31 Jul 2022 11:22:04 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/linuxcommand/</guid>
+      <guid>https://jerrygoodluck.github.io/post/linuxcommand/</guid>
       <description>&lt;h1 id=&#34;一些命令&#34;&gt;一些命令&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;查看目录结构
@@ -331,9 +331,9 @@ sudo umount /dev/disk1s1&lt;/li&gt;
     </item>
     <item>
       <title>Wget用法</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/wget%E7%94%A8%E6%B3%95/</link>
+      <link>https://jerrygoodluck.github.io/post/wget%E7%94%A8%E6%B3%95/</link>
       <pubDate>Sun, 31 Jul 2022 11:20:32 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/wget%E7%94%A8%E6%B3%95/</guid>
+      <guid>https://jerrygoodluck.github.io/post/wget%E7%94%A8%E6%B3%95/</guid>
       <description>&lt;p&gt;我会向你展示10个 Wget 命令的实际案例. Wget 是一个用于下载文件的免费工具，它支持大多数常用的Internet协议，包括 HTTP, HTTPS, 以及 FTP.&lt;/p&gt;
 &lt;p&gt;Wget这个名字来源于 World Wide Web + get. Wget 有很多功能，可以很方便地做到下载大型文件,递归下载,一次下载多个文件以及镜像web网站和FTP站点.&lt;/p&gt;
 &lt;p&gt;Wget是非交互式的，但是使用起来相当的灵活. 你可以在脚本，cron任务，终端等地方调用它. 它可以在用户未登陆的情况下运行在后台. 也就是说你可以开始下载文件，然后退出系统，wget会在后台运行直到完成任务.&lt;/p&gt;
@@ -362,9 +362,9 @@ Saving to: &amp;rsquo;latest.zip&#39;&lt;/p&gt;</description>
     </item>
     <item>
       <title>同一台电脑双Github账号配置</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</link>
+      <link>https://jerrygoodluck.github.io/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sat, 23 Jul 2022 13:35:10 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://jerrygoodluck.github.io/post/%E5%90%8C%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%8Cgithub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE/</guid>
       <description>&lt;p&gt;因为用Hugo开了一个新Blog，然后原来github账号的blog我想一直保留，所以就有了2个github账号，这样放在一台电脑上就不好管理。&lt;/p&gt;
 &lt;p&gt;因为github不支持同一个SSH绑定不同的github账号。这样如果我想用github A账号，我就要换成A账号的私钥，用github B账号就要换成B账号的密钥，挺麻烦的。于是网上找到教程，搞成功了。&lt;/p&gt;
 &lt;p&gt;第一步：假设已经有了A B密钥账号，分别保存在~/.ssh目录下，名字为id_rsa_public,   id_rsa_private，当然公钥也是与之对应。&lt;/p&gt;
@@ -400,9 +400,9 @@ git config --local user.email xxx
     </item>
     <item>
       <title>DABDA</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/dabda/</link>
+      <link>https://jerrygoodluck.github.io/post/dabda/</link>
       <pubDate>Sun, 17 Jul 2022 09:14:08 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/dabda/</guid>
+      <guid>https://jerrygoodluck.github.io/post/dabda/</guid>
       <description>&lt;p&gt;from &lt;a href=&#34;https://twitter.com/cryptoismyjam/status/1548114053247012865&#34;&gt;https://twitter.com/cryptoismyjam/status/1548114053247012865&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;1/ The future of our funds is in limbo.&lt;/p&gt;
 &lt;p&gt;The company that told us &amp;ldquo;Banks are Not Your Friends&amp;rdquo; &amp;amp; &amp;ldquo;Unbank Yourself&amp;rdquo; violated our trust in a most egregious manner.&lt;/p&gt;
@@ -416,9 +416,9 @@ git config --local user.email xxx
     </item>
     <item>
       <title>The Webb Space Telescope Will Rewrite Cosmic History. If It Works.</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/the_webb_space_telescope_will_rewrite_cosmic_history/</link>
+      <link>https://jerrygoodluck.github.io/post/the_webb_space_telescope_will_rewrite_cosmic_history/</link>
       <pubDate>Wed, 13 Jul 2022 22:20:09 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/the_webb_space_telescope_will_rewrite_cosmic_history/</guid>
+      <guid>https://jerrygoodluck.github.io/post/the_webb_space_telescope_will_rewrite_cosmic_history/</guid>
       <description>&lt;p&gt;&lt;strong&gt;《韦伯天文望远镜将会改写宇宙历史，如果它能正常工作的话》&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;作者：娜塔莉·沃尔乔弗&lt;/p&gt;
 &lt;p&gt;和菜头整理,谷歌翻译: &lt;a href=&#34;https://mp.weixin.qq.com/s/YSEmlentq3pwhLsNIfT8Dw&#34;&gt;https://mp.weixin.qq.com/s/YSEmlentq3pwhLsNIfT8Dw&lt;/a&gt;&lt;/p&gt;
@@ -451,9 +451,9 @@ git config --local user.email xxx
     </item>
     <item>
       <title>Advice for lack of discipline</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/advice_for_lack_of_discipline/</link>
+      <link>https://jerrygoodluck.github.io/post/advice_for_lack_of_discipline/</link>
       <pubDate>Sun, 26 Jun 2022 12:55:34 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/advice_for_lack_of_discipline/</guid>
+      <guid>https://jerrygoodluck.github.io/post/advice_for_lack_of_discipline/</guid>
       <description>&lt;p&gt;&amp;ldquo;If you lack discipline, open this&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;Psychology Thread&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/JerryGoodLuck/myimage/main/202206261258258.jpeg&#34; alt=&#34;&#34;  /&gt;
@@ -470,9 +470,9 @@ git config --local user.email xxx
     </item>
     <item>
       <title>Advice from ArtOfLife_</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/advice_from_artoflife_/</link>
+      <link>https://jerrygoodluck.github.io/post/advice_from_artoflife_/</link>
       <pubDate>Sun, 26 Jun 2022 12:52:06 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/advice_from_artoflife_/</guid>
+      <guid>https://jerrygoodluck.github.io/post/advice_from_artoflife_/</guid>
       <description>&lt;p&gt;&amp;ldquo;Overthinkers&amp;rdquo;, open this:&lt;/p&gt;
 &lt;p&gt;• You&amp;rsquo;re loved, someone out there loves you more than you think.&lt;/p&gt;
 &lt;p&gt;• Your anxiety will tell you the worst case scenario. It’s a damn liar!&lt;/p&gt;
@@ -482,17 +482,17 @@ git config --local user.email xxx
     </item>
     <item>
       <title>Advice from LongShortHC</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/advice_from_longshorthc/</link>
+      <link>https://jerrygoodluck.github.io/post/advice_from_longshorthc/</link>
       <pubDate>Sun, 26 Jun 2022 12:30:18 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/advice_from_longshorthc/</guid>
+      <guid>https://jerrygoodluck.github.io/post/advice_from_longshorthc/</guid>
       <description>&lt;p&gt;Had a DM question asking for advice for a brand new analyst working at a pod shop. Noodled on it, and figured I would share the thoughts broadly in case helpful. I am far from the most tenured and successful pod PM - spent 4 years as a PM at combo of D.E. Shaw (not a pod)…&lt;/p&gt;
 &lt;p&gt;Citadel/Aptigon and Schonfeld, over which time I hired/employed/trained a dozen or so analysts. (And then threw up two middle fingers and retired…more on that later). So I’m by no means the absolute authority on pods. But here is my advice:&lt;/p&gt;</description>
     </item>
     <item>
       <title>如何利用GithubAction发布Hugo博客</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://jerrygoodluck.github.io/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Tue, 05 Apr 2022 15:07:33 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://jerrygoodluck.github.io/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8githubaction%E5%8F%91%E5%B8%83hugo%E5%8D%9A%E5%AE%A2/</guid>
       <description>&lt;p&gt;作为一个老网民，我还是很喜欢折腾博客的。从07年开始就玩各种博客，比如07年搜狐博客，那时候博客热很火，不亚于微博兴起的时候，于是我每天去刷我的搜狐博客访问量，是不是还专门去网吧写文章。 后来还开了新浪博客，一直在新浪博客混混文字，大概一直在新浪博客写了4年。&lt;/p&gt;
 &lt;p&gt;再后来又买了独立主机，自己开WordPress写博客，无奈后来被人把主机给黑了。但是那时候很快啦，天天找WordPress好看的主题，去别的的WP 搜索好用的插件。各种互加友链。&lt;/p&gt;
 &lt;p&gt;当然后来还玩了很多其他的博客，比如Google的BlogSpot，Tumbler，对就是那个Tumbler。 还有网易的LOFTER，新浪的绿洲。腾讯的QQ空间，微信公众号。&lt;/p&gt;
@@ -527,9 +527,9 @@ git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
     </item>
     <item>
       <title>如果我有一段生命</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</link>
+      <link>https://jerrygoodluck.github.io/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</link>
       <pubDate>Tue, 05 Apr 2022 00:17:28 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</guid>
+      <guid>https://jerrygoodluck.github.io/post/%E5%A6%82%E6%9E%9C%E6%88%91%E6%9C%89%E4%B8%80%E6%AE%B5%E7%94%9F%E5%91%BD/</guid>
       <description>&lt;p&gt;If God, for a second, forgot what I have become and granted me a little bit more of life, I would use it to the best of my ability.&lt;/p&gt;
 &lt;p&gt;如果有一刹那，上帝忘记我是一只布偶并赋予我片刻生命，我会最大限度的利用起来。&lt;/p&gt;
 &lt;p&gt;I wouldn&amp;rsquo;t possibly, say everything that is in my mind, but I would be more thoughtful of all I say…&lt;/p&gt;
@@ -538,9 +538,9 @@ git submodule add https://github.com/xianmin/hugo-theme-jane.git themes/jane
     </item>
     <item>
       <title>不装蒜</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</link>
+      <link>https://jerrygoodluck.github.io/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</link>
       <pubDate>Mon, 04 Apr 2022 22:16:02 +0800</pubDate>
-      <guid>https://adityatelange.github.io/hugo-PaperMod/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</guid>
+      <guid>https://jerrygoodluck.github.io/post/%E4%B8%8D%E8%A3%85%E8%92%9C/</guid>
       <description>&lt;p&gt;顾城 (1956-1993)&lt;/p&gt;
 &lt;p&gt;人的生命里有一种能量，它使你不安宁。说它是欲望也行，幻想也行，妄想也行，总之它不可能停下来，它需要一个表达形式。这个形式可能是革命，也可能是爱情；可能是搬一块石头，也可能是写一首诗。只要这个形式和生命力里的这个能量吻合了，就有了一个完美的过程。&lt;/p&gt;
 &lt;p&gt;一个彻底诚实的人是从不面对选择的，那条路永远会清楚无二地呈现在你面前，这和你的憧憬无关，就像你是一棵苹果树，你憧憬结橘子，但是你还是诚实地结出苹果一样。&lt;/p&gt;
